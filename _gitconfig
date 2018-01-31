@@ -1,0 +1,150 @@
+[user]
+	name = Stamo-Gochev
+	email = stamo_gochev@yahoo.com
+[branch]
+	autosetuprebase = always
+[core]
+	autocrlf = input
+	whitespace = cr-at-eol
+	excludesfile = ~/.gitignore
+	pager = less -F
+	longpaths = true
+[diff]
+	tool = vsdiffmerge
+	compactionHeuristic = true
+[difftool]
+	prompt = true
+[difftool "vsdiffmerge"]
+	cmd = \"C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\IDE\\vsdiffmerge.exe\" \"$LOCAL\" \"$REMOTE\" //t
+[difftool "vsdiffmerge"]
+	keepbackup = false
+[merge]
+	tool = vsdiffmerge
+[mergetool]
+	prompt = true
+[mergetool "vsdiffmerge"]
+	cmd = \"C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\IDE\\vsdiffmerge.exe\" \"$REMOTE\" \"$LOCAL\" \"$BASE\" \"$MERGED\" //m
+	trustexitcode = true
+[mergetool "vsdiffmerge"]
+	keepbackup = false
+[push]
+	default = simple
+[alias]
+	alias = "!f() { git config --list | egrep '^alias.' | sed 's/^alias.//' | sed 's/=/ = /' ; }; f"
+	a = add
+	bi = bisect
+	br = "!f() { git checkout -b $1 `git current` ; }; f"
+	# delete local branch
+	dlbr = branch -D
+	drbr = push origin --delete
+	# list remote branches
+	lrbr = branch -r
+	# list local branches
+	llbr = branch
+	# remote branches created by an author
+	lrbrby = "!f() { git for-each-ref --format=' %(authorname) %09 %(refname)' | egrep -i 'refs/remotes/' | egrep -i --color $1 ; }; f"
+	# my remote branches
+	lmrbr = "!f() { git lrbrby Stamo ; }; f"
+	# rename branch
+	rbr = branch -m
+	# "!f() { git push -u origin ; }; f"
+	plbr = "!f() { git push --set-upstream origin `git current` ; }; f"
+	c = commit -m
+	ca = commit --amend
+	cae = commit --allow-empty
+	cl = clone
+	co = checkout
+	cod = checkout develop
+	com = checkout master
+	cop = checkout production
+	cp = cherry-pick
+	cpa = cherry-pick --abort
+	cpc = cherry-pick --continue
+	d = diff
+
+	# cherry-pick from ... to ...
+	#cpf2 = "!f() { git checkout $2 && git pull --rebase && git cherry-pick $1 && git push && git checkout $1 ; }; f"
+	cpf2 = "!f() { git checkout $2 && git pull --rebase origin $2 && git cherry-pick $1 ; }; f"
+
+	# cherry-pick from current to ...
+	cp2 = "!f() { git cpf2 `git current` $1 ; }; f"
+
+	# cherry-pick from master to production
+	#cpm2p = "!f() { git cpf2 master production ; }; f"
+	cpm2p = "!f() { git checkout production && git pull --rebase && git cherry-pick master ; }; f"
+
+	# cherry-pick from kendo to kendo-ui-core
+	# cpcore = "!f() { git --git-dir=/c/work/github/kendo/.git format-patch -k -1 --stdout $1 | git am -3 -k ; }; f"
+
+	f = fetch --prune
+	p = push
+	pr = pull --rebase
+	l = log -10 --oneline
+	lh = "!f() { git log -3 --all --full-history -- $1 ; }; f"
+	lo = log -10 --all --graph --pretty=format:'%C(yellow)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(cyan)%an%Creset' --abbrev-commit --date=relative
+	lol = log --all --graph --pretty=format:'%C(yellow)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(cyan)%an%Creset' --abbrev-commit --date=relative
+	mnff = merge --no-ff
+	m = merge
+	ra = rebase --abort
+	ri = rebase -i
+	rim = rebase -i origin/master
+	ric = "!f() { rebase -i origin/`git current` ; }; f"
+	rec = rebase --continue
+	#revert the last commit and preserve the changes locally
+	rc = reset --soft HEAD~
+	s = status
+	st = stash save
+	dst = "!f() { git stash drop stash@{$1} ; }; f"
+	stl = stash list
+	ust = "!f() { git stash apply stash@{$1} ; }; f"
+	# unstash by the name of a stash matched by a regular expression
+	# escape curly braces for windows
+	unstash = "!f() { git stash apply stash^\"{/$*\"}; }; f"
+
+	# branches
+	current = rev-parse --abbrev-ref HEAD
+	parent = "!git show-branch | ack '\\*' | ack -v \"`git current`\" | head -n1 | sed 's/.*\\[\\(.*\\)\\].*/\\1/' | sed 's/[\\^~].*//'"
+	tracked = rev-parse --abbrev-ref --symbolic-full-name @{u}
+
+	#others
+	ignored = ls-files --other --ignored --exclude-standard
+	notpushed = cherry -v
+	jshint = "!f() { git diff --name-status | egrep '^(A|M)' | awk '{ print $2 }' | paste -sd ',' ; }; f"
+	tests = "!f() { git diff --name-only | egrep '^tests/.*' | paste -sd ',' ; }; f"
+	cl = clone
+
+	rh = reset --hard
+	u = reset HEAD
+	undo = checkout --
+	unst = reset HEAD
+	staged = diff --cached
+	unstaged = diff
+	# Usage: git track origin/feature-123-login-form
+	track = checkout -t
+	rmtrack = rm --cached
+
+	#ignore a file
+	ignore = "!f() { git update-index --assume-unchanged $1 ; }; f"
+	rmignore = "!f() { git update-index --no-assume-unchanged $1 ; }; f"
+
+	###############################################
+	# public/private mirrors aliases
+	###############################################
+
+	# bring commits from public repo to private
+    put-in-master = "!git checkout master && git pull --rebase && git cherry-pick core/master && git push && git checkout core-master"
+
+    # drop cherry-picks of private files
+    drop-deleted-by-us = "!git rm `git status --porcelain | grep ^DU | cut -d' ' -f2`"
+
+    # update private marker after all commits are ported from public to private
+    updated-core-tag = "!git tag -f r-private core/master && git push -f core r-private;"
+
+    # update public marker after all commits are ported from private to public
+    updated-master-tag = "!git tag -f r-public origin/master && git push -f origin r-public;"
+
+    # skip a cherry-pick in progress
+    skip-cherry = "!git reset; git cherry-pick --continue"
+
+    # add non-whitespace changes
+	addnw = "!f() { git diff -U0 -w --no-color $@ | git apply --cached --ignore-whitespace --unidiff-zero ; }; f"

@@ -1,0 +1,15 @@
+{
+	"name": "theme-monokai-best",
+	"version": "0.1.0",
+	"publisher": "vscode",
+	"engines": { "vscode": "*" },
+	"contributes": {
+		"themes": [
+			{
+				"label": "Monokai-Best",
+				"uiTheme": "vs-dark",
+				"path": "./themes/monokai-best.tmTheme"
+			}
+		]
+	}
+}

@@ -1,0 +1,244 @@
+=========================================
+=========================================
+
+Primitive types:
+
+There are no user defined types (classes).
+
+There is no string type, so strings are built by other primitive types.
+Strings are represented as binary numbers.
+
+hello_binary = <<104, 101, 108, 108, 111>>
+
+These are so called character lists
+'hello' = [104, 101, 108, 108, 111]
+
+=========================================
+=========================================
+
+Maps are prefixed with %
+student = %{
+  name: "john",
+  age: 23
+}
+puts student[:name]
+
+Tuples are written as objects and are used for pattern matching and with atoms for results
+{:ok, contents} = File.new("test.txt")
+
+tuple = { "id", 123 }
+puts elem(tuple, 0)
+put_elem(tuple, 0, "id2")
+puts elem(tuple, 0)
+
+=========================================
+=========================================
+
+Lists are written as arrays and implemented with head | tail
+names = ["test1", "test2", "test3"]
+puts Enum.at(names, 0)
+
+list1 = [1, 2, 3]
+list2 = [0 | list1]
+
+Enum.each list2, fn n ->
+  puts n
+end
+
+Prepending to a list is FAST:
+Erlang VM (BEAM) is smart as list1 is immutable, it won't create a new list and duplicate the items but rather list2 will have an item 0 and a pointer to the rest of list1
+
+Appending to a list is SLOW:
+The VM will create a copy of the list.
+
+list1 = [1, 2, 3]
+list2 = list1 ++ [4]
+
+Enum.each list2, fn n ->
+  puts n
+end
+
+=========================================
+=========================================
+
+Functions are defined by "fn" and are called by <name>.(args)
+
+add = fn(a, b) ->
+  a + b
+end
+
+puts add.(1, 2
+
+=========================================
+=========================================
+
+Type checking
+is_atom(:atom)
+is_list([1, 2, 3])
+is_map(%{})
+
+
+=========================================
+=========================================
+
+High-level types - Ranges, Structs, HashDict, HashSet, Tasks, Agents, Streams
+
+No such thing and they are built by primitive types and constants
+
+Structs
+
+%Episode {
+	title: "Titanic",
+	year: 1999
+}
+
+=========================================
+=========================================
+
+Ranges
+Enum.each 0..10, fn(n) ->
+  puts n
+end
+
+//under the hood
+Enum.each %Range{first: 0, last: 5}, fn(n) ->
+  puts n
+end
+
+=========================================
+=========================================
+
+Regex
+-r/hello/
+
+%Regex{
+	opts:,
+	re_pattern: ...,
+	source: 'hello'
+}
+
+puts rem(15, 5)
+
+=========================================
+=========================================
+Operators
+
+Variable assignment
+
+name = "John"
+name = "Doe"
+
+This is not reassignment, but just changing name to point to a different value
+
+[a, 2] = [1, 2]
+[a, 2] = [3, 2]
+a == 3
+[^a, 2] = [1, 2] -> error
+
+== - match value 1 == 1.0
+=== - match value and type 1 === 1.0 -> false
+
+[1, 2, 3] ++ [4] = [1, 2, 3, 4]
+[1, 2, 3] -- [3] = [1, 2]
+[a, b, c | tail] = [1, 2, 3, 4, 5, 6
+
+=========================================
+=========================================
+Streams - a lazy version of Enum - it is not evaulated till it needs to
+
+
+
+
+=========================================
+=========================================
+
+
+=========================================
+=========================================
+
+
+=========================================
+=========================================
+
+
+=========================================
+=========================================
+
+
+
+
+=========================================
+=========================================
+
+
+
+=========================================
+=========================================
+
+
+
+=========================================
+=========================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

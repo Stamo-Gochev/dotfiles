@@ -1,0 +1,153 @@
+# Set name of the theme to load. Looks in ~/.oh-my-zsh/themes/
+ZSH_THEME="bira"
+
+# ==================================================================
+# Exports
+# ==================================================================
+
+# use vim as an editor
+export EDITOR=vim
+
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+# export MANPATH="/usr/local/man:$MANPATH"
+
+export LANG=en_US.UTF-8
+
+# ssh
+# export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+# Add RVM to PATH for scripting
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# Path to your oh-my-zsh installation.
+export ZSH=$HOME/.oh-my-zsh
+
+# ==================================================================
+# Settings
+# ==================================================================
+
+source $ZSH/oh-my-zsh.sh
+
+cd /c/Work/GitHub/kendo
+
+# aliases
+if [ -e "$HOME/.aliases" ]; then
+    source "$HOME/.aliases"
+fi
+
+if [ -n "$DISPLAY" ]; then
+    export BROWSER=google-chrome
+fi
+
+autoload colors
+autoload -U colors
+autoload -U compinit
+
+# makes color constants available
+colors
+
+# enable colored output from ls, etc
+export CLICOLOR=1
+
+# expand functions in the prompt
+setopt prompt_subst
+
+# completion
+compinit
+
+# automatically enter directories without cd
+setopt auto_cd
+
+# navigate to a directory with "cd -2"
+# http://zsh.sourceforge.net/Intro/intro_6.html
+# make cd act like pushd
+setopt auto_pushd
+setopt pushd_ignore_dups
+# swaps the meanings of cd +1 and cd -1
+setopt pushdminus
+# prevent the shell from printing the directory stack each time we do a cd
+setopt pushdsilent
+DIRSTACKSIZE=10
+
+setopt PUSHD_MINUS
+setopt CDABLE_VARS
+zstyle ':completion:*:directory-stack' list-colors '=(#b) #([0-9]#)*( *)==95=38;5;12'
+
+# use incremental search
+bindkey ^R history-incremental-search-backward
+
+# ignore duplicate history entries
+setopt histignoredups
+
+setopt share_history
+HISTSIZE=1000
+SAVEHIST=1000
+HISTFILE=~/.history
+setopt APPEND_HISTORY
+
+# prompt
+
+git_prompt_info() {
+  ref=$(git symbolic-ref HEAD 2> /dev/null)
+  if [[ -n $ref ]]; then
+    echo "[[%{$fg_bold[yellow]%}${ref#refs/heads/}%{$reset_color%}]]"
+  fi
+}
+
+# export PS1='%{$fg_bold[blue]%}$%{$reset_color%} '
+# export RPROMPT='${SSH_CONNECTION+"%{$fg_bold[cyan]%}"}%{$fg_bold[cyan]%}%~%{$reset_color%} -- $(git_prompt_info) $HOST'
+
+# PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+
+
+# Uncomment the following line to use case-sensitive completion.
+# CASE_SENSITIVE="true"
+
+# Uncomment the following line to use hyphen-insensitive completion. Case
+# sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
+
+# Uncomment the following line to disable bi-weekly auto-update checks.
+# DISABLE_AUTO_UPDATE="true"
+
+# Uncomment the following line to change how often to auto-update (in days).
+# export UPDATE_ZSH_DAYS=13
+
+# Uncomment the following line to disable colors in ls.
+# DISABLE_LS_COLORS="true"
+
+# Uncomment the following line to disable auto-setting terminal title.
+# DISABLE_AUTO_TITLE="true"
+
+ENABLE_CORRECTION="true"
+
+# Display red dots whilst waiting for completion.
+COMPLETION_WAITING_DOTS="true"
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# HIST_STAMPS="mm/dd/yyyy"
+
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(git)

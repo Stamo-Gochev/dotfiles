@@ -1,0 +1,275 @@
+###//remove all empty lines in file
+:%s /^\n//
+
+===================================================
+Navigation
+===================================================
+
+When in normal mode:
+
+a - go after the cursor and switch to insert mode
+i - go before the cursor and switch to insert mode
+A - go to insert mode at the end of the line
+I - go to insert mode at the beginning of the line
+12G - go to line 12
+12gg - go to line 12
+gg - go to the top of the file
+G - go to the end of the file
+:e . - opens a list of files that can be opened. You open the file by pressing ENTER
+f+ - go to the next occurrence of +
+t+ - set cursor before the next occurrence of +
+} - go to next paragraph/block
+{ - go to the previous paragraph/block
+( - go to the next sentence (after a dot)
+) - go to the previous sentence
+W - go to the start of the next word without punctuation
+v - start visual mode
+V - start visual mode by marking lines from start
+
+H - put cursor at the top of the window
+M - put the cursor at the middle of the window
+L - put the cursor at the bottom of the window
+Ctrl + o - jump to next position 0 - useful for opening a closed buffer (file)
+Ctrl + i - jump to previous position
+:bp - go back to previous file
+gf - go to file - when cursor is on a file will navigate to it
+
+===================================================
+Editing
+===================================================
+
+~ - change casing of the letter
+u - undo
+ctrl + r - redo
+xp - swap characters (delete and paste)
+5j - move 5 lines down
+dd - delete whole line
+D - delete whole line but stay on it (deleting to the end)
+yy - yank whole line
+cc - change whole line, similar to C
+ct) - change to )
+dw - delete word
+cw - change word
+J - join current line with the next one
+gJ - join current line with the next without leaving spaces
+s - delete character on cursor and go to insert mode
+. - repeat last command 
+
+===================================================
+Selection
+===================================================
+
+vit - select everything inside tag, e.g. <p>text</p> => <p>[text]</p>
+    - v - operator - [c]hange, [d]elete, [y]ank, [v]isual
+    - i - extent - [a]ll delimeters, [i]nner object
+    - t - object - [w]ord, [W]ord, [s]entence, [p]aragraph, [t]ag
+vat - select everything including the tag
+
+ci" - change (delete) text inside region ending in ", e.g. <a href="google"> => <a href=""> 
+ca" - delete text including the region, e.g. <a href="google"> => <a href=>
+ct" - delete text until ", e.g. <a hr|ef="google"> => <a hr|google">
+
+Ctrl + v - enter multi-cursor mode 
+
+===================================================
+Scrolling
+===================================================
+
+zt - move the current line to the top of the screen
+zb - move the current line to the bottom of the screen
+zz - move the current line to the middle of the screen
+Ctrl + E - scroll down
+Ctrl + Y - scroll up
+Ctrl + F - scroll one page down
+Ctrl + B - scroll one page up
+
+===================================================
+Indentation
+===================================================
+
+>> - indent to the right
+<< - indent to the left
+2>> - indent 2 lines to the right
+Ctrl + d - indent to the left in insert mode
+Ctrl + t - indent to the right in insert mode
+
+===================================================
+Windows
+===================================================
+
+:sp - split horizontally
+:vsp - split vertically
+:Ctrl + W + hjkl - move to window
+:q - quit current window
+
+===================================================
+Searching
+===================================================
+
+/handle - search for the occurrence of handle
+?handle - search for "handle" backwards
+n - go to the next found word
+N - go back to the found word
+:noh - remove highlighting
+
+Type ":set hlsearch" to highlight words as you type
+Type ":set incsearch" to get standard search
+
+* - searches for the word under the cursor straightaway
+
+===================================================
+Replacing
+===================================================
+
+:[range]s/{pattern}/{replacement}/[flags] [count]
+
+:%s/text/word - replace "text" with "word" in the whole file
+:%s/text/word/g - replace globally
+:s/text/word - replace only the first match
+:s/text/word/gc - replace globally with confirmation
+
+===================================================
+Search and execute
+===================================================
+
+:[range]g/{pattern}/[cmd]
+
+:g/cursor/ - shows a list of matches in a separate window, close with ESC ESC
+:g/re/p - search by a regular expression
+
+===================================================
+Macros
+===================================================
+
+q{register}
+
+qk - start a macro called "k" (in register "k")
+do something
+q - finish
+
+@{register} - @k - repeats the macro in register "k"
+
+===================================================
+Marks
+===================================================
+
+ma - inserts a mark with the letter "a"
+`a - go to the mark with letter "a"
+d`t - delete everything to mark "t"
+
+Built-in marks
+`` - position of the cursor before the latest jump
+'' - position of the cursor before the latest jump
+`0 - `9 - position of the cursor when last exited Vim
+`. - location of the last edit
+'. - location of the last edit
+
+Commands
+:marks - show all marks
+
+Lowercase marks are file-specific
+Uppercase marks are global
+
+===================================================
+Windows and buffers
+===================================================
+
+Ctrl + w s - split window horizontally
+Ctrl + w j - move focus to bottom window
+Ctrl + w k - move focus to up window
+Ctrl + w v - vertical split
+Ctrl + w W - cycles windows clockwise
+Ctrl + w o - close other windows except the active one
+
+===================================================
+Mappings
+===================================================
+
+nnoremap - normal mode map
+inoremap - insert mode map
+vnoremap - visual mode map
+
+nnoremap <C-w> :w<CR> - remaps Ctr+w to :w[Enter] in normal mod
+
+<leader> 	Your leader key
+<leader>a 	Leader-a
+<leader>A 	Leader-Shift-a
+<S-A> 	Shift-a
+A 	Shift-a
+<C-A> 	Ctrl-a
+<C-tab> 	Ctrl-Tab
+<C-S-tab> 	Ctrl-Shift-Tab
+<BS> 	Backspace
+<Tab> 	Tab
+<CR> 	Enter
+<Enter> 	Enter
+<Return> 	Enter
+<Esc> 	Escape
+<Space> 	Space
+<Up> 	Up arrow
+<Down> 	Down arrow
+<Left> 	Left arrow
+<Right> 	Right arrow
+<F1> – <F12> 	Function keys 1 to 12
+#1, #2..#9,#0 	Function keys F1 to F9, F10
+<Insert> 	Insert
+<Del> 	Delete
+<Home> 	Home
+<End> 	End
+<PageUp> 	Page-Up
+<PageDown> 	Page-Down
+<bar> 	the ‘|’ character, which otherwise needs to be escaped ‘\|’
+
+===================================================
+Commands
+===================================================
+
+:! ls -  executes the CLI command
+:s - sed
+
+:r <FILE> - read a file contents into the current buffer
+
+:qa - quit all
+:wqa - save and quit all
+:x - save and quit
+ZZ - save and quit
+
+:e - explore (open files)
+:vsplit file - open file in vertical split
+:split file - open file in horizontal split
+<CTRL> + w + w - change active buffer
+
+:set spell spelllang=en_us - activate spelling check in english
+]s - next wrong spelled word
+[s - previous wrong spelled word
+zg - add word to spellfile
+z= - gives alternatives
+
+-- mixed stuff --
+nnoremap <buffer> <F12> :w<CR>:!gcc -Wall %<CR> - sets F12 in current buffer(useful for filetype plugin) to save file and compile it with gcc
+inoremap ( ()<left>
+<CTRL> + n - auto suggestion even over various buffers
+<CTRL> + R + "- paste in insert mode
+:s#^#//# - place // at the beginning of the current/visual selected line you could and should also map that to a key
+
+:e# - navigates to a previously opened document
+:e#2 - navigates to a previously opened document with number
+
+===================================================
+Ctags
+===================================================
+
+:tag print - goes to a method called "print"
+:tn - goes to next match
+:tp - goes to the previous match
+:ts - choose from list of matches
+Ctrl + ] - when the cursor is on a method jump to definition
+Ctrl + 6 (caret) - go back before the jump to definition
+
+===================================================
+Tricks
+===================================================
+
+:g/var/d - deletes all lines containing "var" (g - global, d - delete)
+:g!/var/d - deletes all lines not containing "var"
+q: - opens a window with previous commands (like CtrlP)

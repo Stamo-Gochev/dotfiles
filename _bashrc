@@ -1,0 +1,123 @@
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+# smart cd to previous directories
+if [ -e "$HOME/.cd_history.sh" ]; then
+  source "$HOME/.cd_history.sh"
+fi
+
+# helper functions
+if [ -e "$HOME/.cd_history.sh" ]; then
+  source "$HOME/.bash_helpers.sh"
+fi
+
+if [ -e "$HOME/.aliases" ]; then
+  source "$HOME/.aliases"
+fi
+
+cd /c/Work/GitHub/kendo
+
+# remove Ctrl+s mapping
+bind -r '\C-s'
+# disable the terminal from interpreting Ctrl+s - used for saving in vim
+stty -ixon
+
+#------------------------------------------------------------------------------
+# Path
+#------------------------------------------------------------------------------
+
+export PATH
+
+# Prepends $1 to $PATH, provided it is a directory and is not already in $PATH.
+# Based on http://superuser.com/a/39995.
+function prepend_to_path() {
+	if [ -d "$1" ] && [[ ":$PATH:" != *":$1:"* ]]; then
+		PATH="$1:$PATH"
+	fi
+}
+
+# append_to_path() {
+#     if [ -d "$1" ] && [[ ":$PATH:" != *":$1:"* ]]; then
+#         PATH="${PATH:+"$PATH:"}$1"
+#     fi
+# }
+
+# Include the path to Ruby gems.
+prepend_to_path "$(ruby -rubygems -e 'puts Gem.user_dir')/bin"
+
+# Include the user's private bin.
+prepend_to_path "$HOME/bin"
+
+#------------------------------------------------------------------------------
+# grep
+#------------------------------------------------------------------------------
+
+# Foreground Colours
+# 30 Black
+# 31 Red
+# 32 Green
+# 33 Yellow
+# 34 Blue
+# 35 Magenta
+# 36 Cyan
+# 37 White
+#
+# Background Colours
+# 40 Black
+# 41 Red
+# 42 Green
+# 43 Yellow
+# 44 Blue
+# 45 Magenta
+# 46 Cyan
+# 47 White
+
+# export GREP_COLOR='1;33'
+export GREP_COLOR=33
+
+# GREP_OPTIONS is deprecated, so we use aliases.
+# alias grep='grep --color=auto'
+# alias egrep='egrep --color=auto'
+# alias fgrep='fgrep --color=auto'
+
+#------------------------------------------------------------------------------
+# Miscellaneous
+#------------------------------------------------------------------------------
+
+# Allow typing just 'dir' instead of 'cd dir'.
+shopt -s autocd
+
+# Attempt to save all lines of a multi-line command in the same history entry.
+# This allows easy re-editing of multi-line commands.
+shopt -s cmdhist
+
+# Make the history list appended to the file named by the value of the HISTFILE
+# variable when the shell exits, rather than overwriting the file.
+shopt -s histappend
+
+# Save multi-line commands to the history with embedded newlines rather than
+# using semicolon separators where possible.
+shopt -s lithist
+
+# Locale. I use en_US, but for some categories, I prefer en_GB. For example, I
+# prefer dd/mm/yyyy (GB) to mm/dd/yyyy (US).
+export LANG=en_US.UTF-8
+export LC_TIME=en_GB.UTF-8
+export LC_PAPER=en_GB.UTF-8
+export LC_MEASUREMENT=en_GB.UTF-8
+
+# Make ls, du, df and possibly other programs report sizes in a human-readable
+# way by default (e.g. `df` implicitly becomes `df -h`).
+export BLOCKSIZE=human-readable
+
+# used for the uru Ruby version manager
+# eval "$(uru_rt admin install)"
+
+#------------------------------------------------------------------------------
+# Tricks
+#------------------------------------------------------------------------------
+
+# autocompletion of aliases, should be sourced as late as possible
+if [ -e "$HOME/.bash_completion.sh" ]; then
+  source "$HOME/.bash_completion.sh"
+fi

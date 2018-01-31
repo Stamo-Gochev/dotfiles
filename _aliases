@@ -1,0 +1,303 @@
+# git aliases
+alias a="git a"
+alias bi="git bi"
+alias bis="git bi start"
+alias bir="git bi reset"
+alias br="git br"
+alias rbr="git rbr"
+alias d="git d"
+alias dlbr="git dlbr"
+alias drbr="git drbr"
+alias llbr="git llbr"
+alias lmrbr="git lmrbr"
+alias lrbr="git lrbr"
+alias lrbrby="git lrbrby"
+alias plbr="git plbr"
+alias c="git c"
+alias ca="git ca"
+alias cae="git cae"
+alias cl="git cl"
+alias co="git co"
+alias cod="git cod"
+alias com="git com"
+alias cop="git cop"
+alias cpa="git cpa"
+alias cpc="git cpc"
+alias g="git"
+alias ig="git ignore"
+alias rmig="git rmignore"
+alias l="git l"
+alias lh="git lh"
+alias lo="git lo"
+alias lol="git lol"
+alias mnff="git mnff"
+alias np="git notpushed"
+alias o="git open"``
+alias pr="git pr"
+alias prk="for i in kendo*/.git; do ( echo "=============" && echo $i && cd $i/.. && git pull --rebase; ); done;"
+alias rc="git rc"
+alias rec="git rec"
+alias ra="git ra"
+alias ri="git ri"
+alias rim="git rim"
+alias ric="git ric"
+alias s="git s"
+alias sr="git remote set-url origin"
+alias dst="git dst"
+alias st="git st"
+alias stl="git stl -10"
+alias stll="git stl"
+alias ust="git ust"
+alias dt="dotnet test wrappers/mvc-6/tests/Kendo.Mvc.Tests"
+alias u="git u"
+alias go="git open"
+alias lga="git alias"
+alias gitcoin="TZ=UTC git log --pretty=format:'%H%x09%ad%x09%an' --date=iso-local | sed -E 's/^(0*[1-9a-f])(.*)/\1\t\1\2/' | sort -k1,1 -k3,3 | head -n10 | cut -f 2,3,4"
+
+# dev
+alias i="sudo apt-get install"
+alias v="vim"
+alias vv="vim ~/.vimrc"
+alias vb="vim ~/.bashrc"
+alias va="vim ~/.aliases"
+alias w="explorer .; gnome-open ."
+alias ldu="du -sh * | sort -hr"
+
+# tmux
+alias tm="tmux new"
+# tmux new -s <session_name> - creates a new session
+alias t="tmux new -s"
+# attaches to the first available session
+alias tal="tmux a"
+# tmux a -t <session_name> - attaches to a session
+alias ta="tmux a -t"
+alias td="tmux detach"
+# tmux kill-session -t <session_name> - destroys a session
+alias tk="tmux kill-session -t"
+# list sessions
+alias tl="tmux ls"
+
+# tests
+alias cta="gulp karma-unit"
+alias ctb='gulp karma-unit --tests="tests/button/**"'
+alias ctcm='gulp karma-unit --tests="tests/columnmenu/**"'
+alias cte='gulp karma-unit --tests="tests/editor/**"'
+alias ctd='gulp karma-unit --tests="tests/diagram/**"'
+alias ctdp='gulp karma-unit --tests="tests/datepicker/**"'
+alias ctds='gulp karma-unit --tests="tests/data/**"'
+alias ctdsm='gulp karma-unit --tests="tests/model/**"'
+alias ctg='gulp karma-unit --tests="tests/grid/**"'
+alias ctgff='gulp karma-unit --tests="tests/grid/**" --browser="Firefox"'
+alias ctgj3='gulp karma-unit --tests="tests/grid/**" --jquery="3.1.1"'
+alias ctve='gulp karma-unit --tests="tests/grid/virtual-*"'
+alias ctlb='gulp karma-unit --tests="tests/listbox/*.js"'
+alias ctlv='gulp karma-unit --tests="tests/listview/*.js"'
+alias ctmtb='gulp karma-unit --tests="tests/maskedtextbox/*.js"'
+alias ctpg='gulp karma-unit --tests="tests/pivotgrid/*.js"'
+alias cttl='gulp karma-unit --tests="tests/treelist/*.js"'
+alias ctw='gulp karma-unit --tests="tests/window/**"'
+
+alias ctms='gulp karma-unit --tests="tests/multiselect/**"'
+alias ctmsi='gulp karma-unit --tests="tests/multiselect/initialization.js"'
+alias ctms='gulp karma-unit --tests="tests/multiselect/**" --jquery="3.1.1"'
+
+alias ctsl='gulp karma-unit --tests="tests/staticlist/**"'
+
+# run karma with multiple files
+# this is necessary as the karma parameters in bash console are not expanded correctly
+# the git alias is a workaround, might not be necessary without Windows
+alias ctm='gulp karma-unit --tests={`git tests`}'
+
+# run karma with a single file
+alias cts='gulp karma-unit --tests="`git tests`"'
+
+# gulp karma-unit --tests="{tests/editor/resizing/table-resize-handle.js,tests/editor/resizing/table-resizing.js}"
+# gulp karma-unit --tests="tests/editor/resizing/table-resize-handle.js" --tests="tests/editor/resizing/table-resizing.js"
+
+# debug tests
+alias ctc="chrome.exe http://gochev:9876/debug.html"
+alias ctf="firefox.exe http://gochev:9876/debug.html"
+alias ctie="iexplore.exe http://gochev:9876/debug.html"
+
+# wrappers
+alias rma="rake mvc:assets"
+alias rmca="rake mvc_6:assets"
+alias rmcas="rake mvc_6:assets_shared"
+alias rdd="rake demos:debug"
+alias rgmcw='rake generate:mvc_6:wrappers'
+alias rgmw='rake generate:mvc:wrappers'
+alias rgmth='rake generate:mvc_6:taghelpers'
+alias rgmth='rake generate:mvc_6:taghelpers'
+alias rgmcth='rake generate:mvc_6:taghelpers'
+alias rgjw='rake generate:jsp'
+alias rgpw='rake generate:php'
+alias rgts='rake type_script:master:test'
+alias rga="rake generate:all"
+alias rgw='rake generate:all'
+alias rja="rake java:assets"
+alias rgrw="rake react:master:test"
+alias rgrwp="rake react:production:test"
+alias rgvw="rake vue:master:test"
+alias rgvwp="rake vue:production:test"
+
+# jshint
+alias jsha="gulp jshint"
+alias jsh='gulp jshint --files="{,`git jshint`}"'
+alias jshw='gulp watch-jshint --files="{,`git jshint`}"'
+
+# styles
+alias ste="gulp watch-styles -s 'styles/web/kendo.{common,default}.less'"
+
+# node
+alias nov="node --version"
+alias noc="explorer C:\Users\gochev\AppData\Roaming\npm\node_modules"
+
+# npm
+alias n="npm"
+alias npmv="npm --version"
+alias nup="npm update && npm prune"
+alias npv="npm view"
+alias npl="npm link"
+alias nvk="npm view @progress/kendo-ui"
+alias nvrw="npm view @progress/kendo-dropdowns-react-wrapper"
+alias ni="npm install"
+alias nig="npm install -g"
+alias nit="npm run typings -- install"
+alias nip="npm-install-peers"
+alias ns="npm start"
+alias nsaot="ng server --aot-true"
+alias nrw="npm run watch"
+alias nu="npm update"
+alias ac="npm run api-check"
+alias rn="rm -rf node_modules/"
+alias rna="find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +"
+alias ti="typings install"
+
+# nvm
+alias nvl="nvm list"
+alias nvu="nvm use"
+
+# yarn
+alias ya="yarn add"
+alias yag="yarn add -g"
+alias yv="yarn --version"
+alias ys="yarn start"
+alias yb="yarn build"
+alias yt="yarn test"
+
+# packages
+alias bp="npm run build-package; npm pack"
+alias saa="bp; cp *.tgz /c/work/github/angular-aot/; cd /c/work/github/angular-aot/; npm install *.tgz; cd -"
+alias sau="bp; cp *.tgz /c/work/github/angular-universal-rendering/; cd /c/work/github/angular-universal-rendering/; npm install *.tgz; cd -"
+
+# angular run aliases
+alias ae="chrome.exe http://gochev:8888/examples/"
+alias al="gulp lint"
+alias ak2="chrome.exe http://gochev:4000"
+alias at="gulp watch-test"
+alias aa="chrome.exe http://localhost:4200"
+alias au="chrome.exe http://localhost:3000"
+alias ak2s="bundle exec jekyll serve --incremental"
+alias ak2sf="SKIP_CONTENT_UPDATE=true bundle exec jekyll serve --incremental"
+alias ak2b="./copy-local-repo.sh kendo-angular-buttons /c/work/github/kendo-angular-buttons"
+alias ke="chrome.exe http://gochev/kendo/playground/editor/"
+
+# projects
+alias pg="cd /d/work/github/playground"
+alias ide="cd /c/work/github/dotfiles"
+
+# projects - kendo
+alias pk="cd /c/work/github/kendo"
+alias pkc="cd /d/work/github/kendo-ui-core"
+alias pkd="cd /d/work/github/kendo-ui-dojo"
+
+# projects - angular
+alias pk2="cd /d/work/github/k2-site"
+alias pacb="cd /c/work/github/kendo-angular-component-base"
+alias pab="cd /c/work/github/kendo-angular-buttons"
+alias pac="cd /d/work/github/kendo-angular-charts"
+alias pc="cd /d/work/github/kendo-charts"
+alias pad="cd /c/work/github/kendo-angular-dropdowns"
+alias pai="cd /c/work/github/kendo-angular-inputs"
+alias pag="cd /c/work/github/kendo-angular-grid"
+alias pap="cd /c/work/github/kendo-angular-popup"
+alias paa="cd /c/work/github/angular-aot"
+alias pau="cd /c/work/github/angular-universal-rendering"
+alias par="cd /c/work/github/angular-rollup"
+alias rab="rm -rf node_modules/@progress/kendo-angular-buttons/"
+alias rac="rm -rf node_modules/@progress/kendo-angular-charts/"
+alias rad="rm -rf node_modules/@progress/kendo-angular-dropdowns/"
+alias rag="rm -rf node_modules/@progress/kendo-angular-grid/"
+alias rai="rm -rf node_modules/@progress/kendo-angular-inputs/"
+alias rnp="rm -rf node_modules/@progress"
+
+alias cpkrp="cd /d/work/github/kendo-react-private && code ."
+alias cpvw="cd /d/work/github/kendo-vue-wrappers && code ."
+
+# projects - react
+alias prp="cd /d/work/github/kendo-react-private"
+alias pkrp="cd /d/work/github/kendo-react-private"
+
+# projects - react wrappers
+alias prw="cd /d/work/github/kendo-react-wrappers"
+alias pvw="cd /d/work/github/kendo-vue-wrappers"
+alias rwe="chrome.exe http://localhost:8080"
+
+alias ctrwg="gulp test --package kendo-grid-react-wrapper"
+alias ctrwc="gulp test --package kendo-charts-react-wrapper"
+
+# projects - common
+alias ptb="cd /c/work/github/themebuilder"
+alias preact="cd /d/work/github/react"
+
+# dotnet
+alias dnc="dotnet nuget locals all --clear"
+
+# ruby
+alias r19="uru 193p551"
+alias r23="uru 233p222"
+
+# gulp
+alias gu="gulp"
+alias gta="gulp --tasks"
+alias gub="gulp build"
+alias guc="gulp compile"
+alias gucdn="gulp compile-cdn"
+alias gunpm="gulp compile-npm"
+alias gues="gulp compile-es"
+alias gul="gulp tslint"
+alias gut="gulp test"
+
+# lerna
+alias le="lerna"
+alias leb="lerna bootstrap"
+alias lei="lerna init"
+
+# built-in helpers
+alias ff='find . -type f -not -path "*node_modules*" -name'
+alias la='ls -lA --group-directories-first'
+
+if [ -n "$BASH_VERSION" ]; then
+  # move to a list of previously visited directories
+  # http://linuxgazette.net/109/marinov.html
+  alias cd=cd_func
+  # smart cd to previous directories, usage "cd 1", better than "cd -2"
+  alias cdd=cd_to_func
+fi
+alias cdl="dirs -v"
+
+# overrides
+alias grep="grep --color"
+alias egrep="egrep --color"
+# alias gr="grep --color -HIirn --exclude-dir={node_modules}"
+alias gr=grep_with_params
+alias gri="grep -i --color"
+
+# bash
+alias rb="source ~/.bash_profile"
+
+# zsh
+alias rz="source ~/.zshrc"
+
+# tmux
+alias rt="tmux source-file ~/.tmux.conf"
