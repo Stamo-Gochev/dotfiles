@@ -111,7 +111,6 @@
 	notpushed = cherry -v
 	jshint = "!f() { git diff --name-status | egrep '^(A|M)' | awk '{ print $2 }' | paste -sd ',' ; }; f"
 	tests = "!f() { git diff --name-only | egrep '^tests/.*' | paste -sd ',' ; }; f"
-	cl = clone
 
 	rh = reset --hard
 	u = reset HEAD
