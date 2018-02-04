@@ -293,7 +293,7 @@ nmap <leader>9 <Plug>AirlineSelectTab9
 
 "------------------------------------------------------------------
 " Fugitive
-"-----------------------------------------------------------------
+"------------------------------------------------------------------
 
 " use vertical splitting when using git diff
 set diffopt+=vertical
@@ -350,6 +350,9 @@ nnoremap ) $
 " open next/previous file (use buffers)
 nmap <leader>ne :bn<CR>
 nmap <leader>pre :bp<CR>
+
+" use CtrlP plugin to open tags, e.g. search for JavaScript method
+noremap <C-m> :CtrlPTag<CR>
 
 "------------------------------------------------------------------
 " Typing
