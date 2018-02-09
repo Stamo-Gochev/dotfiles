@@ -351,9 +351,6 @@ nnoremap ) $
 nmap <leader>ne :bn<CR>
 nmap <leader>pre :bp<CR>
 
-" use CtrlP plugin to open tags, e.g. search for JavaScript method
-noremap <C-m> :CtrlPTag<CR>
-
 "------------------------------------------------------------------
 " Typing
 "------------------------------------------------------------------
@@ -549,7 +546,8 @@ nnoremap <leader>nf :NERDTreeFind<CR>
 " CtrlP
 "------------------------------------------------------------------
 
-map <C-M> :CtrlPBufTag<CR>
+" use CtrlP plugin to open tags, e.g. search for JavaScript method
+noremap <C-m> :CtrlPTag<CR>
 
 "------------------------------------------------------------------
 " vim-fugitive
