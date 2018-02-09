@@ -46,9 +46,7 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'Railscasts-Theme-GUIand256color'
 Plugin 'flazz/vim-colorschemes'
-Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-colorscheme-switcher'
 
