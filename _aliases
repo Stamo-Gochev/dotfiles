@@ -207,6 +207,7 @@ alias ke="chrome.exe http://gochev/kendo/playground/editor/"
 # projects
 alias pg="cd /d/work/github/playground"
 alias ide="cd /c/work/github/dotfiles"
+alias cide="code /c/work/github/dotfiles"
 
 # projects - kendo
 alias pk="cd /c/work/github/kendo"
