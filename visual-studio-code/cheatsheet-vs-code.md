@@ -64,54 +64,60 @@ sudo cp -r theme-monokai-best/ /usr/share/code/resources/app/extensions
 ```
 
 
-# Remap keys in VsCodeVim
+# Settings
 ```javascript
-//Custom settings
+	//Custom settings
 
-"editor.wordWrap": "on",
+	"editor.wordWrap": true,
 
-"editor.autoIndent": true,
+	// Zoom the font of the editor when using mouse wheel and holding Ctrl
+        "editor.mouseWheelZoom": true,
 
-"editor.cursorBlinking": "solid",
+	// Remove trailing auto inserted whitespace
+        "editor.trimAutoWhitespace": true,
 
-// Zoom the font of the editor when using mouse wheel and holding Ctrl
-"editor.mouseWheelZoom": true,
+	"trailing-spaces.trimOnSave": true,
 
-// Remove trailing auto inserted whitespace
-"editor.trimAutoWhitespace": true,
+	//Vim
+	"vim.otherModesKeyBindings": [{
+		"before": ["o"],
+		"after": ["<up>"]
+	}, {
+		"before": ["l"],
+		"after": ["<down>"]
+	}, {
+		"before": ["k"],
+		"after": ["<left>"]
+	}, {
+		"before": [";"],
+		"after": ["<right>"]
+	}],
 
-"files.trimTrailingWhitespace": true,
+	"vim.insertModeKeyBindingsNonRecursive": [{
+		"before": ["k", "k"],
+		"after": ["<esc>"]
+	}],
 
-//Vim
-"vim.otherModesKeyBindings": [{
-	"before": ["o"],
-	"after": ["<up>"]
-}, {
-	"before": ["l"],
-	"after": ["<down>"]
-}, {
-	"before": ["k"],
-	"after": ["<left>"]
-}, {
-	"before": [";"],
-	"after": ["<right>"]
-}],
+	"vim.otherModesKeyBindingsNonRecursive": [{
+		"before": ["j"],
+		"after": ["o"]
+	}],
 
-"vim.insertModeKeyBindingsNonRecursive": [{
-	"before": ["k", "k"],
-	"after": ["<esc>"]
-}],
+	"vim.handleKeys":{
+		"<C-a>": false,
+		"<C-f>": false,
+		"<C-c>": false,
+		"<C-v>": false
+	},
 
-"vim.otherModesKeyBindingsNonRecursive": [{
-	"before": ["j"],
-	"after": ["o"]
-}],
-"vim.leader": "<space>",
-"vim.handleKeys":{
-	"<C-a>": false,
-	"<C-f>": false
-},
-"workbench.colorTheme": "monokai-best",
+	"vim.easymotion": true,
+	"vim.leader": " ",
+
+	"vim.disableAnnoyingNeovimMessage": true,
+	"workbench.colorTheme": "monokai-best",
+	"spell.StopAsking": true,
+	"workbench.iconTheme": "vscode-icons",
+	"vsicons.presets.foldersAllDefaultIcon": true
 ```
 
 # Visual Studio
