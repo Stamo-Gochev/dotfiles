@@ -64,6 +64,7 @@ Plugin 'Shougo/vimproc.vim'
 Plugin 'Quramy/tsuquyomi'
 
 Plugin 'mattn/emmet-vim'
+Plugin 'easymotion/vim-easymotion'
 
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-markdown'
@@ -485,6 +486,12 @@ nmap <leader>ind gg=G
 " =============================================================================
 " Mappings (Plugins)
 " =============================================================================
+
+"------------------------------------------------------------------
+" EasyMotion
+"------------------------------------------------------------------
+
+map <Leader> <Plug>(easymotion-prefix)
 
 "------------------------------------------------------------------
 " NERDTree
