@@ -415,11 +415,10 @@ nnoremap <S-Tab> <<
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
 
-" remaping to Ctrl+s does not work for some reason
-" even after stty -ixon
-" noremap <C-S> :update<CR>
-" vnoremap <C-S> <C-C>:update<CR>
-" inoremap <C-S> <C-O>:update<CR>
+" remaping to Ctrl+s does not work if stty -ixon is not executed
+noremap <C-s> :update<CR>
+vnoremap <C-s> <C-C>:update<CR>
+inoremap <C-s> <C-O>:update<CR>
 
 noremap <leader>s :update<CR>
 vnoremap <leader>s <C-C>:update<CR>
