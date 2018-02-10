@@ -84,6 +84,11 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-unimpaired'
+Plugin 'mbbill/undotree'
+if has("persistent_undo")
+  set undodir=~/.undodir/
+  set undofile
+endif
 
 "------------------------------------------------------------------
 " JavaScript/TypeScript
@@ -523,7 +528,10 @@ map <Leader> <Plug>(easymotion-prefix)
 " NERDTree
 "------------------------------------------------------------------
 
-map <C-n> :NERDTreeToggle<CR>
+noremap <C-n> :NERDTreeToggle<CR>
+noremap <leader>n :NERDTreeToggle<CR>
+
+nnoremap <leader>nf :NERDTreeFind<CR>
 
 let g:NERDTreeMapActivateNode = '<CR>'
 let g:NERDTreeMapJumpFirstChild = '<C-^>'
@@ -571,7 +579,12 @@ let g:NERDTreeMapJumpPrevSibling = "<C-o>"
 
 " auto show file in tree
 " autocmd BufEnter * if &modifiable | NERDTreeFind | wincmd p | endif
-nnoremap <leader>nf :NERDTreeFind<CR>
+
+"------------------------------------------------------------------
+" Undotree
+"------------------------------------------------------------------
+
+nnoremap <leader>u :UndotreeToggle<CR>
 
 "------------------------------------------------------------------
 " CtrlP
