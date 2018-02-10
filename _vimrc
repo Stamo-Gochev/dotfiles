@@ -498,7 +498,7 @@ noremap <leader><up> ddkP
 noremap <leader><down> ddp
 
 " remove the highlighting of words caused by search results
-nmap <leader>h :noh<CR>
+nmap <silent> <leader>h :noh<CR>
 
 " close Vim in a faster way
 nmap <leader>q :x<CR>
@@ -604,6 +604,16 @@ set hlsearch                " Highlight matches
 set showmatch               " Show match numbers
 set ignorecase              " Search case-insensitive
 set smartcase               " ...except when something is capitalized
+
+" A common mistake is to search by a regex like
+" \d+, which does not work - the correct is \d\+, the same is for
+" foo|bar - should be foo\bar
+
+" A more general solution is to prefix it with \v, e.g. - enters in very magic mode
+" \v\d+
+" \vfoo|bar
+
+" nnoremap / /\v
 
 " =============================================================================
 " Functions
