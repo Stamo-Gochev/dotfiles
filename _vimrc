@@ -80,10 +80,10 @@ Plugin 'kien/ctrlp.vim'
 
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'mattn/emmet-vim'
-Plugin 'easymotion/vim-easymotion
+Plugin 'easymotion/vim-easymotion'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
-Plugin 'tpope/vim-unimpaired''
+Plugin 'tpope/vim-unimpaired'
 
 "------------------------------------------------------------------
 " JavaScript/TypeScript
