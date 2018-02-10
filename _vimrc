@@ -46,33 +46,13 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
+"------------------------------------------------------------------
+" Themes
+"------------------------------------------------------------------
+
 Plugin 'flazz/vim-colorschemes'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-colorscheme-switcher'
-
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
-Plugin 'kien/ctrlp.vim'
-
-Plugin 'pangloss/vim-javascript'
-Plugin 'leafgarland/typescript-vim'
-" required for tsuquyomi (or Vim 8)
-Plugin 'Shougo/vimproc.vim'
-" cd ~/.vim/bundle/vimproc.vim && make
-" required if vimproc is used with vundle https://github.com/Shougo/vimproc.vim#vundle
-Plugin 'Quramy/tsuquyomi'
-
-Plugin 'mattn/emmet-vim'
-Plugin 'easymotion/vim-easymotion'
-
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-markdown'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-repeat'
-Plugin 'tpope/vim-unimpaired'
-Plugin 'jtratner/vim-flavored-markdown'
-Plugin 'airblade/vim-gitgutter'
 
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -86,6 +66,53 @@ if has("gui_running")
     set guifont=Consolas:h16
   endif
 endif
+
+"------------------------------------------------------------------
+" File management
+"------------------------------------------------------------------
+
+Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim'
+
+"------------------------------------------------------------------
+" Editing
+"------------------------------------------------------------------
+
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'mattn/emmet-vim'
+Plugin 'easymotion/vim-easymotion
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-unimpaired''
+
+"------------------------------------------------------------------
+" JavaScript/TypeScript
+"------------------------------------------------------------------
+
+Plugin 'pangloss/vim-javascript'
+Plugin 'leafgarland/typescript-vim'
+" required for tsuquyomi (or Vim 8)
+Plugin 'Shougo/vimproc.vim'
+" cd ~/.vim/bundle/vimproc.vim && make
+" required if vimproc is used with vundle https://github.com/Shougo/vimproc.vim#vundle
+Plugin 'Quramy/tsuquyomi'
+Plugin 'scrooloose/syntastic'
+
+"------------------------------------------------------------------
+" Markdown
+"------------------------------------------------------------------
+
+Plugin 'tpope/vim-markdown'
+Plugin 'jtratner/vim-flavored-markdown'
+
+"------------------------------------------------------------------
+" Git
+"------------------------------------------------------------------
+
+Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
+
+"------------------------------------------------------------------
 
 " configure terminal colors
 let os = substitute(system('uname -a'), "\n", "", "")
