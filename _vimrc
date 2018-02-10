@@ -443,13 +443,13 @@ vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
 
 " remaping to Ctrl+s does not work if stty -ixon is not executed
-noremap <C-s> :update<CR>
-vnoremap <C-s> <C-C>:update<CR>
-inoremap <C-s> <C-O>:update<CR>
+noremap <silent> </silent><C-s> :update<CR>
+vnoremap <silent> </silent><C-s> <C-C>:update<CR>
+inoremap <silent> </silent><C-s> <C-O>:update<CR>
 
-noremap <leader>s :update<CR>
-vnoremap <leader>s <C-C>:update<CR>
-inoremap <leader>s <C-O>:update<CR>
+noremap <silent> </silent><leader>s :update<CR>
+vnoremap <silent> </silent><leader>s <C-C>:update<CR>
+inoremap <silent> </silent><leader>s <C-O>:update<CR>
 
 " Refresh syntax highlighting on F12
 noremap <F12> <Esc>:syntax sync fromstart<CR>
