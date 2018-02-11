@@ -74,6 +74,19 @@ endif
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 
+Plugin 'mileszs/ack.vim'
+if executable('ag')
+  " Use ag over grep
+  set grepprg=ag\ --nogroup\ --nocolor
+  let g:ackprg = 'ag --vimgrep'
+
+    " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+  " ag is fast enough that CtrlP doesn't need to cache
+  let g:ctrlp_use_caching = 0
+endif
+
 "------------------------------------------------------------------
 " Editing
 "------------------------------------------------------------------
@@ -452,13 +465,9 @@ vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
 
 " remaping to Ctrl+s does not work if stty -ixon is not executed
-noremap <silent> </silent><C-s> :update<CR>
-vnoremap <silent> </silent><C-s> <C-C>:update<CR>
-inoremap <silent> </silent><C-s> <C-O>:update<CR>
-
-noremap <silent> </silent><leader>s :update<CR>
-vnoremap <silent> </silent><leader>s <C-C>:update<CR>
-inoremap <silent> </silent><leader>s <C-O>:update<CR>
+nnoremap <silent> <C-s> :update<CR>
+vnoremap <silent> <C-s> <C-C>:update<CR>
+inoremap <silent> <C-s> <C-O>:update<CR>
 
 " Refresh syntax highlighting on F12
 noremap <F12> <Esc>:syntax sync fromstart<CR>
@@ -521,6 +530,16 @@ nmap <leader>ind gg=G
 " =============================================================================
 " Mappings (Plugins)
 " =============================================================================
+
+"------------------------------------------------------------------
+" Ack/ag
+"------------------------------------------------------------------
+
+" search with ag via the Ack frontend plugin
+" noremap <leader>s :Ack! 
+noremap <leader>s :Ack ""<left>
+" noremap <leader>s :tab split<CR>:Ack ""<left>
+noremap <leader>a :Ack <C-r><C-w><CR>
 
 "------------------------------------------------------------------
 " EasyMotion
