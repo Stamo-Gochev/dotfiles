@@ -103,6 +103,10 @@ Plugin 'Shougo/vimproc.vim'
 Plugin 'Quramy/tsuquyomi'
 Plugin 'scrooloose/syntastic'
 
+" completion
+Plugin 'ternjs/tern_for_vim', { 'do': 'npm install'}
+Plugin 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
+
 "------------------------------------------------------------------
 " Markdown
 "------------------------------------------------------------------
