@@ -10,8 +10,8 @@ bash install.sh
 **Note:** Use `bash` and not `sh` as it will probably target `/bin/dash`, which does not support the substitution from "_" to ".".
 
 ### Windows
-Make symbolic links (make sure to pass an existing dir as the `mklink` command will fail silently):		
-  		  
+Make symbolic links (make sure to pass an existing dir as the `mklink` command will fail silently):
+
 Open PowerShell and run the following script:
 ```
 dotfiles.ps1
@@ -19,12 +19,12 @@ dotfiles.ps1
 
 Otherwise, manually symlink the necessary files:
 ```
-mklink .gitconfig D:\GitHub\ide-settings\_gitconfig		
-mklink .gitignore D:\GitHub\ide-settings\_gitignore		
-mklink .vimrc D:\GitHub\ide-settings\_vimrc		
-mklink .aliases D:\GitHub\ide-settings\_aliases		
-mklink .bash_profile D:\GitHub\ide-settings\_bash_profile		
-mklink .bashrc D:\GitHub\ide-settings\_bashrc		
+mklink .gitconfig D:\GitHub\ide-settings\_gitconfig
+mklink .gitignore D:\GitHub\ide-settings\_gitignore
+mklink .vimrc D:\GitHub\ide-settings\_vimrc
+mklink .aliases D:\GitHub\ide-settings\_aliases
+mklink .bash_profile D:\GitHub\ide-settings\_bash_profile
+mklink .bashrc D:\GitHub\ide-settings\_bashrc
 mklink .zshrc D:\GitHub\ide-settings\_zshrc
 mklink .inputrc D:\GitHub\ide-settings\_inputrc
  ```
@@ -79,4 +79,4 @@ git config --global core.pager "less -F"
 
 
 
- 
+
