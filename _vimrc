@@ -208,8 +208,8 @@ set ruler
 " show trailing whitespace
 set list listchars=tab:>-,trail:.
 
-" Spelling
-autocmd FileType markdown setlocal spell spelllang=en_us
+" Disable spelling to remove highlighting
+" autocmd FileType markdown setlocal spell spelllang=en_us
 
 " tabs and spaces
 set tabstop=4
@@ -231,7 +231,8 @@ autocmd BufRead,BufNewFile *.md     set filetype=markdown
 autocmd BufRead,BufNewFile *.md     set foldlevel=2
 autocmd BufRead,BufNewFile *.json   set filetype=json
 
-autocmd FileType gitcommit          setlocal spell
+" Disable spelling to remove highlighting
+" autocmd FileType gitcommit          setlocal spell
 autocmd FileType jsx                let b:syntastic_checkers = ["eslint"]
 autocmd FileType typescript nmap <buffer> <Leader>t : <C-u>echo tsuquyomi#hint()<CR>
 
@@ -536,7 +537,7 @@ nmap <leader>ind gg=G
 "------------------------------------------------------------------
 
 " search with ag via the Ack frontend plugin
-" noremap <leader>s :Ack! 
+" noremap <leader>s :Ack!
 noremap <leader>s :Ack ""<left>
 " noremap <leader>s :tab split<CR>:Ack ""<left>
 noremap <leader>a :Ack <C-r><C-w><CR>
