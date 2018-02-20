@@ -88,7 +88,8 @@ body {
 
 /* common */
 
-img[src="App_Themes/Dark/images/ticket-closed.gif"]
+img[src="App_Themes/Dark/images/ticket-closed.gif"],
+img[src="/App_Themes/Dark/images/ticket-closed.gif"]
 {
     background-color: #93f6ff !important;
     margin-left: -50px !important;
@@ -96,11 +97,9 @@ img[src="App_Themes/Dark/images/ticket-closed.gif"]
 }
 
 /* AJAX */
-/*
 img[src="images/ProductImages/button_ajax_16.png"],
 img[src="images/ProductImages/editor_ajax_16.png"],
 img[src="images/ProductImages/htmlchart_ajax_16.png"],
-*/
 
 /* kendo */
 /* dataviz */
@@ -129,11 +128,10 @@ img[src="images/ProductImages/radialgauge_kendoui.png"],
 img[src="images/ProductImages/sparklines_kendoui.png"],
 img[src="images/ProductImages/sparklines_kendoui_mvc.png"],
 
-/*
 img[src="images/ProductImages/editor_kendoui.png"],
 img[src="images/ProductImages/editor_kendoui_mvc.png"],
 
-
+/* buttons */
 img[src="images/ProductImages/button_kendoui.png"],
 img[src="images/ProductImages/button_kendoui_mvc.png"],
 
@@ -146,7 +144,7 @@ img[src="images/ProductImages/pager_kendoui_mvc.png"],
 img[src="images/ProductImages/toolbar_kendoui.png"],
 img[src="images/ProductImages/toolbar_kendoui_mvc.png"],
 
-
+/* forms */
 img[src="images/ProductImages/slider_kendoui.png"],
 img[src="images/ProductImages/slider_kendoui_mvc.png"],
 
@@ -165,8 +163,10 @@ img[src="images/ProductImages/checkbox_kendoui_mvc.png"],
 img[src="images/ProductImages/radiobutton_kendoui.png"],
 img[src="images/ProductImages/radiobutton_kendoui_mvc.png"],
 
+/* modals */
 img[src="images/ProductImages/notification_kendoui.png"],
 img[src="images/ProductImages/notification_kendoui_mvc.png"],
+
 
 img[src="images/ProductImages/progressbar_kendoui.png"],
 img[src="images/ProductImages/progressbar_kendoui_mvc.png"],
@@ -177,7 +177,6 @@ img[src="images/ProductImages/tooltip_kendoui_mvc.png"],
 img[src="images/ProductImages/Window.png"],
 img[src="images/ProductImages/window_kendoui.png"],
 img[src="images/ProductImages/window_kendoui_mvc.png"]
-*/
 {
     background-color: #bbb !important;
     margin-left: -50px !important;
