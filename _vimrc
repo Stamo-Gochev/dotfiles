@@ -208,7 +208,7 @@ set ruler
 " show trailing whitespace
 set list listchars=tab:>-,trail:.
 
-" Disable spelling to remove highlighting
+" disable spelling to remove highlighting
 " autocmd FileType markdown setlocal spell spelllang=en_us
 
 " tabs and spaces
@@ -224,17 +224,6 @@ set expandtab
 set autoindent
 set smartindent
 set smarttab
-
-" file types
-autocmd BufRead,BufNewFile *.cshtml set filetype=html
-autocmd BufRead,BufNewFile *.md     set filetype=markdown
-autocmd BufRead,BufNewFile *.md     set foldlevel=2
-autocmd BufRead,BufNewFile *.json   set filetype=json
-
-" Disable spelling to remove highlighting
-" autocmd FileType gitcommit          setlocal spell
-autocmd FileType jsx                let b:syntastic_checkers = ["eslint"]
-autocmd FileType typescript nmap <buffer> <Leader>t : <C-u>echo tsuquyomi#hint()<CR>
 
 " ignores
 set wildignore=*.o,*.obj,*.bin,*.dll,*.zip
@@ -421,10 +410,8 @@ map ic :s/^/#/g<CR>:let @/ = ""<CR>
 map rc :s/^#//g<CR>:let @/ = ""<CR>
 
 " delete trailing whitespace
-nnoremap <silent> <leader>cw :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
-" Auto-clean whitespace
-autocmd BufWritePre * :%s/\s\+$//e
-
+" nnoremap <silent> <leader>dw :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+nnoremap <leader>dw :call DeleteTrailingWhitespaces()<CR>
 
 " add comma and semicolon to the end of line
 " inoremap <leader>; <C-o>A;<CR>
@@ -653,8 +640,37 @@ set smartcase               " ...except when something is capitalized
 " nnoremap / /\v
 
 " =============================================================================
+" Auto commands
+" =============================================================================
+
+" delete trailing whitepsaces
+autocmd BufWritePre * :%s/\s\+$//e
+" delete trailing whitepaces on specific file types
+" autocmd FileType c,cpp,java,php autocmd BufWritePre <buffer> %s/\s\+$//e
+
+" file types
+autocmd BufRead,BufNewFile *.cshtml set filetype=html
+autocmd BufRead,BufNewFile *.md     set filetype=markdown
+autocmd BufRead,BufNewFile *.md     set foldlevel=2
+autocmd BufRead,BufNewFile *.json   set filetype=json
+
+" disable spelling to remove highlighting
+" autocmd FileType gitcommit          setlocal spell
+
+autocmd FileType jsx                let b:syntastic_checkers = ["eslint"]
+autocmd FileType typescript nmap <buffer> <Leader>t :<C-u>echo tsuquyomi#hint()<CR>
+
+" =============================================================================
 " Functions
 " =============================================================================
+
+" delete trailing whitespaces and restore cursor position
+function! DeleteTrailingWhitespaces()
+    let l = line(".")
+    let c = col(".")
+    %s/\s\+$//e
+    call cursor(l, c)
+endfunc
 
 " functions
 function! NumberToggle()
