@@ -478,8 +478,11 @@ vnoremap <leader>y "+y
 " Select all text
 nmap <C-a> ggVG
 
-" do not move the cursor after copy in visual mode
-" vmap y y`]
+" do not move the cursor to the start position after copy in visual mode
+vmap y y`]
+
+" copy with Ctrl+c
+map <C-c> y
 
 " make Backspace delete in normal mode
 nnoremap <bs> X
