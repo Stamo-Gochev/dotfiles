@@ -463,11 +463,12 @@ noremap <F12> <Esc>:syntax sync fromstart<CR>
 inoremap <F12> <C-o>:syntax sync fromstart<CR>
 
 " Copy with Ctrl + C
-vmap <C-c> "+y
+" vmap <C-c> "+y
+map <C-c> y
 " Paste with Ctrl + v
-nmap <C-v> "+gP
+" nmap <C-v> "+gP
 " Cut with Ctrl + x
-vnoremap <C-x> "+x
+" vnoremap <C-x> "+x
 
 " paste from outside buffer
 nnoremap <leader>p :set paste<CR>"+p:set nopaste<CR>
@@ -481,9 +482,6 @@ nmap <C-a> ggVG
 
 " do not move the cursor to the start position after copy in visual mode
 vmap y y`]
-
-" copy with Ctrl+c
-map <C-c> y
 
 " make Backspace delete in normal mode
 nnoremap <bs> X
