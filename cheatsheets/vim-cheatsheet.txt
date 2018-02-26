@@ -53,7 +53,7 @@ cw - change word
 J - join current line with the next one
 gJ - join current line with the next without leaving spaces
 s - delete character on cursor and go to insert mode
-. - repeat last command 
+. - repeat last command
 
 ===================================================
 Selection
@@ -65,11 +65,12 @@ vit - select everything inside tag, e.g. <p>text</p> => <p>[text]</p>
     - t - object - [w]ord, [W]ord, [s]entence, [p]aragraph, [t]ag
 vat - select everything including the tag
 
-ci" - change (delete) text inside region ending in ", e.g. <a href="google"> => <a href=""> 
+ci" - change (delete) text inside region ending in ", e.g. <a href="google"> => <a href="">
 ca" - delete text including the region, e.g. <a href="google"> => <a href=>
 ct" - delete text until ", e.g. <a hr|ef="google"> => <a hr|google">
 
-Ctrl + v - enter multi-cursor mode 
+Ctrl + v - enter multi-cursor mode
+gv - select a text and press Esc - gv will restore the previous selection
 
 ===================================================
 Scrolling
