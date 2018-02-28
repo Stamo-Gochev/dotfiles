@@ -150,6 +150,11 @@ q - finish
 
 @{register} - @k - repeats the macro in register "k"
 
+:5,10norm! @a - execute the macro at register "a" on lines from 5 to 10
+:5,$norm! @a - execute the macro at register "a" on lines from 5 to the end
+:%norm! @a - execute the macro at register "a" on all lines
+:g/pattern/norm! @a - execute the macro on all lines matching "pattern"
+
 ===================================================
 Marks
 ===================================================
