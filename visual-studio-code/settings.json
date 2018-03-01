@@ -558,7 +558,7 @@
 	"vim.easymotion": true,
 
         // Set a custom background color for EasyMotion markers.
-        "vim.easymotionMarkerBackgroundColor": "#000",
+        "vim.easymotionMarkerBackgroundColor": "#0000ff",
 
 	// Set a custom color for the text on one character long markers.
 	"vim.easymotionMarkerForegroundColorOneChar": "#fff",
