@@ -12,7 +12,16 @@
 9. TypeScript
 10. 
 
-## Highlight occurence
+## VsVim
+### Keyaboard shortcuts
+Currently all are handled by Visual Studio except for:
+1. Ctrl + D
+2. Ctrl + E
+3. Ctrl + Shift + F12
+4. F12
+
+
+## Word highlight with margin
 Highlight words with margin extension:
 - occurrence color (blue) - 30, 121, 210
 - select background color - 255, 128, 128
