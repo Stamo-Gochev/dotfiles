@@ -54,6 +54,9 @@ alias u="git u"
 alias go="git open"
 alias lga="git alias"
 alias gitcoin="TZ=UTC git log --pretty=format:'%H%x09%ad%x09%an' --date=iso-local | sed -E 's/^(0*[1-9a-f])(.*)/\1\t\1\2/' | sort -k1,1 -k3,3 | head -n10 | cut -f 2,3,4"
+# show commits as graph and navigate to one by hovering its hash and pressing K (default for man page of word under cursor)
+alias gl="git log --graph --pretty=format:'%h - %d %s (%cr) <%an>' | vim -R -c 'set filetype=git nowrap' -"
+
 
 # dev
 alias ac="ack-grep"
