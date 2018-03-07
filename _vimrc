@@ -120,7 +120,9 @@ Plugin 'scrooloose/syntastic'
 
 " completion
 Plugin 'ternjs/tern_for_vim', { 'do': 'npm install'}
-Plugin 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
+if v:version > 704
+  Plugin 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
+endif
 
 "------------------------------------------------------------------
 " Markdown
