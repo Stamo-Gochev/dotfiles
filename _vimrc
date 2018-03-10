@@ -401,6 +401,11 @@ nnoremap ) $
 nmap <leader>ne :bn<CR>
 nmap <leader>pre :bp<CR>
 
+" ctags navigate to
+noremap <leader>; <C-]>
+" ctags navigate back
+noremap <leader>k :pop<CR>
+
 "------------------------------------------------------------------
 " Typing
 "------------------------------------------------------------------
@@ -500,10 +505,15 @@ nnoremap <bs> X
 vnoremap <bs> d
 
 " faster way to move between split windows
-nnoremap <leader>o <C-W><Up>
-nnoremap <leader>l <C-W><Down>
-nnoremap <leader>k <C-W><Left>
-nnoremap <leader>; <C-W><Right>
+" nnoremap <leader>o <C-W><Up>
+nnoremap <C-o> <C-W><Up>
+" nnoremap <leader>l <C-W><Down>
+nnoremap <C-l> <C-W><Down>
+" nnoremap <leader>k <C-W><Left>
+nnoremap <C-k> <C-W><Left>
+nnoremap <leader><leader>; <C-W><Right>
+" Ctrl + ; cannot be remapped as it does not map to ASCII character
+" nnoremap <C-;> <C-W><Right>
 
 " duplicate current line
 noremap <C-d> Yp
