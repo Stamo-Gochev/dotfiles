@@ -34,6 +34,8 @@
 	a = add
 	bi = bisect
 	br = "!f() { git checkout -b $1 `git current` ; }; f"
+	# current commit
+	cc = rev-parse HEAD
 	# delete local branch
 	dlbr = branch -D
 	drbr = push origin --delete

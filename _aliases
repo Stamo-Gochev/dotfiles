@@ -1,4 +1,5 @@
 # git aliases
+alias g="git"
 alias a="git a"
 
 # bisect commits
@@ -26,6 +27,7 @@ alias lrbr="git lrbr"
 alias lrbrby="git lrbrby"
 alias plbr="git plbr"
 alias c="git c"
+alias cc="g cc"
 alias ca="git ca"
 alias cae="git cae"
 alias cl="git cl"
@@ -35,7 +37,6 @@ alias com="git com"
 alias cop="git cop"
 alias cpa="git cpa"
 alias cpc="git cpc"
-alias g="git"
 alias ig="git ignore"
 alias rmig="git rmignore"
 alias l="git l"
