@@ -1,6 +1,17 @@
 # git aliases
 alias a="git a"
+
+# bisect commits
+# git checkout (bad commit)
+# git br <new_branch>
+# git bisect start
+# git bisect good fd0a623
+# git bisect bad 256d850
+# git bisect reset
 alias bi="git bi"
+alias big="git bi good"
+alias bib="git bi bad"
+
 alias bis="git bi start"
 alias bir="git bi reset"
 alias br="git br"
@@ -56,7 +67,6 @@ alias lga="git alias"
 alias gitcoin="TZ=UTC git log --pretty=format:'%H%x09%ad%x09%an' --date=iso-local | sed -E 's/^(0*[1-9a-f])(.*)/\1\t\1\2/' | sort -k1,1 -k3,3 | head -n10 | cut -f 2,3,4"
 # show commits as graph and navigate to one by hovering its hash and pressing K (default for man page of word under cursor)
 alias gl="git log --graph --pretty=format:'%h - %d %s (%cr) <%an>' | vim -R -c 'set filetype=git nowrap' -"
-
 
 # dev
 alias ac="ack-grep"
@@ -265,6 +275,8 @@ alias preact="cd /d/work/github/react"
 
 # dotnet
 alias dnc="dotnet nuget locals all --clear"
+alias dor="dotnet restore"
+alias don="dotnet new"
 
 # ruby
 alias r19="uru 193p551"
