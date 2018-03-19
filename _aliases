@@ -11,7 +11,8 @@ alias a="git a"
 # git bisect reset
 alias bi="git bi"
 alias big="git bi good"
-alias bib="git bi bad"
+alias bib="g bi bad"
+alias bibc="g bibc"
 
 alias bis="git bi start"
 alias bir="git bi reset"
