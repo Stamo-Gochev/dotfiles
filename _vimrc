@@ -137,6 +137,7 @@ Plugin 'jtratner/vim-flavored-markdown'
 
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'lambdalisue/vim-unified-diff'
 
 "------------------------------------------------------------------
 
