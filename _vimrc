@@ -529,6 +529,7 @@ noremap <leader><down> ddp
 
 " remove the highlighting of words caused by search results
 nmap <silent> <leader>h :noh<CR>
+nnoremap <silent> <Esc> :noh<CR><Esc>
 
 " close Vim in a faster way
 nmap <leader>q :x<CR>
