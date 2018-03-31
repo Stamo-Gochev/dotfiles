@@ -67,6 +67,12 @@ if has("gui_running")
   endif
 endif
 
+Plugin 'machakann/vim-highlightedyank'
+" update mapping for older Vim
+if !exists('##TextYankPost')
+  map y <Plug>(highlightedyank)
+endif
+
 "------------------------------------------------------------------
 " File management
 "------------------------------------------------------------------
@@ -259,6 +265,13 @@ let g:loaded_matchparen=1
 " change default hint keys
 " let g:EasyMotion_keys='hklyuiopnm,qwertzxcvbasdgjf;'
 let g:EasyMotion_keys='asdko;lqwefrzxcvbtg,:iuyjhmnp'
+
+"------------------------------------------------------------------
+" highlightedyank
+"------------------------------------------------------------------
+
+let g:highlightedyank_highlight_duration = 50
+hi HighlightedyankRegion cterm=reverse gui=reverse
 
 "------------------------------------------------------------------
 " NERDTree
