@@ -111,6 +111,8 @@ Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-unimpaired'
+Plugin 'machakann/vim-swap'
+
 Plugin 'mbbill/undotree'
 if has("persistent_undo")
   set undodir=~/.undodir/
