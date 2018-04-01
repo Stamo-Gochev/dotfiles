@@ -137,6 +137,7 @@ Plugin 'ternjs/tern_for_vim', { 'do': 'npm install'}
 if v:version > 704
   Plugin 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
 endif
+autocmd FileType javascript setlocal omnifunc=tern#Complete
 
 "------------------------------------------------------------------
 " Markdown
