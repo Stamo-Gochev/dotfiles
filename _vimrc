@@ -424,9 +424,9 @@ nmap <leader>ne :bn<CR>
 nmap <leader>pre :bp<CR>
 
 " ctags navigate to
-noremap <leader>; <C-]>
+noremap <leader>; <C-]>zz
 " ctags navigate back
-noremap <leader>k :pop<CR>
+noremap <leader>k :pop<CR>zz
 
 "------------------------------------------------------------------
 " Typing
