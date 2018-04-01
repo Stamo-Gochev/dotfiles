@@ -1,5 +1,6 @@
 # basic
 sudo apt-get install curl
+sudo apt-get install build-essential cmake
 sudo apt-get install python3-dev python3-pip python3-tk python3-lxml python3-six
 
 # dev
