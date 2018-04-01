@@ -7,7 +7,7 @@
 	autocrlf = input
 	whitespace = cr-at-eol
 	excludesfile = ~/.gitignore
-	pager = less -F
+	pager = less -F -X
 	longpaths = true
 [diff]
 	tool = vsdiffmerge

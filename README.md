@@ -60,13 +60,6 @@ Set the following lines in `.vimrc` to prevent Cmder highlighting of some words:
 syntax on
 set background=dark
 ```
-### zsh
-
-Execute the following command to prevent one page pager for git results:
-[http://stackoverflow.com/questions/12352049/always-use-the-pager-for-git-diff](http://stackoverflow.com/questions/12352049/always-use-the-pager-for-git-diff)
-```
-git config --global core.pager "less -F"
-```
 
 
 
