@@ -162,6 +162,7 @@ alias rgrw="rake react:master:test"
 alias rgrwp="rake react:production:test"
 alias rgvw="rake vue:master:test"
 alias rgvwp="rake vue:production:test"
+alias rgaw="rake generate:aspx:wrappers"
 
 # jshint
 alias jsha="gulp jshint"
