@@ -3,7 +3,7 @@
 # petar marinov, http:/geocities.com/h2428, this is public domain
 # http://linuxgazette.net/109/marinov.html
 
-cd_func ()
+cd_func()
 {
   local x2 the_new_dir adir index
   local -i cnt
@@ -59,12 +59,12 @@ cd_func ()
 
 # export the call to a separate function to make it alias-able as "alias cdl=cd_list_func"
 # as passing parameters to bash aliases is not possible
-cd_list_func ()
+cd_list_func()
 {
   dirs -v
 }
 
-cd_to_func ()
+cd_to_func()
 {
   # the expected input is "cd -1"
   cd_func "-$1"
