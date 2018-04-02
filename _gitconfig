@@ -9,6 +9,12 @@
 	excludesfile = ~/.gitignore
 	pager = less -F -X
 	longpaths = true
+[rebase]
+    # stash when pull --rebase
+    autoStash = true
+
+    # show an error when deleting commits while rebasing interactively
+    missingCommitsCheck = error
 [diff]
 	tool = vsdiffmerge
 	compactionHeuristic = true
