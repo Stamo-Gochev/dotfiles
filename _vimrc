@@ -70,7 +70,8 @@ endif
 Plugin 'machakann/vim-highlightedyank'
 " update mapping for older Vim
 if !exists('##TextYankPost')
-  map y <Plug>(highlightedyank)
+  " this breaks VsVim
+  " map y <Plug>(highlightedyank)
 endif
 
 "------------------------------------------------------------------
