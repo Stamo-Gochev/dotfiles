@@ -40,7 +40,7 @@
 	alias = "!f() { git config --list | egrep '^alias.' | sed 's/^alias.//' | sed 's/=/ = /' ; }; f"
 	a = add
 	bi = bisect
-	bibc = "!f() { git bisect bad `git cc` ; }; f"
+	bisc = "!f() { git bisect start && git bisect bad `git cc` ; }; f"
 	br = "!f() { git checkout -b $1 `git current` ; }; f"
 	# current commit
 	cc = rev-parse HEAD

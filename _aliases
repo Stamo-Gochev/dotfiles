@@ -11,11 +11,11 @@ alias a="git a"
 # git bisect reset
 alias bi="git bi"
 alias big="git bi good"
-alias bib="g bi bad"
-alias bibc="g bibc"
-
+alias bib="git bi bad"
+alias bisc="git bisc"
 alias bis="git bi start"
 alias bir="git bi reset"
+
 alias br="git br"
 alias rbr="git rbr"
 alias d="git d"
