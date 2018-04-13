@@ -121,12 +121,6 @@ alias ctpg='gulp karma-unit --tests="tests/pivotgrid/*.js"'
 alias cttl='gulp karma-unit --tests="tests/treelist/*.js"'
 alias ctw='gulp karma-unit --tests="tests/window/**"'
 
-alias ctms='gulp karma-unit --tests="tests/multiselect/**"'
-alias ctmsi='gulp karma-unit --tests="tests/multiselect/initialization.js"'
-alias ctms='gulp karma-unit --tests="tests/multiselect/**" --jquery="3.1.1"'
-
-alias ctsl='gulp karma-unit --tests="tests/staticlist/**"'
-
 # run karma with multiple files
 # this is necessary as the karma parameters in bash console are not expanded correctly
 # the git alias is a workaround, might not be necessary without Windows
