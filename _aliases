@@ -132,6 +132,8 @@ alias cts='gulp karma-unit --tests="`git tests`"'
 # gulp karma-unit --tests="{tests/editor/resizing/table-resize-handle.js,tests/editor/resizing/table-resizing.js}"
 # gulp karma-unit --tests="tests/editor/resizing/table-resize-handle.js" --tests="tests/editor/resizing/table-resizing.js"
 
+alias gus='gulp scripts --skip-min="true"'
+
 # debug tests
 alias ctc="chrome.exe http://gochev:9876/debug.html"
 alias ctf="firefox.exe http://gochev:9876/debug.html"
@@ -231,6 +233,7 @@ alias cide="code /c/work/github/dotfiles"
 alias pk="cd /c/work/github/kendo"
 alias pkc="cd /d/work/github/kendo-ui-core"
 alias pkd="cd /d/work/github/kendo-ui-dojo"
+alias pkt="cd /d/work/github/kendo-themes"
 
 # projects - angular
 alias pk2="cd /d/work/github/k2-site"
