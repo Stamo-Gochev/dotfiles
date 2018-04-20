@@ -10,7 +10,7 @@
 7. Task runner explorer go to file
 8. Go to definition - https://marketplace.visualstudio.com/items?itemName=NoahRichards.GoToDefinition
 9. TypeScript
-10. 
+10. Line endings - https://marketplace.visualstudio.com/items?itemName=JakubBielawa.LineEndingsUnifier
 
 ## VsVim
 ### Keyaboard shortcuts
