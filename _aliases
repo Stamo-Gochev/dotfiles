@@ -177,14 +177,13 @@ alias noc="explorer C:\Users\gochev\AppData\Roaming\npm\node_modules"
 alias n="npm"
 alias npmv="npm --version"
 alias nup="npm update && npm prune"
-alias npv="npm view"
+alias nv="npm view"
 alias npl="npm link"
 alias nvk="npm view @progress/kendo-ui"
 alias nvrw="npm view @progress/kendo-dropdowns-react-wrapper"
 alias ni="npm install"
 alias nig="npm install -g"
 alias nis="npm install --save-dev"
-alias nit="npm run typings -- install"
 alias nip="npm-install-peers"
 alias ns="npm start"
 alias nsaot="ng server --aot-true"
@@ -193,7 +192,6 @@ alias nu="npm update"
 alias rac="npm run api-check"
 alias rn="rm -rf node_modules/"
 alias rna="find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +"
-alias ti="typings install"
 
 # nvm
 alias nvl="nvm list"
@@ -279,6 +277,7 @@ alias dnc="dotnet nuget locals all --clear"
 alias dor="dotnet restore"
 alias don="dotnet new"
 alias dt="dotnet test wrappers/mvc-6/tests/Kendo.Mvc.Tests"
+alias dov="dotnet --version"
 
 # ruby
 alias r19="uru 193p551"
@@ -303,7 +302,7 @@ alias lei="lerna init"
 # built-in helpers
 alias ff='find . -type f -not -path "*node_modules*" -name'
 alias la='ls -lA --group-directories-first'
-alias ll="ls -l"
+alias ll="ls -lA"
 
 if [ -n "$BASH_VERSION" ]; then
   # move to a list of previously visited directories
