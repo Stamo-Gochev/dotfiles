@@ -65,6 +65,7 @@ alias stll="git stl"
 alias ust="git ust"
 alias u="git u"
 alias go="git open"
+alias gopr="chrome `g gopr`"
 alias lga="git alias"
 alias gitcoin="TZ=UTC git log --pretty=format:'%H%x09%ad%x09%an' --date=iso-local | sed -E 's/^(0*[1-9a-f])(.*)/\1\t\1\2/' | sort -k1,1 -k3,3 | head -n10 | cut -f 2,3,4"
 # show commits as graph and navigate to one by hovering its hash and pressing K (default for man page of word under cursor)
@@ -232,6 +233,7 @@ alias pk="cd /c/work/github/kendo"
 alias pkc="cd /d/work/github/kendo-ui-core"
 alias pkd="cd /d/work/github/kendo-ui-dojo"
 alias pkt="cd /d/work/github/kendo-themes"
+alias pks="cd /c/work/github/kendo-ui-demos-service"
 
 # projects - angular
 alias pk2="cd /d/work/github/k2-site"
