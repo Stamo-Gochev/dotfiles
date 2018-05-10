@@ -1,0 +1,72 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    {
+        "key": "ctrl+k ctrl+d",
+        "command": "editor.action.format",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "editor.action.insertCursorAtEndOfEachLineSelected",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "F8",
+        "command": "workbench.action.compareEditor.nextChange",
+        "when": "textCompareEditorVisible"
+    },
+    {
+        "key": "F7",
+        "command": "workbench.action.compareEditor.previousChange",
+        "when": "textCompareEditorVisible"
+    },
+    {
+        "key": "ctrl+,",
+        "command": "workbench.action.openGlobalSettings"
+    },
+    {
+        "key": "ctrl+m",
+        "command": "workbench.action.gotoSymbol"
+    },
+    {
+        "key": "ctrl+k ctrl+s",
+        "command": "workbench.action.openGlobalKeybindings"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "f8",
+        "command": "workbench.action.debug.stepOut",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "ctrl+shift+i",
+        "command": "workbench.debug.action.toggleRepl"
+    },
+    {
+        "key": "F9",
+        "command": "editor.debug.action.toggleBreakpoint",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "editor.action.extensioneditor.showfind",
+        "when": "extensionEditorWebviewFocus"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "-editor.action.extensioneditor.showfind",
+        "when": "extensionEditorWebviewFocus"
+    },
+    {
+        "key": "space l",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key": "space o",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    }
+]
