@@ -61,11 +61,11 @@
         "when": "extensionEditorWebviewFocus"
     },
     {
-        "key": "space l",
+        "key": "ctrl+l",
         "command": "workbench.action.terminal.focus"
     },
     {
-        "key": "space o",
+        "key": "ctrl+o",
         "command": "workbench.action.focusActiveEditorGroup",
         "when": "terminalFocus"
     }
