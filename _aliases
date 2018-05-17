@@ -6,8 +6,8 @@ alias a="git a"
 # git checkout (bad commit)
 # git br <new_branch>
 # git bisect start
-# git bisect good fd0a623
 # git bisect bad 256d850
+# git bisect good fd0a623
 # git bisect reset
 alias bi="git bi"
 alias big="git bi good"
@@ -19,6 +19,7 @@ alias bir="git bi reset"
 alias br="git br"
 alias rbr="git rbr"
 alias d="git d"
+alias ds="git ds"
 alias d1="git d1"
 alias dlbr="git dlbr"
 alias drbr="git drbr"
@@ -113,7 +114,10 @@ alias ctdsm='gulp karma-unit --tests="tests/model/**"'
 alias ctg='gulp karma-unit --tests="tests/grid/**"'
 alias ctgff='gulp karma-unit --tests="tests/grid/**" --browser="Firefox"'
 alias ctgj3='gulp karma-unit --tests="tests/grid/**" --jquery="3.1.1"'
-alias ctve='gulp karma-unit --tests="tests/grid/virtual-*"'
+alias ctve='gulp karma-unit --tests="tests/grid/virtual*"'
+alias ctvpe='gulp karma-unit --tests="tests/grid/virtual-popup*"'
+alias ctvie='gulp karma-unit --tests="tests/grid/virtual-incell*"'
+alias ctvi='gulp karma-unit --tests="tests/grid/virtual-inline*"'
 alias ctlb='gulp karma-unit --tests="tests/listbox/*.js"'
 alias ctlv='gulp karma-unit --tests="tests/listview/*.js"'
 alias ctmtb='gulp karma-unit --tests="tests/maskedtextbox/*.js"'
