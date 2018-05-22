@@ -3,6 +3,9 @@
 
 	//-------- Editor configuration --------
 
+	// Controls whether the editor should render the vertical glyph margin. Glyph margin is mostly used for debugging.
+  	"editor.glyphMargin": true,
+	
 	// Controls the font family.
 	"editor.fontFamily": "Consolas, 'Courier New', monospace",
 
