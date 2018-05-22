@@ -2,10 +2,9 @@
 {
 
 	//-------- Editor configuration --------
-
 	// Controls whether the editor should render the vertical glyph margin. Glyph margin is mostly used for debugging.
-  	"editor.glyphMargin": true,
-	
+	"editor.glyphMargin": true,
+
 	// Controls the font family.
 	"editor.fontFamily": "Consolas, 'Courier New', monospace",
 
@@ -189,7 +188,7 @@
 	"git.path": null,
 
 	// Whether auto fetching is enabled.
-	"git.autofetch": true,
+	"git.autofetch": false,
 
 
 	//-------- Markdown preview configuration --------
@@ -519,10 +518,10 @@
 	"editor.cursorBlinking": "solid",
 
 	// Zoom the font of the editor when using mouse wheel and holding Ctrl
-        "editor.mouseWheelZoom": true,
+    "editor.mouseWheelZoom": true,
 
 	// Remove trailing auto inserted whitespace
-        "editor.trimAutoWhitespace": true,
+    "editor.trimAutoWhitespace": true,
 
 	"trailing-spaces.trimOnSave": true,
 
@@ -560,8 +559,8 @@
 
 	"vim.easymotion": true,
 
-        // Set a custom background color for EasyMotion markers.
-        "vim.easymotionMarkerBackgroundColor": "#0000ff",
+    // Set a custom background color for EasyMotion markers.
+    "vim.easymotionMarkerBackgroundColor": "#0000ff",
 
 	// Set a custom color for the text on one character long markers.
 	"vim.easymotionMarkerForegroundColorOneChar": "#fff",
@@ -610,5 +609,49 @@
 	"sync.quietSync": false,
 	"sync.askGistName": false,
 	"gitlens.gitExplorer.files.layout": "tree",
-	"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe"
+	"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+	"bracketPairColorizer.forceUniqueOpeningColor": true,
+	"bracketPairColorizer.consecutivePairColors": [
+		"()",
+		"[]",
+		"{}",
+		[
+			"White",
+			"White",
+			"White"
+		],
+		"White"
+	],
+	"bracketPairColorizer.independentPairColors": [
+		[
+			"()",
+			[
+				"Cyan",
+				"White",
+				"Yellow"
+			],
+			"White"
+		],
+		[
+			"[]",
+			[
+				"Cyan",
+				"White",
+				"Yellow"
+			],
+			"White"
+		],
+		[
+			"{}",
+			[
+				"Cyan",
+				"White",
+				"Yellow"
+			],
+			"White"
+		]
+	],
+	"indenticator.inner.showHighlight": true,
+	"indenticator.color.dark": "#00ff00",
+	"indenticator.inner.color.dark": "cyan",
 }
