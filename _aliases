@@ -40,6 +40,7 @@ alias com="git com"
 alias cop="git cop"
 alias cpa="git cpa"
 alias cpc="git cpc"
+alias gv="git --version"
 alias ig="git ignore"
 alias rmig="git rmignore"
 alias l="git l"
@@ -124,6 +125,7 @@ alias ctmtb='gulp karma-unit --tests="tests/maskedtextbox/*.js"'
 alias ctmp='gulp karma-unit --tests="tests/mediaplayer/**"'
 alias ctpg='gulp karma-unit --tests="tests/pivotgrid/*.js"'
 alias cttl='gulp karma-unit --tests="tests/treelist/*.js"'
+alias cttle='gulp karma-unit --tests="tests/treelist/editing-incell.js"'
 alias ctw='gulp karma-unit --tests="tests/window/**"'
 
 # run karma with multiple files

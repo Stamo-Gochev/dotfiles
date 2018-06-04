@@ -102,7 +102,7 @@
 	rim = rebase -i origin/master
 	ric = "!f() { rebase -i origin/`git current` ; }; f"
 	rec = rebase --continue
-	#revert the last commit and preserve the changes locally
+	# revert the last commit and preserve the changes locally
 	rc = reset --soft HEAD~
 	s = status
 	st = stash save
@@ -118,7 +118,7 @@
 	parent = "!git show-branch | ack '\\*' | ack -v \"`git current`\" | head -n1 | sed 's/.*\\[\\(.*\\)\\].*/\\1/' | sed 's/[\\^~].*//'"
 	tracked = rev-parse --abbrev-ref --symbolic-full-name @{u}
 
-	#others
+	# others
 	ignored = ls-files --other --ignored --exclude-standard
 	notpushed = cherry -v
 	jshint = "!f() { git diff --name-status | egrep '^(A|M)' | awk '{ print $2 }' | paste -sd ',' ; }; f"
@@ -136,7 +136,7 @@
 	track = checkout -t
 	rmtrack = rm --cached
 
-	#ignore a file
+	# ignore a file
 	ignore = "!f() { git update-index --assume-unchanged $1 ; }; f"
 	rmignore = "!f() { git update-index --no-assume-unchanged $1 ; }; f"
 
