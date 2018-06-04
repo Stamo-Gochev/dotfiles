@@ -563,6 +563,9 @@ nnoremap <leader>w :w\|bd<cr>
 " indent the whole file
 nmap <leader>ind gg=G
 
+" clear registers
+nnoremap <leader>dr :call ClearRegisters()<CR>
+
 " =============================================================================
 " Mappings (Plugins)
 " =============================================================================
@@ -696,6 +699,9 @@ autocmd BufWritePre * :%s/\s\+$//e
 " delete trailing whitepaces on specific file types
 " autocmd FileType c,cpp,java,php autocmd BufWritePre <buffer> %s/\s\+$//e
 
+" clear registers
+" autocmd VimEnter * ClearRegisters
+
 " file types
 autocmd BufRead,BufNewFile *.cshtml set filetype=html
 autocmd BufRead,BufNewFile *.md     set filetype=markdown
@@ -741,3 +747,10 @@ endfunc
 
 " nnoremap <C-n> :call SetLineNumbers()<CR>
 " nnoremap <C-r> :call SetRelativeLineNumbers()<CR>
+
+function! ClearRegisters()
+  let registers=split('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789/-"', '\zs')
+  for register in registers
+    call setreg(register, [])
+  endfor
+endfunc
