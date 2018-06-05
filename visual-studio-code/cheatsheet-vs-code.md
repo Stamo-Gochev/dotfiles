@@ -5,6 +5,8 @@
 new gist id:
 795c85c13164562d375674daefdb4cca
 
+public gist id:
+c3fadfb006fc3f96dd1c9c50694828de
 ```
 
 # Debug Rake task
