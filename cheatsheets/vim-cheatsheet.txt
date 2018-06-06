@@ -111,12 +111,23 @@ Searching
 ?handle - search for "handle" backwards
 n - go to the next found word
 N - go back to the found word
+ggn - go to the first match
+GN - go to the last match
+
 :noh - remove highlighting
 
 Type ":set hlsearch" to highlight words as you type
 Type ":set incsearch" to get standard search
 
-* - searches for the word under the cursor straightaway
+* - searches for the exact word under the cursor straightaway
+# - similar to *, but searches backwards
+g* - searches for partial word, e.g. "rain" will match "rainbow"
+g# - similar to g*, but backwards
+
+3/<word> - finds the 3rd occurrence of <word>
+
+ /<word>\c - search for <word> case insensitive
+ /<word>\C - search for <word> case sensitive (ignoring set ignorecase)
 
 ===================================================
 Replacing
