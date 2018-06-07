@@ -281,8 +281,10 @@ alias ptb="cd /c/work/github/themebuilder"
 alias preact="cd /d/work/github/react"
 
 # dotnet
+alias do="dotnet"
 alias dnc="dotnet nuget locals all --clear"
 alias dor="dotnet restore"
+alias dorr="dotnet run"
 alias don="dotnet new"
 alias dt="dotnet test wrappers/mvc-6/tests/Kendo.Mvc.Tests"
 alias dov="dotnet --version"
