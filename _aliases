@@ -51,7 +51,7 @@ alias mnff="git mnff"
 alias np="git notpushed"
 alias o="git open"``
 alias pr="git pr"
-alias prk="for i in */.git; do ( echo "$i"; echo "============="; cd $i/..; git stash; git checkout master; git pull --rebase; ); done"
+alias prk="for i in kendo*/.git; do ( echo "$i"; echo "============="; cd $i/..; git stash; git checkout master; git pull --rebase; ); done"
 alias rc="git rc"
 alias rec="git rec"
 alias ra="git ra"
