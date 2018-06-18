@@ -125,6 +125,7 @@
 	tests = "!f() { git diff --name-only | egrep '^tests/.*' | paste -sd ',' ; }; f"
 	# open pull request from current to master branch
 	gopr = "!f() { git config --get remote.origin.url | sed -e 's/git@github.com://' | sed -e 's/.git//' | awk '{ printf "\"https://github.com/%s/compare/master...\"", $1 }' && echo `git current` ; }; f"
+	goprp = "!f() { git config --get remote.origin.url | sed -e 's/git@github.com://' | sed -e 's/.git//' | awk '{ printf "\"https://github.com/%s/compare/production...\"", $1 }' && echo `git current` ; }; f"
 
 	rh = reset --hard
 	u = reset HEAD
