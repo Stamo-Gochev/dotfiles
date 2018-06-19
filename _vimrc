@@ -517,6 +517,9 @@ vnoremap <leader>p <Esc>:set paste<CR>gv"+p:set nopaste<CR>
 nnoremap <leader>y "+yy
 vnoremap <leader>y "+y
 
+" paste from register 0 - useful when deleting content between editing
+nnoremap <leader>0 "0P
+
 " Select all text
 nmap <C-a> ggVG
 
@@ -584,7 +587,7 @@ noremap <leader>a :Ack <C-r><C-w><CR>
 " EasyMotion
 "------------------------------------------------------------------
 
-map <Leader> <Plug>(easymotion-prefix)
+"map <Leader> <Plug>(easymotion-prefix)
 
 "------------------------------------------------------------------
 " NERDTree
