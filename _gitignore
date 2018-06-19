@@ -1,6 +1,8 @@
 # run "git update-index --assume-unchanged <filename>"
 # if the file is already available in the repo
 # undo with "git update-index --no-assume-unchanged [<file> ...]"
+
+# kendo
 Gemfile.lock
 yarn.lock
 playground/editor
@@ -9,6 +11,7 @@ demos/mvc/Views/Shared/SourceLayout.cshtml
 debug.log
 npm-debug.log
 global.json
+styles/web/all.less
 
 .vscode
 .vs
