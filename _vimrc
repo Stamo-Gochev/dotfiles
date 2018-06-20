@@ -517,8 +517,19 @@ vnoremap <leader>p <Esc>:set paste<CR>gv"+p:set nopaste<CR>
 nnoremap <leader>y "+yy
 vnoremap <leader>y "+y
 
-" paste from register 0 - useful when deleting content between editing
-nnoremap <leader>0 "0P
+" yank inside registers - useful when deleting content between editing
+nnoremap <leader>0y "0y
+nnoremap <leader>1y "1y
+nnoremap <leader>2y "2y
+nnoremap <leader>3y "3y
+nnoremap <leader>4y "4y
+
+" paste from registers - useful when deleting content between editing
+nnoremap <leader>0p "0P
+nnoremap <leader>1p "1P
+nnoremap <leader>2p "2P
+nnoremap <leader>3p "3P
+nnoremap <leader>4p "4P
 
 " Select all text
 nmap <C-a> ggVG
@@ -587,6 +598,7 @@ noremap <leader>a :Ack <C-r><C-w><CR>
 " EasyMotion
 "------------------------------------------------------------------
 
+" disable this as it conflicts with VsVim
 "map <Leader> <Plug>(easymotion-prefix)
 
 "------------------------------------------------------------------
