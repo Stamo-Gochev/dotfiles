@@ -87,7 +87,7 @@
 	"editor.hideCursorInOverviewRuler": false,
 
 	// Controls whether the editor should render whitespace characters
-	"editor.renderWhitespace": true,
+	"editor.renderWhitespace": "all",
 
 	// Controls if the editor shows reference information for the modes that support it
 	"editor.referenceInfos": true,
@@ -526,7 +526,7 @@
 	"trailing-spaces.trimOnSave": true,
 
 	//Vim
-	"vim.otherModesKeyBindings": [{
+	"vim.normalModeKeyBindingsNonRecursive": [{
 		"before": ["o"],
 		"after": ["<up>"]
 	}, {
@@ -543,11 +543,27 @@
 	"vim.insertModeKeyBindingsNonRecursive": [{
 		"before": ["k", "k"],
 		"after": ["<esc>"]
-	}],
+	}, {
 
-	"vim.otherModesKeyBindingsNonRecursive": [{
 		"before": ["j"],
 		"after": ["o"]
+	}],
+
+	"vim.visualModeKeyBindingsNonRecursive": [{
+		"before": ["o"],
+		"after": ["<up>"]
+	}, {
+		"before": ["l"],
+		"after": ["<down>"]
+	}, {
+		"before": ["k"],
+		"after": ["<left>"]
+	}, {
+		"before": [";"],
+		"after": ["<right>"]
+	}, {
+		"before": ["m", "m"],
+		"after": ["<esc>"]
 	}],
 
 	"vim.handleKeys": {
@@ -597,11 +613,11 @@
 	"workbench.iconTheme": "vscode-icons",
 	"vsicons.presets.foldersAllDefaultIcon": true,
 	"vim.disableAnnoyingNeovimMessage": true,
-	"sync.gist": "54b0a0207c3d4e3afd26f9ca9af8e0ed",
-	"sync.lastUpload": "",
+	"sync.gist": "c3fadfb006fc3f96dd1c9c50694828de",
+	"sync.lastUpload": "2018-06-07T07:56:55.333Z",
 	"sync.autoDownload": false,
 	"sync.autoUpload": false,
-	"sync.lastDownload": "",
+	"sync.lastDownload": "2018-06-14T17:24:20.753Z",
 	"sync.forceDownload": false,
 	"sync.anonymousGist": false,
 	"sync.host": "",
@@ -654,4 +670,14 @@
 	"indenticator.inner.showHighlight": true,
 	"indenticator.color.dark": "#00ff00",
 	"indenticator.inner.color.dark": "cyan",
+	"gitlens.keymap": "alternate",
+	"gitlens.historyExplorer.enabled": true,
+	"gitlens.advanced.messages": {
+		"suppressShowKeyBindingsNotice": true
+	},
+	"vsicons.projectDetection.autoReload": true,
+	"sync.removeExtensions": true,
+	"sync.syncExtensions": true,
+	"lineEndings.crlfCharacter": "CRLF ¤¬",
+	"lineEndings.lfCharacter": "LF ¬",
 }
