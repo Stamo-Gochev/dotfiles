@@ -66,7 +66,14 @@ alias stl="git stl -10"
 alias stll="git stl"
 alias ust="git ust"
 alias u="git u"
-alias go="git open"
+
+# use https://github.com/hotoo/gitopen
+alias go="gitopen"
+alias goc="gitopen commits"
+alias goi="gitopen issues"
+alias gok="gitopen @telerik/kendo"
+alias gokc="gitopen @telerik/kendo-ui-core"
+
 alias gopr="chrome `g gopr`"
 alias goprp="chrome `g goprp`"
 alias lga="git alias"
@@ -126,6 +133,7 @@ alias ctmtb='gulp karma-unit --tests="tests/maskedtextbox/*.js"'
 alias ctmp='gulp karma-unit --tests="tests/mediaplayer/**"'
 alias ctpg='gulp karma-unit --tests="tests/pivotgrid/*.js"'
 alias cttl='gulp karma-unit --tests="tests/treelist/*.js"'
+alias cttlj3='gulp karma-unit --tests="tests/treelist/**" --jquery="3.1.1"'
 alias cttle='gulp karma-unit --tests="tests/treelist/editing-incell.js"'
 alias ctw='gulp karma-unit --tests="tests/window/**"'
 

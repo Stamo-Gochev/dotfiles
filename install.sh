@@ -32,7 +32,7 @@ sudo apt-get install nvm
 sudo n stable
 
 # npm tools
-sudo npm install -g git-open
+sudo npm install -g gitopen
 sudo npm install -g npm-install-peers
 sudo npm install -g lerna
 sudo npm install -g webpack
