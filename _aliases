@@ -68,11 +68,16 @@ alias ust="git ust"
 alias u="git u"
 
 # use https://github.com/hotoo/gitopen
-alias go="gitopen"
+# use 'gitopen "#<issue_id>"' as the hash should be escaped in Windows git bash
+alias go="gitopen -b `g current`"
 alias goc="gitopen commits"
 alias goi="gitopen issues"
 alias gok="gitopen @telerik/kendo"
-alias gokc="gitopen @telerik/kendo-ui-core"
+alias gokco="gitopen @telerik/kendo-ui-core"
+alias gokc="gitopen @telerik/kendo-charts"
+alias god="gitopen -b develop"
+alias gom="gitopen -b master"
+alias gop="gitopen -b production"
 
 alias gopr="chrome `g gopr`"
 alias goprp="chrome `g goprp`"
@@ -122,7 +127,8 @@ alias ctds='gulp karma-unit --tests="tests/data/**"'
 alias ctdsm='gulp karma-unit --tests="tests/model/**"'
 alias ctg='gulp karma-unit --tests="tests/grid/**"'
 alias ctgff='gulp karma-unit --tests="tests/grid/**" --browser="Firefox"'
-alias ctgj3='gulp karma-unit --tests="tests/grid/**" --jquery="3.1.1"'
+alias ctgsj3='gulp karma-unit --tests="tests/grid/scrollable.js" --jquery="3.3.1"'
+alias ctgj3='gulp karma-unit --tests="tests/grid/**" --jquery="3.3.1"'
 alias ctve='gulp karma-unit --tests="tests/grid/virtual*"'
 alias ctvpe='gulp karma-unit --tests="tests/grid/virtual-popup*"'
 alias ctvie='gulp karma-unit --tests="tests/grid/virtual-incell*"'
