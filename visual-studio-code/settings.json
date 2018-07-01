@@ -549,6 +549,11 @@
 		"after": ["o"]
 	}],
 
+	"vim.normalModeKeyBindings": [{
+		"before": ["j"],
+		"after": ["o"]
+	}],
+
 	"vim.visualModeKeyBindingsNonRecursive": [{
 		"before": ["o"],
 		"after": ["<up>"]
@@ -608,7 +613,7 @@
 	"vim.leader": " ",
 
 	"vim.disableAnnoyingNeovimMessage": true,
-	"workbench.colorTheme": "monokai-best",
+	"workbench.colorTheme": "monokai-Best",
 	"spell.StopAsking": true,
 	"workbench.iconTheme": "vscode-icons",
 	"vsicons.presets.foldersAllDefaultIcon": true,
