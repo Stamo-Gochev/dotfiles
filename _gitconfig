@@ -141,6 +141,10 @@
 	ignore = "!f() { git update-index --assume-unchanged $1 ; }; f"
 	rmignore = "!f() { git update-index --no-assume-unchanged $1 ; }; f"
 
+	# tags - usage git tagcommit <tag_name>
+	commit-of-tag = "!f() { git rev-list -n 1 $1 ; }; f"
+	taglist = "!f() { git tag -l | sort -V --reverse | head -30 | grep '^2' ; }; f"
+
 	###############################################
 	# public/private mirrors aliases
 	###############################################
