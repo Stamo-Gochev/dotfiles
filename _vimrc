@@ -380,6 +380,9 @@ set diffopt+=vertical
 " Navigation
 "------------------------------------------------------------------
 
+" the years of playing Fifa have taken their tolls
+" and my right hand is too accustomed to the inverted T shape of the arrow keys
+" don't try this at home, leave it to the professionals
 " remap hjkl to klo;
 map o <Up>
 map l <Down>
