@@ -90,6 +90,10 @@
 
 	f = fetch --prune
 	p = push
+    # do not allow force pushing if new commits are not pulled
+    # this does NOT work with fetch only - make sure that you have pulled the branch
+    pf = push --force-with-lease
+
 	pr = pull --rebase
 	l = log -10 --oneline
 	lh = "!f() { git log -3 --all --full-history -- $1 ; }; f"
