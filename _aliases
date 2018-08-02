@@ -72,8 +72,8 @@ alias gtla="git tag -l"
 
 # use https://github.com/hotoo/gitopen
 # use 'gitopen "#<issue_id>"' as the hash should be escaped in Windows git bash
-alias go="gitopen -b `g current`"
-alias goc="gitopen commits"
+alias go="gitopen -b `g current` commits"
+alias goc="go commits"
 alias gomc="gitopen commits --branch master"
 alias gopc="gitopen commits --branch production"
 alias goi="gitopen issues"
@@ -83,6 +83,7 @@ alias gokc="gitopen @telerik/kendo-charts"
 alias god="gitopen -b develop"
 alias gom="gitopen -b master"
 alias gop="gitopen -b production"
+alias goprs="gitopen prs"
 
 alias gopr="chrome `g gopr`"
 alias goprp="chrome `g goprp`"
@@ -178,10 +179,13 @@ alias rgth='rake generate:mvc_6:taghelpers'
 alias rgmcth='rake generate:mvc_6:taghelpers'
 alias rgjw='rake generate:jsp'
 alias rgpw='rake generate:php'
-alias rgts='rake type_script:master:test'
+alias rgts='rake type_script:generate'
+alias rgtst='rake type_script:test'
+alias rgtsm='rake type_script:master:test'
 alias rga="rake generate:all"
 alias rgw='rake generate:all'
 alias rja="rake java:assets"
+alias cje="chrome.exe http://localhost:8080/spring-demos/"
 alias rgrw="rake react:master:test"
 alias rgrwp="rake react:production:test"
 alias rgvw="rake vue:master:test"
