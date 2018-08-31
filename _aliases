@@ -15,6 +15,7 @@ alias bib="git bi bad"
 alias bisc="git bisc"
 alias bis="git bi start"
 alias bir="git bi reset"
+alias bia="git bi abort"
 
 alias br="git br"
 alias rbr="git rbr"
@@ -66,9 +67,11 @@ alias stl="git stl -10"
 alias stll="git stl"
 alias ust="git ust"
 alias u="git u"
-alias gtc="git commit-of-tag"
-alias gtl="git taglist"
-alias gtla="git tag -l"
+
+# tags
+alias tc="git commit-of-tag"
+alias lt="git list-tags"
+alias lta="git tag -l"
 
 # use https://github.com/hotoo/gitopen
 # use 'gitopen "#<issue_id>"' as the hash should be escaped in Windows git bash
@@ -145,7 +148,7 @@ alias ctmtb='gulp karma-unit --tests="tests/maskedtextbox/*.js"'
 alias ctmp='gulp karma-unit --tests="tests/mediaplayer/**"'
 alias ctpg='gulp karma-unit --tests="tests/pivotgrid/*.js"'
 alias cttl='gulp karma-unit --tests="tests/treelist/*.js"'
-alias cttlj3='gulp karma-unit --tests="tests/treelist/**" --jquery="3.1.1"'
+alias cttlj3='gulp karma-unit --tests="tests/treelist/**" --jquery="3.3.1"'
 alias cttle='gulp karma-unit --tests="tests/treelist/editing-incell.js"'
 alias ctw='gulp karma-unit --tests="tests/window/**"'
 
@@ -191,6 +194,7 @@ alias rgrwp="rake react:production:test"
 alias rgvw="rake vue:master:test"
 alias rgvwp="rake vue:production:test"
 alias rgaw="rake generate:aspx:wrappers"
+alias rjsd="rake js_dependencies"
 
 # jshint
 alias jsha="gulp jshint"
@@ -275,7 +279,7 @@ alias pac="cd /d/work/github/kendo-angular-charts"
 alias pc="cd /d/work/github/kendo-charts"
 alias pad="cd /c/work/github/kendo-angular-dropdowns"
 alias pai="cd /c/work/github/kendo-angular-inputs"
-alias pag="cd /c/work/github/kendo-angular-grid"
+alias pag="cd /d/work/github/kendo-angular-grid"
 alias pap="cd /c/work/github/kendo-angular-popup"
 alias paa="cd /c/work/github/angular-aot"
 alias pau="cd /c/work/github/angular-universal-rendering"

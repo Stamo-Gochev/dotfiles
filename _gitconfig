@@ -54,7 +54,7 @@
 	# remote branches created by an author
 	lrbrby = "!f() { git for-each-ref --format=' %(authorname) %09 %(refname)' | egrep -i 'refs/remotes/' | egrep -i --color $1 ; }; f"
 	# my remote branches
-	lmrbr = "!f() { git lrbrby Stamo ; }; f"
+	lmrbr = "!f() { git lrbrby `git config user.name` ; }; f"
 	# rename branch
 	rbr = branch -m
 	# "!f() { git push -u origin ; }; f"
@@ -147,7 +147,7 @@
 
 	# tags - usage git tagcommit <tag_name>
 	commit-of-tag = "!f() { git rev-list -n 1 $1 ; }; f"
-	taglist = "!f() { git tag -l | sort -V --reverse | head -30 | grep '^2' ; }; f"
+	list-tags = "!f() { git tag -l | sort -V --reverse | head -30 | grep '^2' ; }; f"
 
 	###############################################
 	# public/private mirrors aliases
