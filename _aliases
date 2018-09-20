@@ -97,6 +97,7 @@ alias gl="git log --graph --pretty=format:'%h - %d %s (%cr) <%an>' | vim -R -c '
 
 # dev
 alias ac="ack-grep"
+alias hs="http-server"
 alias i="sudo apt-get install"
 alias v="vim"
 alias vv="vim ~/.vimrc"
@@ -292,20 +293,21 @@ alias rag="rm -rf node_modules/@progress/kendo-angular-grid/"
 alias rai="rm -rf node_modules/@progress/kendo-angular-inputs/"
 alias rnp="rm -rf node_modules/@progress"
 
-alias cpkrp="cd /d/work/github/kendo-react-private && code ."
-alias cpvw="cd /d/work/github/kendo-vue-wrappers && code ."
-
 # projects - kendo react
 alias prp="cd /d/work/github/kendo-react-private"
 alias pkrp="cd /d/work/github/kendo-react-private"
+alias ckrp="cd /d/work/github/kendo-react-private && code ."
 
-# projects - react wrappers
+# projects - kendo react wrappers
 alias prw="cd /d/work/github/kendo-react-wrappers"
-alias pvw="cd /d/work/github/kendo-vue-wrappers"
+alias crw="cd /d/work/github/kendo-react-private && code ."
 alias rwe="chrome.exe http://localhost:8080"
-
 alias ctrwg="gulp test --package kendo-grid-react-wrapper"
 alias ctrwc="gulp test --package kendo-charts-react-wrapper"
+
+# prooects - kendo vue wrappers
+alias pkvw="cd /d/work/github/kendo-vue-wrappers"
+alias cvw="cd /d/work/github/kendo-vue-wrappers && code ."
 
 # projects - common
 alias ptb="cd /c/work/github/themebuilder"
