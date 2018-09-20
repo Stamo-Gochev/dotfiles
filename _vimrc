@@ -467,6 +467,12 @@ nmap <leader>, <S-a>,<Esc>
 nmap <Leader>oo O<Esc><Down>
 nmap <Leader>ll j<Esc><Up>
 
+" delete till the start of the line
+nnoremap c0 c^
+
+" delete till the end of the line
+nnoremap c) c$
+
 "------------------------------------------------------------------
 " Commands
 "------------------------------------------------------------------
