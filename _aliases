@@ -2,7 +2,7 @@
 alias g="git"
 alias a="git a"
 
-# bisect commits
+# bisect commits - http://webchick.net/node/99
 # git checkout (bad commit)
 # git br <new_branch>
 # git bisect start
@@ -71,6 +71,7 @@ alias u="git u"
 # tags
 alias tc="git commit-of-tag"
 alias lt="git list-tags"
+alias lgt="git list-tags"
 alias lta="git tag -l"
 
 # use https://github.com/hotoo/gitopen
@@ -151,7 +152,7 @@ alias ctpa='gulp karma-unit --tests="tests/pager/*.js"'
 alias ctpg='gulp karma-unit --tests="tests/pivotgrid/*.js"'
 alias cttl='gulp karma-unit --tests="tests/treelist/*.js"'
 alias cttlj3='gulp karma-unit --tests="tests/treelist/**" --jquery="3.3.1"'
-alias cttle='gulp karma-unit --tests="tests/treelist/editing-incell.js"'
+alias cttm='gulp karma-unit --tests="tests/treemap/*.js"'
 alias ctw='gulp karma-unit --tests="tests/window/**"'
 
 # run karma with multiple files
@@ -178,6 +179,7 @@ alias rmca="rake mvc_6:assets"
 alias rmcas="rake mvc_6:assets_shared"
 alias rdd="rake demos:debug"
 alias rgmcw='rake generate:mvc_6:wrappers'
+alias rgmc='rake generate:mvc_6:wrappers && rake generate:mvc_6:taghelpers'
 alias rgmw='rake generate:mvc:wrappers'
 alias rgmth='rake generate:mvc_6:taghelpers'
 alias rgth='rake generate:mvc_6:taghelpers'
@@ -212,6 +214,8 @@ alias noc="explorer C:\Users\gochev\AppData\Roaming\npm\node_modules"
 
 # npm
 alias n="npm"
+# escaping is necessary on Windows
+alias wnpm="explorer \$(npm root -g)"
 alias npmv="npm --version"
 alias nup="npm update && npm prune"
 alias nv="npm view"
@@ -319,6 +323,7 @@ alias dnc="dotnet nuget locals all --clear"
 alias dotr="dotnet restore"
 alias dotru="dotnet run"
 alias dotn="dotnet new"
+alias dtt="dotnet test wrappers/mvc-6/tests/Kendo.Mvc.Tests"
 alias dott="dotnet test wrappers/mvc-6/tests/Kendo.Mvc.Tests"
 alias dotv="dotnet --version"
 
@@ -380,3 +385,13 @@ alias rz="source ~/.zshrc"
 
 # tmux
 alias rt="tmux source-file ~/.tmux.conf"
+
+# todo - think about aliases
+# find which process ID is running on port 8080
+# netstat -o -n -a | findstr 0.0:8080
+
+# sample response
+# TCP    0.0.0.0:8080           0.0.0.0:0              LISTENING       8588
+
+# kill the process
+# taskkill /F /PID 8588
