@@ -92,5 +92,13 @@
     {
         "key": "ctrl+alt+n",
         "command": "-newFile.createNewFile"
+    },
+    {
+        "key": "alt+c",
+        "command": "git.openChange"
+    },
+    {
+        "key": "alt+f",
+        "command": "gitlens.openWorkingFile"
     }
 ]
