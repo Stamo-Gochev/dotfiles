@@ -127,41 +127,72 @@ alias tk="tmux kill-session -t"
 alias tl="tmux ls"
 
 # tests
-alias cta="gulp karma-unit"
-alias ctb='gulp karma-unit --tests="tests/button/**"'
-alias ctcm='gulp karma-unit --tests="tests/columnmenu/**"'
-alias cte='gulp karma-unit --tests="tests/editor/**"'
-alias ctd='gulp karma-unit --tests="tests/diagram/**"'
-alias ctdp='gulp karma-unit --tests="tests/datepicker/**"'
-alias ctdtp='gulp karma-unit --tests="tests/datetimepicker/**"'
-alias ctds='gulp karma-unit --tests="tests/data/**"'
-alias ctdsm='gulp karma-unit --tests="tests/model/**"'
-alias ctg='gulp karma-unit --tests="tests/grid/**"'
-alias ctgff='gulp karma-unit --tests="tests/grid/**" --browser="Firefox"'
-alias ctgsj3='gulp karma-unit --tests="tests/grid/scrollable.js" --jquery="3.3.1"'
-alias ctgj3='gulp karma-unit --tests="tests/grid/**" --jquery="3.3.1"'
-alias ctve='gulp karma-unit --tests="tests/grid/virtual*"'
-alias ctvpe='gulp karma-unit --tests="tests/grid/virtual-popup*"'
-alias ctvie='gulp karma-unit --tests="tests/grid/virtual-incell*"'
-alias ctvi='gulp karma-unit --tests="tests/grid/virtual-inline*"'
-alias ctlb='gulp karma-unit --tests="tests/listbox/*.js"'
-alias ctlv='gulp karma-unit --tests="tests/listview/*.js"'
-alias ctmtb='gulp karma-unit --tests="tests/maskedtextbox/*.js"'
-alias ctmp='gulp karma-unit --tests="tests/mediaplayer/**"'
-alias ctpa='gulp karma-unit --tests="tests/pager/*.js"'
-alias ctpg='gulp karma-unit --tests="tests/pivotgrid/*.js"'
-alias cttl='gulp karma-unit --tests="tests/treelist/*.js"'
-alias cttlj3='gulp karma-unit --tests="tests/treelist/**" --jquery="3.3.1"'
-alias cttm='gulp karma-unit --tests="tests/treemap/*.js"'
-alias ctw='gulp karma-unit --tests="tests/window/**"'
+alias cta="gulp karma-mocha"
+alias ctb='gulp karma-mocha --tests="mocha-tests/button/**"'
+alias ctcm='gulp karma-mocha --tests="mocha-tests/columnmenu/**"'
+alias cte='gulp karma-mocha --tests="mocha-tests/editor/**"'
+alias ctd='gulp karma-mocha --tests="mocha-tests/diagram/**"'
+alias ctdp='gulp karma-mocha --tests="mocha-tests/datepicker/**"'
+alias ctdtp='gulp karma-mocha --tests="mocha-tests/datetimepicker/**"'
+alias ctds='gulp karma-mocha --tests="mocha-tests/data/**"'
+alias ctdsm='gulp karma-mocha --tests="mocha-tests/model/**"'
+alias ctg='gulp karma-mocha --tests="mocha-tests/grid/**"'
+alias ctgff='gulp karma-mocha --tests="mocha-tests/grid/**" --browser="Firefox"'
+alias ctgsj3='gulp karma-mocha --tests="mocha-tests/grid/scrollable.js" --jquery="3.3.1"'
+alias ctgj3='gulp karma-mocha --tests="mocha-tests/grid/**" --jquery="3.3.1"'
+alias ctve='gulp karma-mocha --tests="mocha-tests/grid/virtual*"'
+alias ctvpe='gulp karma-mocha --tests="mocha-tests/grid/virtual-popup*"'
+alias ctvie='gulp karma-mocha --tests="mocha-tests/grid/virtual-incell*"'
+alias ctvi='gulp karma-mocha --tests="mocha-tests/grid/virtual-inline*"'
+alias ctlb='gulp karma-mocha --tests="mocha-tests/listbox/*.js"'
+alias ctlv='gulp karma-mocha --tests="mocha-tests/listview/*.js"'
+alias ctmtb='gulp karma-mocha --tests="mocha-tests/maskedtextbox/*.js"'
+alias ctmp='gulp karma-mocha --tests="mocha-tests/mediaplayer/**"'
+alias ctpa='gulp karma-mocha --tests="mocha-tests/pager/*.js"'
+alias ctpg='gulp karma-mocha --tests="mocha-tests/pivotgrid/*.js"'
+alias cttl='gulp karma-mocha --tests="mocha-tests/treelist/*.js"'
+alias cttlj3='gulp karma-mocha --tests="mocha-tests/treelist/**" --jquery="3.3.1"'
+alias cttm='gulp karma-mocha --tests="mocha-tests/treemap/*.js"'
+alias ctw='gulp karma-mocha --tests="mocha-tests/window/**"'
+
+# deprecated tests
+alias dcta="gulp karma-unit"
+alias dctb='gulp karma-unit --tests="tests/button/**"'
+alias dctcm='gulp karma-unit --tests="tests/columnmenu/**"'
+alias dcte='gulp karma-unit --tests="tests/editor/**"'
+alias dctd='gulp karma-unit --tests="tests/diagram/**"'
+alias dctdp='gulp karma-unit --tests="tests/datepicker/**"'
+alias dctdtp='gulp karma-unit --tests="tests/datetimepicker/**"'
+alias dctds='gulp karma-unit --tests="tests/data/**"'
+alias dctdsm='gulp karma-unit --tests="tests/model/**"'
+alias dctg='gulp karma-unit --tests="tests/grid/**"'
+alias dctgff='gulp karma-unit --tests="tests/grid/**" --browser="Firefox"'
+alias dctgsj3='gulp karma-unit --tests="tests/grid/scrollable.js" --jquery="3.3.1"'
+alias dctgj3='gulp karma-unit --tests="tests/grid/**" --jquery="3.3.1"'
+alias dctve='gulp karma-unit --tests="tests/grid/virtual*"'
+alias dctvpe='gulp karma-unit --tests="tests/grid/virtual-popup*"'
+alias dctvie='gulp karma-unit --tests="tests/grid/virtual-incell*"'
+alias dctvi='gulp karma-unit --tests="tests/grid/virtual-inline*"'
+alias dctlb='gulp karma-unit --tests="tests/listbox/*.js"'
+alias dctlv='gulp karma-unit --tests="tests/listview/*.js"'
+alias dctmtb='gulp karma-unit --tests="tests/maskedtextbox/*.js"'
+alias dctmp='gulp karma-unit --tests="tests/mediaplayer/**"'
+alias dctpa='gulp karma-unit --tests="tests/pager/*.js"'
+alias dctpg='gulp karma-unit --tests="tests/pivotgrid/*.js"'
+alias dcttl='gulp karma-unit --tests="tests/treelist/*.js"'
+alias dcttlj3='gulp karma-unit --tests="tests/treelist/**" --jquery="3.3.1"'
+alias dcttm='gulp karma-unit --tests="tests/treemap/*.js"'
+alias dctw='gulp karma-unit --tests="tests/window/**"'
 
 # run karma with multiple files
 # this is necessary as the karma parameters in bash console are not expanded correctly
 # the git alias is a workaround, might not be necessary without Windows
-alias ctm='gulp karma-unit --tests={`git tests`}'
+alias ctm='gulp karma-mocha --tests={`git mocha-tests`}'
+alias dctm='gulp karma-unit --tests={`git tests`}'
 
 # run karma with a single file
-alias cts='gulp karma-unit --tests="`git tests`"'
+alias cts='gulp karma-mocha --tests="`git mocha-tests`"'
+alias dcts='gulp karma-unit --tests="`git tests`"'
 
 # gulp karma-unit --tests="{tests/editor/resizing/table-resize-handle.js,tests/editor/resizing/table-resizing.js}"
 # gulp karma-unit --tests="tests/editor/resizing/table-resize-handle.js" --tests="tests/editor/resizing/table-resizing.js"
@@ -173,7 +204,8 @@ alias ctc="chrome.exe http://gochev:9876/debug.html"
 alias ctf="firefox.exe http://gochev:9876/debug.html"
 alias ctie="iexplore.exe http://gochev:9876/debug.html"
 
-# wrappers
+# rake tasks
+alias rmb="rake mvc:binaries"
 alias rma="rake mvc:assets"
 alias rmca="rake mvc_6:assets"
 alias rmcas="rake mvc_6:assets_shared"
@@ -199,6 +231,9 @@ alias rgvw="rake vue:master:test"
 alias rgvwp="rake vue:production:test"
 alias rgaw="rake generate:aspx:wrappers"
 alias rjsd="rake js_dependencies"
+
+# gulp tasks
+alias gumt="gulp migrate-tests-mocha"
 
 # jshint
 alias jsha="gulp jshint"
@@ -241,6 +276,7 @@ alias nvu="nvm use"
 
 # yarn
 alias ya="yarn add"
+alias yad="yarn add --dev"
 alias yag="yarn add -g"
 alias yv="yarn --version"
 alias ys="yarn start"
