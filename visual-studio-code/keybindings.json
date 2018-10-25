@@ -94,11 +94,56 @@
         "command": "-newFile.createNewFile"
     },
     {
-        "key": "alt+c",
-        "command": "git.openChange"
-    },
-    {
         "key": "alt+f",
         "command": "gitlens.openWorkingFile"
+    },
+    {
+        "key": "ctrl+k ctrl+z",
+        "command": "extension.colorHelper.convert",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+z alt+t",
+        "command": "-extension.colorHelper.convert",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+z ctrl+q",
+        "command": "extension.colorHelper.pick",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+z alt+p",
+        "command": "-extension.colorHelper.pick",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+d",
+        "command": "gitlens.showQuickCommitFileDetails",
+        "when": "editorTextFocus && gitlens:enabled && gitlens:keymap == 'alternate'"
+    },
+    {
+        "key": "alt+e alt+w",
+        "command": "toggleFindCaseSensitive",
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+z alt+q",
+        "command": "-toggleFindCaseSensitive",
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+q alt+e",
+        "command": "toggleSearchCaseSensitive",
+        "when": "searchInputBoxFocus && searchViewletVisible"
+    },
+    {
+        "key": "alt+z alt+e",
+        "command": "-toggleSearchCaseSensitive",
+        "when": "searchInputBoxFocus && searchViewletVisible"
+    },
+    {
+        "key": "alt+c",
+        "command": "git.openChange"
     }
 ]
