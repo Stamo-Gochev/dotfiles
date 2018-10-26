@@ -98,7 +98,7 @@
         "command": "gitlens.openWorkingFile"
     },
     {
-        "key": "ctrl+k ctrl+z",
+        "key": "ctrl+shift+z ctrl+shift+p",
         "command": "extension.colorHelper.convert",
         "when": "editorTextFocus"
     },
@@ -108,7 +108,7 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+z ctrl+q",
+        "key": "ctrl+shift+p ctrl+shift+p",
         "command": "extension.colorHelper.pick",
         "when": "editorTextFocus"
     },
@@ -123,7 +123,7 @@
         "when": "editorTextFocus && gitlens:enabled && gitlens:keymap == 'alternate'"
     },
     {
-        "key": "alt+e alt+w",
+        "key": "ctrl+shift+x ctrl+shift+p",
         "command": "toggleFindCaseSensitive",
         "when": "editorFocus"
     },
@@ -133,7 +133,7 @@
         "when": "editorFocus"
     },
     {
-        "key": "alt+q alt+e",
+        "key": "ctrl+shift+p",
         "command": "toggleSearchCaseSensitive",
         "when": "searchInputBoxFocus && searchViewletVisible"
     },
@@ -145,5 +145,61 @@
     {
         "key": "alt+c",
         "command": "git.openChange"
+    },
+    {
+        "key": "alt+o",
+        "command": "editor.action.goToDeclaration",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "f12",
+        "command": "-editor.action.goToDeclaration",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "alt+k",
+        "command": "workbench.action.navigateBack"
+    },
+    {
+        "key": "alt+left",
+        "command": "-workbench.action.navigateBack"
+    },
+    {
+        "key": "alt+d",
+        "command": "-gitlens.showQuickCommitFileDetails",
+        "when": "editorTextFocus && gitlens:enabled && gitlens:keymap == 'alternate'"
+    },
+    {
+        "key": "alt+tc",
+        "command": "-toggleFindCaseSensitive",
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+cs",
+        "command": "-toggleSearchCaseSensitive",
+        "when": "searchInputBoxFocus && searchViewletVisible"
+    },
+    {
+        "key": "alt+c p",
+        "command": "-extension.colorHelper.pick",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+tc",
+        "command": "-extension.colorHelper.convert",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+c",
+        "command": "-gitlens.showQuickCommitFileDetails",
+        "when": "editorTextFocus && gitlens:enabled && gitlens:keymap == 'alternate'"
+    },
+    {
+        "key": "alt+;",
+        "command": "workbench.action.navigateForward"
+    },
+    {
+        "key": "alt+right",
+        "command": "-workbench.action.navigateForward"
     }
 ]
