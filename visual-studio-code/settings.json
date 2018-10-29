@@ -543,10 +543,6 @@
 	"vim.insertModeKeyBindingsNonRecursive": [{
 		"before": ["k", "k"],
 		"after": ["<esc>"]
-	}, {
-
-		"before": ["j"],
-		"after": ["o"]
 	}],
 
 	"vim.normalModeKeyBindings": [{
@@ -613,16 +609,15 @@
 	"vim.leader": " ",
 
 	"vim.disableAnnoyingNeovimMessage": true,
-	"workbench.colorTheme": "monokai-Best",
 	"spell.StopAsking": true,
 	"workbench.iconTheme": "vscode-icons",
 	"vsicons.presets.foldersAllDefaultIcon": true,
 	"vim.disableAnnoyingNeovimMessage": true,
 	"sync.gist": "c3fadfb006fc3f96dd1c9c50694828de",
-	"sync.lastUpload": "2018-06-07T07:56:55.333Z",
+	"sync.lastUpload": "2018-06-25T06:55:42.312Z",
 	"sync.autoDownload": false,
 	"sync.autoUpload": false,
-	"sync.lastDownload": "2018-06-14T17:24:20.753Z",
+	"sync.lastDownload": "2018-07-01T08:13:58.235Z",
 	"sync.forceDownload": false,
 	"sync.anonymousGist": false,
 	"sync.host": "",
@@ -685,4 +680,5 @@
 	"sync.syncExtensions": true,
 	"lineEndings.crlfCharacter": "CRLF ¤¬",
 	"lineEndings.lfCharacter": "LF ¬",
+	"workbench.colorTheme": "monokai-best",
 }
