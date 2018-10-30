@@ -254,12 +254,14 @@ alias wnpm="explorer \$(npm root -g)"
 alias npmv="npm --version"
 alias nup="npm update && npm prune"
 alias nv="npm view"
-alias npl="npm link"
+alias nli="npm link"
+alias nl="npm list --depth=0"
 alias nvk="npm view @progress/kendo-ui"
 alias nvrw="npm view @progress/kendo-dropdowns-react-wrapper"
 alias ni="npm install"
 alias nig="npm install -g"
-alias nis="npm install --save-dev"
+alias nis="npm install --save"
+alias nisd="npm install --save-dev"
 alias nip="npm-install-peers"
 alias nu="npm uninstall"
 alias ns="npm start"
@@ -269,6 +271,14 @@ alias nu="npm update"
 alias rac="npm run api-check"
 alias rn="rm -rf node_modules/"
 alias rna="find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +"
+alias rnp="rm -rf node_modules/$1"
+
+# npm packages
+
+# patch-package
+alias npp="npx patch-package"
+alias napp="patch-package"
+alias nppr="patch-package --reverse"
 
 # nvm
 alias nvl="nvm list"
