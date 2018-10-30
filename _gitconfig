@@ -126,8 +126,8 @@
 	ignored = ls-files --other --ignored --exclude-standard
 	notpushed = cherry -v
 	jshint = "!f() { git diff --name-status | egrep '^(A|M)' | awk '{ print $2 }' | paste -sd ',' ; }; f"
-	tests = "!f() { git diff --name-only | egrep 'tests/.*' | paste -sd ',' ; }; f"
-	mocha-tests = "!f() { git diff --name-only | egrep 'mocha-tests/.*' | paste -sd ',' ; }; f"
+	tests = "!f() { git diff --name-only | egrep '^tests/.*' | paste -sd ',' ; }; f"
+	mocha-tests = "!f() { git diff --name-only | egrep '^mocha-tests/.*' | paste -sd ',' ; }; f"
 	# open pull request from current to master branch
 	gopr = "!f() { git config --get remote.origin.url | sed -e 's/git@github.com://' | sed -e 's/.git//' | awk '{ printf "\"https://github.com/%s/compare/master...\"", $1 }' && echo `git current` ; }; f"
 	goprp = "!f() { git config --get remote.origin.url | sed -e 's/git@github.com://' | sed -e 's/.git//' | awk '{ printf "\"https://github.com/%s/compare/production...\"", $1 }' && echo `git current` ; }; f"

@@ -12,6 +12,8 @@ debug.log
 npm-debug.log
 global.json
 styles/web/all.less
+# necessary for patch-package (npm)
+patches/
 
 .vscode
 .vs

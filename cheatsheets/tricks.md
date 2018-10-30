@@ -6,4 +6,4 @@ for i in */.git; do ( echo $i; cd $i/..; git stash; git checkout master; git pul
 ```
 
 ## Empty recycle bin
-`rd /s %systemdrive%\$Recycle.bin`
+rd /s %systemdrive%\$Recycle.bin
