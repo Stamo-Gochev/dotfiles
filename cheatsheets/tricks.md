@@ -9,3 +9,6 @@ for i in */.git; do ( echo $i; cd $i/..; git stash; git checkout master; git pul
 
 
 `rd /s %systemdrive%\$Recycle.bin`
+
+## Stylus regex
+`https?:\/\/(?!((www\\.)?(teams\.microsoft\.com))).*`
