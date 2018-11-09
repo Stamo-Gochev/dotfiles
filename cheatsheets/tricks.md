@@ -12,3 +12,6 @@ for i in */.git; do ( echo $i; cd $i/..; git stash; git checkout master; git pul
 
 ## Stylus regex
 `https?:\/\/(?!((www\\.)?(teams\.microsoft\.com))).*`
+
+## Chrome extensions
+Quick Tabs - https://chrome.google.com/webstore/detail/quick-tabs/jnjfeinjfmenlddahdjdmgpbokiacbbb?hl=en
