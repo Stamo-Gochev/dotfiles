@@ -526,6 +526,14 @@
 	"trailing-spaces.trimOnSave": true,
 
 	//Vim
+	"vim.normalModeKeyBindings": [{
+		"before": ["<leader>", "o", "o"],
+		"after": ["O", "<esc>", "<down>"]
+	}, {
+		"before": ["<leader>", "l", "l"],
+		"after": ["j", "<esc>", "<up>"]
+	}],
+
 	"vim.normalModeKeyBindingsNonRecursive": [{
 		"before": ["o"],
 		"after": ["<up>"]
@@ -539,43 +547,21 @@
 		"before": [";"],
 		"after": ["<right>"]
 	}, {
-		"before": ["*"],
-		"after": ["*", "z", "z"]
+		"before": ["j"],
+		"after": ["o"]
 	}, {
-		"before": ["G"],
-		"after": ["G", "z", "z"]
+		"before": ["<tab>"],
+		"after": [">", ">"]
 	}, {
-		"before": ["g", "g"],
-		"after": ["g", "g", "z", "z"]
-	}, {
-		"before": ["n"],
-		"after": ["n", "z", "z"]
-	}, {
-		"before": ["N"],
-		"after": ["N", "z", "z"]
-	}, {
-		"before": ["}"],
-		"after": ["}", "z", "z"]
-	}, {
-		"before": ["{"],
-		"after": ["{", "z", "z"]
-	}, {
-		"before": ["*"],
-		"after": ["*", "z", "z"]
-	}, {
-		"before": ["`", "`"],
-		"after": ["`", "`", "z", "z"]
-	}, {
-		"before": ["%"],
-		"after": ["%", "z", "z"]
+		"before": ["<shift>", "<tab>"],
+		"after": ["<", "<"]
 	}],
 
 	"vim.insertModeKeyBindingsNonRecursive": [{
 		"before": ["k", "k"],
 		"after": ["<esc>"]
-	}],
+	}, {
 
-	"vim.normalModeKeyBindings": [{
 		"before": ["j"],
 		"after": ["o"]
 	}],
@@ -639,15 +625,16 @@
 	"vim.leader": " ",
 
 	"vim.disableAnnoyingNeovimMessage": true,
+	"workbench.colorTheme": "monokai-best",
 	"spell.StopAsking": true,
 	"workbench.iconTheme": "vscode-icons",
 	"vsicons.presets.foldersAllDefaultIcon": true,
 	"vim.disableAnnoyingNeovimMessage": true,
 	"sync.gist": "c3fadfb006fc3f96dd1c9c50694828de",
-	"sync.lastUpload": "2018-06-25T06:55:42.312Z",
+	"sync.lastUpload": "2018-06-07T07:56:55.333Z",
 	"sync.autoDownload": false,
 	"sync.autoUpload": false,
-	"sync.lastDownload": "2018-07-01T08:13:58.235Z",
+	"sync.lastDownload": "2018-06-14T17:24:20.753Z",
 	"sync.forceDownload": false,
 	"sync.anonymousGist": false,
 	"sync.host": "",
@@ -710,5 +697,4 @@
 	"sync.syncExtensions": true,
 	"lineEndings.crlfCharacter": "CRLF ¤¬",
 	"lineEndings.lfCharacter": "LF ¬",
-	"workbench.colorTheme": "monokai-best",
 }
