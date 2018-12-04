@@ -697,4 +697,5 @@
 	"sync.syncExtensions": true,
 	"lineEndings.crlfCharacter": "CRLF ¤¬",
 	"lineEndings.lfCharacter": "LF ¬",
+	"scrolloff.scrolloff": 10
 }
