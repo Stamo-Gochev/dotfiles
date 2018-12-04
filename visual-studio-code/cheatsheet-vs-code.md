@@ -163,3 +163,6 @@ Extensions Added:
   wallaby-vscode v1.0.86
   xml v2.2.0
   ```
+# Other extensions
+(not tracked by the sync plugin)
+vscode-scrolloff
