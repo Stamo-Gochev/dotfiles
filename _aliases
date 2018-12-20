@@ -41,6 +41,7 @@ alias com="git com"
 alias cop="git cop"
 alias cpa="git cpa"
 alias cpc="git cpc"
+alias cpn="git cpn"
 alias gv="git --version"
 alias ig="git ignore"
 alias rmig="git rmignore"
@@ -54,6 +55,7 @@ alias o="git open"``
 alias pr="git pr"
 alias prk="for i in kendo*/.git; do ( echo "$i"; echo "============="; cd $i/..; git stash; git checkout master; git pull --rebase; ); done"
 alias rc="git rc"
+alias rea="git rea"
 alias rec="git rec"
 alias ra="git ra"
 alias ri="git ri"
@@ -130,6 +132,7 @@ alias tl="tmux ls"
 alias cta="gulp karma-mocha"
 alias ctb='gulp karma-mocha --tests="mocha-tests/button/**"'
 alias ctcm='gulp karma-mocha --tests="mocha-tests/columnmenu/**"'
+alias ctch='gulp karma-mocha --tests="mocha-tests/chart/**"'
 alias cte='gulp karma-mocha --tests="mocha-tests/editor/**"'
 alias ctd='gulp karma-mocha --tests="mocha-tests/diagram/**"'
 alias ctdp='gulp karma-mocha --tests="mocha-tests/datepicker/**"'
@@ -154,6 +157,7 @@ alias cttl='gulp karma-mocha --tests="mocha-tests/treelist/*.js"'
 alias cttlj3='gulp karma-mocha --tests="mocha-tests/treelist/**" --jquery="3.3.1"'
 alias cttm='gulp karma-mocha --tests="mocha-tests/treemap/*.js"'
 alias ctw='gulp karma-mocha --tests="mocha-tests/window/**"'
+alias ctaw='gulp karma-mocha --tests="mocha-tests/action-widgets/**"'
 
 # deprecated tests
 alias dcta="gulp karma-unit"
@@ -264,9 +268,13 @@ alias nis="npm install --save"
 alias nisd="npm install --save-dev"
 alias nip="npm-install-peers"
 alias nu="npm uninstall"
+alias nr="npm run"
+alias nrb="npm run build"
+alias nrd="npm run dev"
+alias nrs="npm run serve"
+alias nrw="npm run watch"
 alias ns="npm start"
 alias nsaot="ng server --aot-true"
-alias nrw="npm run watch"
 alias nu="npm update"
 alias rac="npm run api-check"
 alias rn="rm -rf node_modules/"
@@ -313,7 +321,11 @@ alias ke="chrome.exe http://gochev/kendo/playground/editor/"
 # projects
 alias pg="cd /d/work/github/playground"
 alias ide="cd /c/work/github/dotfiles"
+
+# open projects
 alias cide="code /c/work/github/dotfiles"
+alias ckendo="code /c/work/github/kendo"
+alias cprp="code /d/work/github/kendo-react-private"
 
 # projects - kendo
 alias pk="cd /c/work/github/kendo"
@@ -358,6 +370,7 @@ alias ctrwc="gulp test --package kendo-charts-react-wrapper"
 # prooects - kendo vue wrappers
 alias pkvw="cd /d/work/github/kendo-vue-wrappers"
 alias cvw="cd /d/work/github/kendo-vue-wrappers && code ."
+alias rve="chrome.exe http://localhost:8764"
 
 # projects - common
 alias ptb="cd /c/work/github/themebuilder"
@@ -401,6 +414,17 @@ alias gut="gulp test"
 alias le="lerna"
 alias leb="lerna bootstrap"
 alias lei="lerna init"
+
+# webpack
+alias wp="webpack"
+alias wpds="webpack-dev-server"
+
+# react
+alias cra="create-react-app"
+
+# vue
+alias cva="create-vue-app"
+alias vce="vue create example"
 
 # built-in helpers
 alias ff='find . -type f -not -path "*node_modules*" -name'

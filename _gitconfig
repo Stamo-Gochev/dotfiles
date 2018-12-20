@@ -68,6 +68,8 @@
 	com = checkout master
 	cop = checkout production
 	cp = cherry-pick
+	# --no-commit let's you modify the commit before cherry picking, then do `git commit`
+	cpn = cherry-pick -n
 	cpa = cherry-pick --abort
 	cpc = cherry-pick --continue
 	d = diff
@@ -105,6 +107,7 @@
 	ri = rebase -i
 	rim = rebase -i origin/master
 	ric = "!f() { rebase -i origin/`git current` ; }; f"
+	rea = rebase --abort
 	rec = rebase --continue
 	# revert the last commit and preserve the changes locally
 	rc = reset --soft HEAD~
