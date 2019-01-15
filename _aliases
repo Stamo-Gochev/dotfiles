@@ -79,6 +79,7 @@ alias lta="git tag -l"
 # use https://github.com/hotoo/gitopen
 # use 'gitopen "#<issue_id>"' as the hash should be escaped in Windows git bash
 alias go="gitopen -b `g current` commits"
+# alias go="gitopen -b `g current`"
 alias goc="go commits"
 alias gomc="gitopen commits --branch master"
 alias gopc="gitopen commits --branch production"
@@ -130,34 +131,35 @@ alias tl="tmux ls"
 
 # tests
 alias cta="gulp karma-mocha"
-alias ctb='gulp karma-mocha --tests="mocha-tests/button/**"'
-alias ctcm='gulp karma-mocha --tests="mocha-tests/columnmenu/**"'
-alias ctch='gulp karma-mocha --tests="mocha-tests/chart/**"'
-alias cte='gulp karma-mocha --tests="mocha-tests/editor/**"'
-alias ctd='gulp karma-mocha --tests="mocha-tests/diagram/**"'
-alias ctdp='gulp karma-mocha --tests="mocha-tests/datepicker/**"'
-alias ctdtp='gulp karma-mocha --tests="mocha-tests/datetimepicker/**"'
-alias ctds='gulp karma-mocha --tests="mocha-tests/data/**"'
-alias ctdsm='gulp karma-mocha --tests="mocha-tests/model/**"'
-alias ctg='gulp karma-mocha --tests="mocha-tests/grid/**"'
-alias ctgff='gulp karma-mocha --tests="mocha-tests/grid/**" --browser="Firefox"'
-alias ctgsj3='gulp karma-mocha --tests="mocha-tests/grid/scrollable.js" --jquery="3.3.1"'
-alias ctgj3='gulp karma-mocha --tests="mocha-tests/grid/**" --jquery="3.3.1"'
-alias ctve='gulp karma-mocha --tests="mocha-tests/grid/virtual*"'
-alias ctvpe='gulp karma-mocha --tests="mocha-tests/grid/virtual-popup*"'
-alias ctvie='gulp karma-mocha --tests="mocha-tests/grid/virtual-incell*"'
-alias ctvi='gulp karma-mocha --tests="mocha-tests/grid/virtual-inline*"'
-alias ctlb='gulp karma-mocha --tests="mocha-tests/listbox/*.js"'
-alias ctlv='gulp karma-mocha --tests="mocha-tests/listview/*.js"'
-alias ctmtb='gulp karma-mocha --tests="mocha-tests/maskedtextbox/*.js"'
-alias ctmp='gulp karma-mocha --tests="mocha-tests/mediaplayer/**"'
-alias ctpa='gulp karma-mocha --tests="mocha-tests/pager/*.js"'
-alias ctpg='gulp karma-mocha --tests="mocha-tests/pivotgrid/*.js"'
-alias cttl='gulp karma-mocha --tests="mocha-tests/treelist/*.js"'
-alias cttlj3='gulp karma-mocha --tests="mocha-tests/treelist/**" --jquery="3.3.1"'
-alias cttm='gulp karma-mocha --tests="mocha-tests/treemap/*.js"'
-alias ctw='gulp karma-mocha --tests="mocha-tests/window/**"'
-alias ctaw='gulp karma-mocha --tests="mocha-tests/action-widgets/**"'
+alias ctb='gulp karma-mocha --tests="tests/button/**"'
+alias ctcm='gulp karma-mocha --tests="tests/columnmenu/**"'
+alias ctch='gulp karma-mocha --tests="tests/chart/**"'
+alias cte='gulp karma-mocha --tests="tests/editor/**"'
+alias ctd='gulp karma-mocha --tests="tests/diagram/**"'
+alias ctdp='gulp karma-mocha --tests="tests/datepicker/**"'
+alias ctdtp='gulp karma-mocha --tests="tests/datetimepicker/**"'
+alias ctds='gulp karma-mocha --tests="tests/data/**"'
+alias ctdsm='gulp karma-mocha --tests="tests/model/**"'
+alias ctg='gulp karma-mocha --tests="tests/grid/**"'
+alias ctgh='gulp karma-mocha --tests="tests/grid/**" --browser="ChromeHeadless"'
+alias ctgff='gulp karma-mocha --tests="tests/grid/**" --browser="Firefox"'
+alias ctgsj3='gulp karma-mocha --tests="tests/grid/scrollable.js" --jquery="3.3.1"'
+alias ctgj3='gulp karma-mocha --tests="tests/grid/**" --jquery="3.3.1"'
+alias ctve='gulp karma-mocha --tests="tests/grid/virtual*"'
+alias ctvpe='gulp karma-mocha --tests="tests/grid/virtual-popup*"'
+alias ctvie='gulp karma-mocha --tests="tests/grid/virtual-incell*"'
+alias ctvi='gulp karma-mocha --tests="tests/grid/virtual-inline*"'
+alias ctlb='gulp karma-mocha --tests="tests/listbox/*.js"'
+alias ctlv='gulp karma-mocha --tests="tests/listview/*.js"'
+alias ctmtb='gulp karma-mocha --tests="tests/maskedtextbox/*.js"'
+alias ctmp='gulp karma-mocha --tests="tests/mediaplayer/**"'
+alias ctpa='gulp karma-mocha --tests="tests/pager/*.js"'
+alias ctpg='gulp karma-mocha --tests="tests/pivotgrid/*.js"'
+alias cttl='gulp karma-mocha --tests="tests/treelist/*.js"'
+alias cttlj3='gulp karma-mocha --tests="tests/treelist/**" --jquery="3.3.1"'
+alias cttm='gulp karma-mocha --tests="tests/treemap/*.js"'
+alias ctw='gulp karma-mocha --tests="tests/window/**"'
+alias ctaw='gulp karma-mocha --tests="tests/action-widgets/**"'
 
 # deprecated tests
 alias dcta="gulp karma-unit"
@@ -191,11 +193,13 @@ alias dctw='gulp karma-unit --tests="tests/window/**"'
 # run karma with multiple files
 # this is necessary as the karma parameters in bash console are not expanded correctly
 # the git alias is a workaround, might not be necessary without Windows
-alias ctm='gulp karma-mocha --tests={`git mocha-tests`}'
+alias ctm='gulp karma-mocha --tests={`git tests`}'
+alias ctmh='gulp karma-mocha --tests={`git tests`} --browser="ChromeHeadless"'
 alias dctm='gulp karma-unit --tests={`git tests`}'
 
 # run karma with a single file
-alias cts='gulp karma-mocha --tests="`git mocha-tests`"'
+alias cts='gulp karma-mocha --tests="`git tests`"'
+alias ctsh='gulp karma-mocha --tests="`git tests`" --browser="ChromeHeadless"'
 alias dcts='gulp karma-unit --tests="`git tests`"'
 
 # gulp karma-unit --tests="{tests/editor/resizing/table-resize-handle.js,tests/editor/resizing/table-resizing.js}"
@@ -217,6 +221,7 @@ alias rdd="rake demos:debug"
 alias rgmcw='rake generate:mvc_6:wrappers'
 alias rgmc='rake generate:mvc_6:wrappers && rake generate:mvc_6:taghelpers'
 alias rgmw='rake generate:mvc:wrappers'
+alias rgmow='rake generate:mvc:mobile:wrappers'
 alias rgmth='rake generate:mvc_6:taghelpers'
 alias rgth='rake generate:mvc_6:taghelpers'
 alias rgmcth='rake generate:mvc_6:taghelpers'
@@ -227,6 +232,7 @@ alias rgtst='rake type_script:test'
 alias rgtsm='rake type_script:master:test'
 alias rga="rake generate:all"
 alias rgw='rake generate:all'
+alias rmb='rake mvc:binaries --trace'
 alias rja="rake java:assets"
 alias cje="chrome.exe http://localhost:8080/spring-demos/"
 alias rgrw="rake react:master:test"
@@ -369,7 +375,9 @@ alias ctrwc="gulp test --package kendo-charts-react-wrapper"
 
 # prooects - kendo vue wrappers
 alias pkvw="cd /d/work/github/kendo-vue-wrappers"
+alias pvw="cd /d/work/github/kendo-vue-wrappers"
 alias cvw="cd /d/work/github/kendo-vue-wrappers && code ."
+alias cpkvw="cd /d/work/github/kendo-vue-wrappers && code ."
 alias rve="chrome.exe http://localhost:8764"
 
 # projects - common
@@ -385,6 +393,7 @@ alias dotn="dotnet new"
 alias dtt="dotnet test wrappers/mvc-6/tests/Kendo.Mvc.Tests"
 alias dott="dotnet test wrappers/mvc-6/tests/Kendo.Mvc.Tests"
 alias dotv="dotnet --version"
+alias dotsdk="dotnet --list-sdks"
 
 # docker
 alias doc="docker"
