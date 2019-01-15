@@ -15,3 +15,8 @@ for i in */.git; do ( echo $i; echo "============="; cd $i/..; git stash; git ch
 
 ## Chrome extensions
 Quick Tabs - https://chrome.google.com/webstore/detail/quick-tabs/jnjfeinjfmenlddahdjdmgpbokiacbbb?hl=en
+
+
+## NVM for Windows
+Files are stored in:
+C:\Program Files\nodejs\node_modules
