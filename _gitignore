@@ -8,6 +8,9 @@ yarn.lock
 playground/editor
 playground/test.html
 demos/mvc/Views/Shared/SourceLayout.cshtml
+wrappers/mvc-6/demos/Kendo.Mvc.Examples/Views/Shared/_Layout.cshtml
+download-builder/service/scripts/
+
 debug.log
 npm-debug.log
 global.json
