@@ -560,10 +560,6 @@
 	"vim.insertModeKeyBindingsNonRecursive": [{
 		"before": ["k", "k"],
 		"after": ["<esc>"]
-	}, {
-
-		"before": ["j"],
-		"after": ["o"]
 	}],
 
 	"vim.visualModeKeyBindingsNonRecursive": [{
