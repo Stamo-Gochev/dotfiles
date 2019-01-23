@@ -81,8 +81,8 @@ alias lta="git tag -l"
 alias go="gitopen -b `g current` commits"
 # alias go="gitopen -b `g current`"
 alias goc="go commits"
-alias gomc="gitopen commits --branch master"
-alias gopc="gitopen commits --branch production"
+alias gomc="gitopen -b master commits"
+alias gopc="gitopen -b production commits"
 alias goi="gitopen issues"
 alias gok="gitopen @telerik/kendo"
 alias gokco="gitopen @telerik/kendo-ui-core"
@@ -130,10 +130,12 @@ alias tk="tmux kill-session -t"
 alias tl="tmux ls"
 
 # tests
-alias cta="gulp karma-mocha"
+alias cta='gulp karma-mocha'
+alias ctah='gulp karma-mocha --browser="ChromeHeadless"'
 alias ctb='gulp karma-mocha --tests="tests/button/**"'
 alias ctcm='gulp karma-mocha --tests="tests/columnmenu/**"'
 alias ctch='gulp karma-mocha --tests="tests/chart/**"'
+alias ctchh='gulp karma-mocha --tests="tests/chart/**" --browser="ChromeHeadless"'
 alias cte='gulp karma-mocha --tests="tests/editor/**"'
 alias ctd='gulp karma-mocha --tests="tests/diagram/**"'
 alias ctdp='gulp karma-mocha --tests="tests/datepicker/**"'
@@ -330,12 +332,19 @@ alias ide="cd /c/work/github/dotfiles"
 
 # open projects
 alias cide="code /c/work/github/dotfiles"
+
+# open projects - kendo
+alias ck="code /c/work/github/kendo"
 alias ckendo="code /c/work/github/kendo"
+alias ckb="code /d/work/github/kendo-blazor"
 alias cprp="code /d/work/github/kendo-react-private"
+alias cvw="code /d/work/github/kendo-vue-wrappers"
+alias ckt="code /d/work/github/kendo-themes"
 
 # projects - kendo
 alias pk="cd /c/work/github/kendo"
 alias pkco="cd /d/work/github/kendo-ui-core"
+alias pkb="cd /d/work/github/kendo-blazor"
 alias pkd="cd /d/work/github/kendo-ui-dojo"
 alias pkt="cd /d/work/github/kendo-themes"
 alias pks="cd /c/work/github/kendo-ui-demos-service"
@@ -387,8 +396,9 @@ alias preact="cd /d/work/github/react"
 # dotnet
 alias dt="dotnet"
 alias dnc="dotnet nuget locals all --clear"
-alias dotr="dotnet restore"
-alias dotru="dotnet run"
+alias doti="dotnet --info"
+alias dotre="dotnet restore"
+alias dotr="dotnet run"
 alias dotn="dotnet new"
 alias dtt="dotnet test wrappers/mvc-6/tests/Kendo.Mvc.Tests"
 alias dott="dotnet test wrappers/mvc-6/tests/Kendo.Mvc.Tests"
