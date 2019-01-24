@@ -1,226 +1,437 @@
-/* Firefox Scrollbars */
-scrollbar {opacity: .75 !important;}
-
-/* Base */
-
-*, ::before, ::after {
-color: #CCC !important; 
-border-color: #444 !important;
-outline-color: #444 !important;
-text-shadow: none !important;
-box-shadow: none !important;
--moz-box-shadow: none !important;
-background-color: transparent !important;
+@-moz-document url("chrome://browser/content/browser.xul") {
+/* Browser Background */
+browser[type="content-primary"] {
+/*background-color: #1a1a1a !important; */
+}
 }
 
-html * {
-color: inherit !important;
+@-moz-document url("about:newtab") {
+window {
+background: #000000 !important;
 }
 
-p::first-letter,
-h1::first-letter,
-h2::first-letter {
-
-color: inherit !important; 
-background: none !important;
+#newtab-scrollbox {
+background: transparent none !important;
 }
 
-/* :: Give solid BG :: */
-
-/* element */
-
-html, 
-body,
-
-li ul,
-ul li,
-table,
-header,
-article,
-section,
-nav,
-menu,
-aside,
-
-/* common */
-
-[class*="nav"],
-[class*="open"],
-[id*="ropdown"], /*dropdown*/
-[class*="ropdown"], 
-div[class*="menu"],
-[class*="tooltip"],
-div[class*="popup"], 
-div[id*="popup"],
-
-/* Notes, details, etc.  Maybe useful */
-
-div[class*="note"],
-span[class*="note"],
-div[id*="detail"],
-div[class*="detail"],
-div[class*="description"],
-
-/* Also common */
-body div[class*="content"],
-body div[class*="container"],
-
-/* Popup divs that use visibility: hidden and display: none */
-div[style*="display: block"], 
-div[style*="visibility: visible"] {
-background-color: #1a1a1a !important;
+.newtab-title {
+background-color: rgba(0,0,0,.75) !important; 
+color: #eee !important;
+}
 }
 
+@-moz-document url("about:blank"), url-prefix("ftp://"), url-prefix("file://"), url-prefix("about:neterror"), regexp("https?:\\/\\/(?!((www\\\\.)?(teams\\.microsoft\\.com))).*") {
+@namespace html url(http://www.w3.org/1999/xhtml);
+@namespace xul url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 
-/*: No BG :*/
-*:not(:empty):not(span):not([class="html5-volume-slider html5-draggable"]):not([class="html5-player-chrome html5-stop-propagation"]),
-*::before,
-*::after,
-td:empty,
-p:empty, div:empty:not([role]):not([style*="flashblock"]):not([class^="html5"]):not([class*="noscriptPlaceholder"]) {
-background-image: none !important;
+/* Browser Background */
+browser[type="content-primary"] {
+    background-color: #141414 !important;
+}
+/*No background images. try to exclude icons, other misc items. */
+*:not(:empty):not([onclick*="open"]):not(span):not([class*="stars"]):not([id*="stars"]):not([id="rating"]):not([class="rating"]):not([class*="prite"]):not([id*="prite"]):not([id*="lbImage"]) {
+    background-image: none !important;
 }
 
-/*: Filter non-icons :*/
+/* Basic Bodies */
+html,
+body {
+    background: none #141414 !important;
+}
+
+/* Make descendents of the body element transparent.  Formerly "DIV + SPAN" rules. */
+body * {
+    background-color: transparent !important;
+}
+
+/* Give id's BG hopefully */
+div[id] {
+    background-color: inherit !important;
+}
+
+/* Filter non-icons */
 span:not(:empty):not([class*="icon"]):not([id*="icon"]):not([class*="star"]):not([id*="star"]):not([id*="rating"]):not([class*="rating"]):not([class*="prite"]) {
-background-image: none !important;
-text-indent: 0 !important;
+
+    background: none transparent !important;
+    border-color: #000 !important;
 }
 
-/*: Image opacity :*/
-img,
-svg {
-opacity: .75 !important;
-}
-  
-img:hover,
-svg:hover {
-opacity: 1 !important;
+/* Try to contrast containers */
+html:root > body > * > * > * > *:not(input):not([onclick]) > div:not(:empty):not([id]) {
+    background: none #1c1c1c !important
 }
 
-/* Highlight */
-::-moz-selection {
-background-color: #626F61 !important;
-color: #F6F7B9 !important;
-}
-
-/* ::: anchor/links ::: */
-
-a {
-color: #71BAA5 !important; 
-background-color: #1a1a1a !important;
-opacity: 1 !important; 
-text-indent: 0 !important;
-}
-
-a:link         {color: #ACC7F6 !important;} /* hyperlink */
-a:visited      {color: #CDB4E7 !important;}
-a:hover        {color: #FFE900 !important; background-color: #363037 !important;}
-a:active       {color: #FFAE00 !important;}
-
-/* "Top level" div */
-
-body > div {
-background-color: inherit !important;
-}
-
-/* :::::: Text Presentation :::::: */
-
+/* :::::::: Text Presentation :::::::: */
 summary,
-details  {
-background-color: inherit !important
+details {
+    background-color: inherit !important;
 }
 
-kbd,
+abbr,
+progress,
 time,
 label,
-.date  {
-color: #B6D2AC !important
+.date {
+    color: #CDEFC2 !important;
 }
 
-acronym,
-abbr  {
-border-bottom: 1px dotted !important;
-cursor: help !important;
-}
-  
 mark,
 code,
 pre,
-samp,
-blockquote  {
-background-color: #282826 !important;
+blockquote,
+[class*="quote"],
+td[style*="inset"][class="alt2"] {
+    background-color: #00090F !important;
 }
 
 
-/* :::::: Headings :::::: */
-
-h1,h2,h3,h4,h5,h6  { 
-
-background-image: none !important;
-border-radius: 5px !important;
--moz-border-radius: 5px !important;
--webkit-border-radius: 5px !important; 
-text-indent: 0 !important;
+/* :::::::: Headings + Header :::::::: */
+/* Header gradient rules */
+header,
+#header {
+    background: -moz-linear-gradient(#333, #141414) transparent !important;
 }
 
-h1,h2 {background-color: #28313E !important}
-h3,h4 {background-color: #2A3731 !important}
-h5,h6 {background-color: #372A2A !important}
+#header h1 {
+    background-color: transparent !important;
+}
 
-/* :::::: Tables, cells :::::: */
+h1,
+h2 {
+    background: none #28313E !important;
+    border-radius: 5px !important;
+    -moz-border-radius: 5px !important;
+    -webkit-border-radius: 5px !important;
+}
 
-table table {background: #212121 !important;}
-th, caption {background: #313131 !important;}
+h3,
+h4 {
+    background: none #2A3731 !important;
+    border-radius: 5px !important;
+    -moz-border-radius: 5px !important;
+    -webkit-border-radius: 5px !important;
+}
 
-/* ::: Inputs, textareas ::: */
+h5,
+h6 {
+    background: none #372A2A !important;
+}
 
-input,
-textarea,
+
+/* :::::::: Lists :::::::: */
+dt {
+    background-color: #2B3135 !important;
+}
+
+dl,
+dd {
+    background-color: #232323 !important;
+}
+
+li,
+ul {
+    background-color: inherit !important;
+}
+
+li a:not([class*="icon"]):not([id*="icon"]):not([onclick]),
+dt a:not([class*="icon"]):not([id*="icon"]):not([onclick]) {
+    background-image: none !important;
+    text-indent: 0 !important;
+}
+
+/* :::::::: list Item highlight :::::::: */
+li[class*="item"] a:hover,
+li[class*="item"]:hover,
+
+/* Not list item, but still useful*/
+[class*="menuitem"]:hover {
+    background-color: #2E2B2F !important;
+}
+
+/* :::::::: Tables, cells :::::::: */
+table {
+    background-color: #232323 !important;
+    border-color: #333 !important;
+}
+
+table table {
+    background: #191919 !important;
+}
+
+th,
+caption {
+    background-color: #353535 !important;
+}
+
+/* :::::::: Input :::::::: */
+/* === Basic === */
+/* anonymous divs */
+input *,
+textarea * {
+    color: #DDD !important;
+}
+
+html body input:not([type="image"]),
 button,
+html body textarea {
+
+    background: none #353535 !important;
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+    color: #DDD !important;
+    border: solid 1px #777 !important;
+    border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    opacity: 1 !important;
+}
+
+/* Style reset. */
+html body input[type="checkbox"] {
+    -moz-appearance: checkbox !important;
+    -webkit-appearance: checkbox !important;
+}
+
+html body input[type="radio"] {
+    -moz-appearance: radio !important;
+    -webkit-appearance: radio !important;
+}
+
+/* :::::::: Custom styling :::::::: */
+html:root input[type="button"],
+html:root input[type="submit"],
+html:root input[type="reset"],
+html:root button {
+
+    color: #EEE !important;
+    background-color: #222437 !important;
+
+    -moz-box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), inset 0 10px rgba(255, 255, 255, 0.1), inset 0 10px 20px rgba(255, 255, 255, 0.15), inset 0 -15px 30px rgba(0, 0, 0, 0.2) !important;
+    -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), inset 0 10px rgba(255, 255, 255, 0.1), inset 0 10px 20px rgba(255, 255, 255, 0.15), inset 0 -15px 30px rgba(0, 0, 0, 0.2) !important;
+}
+
+html:root input[type="button"]:hover,
+html:root input[type="submit"]:hover,
+html:root input[type="reset"]:hover,
+html:root button:hover {
+
+    color: #FFF !important;
+    background-color: #31344F !important;
+    border-color: #5F687F !important;
+
+    -moz-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3) !important;
+    -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3) !important;
+}
+
+html:root input[type="image"] {
+    opacity: .85 !important;
+}
+
+html:root input[type="image"]:hover {
+    opacity: .95 !important;
+}
+
+/* Drop-down menu */
 select,
 option,
 optgroup {
 
-color: #DDD !important;
-background: none #404046 !important;
--moz-appearance: none !important; 
--webkit-appearance: none !important;
+    background: none #383838 !important;
+    border-color: #555 !important;
+    color: #f1f1f1 !important;
+    -moz-appearance: none !important;
 }
 
-input,
-textarea, 
-button {
-border-color: #000 !important; 
-border-width: 1px !important;
+/* :::::::: Misc :::::::: */
+address {
+    background: none #333 !important;
 }
 
-/* :::::: Button styling :::::: */
-
-input[type="button"],
-input[type="submit"],
-input[type="reset"],
-button {
-background: #343855 !important;
+hr {
+    background: none #444 !important
 }
 
-input[type="button"]:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-button:hover {
-color: #FFF !important;
-background: #435B6B !important;
+/*currently viewed page*/
+.current {
+    color: #FFF !important;
 }
 
-input[type="image"] {opacity: .85 !important}
-input[type="image"]:hover {opacity: .95 !important}
+/* Remove Rounded Corners, Borders, Spacer, Padding images */
+img[src*="spacer"]:empty,
+[id*="round"]:empty,
+[id*="bottom"]:empty,
+[class*="bottom"]:empty,
+[class*="Bottom"]:empty,
+[id*="top"]:empty,
+[class*="top"]:empty,
+[class*="Top"]:empty,
+[class*="spacer"]:empty {
+    background-image: none !important;
+}
 
-/* Lightbox fix */
-html [id*="lightbox"] * {background-color: transparent !important;}
-html [id*="lightbox"] img {opacity: 1 !important;}
+/* Menus and Navigation */
+nav,
+menu,
 
-/* Youtube Annotation */
-#movie_player-html5 .annotation {background: #333 !important}
+/*Common naming conventions - in case previous declarations fail to give solid BG*/
+html body [class*="open"],
+html body [id*="Dropdown"],
+html body [id*="dropdown"],
+html body [class*="Dropdown"],
+html body [class*="dropdown"],
+html body [id*="menu"]:not(SELECT),
+html body [class*="menu"]:NOT(SELECT),
+html body [class*="tooltip"],
+html body [class*="popup"],
+html body [id*="popup"],
 
-/* Mozilla addons shrink/expand sections */
-.expando a {background: none transparent  !important;}
+/* Notes, details, etc.  Maybe useful */
+html body [class*="note"],
+html body [class*="detail"],
+html body [class*="description"] {
+    background-color: #232323 !important
+}
+
+/* Also common */
+[class*="content"],
+[class*="container"] {
+    background-color: #1c1c1c !important;
+}
+
+/* Headers, Logos */
+[id*="masthead"] a,
+[id*="header"] a,
+[id*="logo"] a,
+[class*="logo"] a {
+    text-indent: 0 !important;
+}
+
+/* Instead of increasing specificity rating by using :not, set rules separately */
+html:root body [class*="layer"],
+html:root body #lightbox-nav,
+html:root body #imageContainer {
+    background-color: transparent !important;
+}
+
+/*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+/* Universal - sets color of text, border */
+* {
+    color: #CCC !important;
+    border-color: #444 !important;
+    outline-color: #444 !important;
+    text-shadow: none !important;
+}
+
+html *:after,
+html *:before {
+    color: #CCC !important;
+    border-color: #666 !important;
+    background: none transparent !important;
+}
+
+
+/* Link */
+a:link,
+a:link *:not(img) {
+
+    color: #B1CBF7 !important;
+    background-color: transparent !important;
+    border-color: #666 !important;
+}
+
+a:visited,
+a:visited * {
+    color: #CDB4E7 !important;
+}
+
+a:hover,
+a:hover *:not(img) {
+
+    color: #FFE900 !important;
+    background-color: #363037 !important;
+    border-color: #999 !important;
+}
+
+html [href*="#"]:hover {
+    color: #FFE900 !important;
+    background-color: transparent !important;
+}
+
+
+/* Event Handlers/Attributes */
+[onclick],
+[ondblclick],
+[onmousedown] {
+    color: #DFD5BC !important;
+    text-indent: 0 !important;
+}
+
+[onclick]:hover,
+[ondblclick]:hover,
+[onmousedown]:hover {
+    color: #FEFF97 !important;
+}
+
+/* Make images transparent */
+img {
+    opacity: .75 !important;
+}
+
+img:hover {
+    opacity: 1 !important;
+    background-color: #888 !important;
+}
+
+svg {
+    background: none #666 !important;
+}
+
+/* Highlight */
+::-moz-selection {
+    background-color: #626F61 !important;
+    color: #F6F7B9 !important;
+}
+
+/* :::::::: Specific Fixes :::::::: */
+/* google search link fix */
+.g .r {
+    background-color: transparent !important;
+}
+
+/* google result hover highlight*/
+div.vsc:hover > .vspi,
+div.vso > .vspi {
+    background: none transparent !important;
+    border: none !important;
+}
+}
+
+@-moz-document url("https://github.com/") {
+
+
+body * {
+    background-color: #000000 !important;
+}
+}
+
+@-moz-document regexp("https?:\\/\\/(?!((www\\\\.)?(github\\.com))).*") {
+.bg-gray-light {
+    background-color: #000000 !important;
+}
+
+.text-gray-dark {
+    color: #CCC !important;
+}
+}
+
+@-moz-document url-prefix("https://docs.microsoft.com/") {
+.alert,
+.alert.is-info, 
+.alert.is-success,
+.alert.is-info,
+.alert.is-warning {
+    /* background: hsla(262, 46%, 90%, 1)!important; */
+    /* background: var(--info-background)!important; */
+    background-color: black !important;
+}
+}
