@@ -11,6 +11,7 @@
 8. Go to definition - https://marketplace.visualstudio.com/items?itemName=NoahRichards.GoToDefinition
 9. TypeScript
 10. Line endings - https://marketplace.visualstudio.com/items?itemName=JakubBielawa.LineEndingsUnifier
+11. whitespace visualizer - https://marketplace.visualstudio.com/items?itemName=MadsKristensen.TrailingWhitespaceVisualizer
 
 ## VsVim
 ### Keyaboard shortcuts
