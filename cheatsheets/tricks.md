@@ -20,3 +20,6 @@ Quick Tabs - https://chrome.google.com/webstore/detail/quick-tabs/jnjfeinjfmenld
 ## NVM for Windows
 Files are stored in:
 C:\Program Files\nodejs\node_modules
+
+## Livereload script
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
