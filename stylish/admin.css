@@ -1,3 +1,8 @@
+@-moz-document domain("admin.telerik.com") {
+
+
+
+
 .supportSubject {
     font: 12pt calibri,sans-serif;
 }
@@ -89,7 +94,8 @@ body {
 /* common */
 
 img[src="App_Themes/Dark/images/ticket-closed.gif"],
-img[src="/App_Themes/Dark/images/ticket-closed.gif"]
+img[src="/App_Themes/Dark/images/ticket-closed.gif"],
+img[src="/support/assets/ticket-closed.gif"]
 {
     background-color: #93f6ff !important;
     margin-left: -50px !important;
@@ -189,4 +195,5 @@ img[src="images/ProductImages/window_kendoui_mvc.png"]
 
 #supportNotification {
     display: none;
+}
 }
