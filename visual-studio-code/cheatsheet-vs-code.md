@@ -24,6 +24,22 @@ c3fadfb006fc3f96dd1c9c50694828de
     ]
 }
 ```
+from https://github.com/rubyide/vscode-ruby/wiki/1.-Debugger-Installation
+### Install Ruby Dependencies
+Debugging in this extension implements the [ruby debug ide protocol](http://debug-commons.rubyforge.org/protocol-spec.html) to allow VS Code to communicate with ruby debug, it requires `ruby-debug-ide` to be installed on your machine. This is also how RubyMine/NetBeans implement debugging by default.
+
+- If you are using JRuby or Ruby v1.8.x (`jruby`, `ruby_18`, `mingw_18`)
+  * `gem install ruby-debug-ide`, the latest version is `0.6.0`. Make sure `ruby-debug-base` is installed together with ruby-debug-ide`.
+- If you are using Ruby v1.9.x (`ruby_19`, `mingw_19`)
+  * `gem install ruby-debug-ide`, the latest version is `0.6.0`. Make sure `ruby-debug-base19x` is installed together with `ruby-debug-ide`.
+- If you are using Ruby v2.x
+  * `gem install ruby-debug-ide -v 0.6.0` or higher versions
+  * `gem install debase -v 0.2.1` or higher versions
+
+### Add VS Code config to your project
+Go to the debugger view of VS Code and hit the gear icon. Choose Ruby or Ruby Debugger from the prompt window, then you'll get the sample launch config in `.vscode/launch.json`
+
+
 
 # Debug Gulp task
 
