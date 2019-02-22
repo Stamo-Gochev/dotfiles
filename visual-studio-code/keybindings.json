@@ -201,5 +201,13 @@
     {
         "key": "alt+right",
         "command": "-workbench.action.navigateForward"
+    },
+    {
+        "key": "ctrl+shift+f8",
+        "command": "workbench.debug.viewlet.action.enableAllBreakpoints"
+    },
+    {
+        "key": "ctrl+f8",
+        "command": "workbench.debug.viewlet.action.disableAllBreakpoints"
     }
 ]
