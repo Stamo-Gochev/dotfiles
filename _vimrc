@@ -420,6 +420,7 @@ nmap * *zz
 
 " go to the first character on the line instead of to the start of the line
 nnoremap 0 ^
+nnoremap ^ 0
 
 " go to the end of a line
 nnoremap ) $
