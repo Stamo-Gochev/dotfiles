@@ -110,6 +110,7 @@ alias va="vim ~/.aliases"
 alias w="explorer .; gnome-open ."
 alias ldu="du -sh * | sort -hr"
 alias mkdir="mkdir -p"
+alias lr="bundle exec guard"
 
 # babun (shell for Windows)
 alias bpi="pact install"
@@ -158,6 +159,7 @@ alias ctmp='gulp karma-mocha --tests="tests/mediaplayer/**"'
 alias ctpa='gulp karma-mocha --tests="tests/pager/*.js"'
 alias ctpg='gulp karma-mocha --tests="tests/pivotgrid/*.js"'
 alias cttl='gulp karma-mocha --tests="tests/treelist/*.js"'
+alias cttlh='gulp karma-mocha --tests="tests/treelist/*.js" --browser="ChromeHeadless"'
 alias cttlj3='gulp karma-mocha --tests="tests/treelist/**" --jquery="3.3.1"'
 alias cttm='gulp karma-mocha --tests="tests/treemap/*.js"'
 alias ctw='gulp karma-mocha --tests="tests/window/**"'
@@ -210,9 +212,9 @@ alias dcts='gulp karma-unit --tests="`git tests`"'
 alias gus='gulp scripts --skip-min="true"'
 
 # debug tests
-alias ctc="chrome.exe http://gochev:9876/debug.html"
-alias ctf="firefox.exe http://gochev:9876/debug.html"
-alias ctie="iexplore.exe http://gochev:9876/debug.html"
+alias ctc="chrome.exe http://localhost:9876/debug.html"
+alias ctf="firefox.exe http://localhost:9876/debug.html"
+alias ctie="iexplore.exe http://localhost:9876/debug.html"
 
 # rake tasks
 alias rmb="rake mvc:binaries"
@@ -220,6 +222,8 @@ alias rma="rake mvc:assets"
 alias rmca="rake mvc_6:assets"
 alias rmcas="rake mvc_6:assets_shared"
 alias rdd="rake demos:debug"
+alias rgb='rake generate:blazor:components'
+alias rgbc='rake generate:blazor:components'
 alias rgmcw='rake generate:mvc_6:wrappers'
 alias rgmc='rake generate:mvc_6:wrappers && rake generate:mvc_6:taghelpers'
 alias rgmw='rake generate:mvc:wrappers'
@@ -258,6 +262,7 @@ alias ste="gulp watch-styles -s 'styles/web/kendo.{common,default}.less'"
 # node
 alias nov="node --version"
 alias noc="explorer C:\Users\gochev\AppData\Roaming\npm\node_modules"
+alias non="node --allow-natives-syntax"
 
 # npm
 alias n="npm"
@@ -324,45 +329,66 @@ alias au="chrome.exe http://localhost:3000"
 alias ak2s="bundle exec jekyll serve --incremental"
 alias ak2sf="SKIP_CONTENT_UPDATE=true bundle exec jekyll serve --incremental"
 alias ak2b="./copy-local-repo.sh kendo-angular-buttons /c/work/github/kendo-angular-buttons"
-alias ke="chrome.exe http://gochev/kendo/playground/editor/"
+alias ke="chrome.exe http://gochevlap/kendo/playground/editor/"
 
 # projects
 alias pg="cd /d/work/github/playground"
 alias ide="cd /c/work/github/dotfiles"
+alias pa="cd /d/work/github/aspnet-core"
+alias pac="cd /d/work/github/aspnet-core/AspNetCore"
+alias pab="cd /d/work/github/aspnet-core/blazor"
 
 # open projects
 alias cide="code /c/work/github/dotfiles"
+alias cpg="code /d/work/github/playground"
+
+# open projects - dev
+alias cpac="code /d/work/github/aspnet-core/AspNetCore"
 
 # open projects - kendo
 alias ck="code /c/work/github/kendo"
 alias ckendo="code /c/work/github/kendo"
 alias ckb="code /d/work/github/kendo-blazor"
-alias cprp="code /d/work/github/kendo-react-private"
-alias cvw="code /d/work/github/kendo-vue-wrappers"
+alias ckb2="code /d/kendo-blazor"
+alias ckc="code /d/work/github/kendo-charts"
+alias ckac="code /d/work/github/kendo-angular-charts"
+alias ckai="code /d/work/github/kendo-angular-intl"
+alias ckd="code /d/work/github/kendo-drawing"
+alias ckr="code /d/work/github/kendo-react-private"
+alias ckrp="code /d/work/github/kendo-react-private"
+alias ckvw="code /d/work/github/kendo-vue-wrappers"
 alias ckt="code /d/work/github/kendo-themes"
 
 # projects - kendo
 alias pk="cd /c/work/github/kendo"
 alias pkco="cd /d/work/github/kendo-ui-core"
 alias pkb="cd /d/work/github/kendo-blazor"
+alias pkb2="cd /d/kendo-blazor"
 alias pkd="cd /d/work/github/kendo-ui-dojo"
 alias pkt="cd /d/work/github/kendo-themes"
 alias pks="cd /c/work/github/kendo-ui-demos-service"
 alias pkc="cd /d/work/github/kendo-charts"
+alias pkd="cd /d/work/github/kendo-drawing"
+
+# alias ckbc="code /c/work/github/kendo-blazor/kendo-blazor-charts"
+# alias pkbc="cd /c/work/github/kendo-blazor/kendo-blazor-charts"
+
+alias ckbc="code /c/work/github/kendo-blazor/Kendo.Blazor/Components/Chart/kendo-blazor-charts"
+alias pkbc="cd /c/work/github/kendo-blazor/Kendo.Blazor/Components/Chart/kendo-blazor-charts"
 
 # projects - kendo angular
 alias pk2="cd /d/work/github/k2-site"
-alias pacb="cd /c/work/github/kendo-angular-component-base"
-alias pab="cd /c/work/github/kendo-angular-buttons"
-alias pac="cd /d/work/github/kendo-angular-charts"
+alias pkacb="cd /c/work/github/kendo-angular-component-base"
+alias pkab="cd /c/work/github/kendo-angular-buttons"
+alias pkac="cd /d/work/github/kendo-angular-charts"
 alias pc="cd /d/work/github/kendo-charts"
-alias pad="cd /c/work/github/kendo-angular-dropdowns"
-alias pai="cd /c/work/github/kendo-angular-inputs"
-alias pag="cd /d/work/github/kendo-angular-grid"
-alias pap="cd /c/work/github/kendo-angular-popup"
-alias paa="cd /c/work/github/angular-aot"
-alias pau="cd /c/work/github/angular-universal-rendering"
-alias par="cd /c/work/github/angular-rollup"
+alias pkad="cd /c/work/github/kendo-angular-dropdowns"
+alias pkai="cd /c/work/github/kendo-angular-inputs"
+alias pkag="cd /d/work/github/kendo-angular-grid"
+alias pkap="cd /c/work/github/kendo-angular-popup"
+alias pkaa="cd /c/work/github/angular-aot"
+alias pkau="cd /c/work/github/angular-universal-rendering"
+alias pkar="cd /c/work/github/angular-rollup"
 alias rab="rm -rf node_modules/@progress/kendo-angular-buttons/"
 alias rac="rm -rf node_modules/@progress/kendo-angular-charts/"
 alias rad="rm -rf node_modules/@progress/kendo-angular-dropdowns/"
@@ -372,8 +398,8 @@ alias rnp="rm -rf node_modules/@progress"
 
 # projects - kendo react
 alias prp="cd /d/work/github/kendo-react-private"
+alias pkr="cd /d/work/github/kendo-react-private"
 alias pkrp="cd /d/work/github/kendo-react-private"
-alias ckrp="cd /d/work/github/kendo-react-private && code ."
 
 # projects - kendo react wrappers
 alias prw="cd /d/work/github/kendo-react-wrappers"
@@ -397,6 +423,7 @@ alias preact="cd /d/work/github/react"
 alias dt="dotnet"
 alias dnc="dotnet nuget locals all --clear"
 alias doti="dotnet --info"
+alias dotp="dotnet publish"
 alias dotre="dotnet restore"
 alias dotr="dotnet run"
 alias dotn="dotnet new"
@@ -423,7 +450,8 @@ alias gu="gulp"
 alias gta="gulp --tasks"
 alias gub="gulp build"
 alias guc="gulp compile"
-alias gucdn="gulp compile-cdn"
+# alias gucdn="gulp compile-cdn"
+alias gucdn="gulp build-cdn"
 alias gunpm="gulp compile-npm"
 alias gues="gulp compile-es"
 alias gul="gulp tslint"
@@ -444,6 +472,11 @@ alias cra="create-react-app"
 # vue
 alias cva="create-vue-app"
 alias vce="vue create example"
+
+# jsvu
+alias jssm="~/.jsvu/spidermonkey.cmd"
+alias jsc="~/.jsvu/chakra.cmd"
+alias jsv="~/.jsvu/v8.cmd"
 
 # built-in helpers
 alias ff='find . -type f -not -path "*node_modules*" -name'
