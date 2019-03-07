@@ -135,7 +135,7 @@
 	"files.trimTrailingWhitespace": true,
 
 	// Controls auto save of dirty files. Accepted values:  "off", "afterDelay", "onFocusChange". If set to "afterDelay" you can configure the delay in "files.autoSaveDelay".
-	"files.autoSave": "off",
+	"files.autoSave": "afterDelay",
 
 	// Controls the delay in ms after which a dirty file is saved automatically. Only applies when "files.autoSave" is set to "afterDelay"
 	"files.autoSaveDelay": 1000,
@@ -176,7 +176,7 @@
 	//-------- Update configuration --------
 
 	// Configure the update channel to receive updates from. Requires a restart after change.
-	"update.channel": "default",
+	"update.channel": "none",
 
 
 	//-------- Git configuration --------
@@ -555,6 +555,30 @@
 	}, {
 		"before": ["<shift>", "<tab>"],
 		"after": ["<", "<"]
+	}, {
+		"before": ["G"],
+		"after": ["G", "z", "z"]
+	}, {
+		"before": ["n"],
+		"after": ["n", "z", "z"]
+	}, {
+		"before": ["}"],
+		"after": ["}", "z", "z"]
+	}, {
+		"before": ["{"],
+		"after": ["{", "z", "z"]
+	}, {
+		"before": ["*"],
+		"after": ["*", "z", "z"]
+	}, {
+		"before": [")"],
+		"after": ["$"]
+	}, {
+		"before": ["0"],
+		"after": ["^"]
+	}, {
+		"before": ["^"],
+		"after": ["0"]
 	}],
 
 	"vim.insertModeKeyBindingsNonRecursive": [{
@@ -693,5 +717,7 @@
 	"sync.syncExtensions": true,
 	"lineEndings.crlfCharacter": "CRLF ¤¬",
 	"lineEndings.lfCharacter": "LF ¬",
-	"scrolloff.scrolloff": 10
+	"scrolloff.scrolloff": 10,
+	"gitlens.views.search.files.layout": "tree",
+	"gitlens.settings.mode": "advanced"
 }
