@@ -61,7 +61,7 @@
         "when": "extensionEditorWebviewFocus"
     },
     {
-        "key": "ctrl+l",
+        "key": "alt+t",
         "command": "workbench.action.terminal.focus"
     },
     {
@@ -209,5 +209,49 @@
     {
         "key": "ctrl+f8",
         "command": "workbench.debug.viewlet.action.disableAllBreakpoints"
+    },
+    {
+        "key": "alt+b",
+        "command": "-gitlens.toggleFileBlame",
+        "when": "editorTextFocus && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /blameable/"
+    },
+    {
+        "key": "alt+b",
+        "command": "gitlens.toggleLineBlame"
+    },
+    {
+        "key": "ctrl+shift+g b",
+        "command": "-gitlens.toggleFileBlame",
+        "when": "editorTextFocus && config.gitlens.keymap == 'chorded' && gitlens:activeFileStatus =~ /blameable/"
+    },
+    {
+        "key": "alt+b",
+        "command": "gitlens.toggleFileBlame"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-extension.vim_navigateCtrlL",
+        "when": "editorTextFocus && vim.active && vim.use<C-l> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+shift+t",
+        "command": "-launcher.terminal"
+    },
+    {
+        "key": "ctrl+shift+t",
+        "command": "-extension.tabSpacer"
+    },
+    {
+        "key": "alt+p",
+        "command": "workbench.action.reopenClosedEditor"
+    },
+    {
+        "key": "ctrl+shift+t",
+        "command": "-workbench.action.reopenClosedEditor"
+    },
+    {
+        "key": "alt+p",
+        "command": "-keybindings.editor.toggleSortByPrecedence",
+        "when": "inKeybindings"
     }
 ]
