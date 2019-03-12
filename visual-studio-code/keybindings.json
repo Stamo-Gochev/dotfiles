@@ -118,11 +118,6 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "alt+d",
-        "command": "gitlens.showQuickCommitFileDetails",
-        "when": "editorTextFocus && gitlens:enabled && gitlens:keymap == 'alternate'"
-    },
-    {
         "key": "ctrl+shift+x ctrl+shift+p",
         "command": "toggleFindCaseSensitive",
         "when": "editorFocus"
@@ -253,5 +248,23 @@
         "key": "alt+p",
         "command": "-keybindings.editor.toggleSortByPrecedence",
         "when": "inKeybindings"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.debug.panel.action.clearReplAction",
+        "when": "inDebugRepl"
+    },
+    {
+        "key": "win+l",
+        "command": "-workbench.debug.panel.action.clearReplAction",
+        "when": "inDebugRepl"
+    },
+    {
+        "key": "ctrl+shift+y",
+        "command": "-workbench.debug.action.toggleRepl"
+    },
+    {
+        "key": "alt+d",
+        "command": "workbench.debug.action.focusRepl"
     }
 ]
