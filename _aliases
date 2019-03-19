@@ -341,6 +341,7 @@ alias pab="cd /d/work/github/aspnet-core/blazor"
 # open projects
 alias cide="code /c/work/github/dotfiles"
 alias cpg="code /d/work/github/playground"
+alias cac="code /d/work/github/aspnet-core/AspNetCore"
 
 # open projects - dev
 alias cpac="code /d/work/github/aspnet-core/AspNetCore"
@@ -369,6 +370,10 @@ alias pkt="cd /d/work/github/kendo-themes"
 alias pks="cd /c/work/github/kendo-ui-demos-service"
 alias pkc="cd /d/work/github/kendo-charts"
 alias pkd="cd /d/work/github/kendo-drawing"
+
+# projects - kendo examples
+alias pkumce="cd ui-for-aspnet-core-examples"
+alias pkume="cd ui-for-aspnet-mvc-examples"
 
 # alias ckbc="code /c/work/github/kendo-blazor/kendo-blazor-charts"
 # alias pkbc="cd /c/work/github/kendo-blazor/kendo-blazor-charts"
@@ -419,10 +424,16 @@ alias rve="chrome.exe http://localhost:8764"
 alias ptb="cd /c/work/github/themebuilder"
 alias preact="cd /d/work/github/react"
 
+# projects - kendo blazor
+alias bkb="cd Kendo.Blazor && `dotng`"
+
 # dotnet
+alias cddot="cd /C/Program Files/dotnet/sdk"
 alias dt="dotnet"
 alias dnc="dotnet nuget locals all --clear"
 alias doti="dotnet --info"
+alias dotb="dotnet build"
+alias dotng="dotnet pack --configuration Release"
 alias dotp="dotnet publish"
 alias dotre="dotnet restore"
 alias dotr="dotnet run"
@@ -454,8 +465,10 @@ alias guc="gulp compile"
 alias gucdn="gulp build-cdn"
 alias gunpm="gulp compile-npm"
 alias gues="gulp compile-es"
-alias gul="gulp tslint"
+alias gutl="gulp tslint"
+alias gul="gulp lint"
 alias gut="gulp test"
+alias guwt="gulp watch-test"
 
 # lerna
 alias le="lerna"
