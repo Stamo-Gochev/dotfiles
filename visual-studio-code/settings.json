@@ -579,6 +579,9 @@
 	}, {
 		"before": ["^"],
 		"after": ["0"]
+	}, {
+		"before": ["<backspace>"],
+		"after": ["X"]
 	}],
 
 	"vim.insertModeKeyBindingsNonRecursive": [{
@@ -719,5 +722,6 @@
 	"lineEndings.lfCharacter": "LF ¬",
 	"scrolloff.scrolloff": 10,
 	"gitlens.views.search.files.layout": "tree",
-	"gitlens.settings.mode": "advanced"
+	"gitlens.settings.mode": "advanced",
+	"javascript.updateImportsOnFileMove.enabled": "always"
 }
