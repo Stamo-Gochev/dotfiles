@@ -51,7 +51,7 @@ alias lo="git lo"
 alias lol="git lol"
 alias mnff="git mnff"
 alias np="git notpushed"
-alias o="git open"``
+alias o="git open"
 alias pr="git pr"
 alias prk="for i in kendo*/.git; do ( echo "$i"; echo "============="; cd $i/..; git stash; git checkout master; git pull --rebase; ); done"
 alias rc="git rc"
@@ -324,7 +324,7 @@ alias ae="chrome.exe http://gochev:8888/examples/"
 alias al="gulp lint"
 alias ak2="chrome.exe http://gochev:4000"
 alias at="gulp watch-test"
-alias aa="chrome.exe http://localhost:4200"
+# alias aa="chrome.exe http://localhost:4200"
 alias au="chrome.exe http://localhost:3000"
 alias ak2s="bundle exec jekyll serve --incremental"
 alias ak2sf="SKIP_CONTENT_UPDATE=true bundle exec jekyll serve --incremental"
@@ -348,6 +348,7 @@ alias cpac="code /d/work/github/aspnet-core/AspNetCore"
 
 # open projects - kendo
 alias ck="code /c/work/github/kendo"
+alias ckco="code /d/work/github/kendo-ui-core"
 alias ckendo="code /c/work/github/kendo"
 alias ckb="code /d/work/github/kendo-blazor"
 alias ckb2="code /d/kendo-blazor"
@@ -363,13 +364,16 @@ alias ckt="code /d/work/github/kendo-themes"
 # projects - kendo
 alias pk="cd /c/work/github/kendo"
 alias pkco="cd /d/work/github/kendo-ui-core"
-alias pkb="cd /d/work/github/kendo-blazor"
-alias pkb2="cd /d/kendo-blazor"
 alias pkd="cd /d/work/github/kendo-ui-dojo"
 alias pkt="cd /d/work/github/kendo-themes"
 alias pks="cd /c/work/github/kendo-ui-demos-service"
 alias pkc="cd /d/work/github/kendo-charts"
 alias pkd="cd /d/work/github/kendo-drawing"
+
+# projects - kendo lazor
+alias pkb="cd /d/work/github/kendo-blazor"
+alias pkbe="cd /d/work/github/ui-for-blazor-examples"
+alias pkb2="cd /d/kendo-blazor"
 
 # projects - kendo examples
 alias pkumce="cd ui-for-aspnet-core-examples"
@@ -428,7 +432,6 @@ alias preact="cd /d/work/github/react"
 alias bkb="cd Kendo.Blazor && `dotng`"
 
 # dotnet
-alias cddot="cd /C/Program Files/dotnet/sdk"
 alias dt="dotnet"
 alias dnc="dotnet nuget locals all --clear"
 alias doti="dotnet --info"
@@ -441,7 +444,31 @@ alias dotn="dotnet new"
 alias dtt="dotnet test wrappers/mvc-6/tests/Kendo.Mvc.Tests"
 alias dott="dotnet test wrappers/mvc-6/tests/Kendo.Mvc.Tests"
 alias dotv="dotnet --version"
+alias dotlr="dotnet --list-runtimes"
+alias dotrunt="dotnet --list-runtimes"
+alias dotls="dotnet --list-sdks"
 alias dotsdk="dotnet --list-sdks"
+
+# dotnet projects - kendo
+alias dotrew="dotnet restore wrappers/mvc-6/src/Kendo.Mvc/Kendo.Mvc.csproj"
+alias dotbw="dotnet build wrappers/mvc-6/src/Kendo.Mvc/Kendo.Mvc.csproj"
+
+alias dotre="dotnet run wrappers/mvc-6/demos/Kendo.Mvc.Examples.csproj"
+alias dotree="dotnet build wrappers/mvc-6/demos/Kendo.Mvc.Examples.csproj"
+alias dotbe="dotnet build wrappers/mvc-6/demos/Kendo.Mvc.Examples/Kendo.Mvc.Examples.csproj"
+
+alias dotret="dotnet restore wrappers/mvc-6/tests/Kendo.Mvc.Tests/Kendo.Mvc.Tests.csproj"
+alias dotbt="dotnet build wrappers/mvc-6/tests/Kendo.Mvc.Tests/Kendo.Mvc.Tests.csproj"
+alias dotba="`dotbw` ; `dotbe`"
+
+# dotnet projects - kendo blazor
+alias dotbb="dotnet build Telerik.Blazor/Telerik.Blazor.csproj"
+
+alias dotbbe="dotnet build RazorComponentsApp/RazorComponentsApp.Server/RazorComponentsApp.Server.csproj"
+alias dotrbe="dotnet run RazorComponentsApp/RazorComponentsApp.Server"
+
+alias dotbbc="dotnet build RazorComponentsApp/RazorComponentsApp.Client/RazorComponentsApp.Client.csproj"
+alias dotbbs="dotnet build RazorComponentsApp/RazorComponentsApp.Shared/RazorComponentsApp.Shared.csproj"
 
 # docker
 alias doc="docker"
