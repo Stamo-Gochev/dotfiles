@@ -98,10 +98,11 @@
 
 	pr = pull --rebase
 	l = log -10 --oneline
+	l2 = log -10 --oneline --pretty=format:"%H %an %ad" --date=iso
 	# list history of a deleted file
 	lh = "!f() { git log -30 --all --full-history -- $1 ; }; f"
-	lo = log -10 --all --graph --pretty=format:'%C(yellow)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(cyan)%an%Creset' --abbrev-commit --date=relative
-	lol = log --all --graph --pretty=format:'%C(yellow)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(cyan)%an%Creset' --abbrev-commit --date=relative
+	lo = log -10 --all --graph --pretty=format:'%Cgreen(%cd)%Creset %C(yellow)%h%Creset -%C(yellow)%d%Creset %s %C(cyan)%an%Creset' --abbrev-commit --date=iso
+	lol = log--all --graph --pretty=format:'%Cgreen(%cd)%Creset %C(yellow)%h%Creset -%C(yellow)%d%Creset %s %C(cyan)%an%Creset' --abbrev-commit --date=iso
 	mnff = merge --no-ff
 	m = merge
 	ra = rebase --abort
