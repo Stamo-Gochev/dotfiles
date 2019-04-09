@@ -6,12 +6,13 @@ alias a="git a"
 # git checkout (bad commit)
 # git br <new_branch>
 # git bisect start
-# git bisect bad 256d850
 # git bisect good fd0a623
+# git bisect bad 256d850
 # git bisect reset
 alias bi="git bi"
 alias big="git bi good"
 alias bib="git bi bad"
+alias bibc="git bi bad `git current`"
 alias bisc="git bisc"
 alias bis="git bi start"
 alias bir="git bi reset"
@@ -350,12 +351,16 @@ alias cpac="code /d/work/github/aspnet-core/AspNetCore"
 alias ck="code /c/work/github/kendo"
 alias ckco="code /d/work/github/kendo-ui-core"
 alias ckendo="code /c/work/github/kendo"
-alias ckb="code /d/work/github/kendo-blazor"
+
+alias ckb="code /d/work/github/blazor"
+alias ckbc="code /d/work/github/blazor/js/telerik-blazor-charts"
 alias ckb2="code /d/kendo-blazor"
+
 alias ckc="code /d/work/github/kendo-charts"
 alias ckac="code /d/work/github/kendo-angular-charts"
 alias ckai="code /d/work/github/kendo-angular-intl"
 alias ckd="code /d/work/github/kendo-drawing"
+
 alias ckr="code /d/work/github/kendo-react-private"
 alias ckrp="code /d/work/github/kendo-react-private"
 alias ckvw="code /d/work/github/kendo-vue-wrappers"
@@ -370,20 +375,14 @@ alias pks="cd /c/work/github/kendo-ui-demos-service"
 alias pkc="cd /d/work/github/kendo-charts"
 alias pkd="cd /d/work/github/kendo-drawing"
 
-# projects - kendo lazor
-alias pkb="cd /d/work/github/kendo-blazor"
+# projects - kendo blazor
+alias pkb="cd /d/work/github/blazor"
 alias pkbe="cd /d/work/github/ui-for-blazor-examples"
 alias pkb2="cd /d/kendo-blazor"
 
 # projects - kendo examples
 alias pkumce="cd ui-for-aspnet-core-examples"
 alias pkume="cd ui-for-aspnet-mvc-examples"
-
-# alias ckbc="code /c/work/github/kendo-blazor/kendo-blazor-charts"
-# alias pkbc="cd /c/work/github/kendo-blazor/kendo-blazor-charts"
-
-alias ckbc="code /c/work/github/kendo-blazor/Kendo.Blazor/Components/Chart/kendo-blazor-charts"
-alias pkbc="cd /c/work/github/kendo-blazor/Kendo.Blazor/Components/Chart/kendo-blazor-charts"
 
 # projects - kendo angular
 alias pk2="cd /d/work/github/k2-site"
@@ -453,22 +452,23 @@ alias dotsdk="dotnet --list-sdks"
 alias dotrew="dotnet restore wrappers/mvc-6/src/Kendo.Mvc/Kendo.Mvc.csproj"
 alias dotbw="dotnet build wrappers/mvc-6/src/Kendo.Mvc/Kendo.Mvc.csproj"
 
-alias dotre="dotnet run wrappers/mvc-6/demos/Kendo.Mvc.Examples.csproj"
-alias dotree="dotnet build wrappers/mvc-6/demos/Kendo.Mvc.Examples.csproj"
-alias dotbe="dotnet build wrappers/mvc-6/demos/Kendo.Mvc.Examples/Kendo.Mvc.Examples.csproj"
+alias dotre="dotnet run /C/work/github/kendo/wrappers/mvc-6/demos/Kendo.Mvc.Examples.csproj"
+alias dotree="dotnet build /C/work/github/kendo/wrappers/mvc-6/demos/Kendo.Mvc.Examples.csproj"
+alias dotbe="dotnet build /C/work/github/kendo/wrappers/mvc-6/demos/Kendo.Mvc.Examples/Kendo.Mvc.Examples.csproj"
 
-alias dotret="dotnet restore wrappers/mvc-6/tests/Kendo.Mvc.Tests/Kendo.Mvc.Tests.csproj"
-alias dotbt="dotnet build wrappers/mvc-6/tests/Kendo.Mvc.Tests/Kendo.Mvc.Tests.csproj"
-alias dotba="`dotbw` ; `dotbe`"
+alias dotret="dotnet restore /C/work/github/kendo/wrappers/mvc-6/tests/Kendo.Mvc.Tests/Kendo.Mvc.Tests.csproj"
+alias dotbt="dotnet build /C/work/github/kendo/wrappers/mvc-6/tests/Kendo.Mvc.Tests/Kendo.Mvc.Tests.csproj"
 
 # dotnet projects - kendo blazor
-alias dotbb="dotnet build Telerik.Blazor/Telerik.Blazor.csproj"
+alias dotbb="dotnet build /d/work/github/blazor/Telerik.Blazor/Telerik.Blazor.csproj"
 
-alias dotbbe="dotnet build RazorComponentsApp/RazorComponentsApp.Server/RazorComponentsApp.Server.csproj"
-alias dotrbe="dotnet run RazorComponentsApp/RazorComponentsApp.Server"
+# alias dotbbe="dotnet build RazorComponentsApp/RazorComponentsApp.Server/RazorComponentsApp.Server.csproj"
+# alias dotrbe="dotnet run RazorComponentsApp/RazorComponentsApp.Server"
+alias dotbbe="dotnet build /d/work/github/ui-for-blazor-examples/TelerikBlazor.Server"
+alias dotrbe="dotnet restore /d/work/github/ui-for-blazor-examples/TelerikBlazor.Server"
 
-alias dotbbc="dotnet build RazorComponentsApp/RazorComponentsApp.Client/RazorComponentsApp.Client.csproj"
-alias dotbbs="dotnet build RazorComponentsApp/RazorComponentsApp.Shared/RazorComponentsApp.Shared.csproj"
+# alias dotbbc="dotnet build RazorComponentsApp/RazorComponentsApp.Client/RazorComponentsApp.Client.csproj"
+# alias dotbbs="dotnet build RazorComponentsApp/RazorComponentsApp.Shared/RazorComponentsApp.Shared.csproj"
 
 # docker
 alias doc="docker"
