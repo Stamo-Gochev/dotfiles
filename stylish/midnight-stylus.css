@@ -415,12 +415,19 @@ body * {
 }
 
 @-moz-document regexp("https?:\\/\\/(?!((www\\\\.)?(github\\.com))).*") {
-.bg-gray-light {
+.bg-gray-light,
+#wiki-footer {
     background-color: #000000 !important;
 }
 
 .text-gray-dark {
     color: #CCC !important;
+}
+}
+
+@-moz-document url-prefix("https://docs.docker.com/") {
+.language-Dockerfile, .highlighter-rouge, code {
+    color: white !important;
 }
 }
 
