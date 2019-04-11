@@ -472,15 +472,17 @@ alias dotrbe="dotnet restore /d/work/github/ui-for-blazor-examples/TelerikBlazor
 # alias dotbbs="dotnet build RazorComponentsApp/RazorComponentsApp.Shared/RazorComponentsApp.Shared.csproj"
 
 # docker
-alias doc="sudo docker"
-alias doccl="sudo docker pull"
-alias docb="sudo docker build"
-alias docp="sudo docker ps"
-alias docv="sudo docker --version"
-alias doci="sudo docker images"
-alias docil="sudo docker image ls"
-alias docils="sudo docker image ls"
-alias docls="sudo docker container ls --all"
+alias doc="docker"
+alias doccl="docker pull"
+alias docb="docker build"
+alias docr="docker run"
+alias docp="docker pull"
+alias docps="docker ps"
+alias docv="docker --version"
+alias doci="docker images"
+alias docil="docker image ls"
+alias docils="docker image ls"
+alias docls="docker container ls --all"
 
 # ruby
 alias r19="uru 193p551"
