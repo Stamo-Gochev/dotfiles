@@ -21,5 +21,9 @@ Quick Tabs - https://chrome.google.com/webstore/detail/quick-tabs/jnjfeinjfmenld
 Files are stored in:
 C:\Program Files\nodejs\node_modules
 
+### Changing versions does not work
+Rename `nodejs` folder to `nodejsx` to clear the path for nvm:
+https://github.com/coreybutler/nvm-windows/issues/321#issuecomment-382396940
+
 ## Livereload script
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
