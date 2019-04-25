@@ -734,10 +734,6 @@
 			"name": "Angular Red",
 			"value": "#b52e31"
 		},
-		// {
-		// 	"name": "Auth0 Orange",
-		// 	"value": "#eb5424"
-		// },
 		{
 			"name": "Azure Blue",
 			"value": "#007fff"
@@ -746,10 +742,6 @@
 			"name": "Gatsby Purple",
 			"value": "#639"
 		},
-		// {
-		// 	"name": "JavaScript Yellow",
-		// 	"value": "#f9e64f"
-		// },
 		{
 			"name": "Mandalorian Blue",
 			"value": "#1857a4"
@@ -758,62 +750,26 @@
 			"name": "Node Green",
 			"value": "#215732"
 		},
-		// {
-		// 	"name": "React Blue",
-		// 	"value": "#00b3e6"
-		// },
 		{
 			"name": "Something Different",
 			"value": "#832561"
-		},
-		// {
-		// 	"name": "Vue Green",
-		// 	"value": "#42b883"
-		// },
-		// {
-		// 	"name": "green",
-		// 	"value": "#34bf49"
-		// },
-		// {
-		// 	"name": "ight bluel",
-		// 	"value": "#00bce4"
-		// },
-		// {
-		// 	"name": "orange",
-		// 	"value": "#f47721"
-		// },
-		// {
-		// 	"name": "dark orange",
-		// 	"value": "#da532c"
-		// },
-		{
-			"name": "new purple",
-			"value": "#4C18B3"
-		},
-		{
-			"name": "dark pink",
-			"value": "#AB307E"
-		},
-		{
-			"name": "purple blue",
-			"value": "#5055F6"
-		},
-		{
-			"name": "new purple",
-			"value": "#7F40BF"
 		},
 		{
 			"name": "dark blue",
 			"value": "#2b5797"
 		},
-		// {
-		// 	"name": "dark red",
-		// 	"value": "#b91d47"
-		// },
-		// {
-		// 	"name": "teal",
-		// 	"value": "teal"
-		// }
+		{
+			"name": "original dark pink",
+			"value": "#832561"
+		},
+		{
+			"name": "original dark purple",
+			"value": "#391286"
+		},
+		{
+			"name": "original purple blue",
+			"value": "#1e26f4"
+		}
 	],
 	"peacock.surpriseMeOnStartup": true,
 	"peacock.keepBadgeColor": true
