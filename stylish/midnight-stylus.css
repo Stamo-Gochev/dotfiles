@@ -420,6 +420,7 @@ body * {
     background-color: #000000 !important;
 }
 
+.text-gray,
 .text-gray-dark {
     color: #CCC !important;
 }
@@ -440,5 +441,11 @@ body * {
     /* background: hsla(262, 46%, 90%, 1)!important; */
     /* background: var(--info-background)!important; */
     background-color: black !important;
+}
+}
+
+@-moz-document url-prefix("https://blogs.windows.com/") {
+.type-curation_post .post-title, .type-curation_post .post-title a, .type-post:not(tr) .post-title, .type-post:not(tr) .post-title a {
+    color: white !important;
 }
 }
