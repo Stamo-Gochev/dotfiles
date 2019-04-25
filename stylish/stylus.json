@@ -1,0 +1,111 @@
+[
+	{
+		"enabled": true,
+		"id": 1,
+		"installDate": 1541665055830,
+		"md5Url": "https://update.userstyles.org/47391.md5",
+		"name": "Midnight Surfing Alternative",
+		"originalDigest": "47090cf8fec1ce7f79dbedb216208ccbcf242424",
+		"originalMd5": "0b52ac73ac871473e647a6cb6bc6b0c7",
+		"sections": [
+			{
+				"code": "/* Browser Background */\nbrowser[type=\"content-primary\"] {\n/*background-color: #1a1a1a !important; */\n}",
+				"urls": [
+					"chrome://browser/content/browser.xul"
+				]
+			},
+			{
+				"code": "window {\nbackground: #000000 !important;\n}\n\n#newtab-scrollbox {\nbackground: transparent none !important;\n}\n\n.newtab-title {\nbackground-color: rgba(0,0,0,.75) !important; \ncolor: #eee !important;\n}",
+				"urls": [
+					"about:newtab"
+				]
+			},
+			{
+				"code": "@namespace html url(http://www.w3.org/1999/xhtml);\n@namespace xul url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);\n\n/* Browser Background */\nbrowser[type=\"content-primary\"] {\n    background-color: #141414 !important;\n}\n/*No background images. try to exclude icons, other misc items. */\n*:not(:empty):not([onclick*=\"open\"]):not(span):not([class*=\"stars\"]):not([id*=\"stars\"]):not([id=\"rating\"]):not([class=\"rating\"]):not([class*=\"prite\"]):not([id*=\"prite\"]):not([id*=\"lbImage\"]) {\n    background-image: none !important;\n}\n\n/* Basic Bodies */\nhtml,\nbody {\n    background: none #141414 !important;\n}\n\n/* Make descendents of the body element transparent.  Formerly \"DIV + SPAN\" rules. */\nbody * {\n    background-color: transparent !important;\n}\n\n/* Give id's BG hopefully */\ndiv[id] {\n    background-color: inherit !important;\n}\n\n/* Filter non-icons */\nspan:not(:empty):not([class*=\"icon\"]):not([id*=\"icon\"]):not([class*=\"star\"]):not([id*=\"star\"]):not([id*=\"rating\"]):not([class*=\"rating\"]):not([class*=\"prite\"]) {\n\n    background: none transparent !important;\n    border-color: #000 !important;\n}\n\n/* Try to contrast containers */\nhtml:root > body > * > * > * > *:not(input):not([onclick]) > div:not(:empty):not([id]) {\n    background: none #1c1c1c !important\n}\n\n/* :::::::: Text Presentation :::::::: */\nsummary,\ndetails {\n    background-color: inherit !important;\n}\n\nabbr,\nprogress,\ntime,\nlabel,\n.date {\n    color: #CDEFC2 !important;\n}\n\nmark,\ncode,\npre,\nblockquote,\n[class*=\"quote\"],\ntd[style*=\"inset\"][class=\"alt2\"] {\n    background-color: #00090F !important;\n}\n\n\n/* :::::::: Headings + Header :::::::: */\n/* Header gradient rules */\nheader,\n#header {\n    background: -moz-linear-gradient(#333, #141414) transparent !important;\n}\n\n#header h1 {\n    background-color: transparent !important;\n}\n\nh1,\nh2 {\n    background: none #28313E !important;\n    border-radius: 5px !important;\n    -moz-border-radius: 5px !important;\n    -webkit-border-radius: 5px !important;\n}\n\nh3,\nh4 {\n    background: none #2A3731 !important;\n    border-radius: 5px !important;\n    -moz-border-radius: 5px !important;\n    -webkit-border-radius: 5px !important;\n}\n\nh5,\nh6 {\n    background: none #372A2A !important;\n}\n\n\n/* :::::::: Lists :::::::: */\ndt {\n    background-color: #2B3135 !important;\n}\n\ndl,\ndd {\n    background-color: #232323 !important;\n}\n\nli,\nul {\n    background-color: inherit !important;\n}\n\nli a:not([class*=\"icon\"]):not([id*=\"icon\"]):not([onclick]),\ndt a:not([class*=\"icon\"]):not([id*=\"icon\"]):not([onclick]) {\n    background-image: none !important;\n    text-indent: 0 !important;\n}\n\n/* :::::::: list Item highlight :::::::: */\nli[class*=\"item\"] a:hover,\nli[class*=\"item\"]:hover,\n\n/* Not list item, but still useful*/\n[class*=\"menuitem\"]:hover {\n    background-color: #2E2B2F !important;\n}\n\n/* :::::::: Tables, cells :::::::: */\ntable {\n    background-color: #232323 !important;\n    border-color: #333 !important;\n}\n\ntable table {\n    background: #191919 !important;\n}\n\nth,\ncaption {\n    background-color: #353535 !important;\n}\n\n/* :::::::: Input :::::::: */\n/* === Basic === */\n/* anonymous divs */\ninput *,\ntextarea * {\n    color: #DDD !important;\n}\n\nhtml body input:not([type=\"image\"]),\nbutton,\nhtml body textarea {\n\n    background: none #353535 !important;\n    -moz-appearance: none !important;\n    -webkit-appearance: none !important;\n    color: #DDD !important;\n    border: solid 1px #777 !important;\n    border-radius: 0 !important;\n    -moz-border-radius: 0 !important;\n    -webkit-border-radius: 0 !important;\n    opacity: 1 !important;\n}\n\n/* Style reset. */\nhtml body input[type=\"checkbox\"] {\n    -moz-appearance: checkbox !important;\n    -webkit-appearance: checkbox !important;\n}\n\nhtml body input[type=\"radio\"] {\n    -moz-appearance: radio !important;\n    -webkit-appearance: radio !important;\n}\n\n/* :::::::: Custom styling :::::::: */\nhtml:root input[type=\"button\"],\nhtml:root input[type=\"submit\"],\nhtml:root input[type=\"reset\"],\nhtml:root button {\n\n    color: #EEE !important;\n    background-color: #222437 !important;\n\n    -moz-box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), inset 0 10px rgba(255, 255, 255, 0.1), inset 0 10px 20px rgba(255, 255, 255, 0.15), inset 0 -15px 30px rgba(0, 0, 0, 0.2) !important;\n    -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), inset 0 10px rgba(255, 255, 255, 0.1), inset 0 10px 20px rgba(255, 255, 255, 0.15), inset 0 -15px 30px rgba(0, 0, 0, 0.2) !important;\n}\n\nhtml:root input[type=\"button\"]:hover,\nhtml:root input[type=\"submit\"]:hover,\nhtml:root input[type=\"reset\"]:hover,\nhtml:root button:hover {\n\n    color: #FFF !important;\n    background-color: #31344F !important;\n    border-color: #5F687F !important;\n\n    -moz-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3) !important;\n    -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3) !important;\n}\n\nhtml:root input[type=\"image\"] {\n    opacity: .85 !important;\n}\n\nhtml:root input[type=\"image\"]:hover {\n    opacity: .95 !important;\n}\n\n/* Drop-down menu */\nselect,\noption,\noptgroup {\n\n    background: none #383838 !important;\n    border-color: #555 !important;\n    color: #f1f1f1 !important;\n    -moz-appearance: none !important;\n}\n\n/* :::::::: Misc :::::::: */\naddress {\n    background: none #333 !important;\n}\n\nhr {\n    background: none #444 !important\n}\n\n/*currently viewed page*/\n.current {\n    color: #FFF !important;\n}\n\n/* Remove Rounded Corners, Borders, Spacer, Padding images */\nimg[src*=\"spacer\"]:empty,\n[id*=\"round\"]:empty,\n[id*=\"bottom\"]:empty,\n[class*=\"bottom\"]:empty,\n[class*=\"Bottom\"]:empty,\n[id*=\"top\"]:empty,\n[class*=\"top\"]:empty,\n[class*=\"Top\"]:empty,\n[class*=\"spacer\"]:empty {\n    background-image: none !important;\n}\n\n/* Menus and Navigation */\nnav,\nmenu,\n\n/*Common naming conventions - in case previous declarations fail to give solid BG*/\nhtml body [class*=\"open\"],\nhtml body [id*=\"Dropdown\"],\nhtml body [id*=\"dropdown\"],\nhtml body [class*=\"Dropdown\"],\nhtml body [class*=\"dropdown\"],\nhtml body [id*=\"menu\"]:not(SELECT),\nhtml body [class*=\"menu\"]:NOT(SELECT),\nhtml body [class*=\"tooltip\"],\nhtml body [class*=\"popup\"],\nhtml body [id*=\"popup\"],\n\n/* Notes, details, etc.  Maybe useful */\nhtml body [class*=\"note\"],\nhtml body [class*=\"detail\"],\nhtml body [class*=\"description\"] {\n    background-color: #232323 !important\n}\n\n/* Also common */\n[class*=\"content\"],\n[class*=\"container\"] {\n    background-color: #1c1c1c !important;\n}\n\n/* Headers, Logos */\n[id*=\"masthead\"] a,\n[id*=\"header\"] a,\n[id*=\"logo\"] a,\n[class*=\"logo\"] a {\n    text-indent: 0 !important;\n}\n\n/* Instead of increasing specificity rating by using :not, set rules separately */\nhtml:root body [class*=\"layer\"],\nhtml:root body #lightbox-nav,\nhtml:root body #imageContainer {\n    background-color: transparent !important;\n}\n\n/*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/\n/* Universal - sets color of text, border */\n* {\n    color: #CCC !important;\n    border-color: #444 !important;\n    outline-color: #444 !important;\n    text-shadow: none !important;\n}\n\nhtml *:after,\nhtml *:before {\n    color: #CCC !important;\n    border-color: #666 !important;\n    background: none transparent !important;\n}\n\n\n/* Link */\na:link,\na:link *:not(img) {\n\n    color: #B1CBF7 !important;\n    background-color: transparent !important;\n    border-color: #666 !important;\n}\n\na:visited,\na:visited * {\n    color: #CDB4E7 !important;\n}\n\na:hover,\na:hover *:not(img) {\n\n    color: #FFE900 !important;\n    background-color: #363037 !important;\n    border-color: #999 !important;\n}\n\nhtml [href*=\"#\"]:hover {\n    color: #FFE900 !important;\n    background-color: transparent !important;\n}\n\n\n/* Event Handlers/Attributes */\n[onclick],\n[ondblclick],\n[onmousedown] {\n    color: #DFD5BC !important;\n    text-indent: 0 !important;\n}\n\n[onclick]:hover,\n[ondblclick]:hover,\n[onmousedown]:hover {\n    color: #FEFF97 !important;\n}\n\n/* Make images transparent */\nimg {\n    opacity: .75 !important;\n}\n\nimg:hover {\n    opacity: 1 !important;\n    background-color: #888 !important;\n}\n\nsvg {\n    background: none #666 !important;\n}\n\n/* Highlight */\n::-moz-selection {\n    background-color: #626F61 !important;\n    color: #F6F7B9 !important;\n}\n\n/* :::::::: Specific Fixes :::::::: */\n/* google search link fix */\n.g .r {\n    background-color: transparent !important;\n}\n\n/* google result hover highlight*/\ndiv.vsc:hover > .vspi,\ndiv.vso > .vspi {\n    background: none transparent !important;\n    border: none !important;\n}",
+				"urls": [
+					"about:blank"
+				],
+				"urlPrefixes": [
+					"ftp://",
+					"file://",
+					"about:neterror"
+				],
+				"regexps": [
+					"https?:\\/\\/(?!((www\\\\.)?(teams\\.microsoft\\.com))).*"
+				]
+			},
+			{
+				"code": "\n\nbody * {\n    background-color: #000000 !important;\n}",
+				"urls": [
+					"https://github.com/"
+				]
+			},
+			{
+				"code": ".bg-gray-light,\n#wiki-footer {\n    background-color: #000000 !important;\n}\n\n.text-gray,\n.text-gray-dark {\n    color: #CCC !important;\n}",
+				"regexps": [
+					"https?:\\/\\/(?!((www\\\\.)?(github\\.com))).*"
+				]
+			},
+			{
+				"code": ".language-Dockerfile, .highlighter-rouge, code {\n    color: white !important;\n}",
+				"urlPrefixes": [
+					"https://docs.docker.com/"
+				]
+			},
+			{
+				"code": ".alert,\n.alert.is-info, \n.alert.is-success,\n.alert.is-info,\n.alert.is-warning {\n    /* background: hsla(262, 46%, 90%, 1)!important; */\n    /* background: var(--info-background)!important; */\n    background-color: black !important;\n}",
+				"urlPrefixes": [
+					"https://docs.microsoft.com/"
+				]
+			},
+			{
+				"code": ".type-curation_post .post-title, .type-curation_post .post-title a, .type-post:not(tr) .post-title, .type-post:not(tr) .post-title a {\n    color: white !important;\n}",
+				"urlPrefixes": [
+					"https://blogs.windows.com/"
+				]
+			}
+		],
+		"updateDate": 1555997344956,
+		"updateUrl": "https://userstyles.org/styles/chrome/47391.json",
+		"url": "http://userstyles.org/styles/47391"
+	},
+	{
+		"enabled": true,
+		"id": 2,
+		"installDate": 1541665325309,
+		"md5Url": null,
+		"name": "admin.telerik.com",
+		"originalMd5": null,
+		"sections": [
+			{
+				"code": "\n\n\n\n.supportSubject {\n    font: 12pt calibri,sans-serif;\n}\n\n.supportSubject img {\n    display: none;\n}\n\n/*\n.adminThreadReply  {\n    width: 1596px !important;\n}\n\n.threadsTable .RadGrid {\n   width: 1560px !important;\n}\n\n.admPageRight {\n   width: 1560px !important;\n   float: left !important;\n}\n\n.adminThreadReply .adminInnerLeft {\n    width: 1268px !important;\n}\n\n.adminInnerThreadBox .adminInnerRight {\n    left: 1276px !important;\n}\n\n.admContentWrap {\n    margin-left: 20px !important;\n    width: 1880px !important;\n}\n*/\n\n.markAnswer {\n   height: 35px !important;\n}\n\n.givePoints,\n.messageHeaderClient,\n.messageHeaderAdmin {\n   padding: 4px !important;\n}\n\n.admShowTags {\n   margin-bottom: 10px !important;\n}\n\n.frontend_codeinsert {\n   color: #c5c5c5 !important;\n}\n\nbody {\n   text-rendering: initial !important;\n}\n\n.frontend_codeinsert {\n   color: #fff !important;\n}\n\n.frontend_internalnote {\n    color: #000 !important;\n}\n\n.adminMessageText .text {\n    font: 12pt calibri,sans-serif;\n}\n\n.messageHeaderAdminWrap .messageDatesInfo {\n    font: 12pt calibri,sans-serif;\n}\n\n.adminThreadReply h1.title span {\n    font-size: 19px;\n}\n\n#supportNotification {\n    display: none;\n}\n\n/*\n.reWrapper {\n   min-width: 1256px !important;\n}\n*/\n\n/* common */\n\nimg[src=\"App_Themes/Dark/images/ticket-closed.gif\"],\nimg[src=\"/App_Themes/Dark/images/ticket-closed.gif\"],\nimg[src=\"/support/assets/ticket-closed.gif\"]\n{\n    background-color: #93f6ff !important;\n    margin-left: -50px !important;\n    padding: 4px 50px !important;\n}\n\n/* AJAX */\nimg[src=\"images/ProductImages/button_ajax_16.png\"],\nimg[src=\"images/ProductImages/editor_ajax_16.png\"],\nimg[src=\"images/ProductImages/htmlchart_ajax_16.png\"],\n\n/* kendo */\n/* dataviz */\nimg[src=\"images/ProductImages/barchart_kendoui.png\"],\nimg[src=\"images/ProductImages/barchart_kendoui_mvc.png\"],\nimg[src=\"images/ProductImages/barchart_kendoui_php.png\"],\nimg[src=\"images/ProductImages/barchart_core.png\"],\n\nimg[src=\"images/ProductImages/barcode_kendoui.png\"],\n\nimg[src=\"images/ProductImages/bulletgraph_kendoui.png\"],\nimg[src=\"images/ProductImages/bulletgraph_kendoui_mvc.png\"],\nimg[src=\"images/ProductImages/bulletgraph_kendoui_php.png\"],\n\nimg[src=\"images/ProductImages/Chart.png\"],\nimg[src=\"images/ProductImages/chart_mvc.png\"],\n\nimg[src=\"images/ProductImages/dataviz_kendoui.png\"],\nimg[src=\"images/ProductImages/diagram_kendoui.png\"],\nimg[src=\"images/ProductImages/diagram_kendoui_mvc.png\"],\n\nimg[src=\"images/ProductImages/map_kendoui.png\"],\nimg[src=\"images/ProductImages/map_kendoui_mvc.png\"],\n\nimg[src=\"images/ProductImages/radialgauge_kendoui.png\"],\nimg[src=\"images/ProductImages/sparklines_kendoui.png\"],\nimg[src=\"images/ProductImages/sparklines_kendoui_mvc.png\"],\n\nimg[src=\"images/ProductImages/editor_kendoui.png\"],\nimg[src=\"images/ProductImages/editor_kendoui_mvc.png\"],\n\n/* buttons */\nimg[src=\"images/ProductImages/button_kendoui.png\"],\nimg[src=\"images/ProductImages/button_kendoui_mvc.png\"],\n\nimg[src=\"images/ProductImages/menu_kendoui.png\"],\nimg[src=\"images/ProductImages/menu_kendoui_mvc.png\"],\n\nimg[src=\"images/ProductImages/pager_kendoui.png\"],\nimg[src=\"images/ProductImages/pager_kendoui_mvc.png\"],\n\nimg[src=\"images/ProductImages/toolbar_kendoui.png\"],\nimg[src=\"images/ProductImages/toolbar_kendoui_mvc.png\"],\n\n/* forms */\nimg[src=\"images/ProductImages/slider_kendoui.png\"],\nimg[src=\"images/ProductImages/slider_kendoui_mvc.png\"],\n\nimg[src=\"images/ProductImages/switch_kendoui.png\"],\nimg[src=\"images/ProductImages/switch_kendoui_mvc.png\"],\n\nimg[src=\"images/ProductImages/colorpicker_kendoui.png\"],\nimg[src=\"images/ProductImages/colorpicker_kendoui_mvc.png\"],\n\nimg[src=\"images/ProductImages/rating_kendoui.png\"],\nimg[src=\"images/ProductImages/rating_kendoui_mvc.png\"],\n\nimg[src=\"images/ProductImages/checkbox_kendoui.png\"],\nimg[src=\"images/ProductImages/checkbox_kendoui_mvc.png\"],\n\nimg[src=\"images/ProductImages/radiobutton_kendoui.png\"],\nimg[src=\"images/ProductImages/radiobutton_kendoui_mvc.png\"],\n\n/* modals */\nimg[src=\"images/ProductImages/notification_kendoui.png\"],\nimg[src=\"images/ProductImages/notification_kendoui_mvc.png\"],\n\n\nimg[src=\"images/ProductImages/progressbar_kendoui.png\"],\nimg[src=\"images/ProductImages/progressbar_kendoui_mvc.png\"],\n\nimg[src=\"images/ProductImages/tooltip_kendoui.png\"],\nimg[src=\"images/ProductImages/tooltip_kendoui_mvc.png\"],\n\nimg[src=\"images/ProductImages/Window.png\"],\nimg[src=\"images/ProductImages/window_kendoui.png\"],\nimg[src=\"images/ProductImages/window_kendoui_mvc.png\"]\n{\n    background-color: #bbb !important;\n    margin-left: -50px !important;\n    padding: 4px 50px !important;\n}\n\n.frontend_internalnote {\n    color: #000 !important;\n}\n\n#supportNotification {\n    display: none;\n}",
+				"domains": [
+					"admin.telerik.com"
+				]
+			}
+		],
+		"updateUrl": null,
+		"url": null
+	},
+	{
+		"enabled": true,
+		"id": 3,
+		"installDate": 1541665403449,
+		"md5Url": null,
+		"name": "w3schools-dark",
+		"originalMd5": null,
+		"sections": [
+			{
+				"code": "@namespace url(http://www.w3.org/1999/xhtml);\nhtml, #main, .w3-sidebar, .w3-light-grey,\n.w3-container, .top, .w3-white\n{\nbackground-color: #111111 !important;\n}\n.w3-example, th,\n.nextprev a:link, .nextprev a:visited\n{\nbackground-color: #333333 !important;\n}\n.w3-code, .w3-note, #leftmenuinnerinner a:hover, td\n{\nbackground-color: #555555 !important;\n}\n.w3-code\n{\nborder-left:4px #FFFF00 solid !important;\n}\n.nextprev a\n{\nborder:1px #333333 solid !important;\n}\nhr, table, tr, td, th\n{\nborder-color:#FFFF00 !important;\n}\nh1, h2, h3, h4, h5, .w3-example span, a:hover, \n.dotcom, .w3-code, .w3-code span, th\n{\ncolor: #FFFF00 !important;\n}\na, p, li, td,\n.w3-xlarge, .w3-text-dark-grey\n{\ncolor: #FFFFFF !important;\n}\n}",
+				"domains": [
+					"w3schools.com"
+				],
+				"regexps": [],
+				"urlPrefixes": [],
+				"urls": []
+			}
+		],
+		"updateUrl": null,
+		"url": null
+	}
+]
