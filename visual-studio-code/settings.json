@@ -787,6 +787,22 @@
 		// 	"value": "#da532c"
 		// },
 		{
+			"name": "new purple",
+			"value": "#4C18B3"
+		},
+		{
+			"name": "dark pink",
+			"value": "#AB307E"
+		},
+		{
+			"name": "purple blue",
+			"value": "#5055F6"
+		},
+		{
+			"name": "new purple",
+			"value": "#7F40BF"
+		},
+		{
 			"name": "dark blue",
 			"value": "#2b5797"
 		},
