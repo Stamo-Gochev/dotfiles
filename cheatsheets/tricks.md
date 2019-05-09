@@ -27,3 +27,6 @@ https://github.com/coreybutler/nvm-windows/issues/321#issuecomment-382396940
 
 ## Livereload script
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+## XAMPP
+When used together with skype, remap port 80 to 8080: https://stackoverflow.com/questions/18300377/xampp-apache-error-apache-shutdown-unexpectedly
