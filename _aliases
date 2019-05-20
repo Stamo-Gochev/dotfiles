@@ -46,6 +46,7 @@ alias cpn="git cpn"
 alias gv="git --version"
 alias ig="git ignore"
 alias rmig="git rmignore"
+alias lig="git lig"
 alias l="git l"
 alias lh="git lh"
 alias lo="git lo"
@@ -219,6 +220,7 @@ alias ctie="iexplore.exe http://localhost:9876/debug.html"
 
 # rake tasks
 alias rmb="rake mvc:binaries"
+alias rmb2="rake mvc:binaries MSBUILD='C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\MSBuild\Current\Bin\msbuild.exe'"
 alias rma="rake mvc:assets"
 alias rmca="rake mvc_6:assets"
 alias rmcas="rake mvc_6:assets_shared"
@@ -241,7 +243,7 @@ alias rga="rake generate:all"
 alias rgw='rake generate:all'
 alias rmb='rake mvc:binaries --trace'
 alias rja="rake java:assets"
-alias cje="chrome.exe http://localhost:8080/spring-demos/"
+alias rpa="rake php:assets"
 alias rgrw="rake react:master:test"
 alias rgrwp="rake react:production:test"
 alias rgvw="rake vue:master:test"
@@ -359,7 +361,7 @@ alias ckb="code /d/work/github/blazor"
 alias ckbc="code /d/work/github/blazor/js/telerik-blazor"
 alias ckb2="code /d/kendo-blazor"
 
-# open projects - kend angular
+# open projects - kendo angular
 alias ckc="code /d/work/github/kendo-charts"
 alias ckintl="code /d/work/github/kendo-intl"
 alias ckac="code /d/work/github/kendo-angular-charts"
@@ -381,6 +383,10 @@ alias pkco="cd /d/work/github/kendo-ui-core"
 alias pkd="cd /d/work/github/kendo-ui-dojo"
 alias pkt="cd /d/work/github/kendo-themes"
 alias pks="cd /c/work/github/kendo-ui-demos-service"
+alias rks="chrome.exe http://gochevlap/kendo-service/products"
+alias rje="chrome.exe http://localhost:8080/spring-demos/"
+alias rmce="chrome.exe http://localhost:5000"
+alias rpe="chrome.exe http://localhost:8987"
 alias pkc="cd /d/work/github/kendo-charts"
 alias pkd="cd /d/work/github/kendo-drawing"
 alias pkpt="cd /d/work/github/kendo-package-tasks"
@@ -391,6 +397,7 @@ alias pkcdn="cd /d/work/github/kendo-cdn"
 alias pkb="cd /d/work/github/blazor"
 alias pkbe="cd /d/work/github/ui-for-blazor-examples"
 alias pkb2="cd /d/kendo-blazor"
+alias pkbd="cd /d/work/github/blazor-docs"
 
 # projects - kendo examples
 alias pkumce="cd ui-for-aspnet-core-examples"
@@ -425,11 +432,11 @@ alias rre="chrome.exe http://localhost:8888"
 # projects - kendo react wrappers
 alias prw="cd /d/work/github/kendo-react-wrappers"
 alias crw="cd /d/work/github/kendo-react-private && code ."
-alias rwe="chrome.exe http://localhost:8080"
+alias rrwe="chrome.exe http://localhost:8080"
 alias ctrwg="gulp test --package kendo-grid-react-wrapper"
 alias ctrwc="gulp test --package kendo-charts-react-wrapper"
 
-# prooects - kendo vue wrappers
+# projects - kendo vue wrappers
 alias pkvw="cd /d/work/github/kendo-vue-wrappers"
 alias pvw="cd /d/work/github/kendo-vue-wrappers"
 alias cvw="cd /d/work/github/kendo-vue-wrappers && code ."
@@ -438,6 +445,7 @@ alias rve="chrome.exe http://localhost:8764"
 
 # projects - common
 alias ptb="cd /c/work/github/themebuilder"
+alias rtb="chrome.exe http://localhost:4200"
 alias preact="cd /d/work/github/react"
 
 # dotnet
@@ -462,38 +470,62 @@ alias dotsdk="dotnet --list-sdks"
 alias dotrew="dotnet restore wrappers/mvc-6/src/Kendo.Mvc/Kendo.Mvc.csproj"
 alias dotbw="dotnet build wrappers/mvc-6/src/Kendo.Mvc/Kendo.Mvc.csproj"
 
-alias dotre="dotnet run /C/work/github/kendo/wrappers/mvc-6/demos/Kendo.Mvc.Examples.csproj"
+alias dotrwe="dotnet run --project /c/work/github/kendo/wrappers/mvc-6/demos/Kendo.Mvc.Examples/Kendo.Mvc.Examples.csproj"
 alias dotree="dotnet build /C/work/github/kendo/wrappers/mvc-6/demos/Kendo.Mvc.Examples.csproj"
 alias dotbe="dotnet build /C/work/github/kendo/wrappers/mvc-6/demos/Kendo.Mvc.Examples/Kendo.Mvc.Examples.csproj"
+alias dotpe="dotnet publish wrappers/mvc-6/demos/Kendo.Mvc.Examples/Kendo.Mvc.Examples.csproj --framework netcoreapp2.2 --configuration Release"
+
+alias dotrpe="dotnet wrappers/mvc-6/demos/Kendo.Mvc.Examples/bin/Release/netcoreapp2.2/publish/Kendo.Mvc.Examples.dll"
+alias rwe="chrome.exe http://localhost:5000"
 
 alias dotret="dotnet restore /C/work/github/kendo/wrappers/mvc-6/tests/Kendo.Mvc.Tests/Kendo.Mvc.Tests.csproj"
 alias dotbt="dotnet build /C/work/github/kendo/wrappers/mvc-6/tests/Kendo.Mvc.Tests/Kendo.Mvc.Tests.csproj"
 
 # dotnet projects - kendo blazor
 alias dotbb="dotnet build /d/work/github/blazor/Telerik.Blazor/Telerik.Blazor.csproj"
-alias dotbbe="dotnet build /d/work/github/blazor/demos/TelerikBlazor.Server/TelerikBlazor.Server.csproj"
+alias dotbbe="dotnet build /d/work/github/blazor/demos/TelerikBlazorDemos.Server/TelerikBlazorDemos.Server.csproj"
 
 # alias dotbbe="dotnet build RazorComponentsApp/RazorComponentsApp.Server/RazorComponentsApp.Server.csproj"
 # alias dotrbe="dotnet run RazorComponentsApp/RazorComponentsApp.Server"
 # alias dotbbe="dotnet build /d/work/github/ui-for-blazor-examples/TelerikBlazor.Server"
-# alias dotrbe="dotnet restore /d/work/github/ui-for-blazor-examples/TelerikBlazor.Server"
+# alias dotrbe="dotnet restore /d/work/github/blazor/demos/TelerikBlazorDemos.Server/TelerikBlazorDemos.Server.csproj"
+alias dotrbe="dotnet run --project /d/work/github/blazor/demos/TelerikBlazorDemos.Server/TelerikBlazorDemos.Server.csproj"
 
 alias dotbbce="dotnet build /d/work/github/blazor/demos/TelerikBlazor/TelerikBlazorDemos"
 
+alias dotpbe="dotnet publish /d/work/github/blazor/demos/TelerikBlazorDemos.Server/TelerikBlazorDemos.Server.csproj"
+
+
+# dotnet projects - kendo blazor server
+alias dotbbse="dotnet build /d/work/github/blazor/demos/server-side/TelerikBlazorDemos/TelerikBlazorDemos.csproj"
+alias dotrbse="dotnet build /d/work/github/blazor/demos/server-side/TelerikBlazorDemos/TelerikBlazorDemos.csproj"
+
+
 # docker
 alias doc="docker"
-alias doccl="docker pull"
+alias docu="docker-compose up"
 alias docb="docker build"
 alias docr="docker run"
 alias docp="docker pull"
+alias doccl="docker pull"
 alias docps="docker ps"
-alias docpsa="docker ps"
+alias docpsa="docker ps -a"
 alias docv="docker --version"
 alias doci="docker images"
 alias docil="docker image ls"
-alias docils="docker image ls"
-alias docls="docker container ls --all"
+alias docl="docker container ls --all"
 alias docs="docker stop"
+alias docrm="docker rm"
+alias docpr="yes | docker container prune"
+alias docrme="docker rm $(docker ps -a -q -f status=exited)"
+alias docnl="docker network ls"
+alias docni="docker network inspect"
+
+# docker cheatsheet
+# docker run -it busybox sh
+
+# docker run -d -P --name static-site prakhar1989/static-site
+# docker port static-site
 
 # ruby
 alias r19="uru 193p551"
