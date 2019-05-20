@@ -101,8 +101,8 @@
 	l2 = log -10 --oneline --pretty=format:"%H %an %ad" --date=iso
 	# list history of a deleted file
 	lh = "!f() { git log -30 --all --full-history -- $1 ; }; f"
-	lo = log -10 --all --graph --pretty=format:'%C(yellow)(%cd)%Creset %C(cyan)%an%Creset %C(green)%h%Creset -%C(yellow)%d%Creset %s' --abbrev-commit --date=iso
-	lol = log --all --graph --pretty=format:'%C(yellow)(%cd)%Creset %C(green)%h%Creset -%C(yellow)%d%Creset %s %C(cyan)%an%Creset' --abbrev-commit --date=iso
+	lo = log -10 --graph --pretty=format:'%C(yellow)(%cd)%Creset %C(cyan)%an%Creset %C(green)%h%Creset -%C(yellow)%d%Creset %s' --abbrev-commit --date=iso
+	lol = log --graph --pretty=format:'%C(yellow)(%cd)%Creset %C(green)%h%Creset -%C(yellow)%d%Creset %s %C(cyan)%an%Creset' --abbrev-commit --date=iso
 	mnff = merge --no-ff
 	m = merge
 	ra = rebase --abort
@@ -150,6 +150,7 @@
 	# ignore a file
 	ignore = "!f() { git update-index --assume-unchanged $1 ; }; f"
 	rmignore = "!f() { git update-index --no-assume-unchanged $1 ; }; f"
+	lig = "!f() { git check-ignore * }; f"
 
 	# tags - usage git tagcommit <tag_name>
 	commit-of-tag = "!f() { git rev-list -n 1 $1 ; }; f"
