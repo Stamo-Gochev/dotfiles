@@ -772,5 +772,6 @@
 		}
 	],
 	"peacock.surpriseMeOnStartup": true,
-	"peacock.keepBadgeColor": true
+	"peacock.keepBadgeColor": true,
+	"breadcrumbs.enabled": true
 }
