@@ -30,3 +30,7 @@ https://github.com/coreybutler/nvm-windows/issues/321#issuecomment-382396940
 
 ## XAMPP
 When used together with skype, remap port 80 to 8080: https://stackoverflow.com/questions/18300377/xampp-apache-error-apache-shutdown-unexpectedly
+
+## JavaScript bookmarklet
+https://superuser.com/questions/279107/add-a-bookmarklet-in-google-chrome
+Add a bookmark with text `javascript: <minified-code>"
