@@ -266,5 +266,19 @@
     {
         "key": "alt+d",
         "command": "workbench.debug.action.focusRepl"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.output.action.clearOutput"
+    },
+    {
+        "key": "ctrl+r ctrl+r",
+        "command": "editor.action.rename",
+        "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "f2",
+        "command": "-editor.action.rename",
+        "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
     }
 ]
