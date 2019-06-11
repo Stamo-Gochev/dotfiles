@@ -80,7 +80,7 @@ alias lta="git tag -l"
 
 # use https://github.com/hotoo/gitopen
 # use 'gitopen "#<issue_id>"' as the hash should be escaped in Windows git bash
-alias go="gitopen -b `g current` commits"
+alias gio="gitopen -b `g current` commits"
 # alias go="gitopen -b `g current`"
 alias goc="go commits"
 alias gomc="gitopen -b master commits"
@@ -111,7 +111,6 @@ alias vb="vim ~/.bashrc"
 alias va="vim ~/.aliases"
 alias w="explorer .; gnome-open ."
 alias ldu="du -sh * | sort -hr"
-alias mkdir="mkdir -p"
 alias lr="bundle exec guard"
 
 # babun (shell for Windows)
@@ -449,9 +448,9 @@ alias rtb="chrome.exe http://localhost:4200"
 alias preact="cd /d/work/github/react"
 
 # dotnet
-alias dt="dotnet"
 alias dot="dotnet"
 alias dnc="dotnet nuget locals all --clear"
+alias dotap="dotnet add package"
 alias doti="dotnet --info"
 alias dotb="dotnet build"
 alias dotp="dotnet publish"
@@ -460,6 +459,8 @@ alias dotr="dotnet run"
 alias dotn="dotnet new"
 alias dtt="dotnet test wrappers/mvc-6/tests/Kendo.Mvc.Tests"
 alias dott="dotnet test wrappers/mvc-6/tests/Kendo.Mvc.Tests"
+alias rmct="dotnet test wrappers/mvc-6/tests/Kendo.Mvc.Tests"
+alias rmt="build/xunit/xunit.console.clr4.exe wrappers/mvc/tests/Kendo.Mvc.Tests/bin/Debug/Kendo.Mvc.Tests.dll"
 alias dotv="dotnet --version"
 alias dotlr="dotnet --list-runtimes"
 alias dotrunt="dotnet --list-runtimes"
@@ -498,12 +499,13 @@ alias dotpbe="dotnet publish /d/work/github/blazor/demos/TelerikBlazorDemos.Serv
 
 # dotnet projects - kendo blazor server
 alias dotbbse="dotnet build /d/work/github/blazor/demos/server-side/TelerikBlazorDemos/TelerikBlazorDemos.csproj"
-alias dotrbse="dotnet build /d/work/github/blazor/demos/server-side/TelerikBlazorDemos/TelerikBlazorDemos.csproj"
+alias dotrbse="dotnet run --project /d/work/github/blazor/demos/server-side/TelerikBlazorDemos/TelerikBlazorDemos.csproj"
 
 
 # docker
 alias doc="docker"
-alias docu="docker-compose up"
+alias doccu="docker-compose up"
+alias doccb="docker-compose build"
 alias docb="docker build"
 alias docr="docker run"
 alias docp="docker pull"
@@ -526,6 +528,10 @@ alias docni="docker network inspect"
 
 # docker run -d -P --name static-site prakhar1989/static-site
 # docker port static-site
+
+# kubernetes
+alias kub="kubectl"
+
 
 # ruby
 alias r19="uru 193p551"
@@ -586,6 +592,7 @@ alias egrep="egrep --color"
 # alias gr="grep --color -HIirn --exclude-dir={node_modules}"
 alias gr="grep -i --color"
 alias gri="grep -i --color"
+alias md="mkdir -p"
 
 # bash
 alias rb="source ~/.bash_profile"

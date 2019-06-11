@@ -150,7 +150,7 @@
 	# ignore a file
 	ignore = "!f() { git update-index --assume-unchanged $1 ; }; f"
 	rmignore = "!f() { git update-index --no-assume-unchanged $1 ; }; f"
-	lig = "!f() { git check-ignore * }; f"
+	lig = "!f() { git check-ignore * ; }; f"
 
 	# tags - usage git tagcommit <tag_name>
 	commit-of-tag = "!f() { git rev-list -n 1 $1 ; }; f"
