@@ -1,0 +1,9 @@
+body, input {
+    font-size: 16px;
+    color: white !important;
+}
+
+li, div, input {
+    background-color: black;
+    color: white !important;
+}
