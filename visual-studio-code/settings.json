@@ -800,7 +800,6 @@
 		}
 	],
 	"workbench.colorCustomizations": {
-		"editor.selectionBackground": "#1E79D2",
 		"editor.selectionHighlightBackground": "#1E79D2",
 		"editor.inactiveSelectionBackground": "#1E79D2",
 		"editor.wordHighlightBackground": "#FF0000",
