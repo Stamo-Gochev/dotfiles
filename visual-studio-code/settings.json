@@ -797,12 +797,17 @@
 		{
 			"name": "nice-blue",
 			"value": "#1857a4"
-		},
-		{
-			"name": "kendo-orange",
-			"value": "#8e4c37"
 		}
 	],
+	"workbench.colorCustomizations": {
+		"editor.selectionBackground": "#1E79D2",
+		"editor.selectionHighlightBackground": "#1E79D2",
+		"editor.inactiveSelectionBackground": "#1E79D2",
+		"editor.wordHighlightBackground": "#FF0000",
+		"editor.wordHighlightStrongBackground": "#1E79D2",
+		"editor.findMatchBackground": "#1E79D2",
+		"editor.findMatchHighlightBackground": "#1E79D2"
+	},
 	"peacock.surpriseMeOnStartup": true,
 	"peacock.keepBadgeColor": true,
 	"breadcrumbs.enabled": true,
