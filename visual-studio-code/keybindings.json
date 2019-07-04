@@ -348,5 +348,13 @@
         "key": "ctrl+b",
         "command": "-extension.togglebold",
         "when": "editorTextFocus && editorLangId == 'markdown'"
+    },
+    {
+        "key": "alt+]",
+        "command": "workbench.action.nextEditor"
+    },
+    {
+        "key": "alt+[",
+        "command": "workbench.action.previousEditor"
     }
 ]
