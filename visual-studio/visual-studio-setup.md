@@ -24,9 +24,12 @@ Currently all are handled by Visual Studio except for:
 
 ## Word highlight with margin
 Highlight words with margin extension:
-- occurrence color (blue) - 30, 121, 210
+- occurrence color (blue) - 30, 121, 210 
+- hex #1E79D2
 - select background color - 255, 128, 128
+- hex #FF8080
 - select border color - 255, 0, 0
+- hex #FF0000
 
 ## VS 2015
 Help -> About -> Copy info
