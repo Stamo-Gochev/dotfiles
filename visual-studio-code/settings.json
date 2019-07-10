@@ -585,7 +585,14 @@
 	}, {
 		"before": ["<backspace>"],
 		"after": ["X"]
-	}],
+	}, {
+		"before":["<Esc>"],
+		"commands": [":nohl"]
+	}, {
+		"before":["<leader>", "h"],
+		"commands": [":nohl"]
+	}
+	],
 
 	"vim.insertModeKeyBindingsNonRecursive": [{
 		"before": ["k", "k"],
@@ -647,15 +654,17 @@
 
 	// Set the characters used for jump marker name
 	"vim.easymotionKeys": "asdko;lqwefrzxcvbtg,:iuyjhm",
-
 	"vim.leader": " ",
+	"vim.hlsearch": true,
+	"vim.highlightedyank.enable": true,
+	"vim.highlightedyank.color": "#d2cf1e",
+	"vim.highlightedyank.duration": 400,
+	"vim.searchHighlightColor": "#58c4db",
 
-	"vim.disableAnnoyingNeovimMessage": true,
 	"workbench.colorTheme": "monokai-best",
 	"spell.StopAsking": true,
 	"workbench.iconTheme": "vscode-icons",
 	"vsicons.presets.foldersAllDefaultIcon": true,
-	"vim.disableAnnoyingNeovimMessage": true,
 	"sync.gist": "c3fadfb006fc3f96dd1c9c50694828de",
 	"sync.lastUpload": "2018-06-07T07:56:55.333Z",
 	"sync.autoDownload": false,
@@ -756,7 +765,7 @@
 		},
 		{
 			"name": "React Blue",
-			"value": "#00b3e6"
+			"value": "#1857a4"
 		},
 		{
 			"name": "Something Different",
@@ -769,10 +778,6 @@
 		{
 			"name": "kendo-orange",
 			"value": "#8e4c37"
-		},
-		{
-			"name": "dark blue",
-			"value": "#2b5797"
 		},
 		{
 			"name": "original dark pink",
@@ -801,7 +806,7 @@
 	],
 	"workbench.colorCustomizations": {
 		"editor.selectionHighlightBackground": "#1E79D2",
-		"editor.inactiveSelectionBackground": "#1E79D2",
+		"editor.inactiveSelectionBackground": "#d2cf1e",
 		"editor.wordHighlightBackground": "#FF0000",
 		"editor.wordHighlightStrongBackground": "#1E79D2",
 		"editor.findMatchBackground": "#1E79D2",
