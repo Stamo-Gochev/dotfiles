@@ -654,6 +654,12 @@
 
 	// Set the characters used for jump marker name
 	"vim.easymotionKeys": "asdko;lqwefrzxcvbtg,:iuyjhm",
+
+	"vim.sneak": false,
+	"vim.sneakUseIgnorecaseAndSmartcase": true,
+
+	"vim.camelCaseMotion.enable": true,
+
 	"vim.leader": " ",
 	"vim.hlsearch": true,
 	"vim.highlightedyank.enable": true,
@@ -810,7 +816,8 @@
 		"editor.wordHighlightBackground": "#FF0000",
 		"editor.wordHighlightStrongBackground": "#1E79D2",
 		"editor.findMatchBackground": "#1E79D2",
-		"editor.findMatchHighlightBackground": "#1E79D2"
+		"editor.findMatchHighlightBackground": "#1E79D2",
+		"editorLineNumber.foreground": "#ffffff"
 	},
 	"peacock.surpriseMeOnStartup": true,
 	"peacock.keepBadgeColor": true,
