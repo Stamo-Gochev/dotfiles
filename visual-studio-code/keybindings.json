@@ -264,10 +264,6 @@
         "command": "-workbench.debug.action.toggleRepl"
     },
     {
-        "key": "alt+d",
-        "command": "workbench.debug.action.focusRepl"
-    },
-    {
         "key": "ctrl+l",
         "command": "workbench.output.action.clearOutput"
     },
@@ -356,5 +352,20 @@
     {
         "key": "alt+[",
         "command": "workbench.action.previousEditor"
+    },
+    {
+        "key": "ctrl+shift+r d",
+        "command": "-wallaby.showSideBySideDiff",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+d",
+        "command": "gitlens.diffWithPrevious",
+        "when": "editorTextFocus && !isInDiffEditor && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /tracked/"
+    },
+    {
+        "key": "alt+,",
+        "command": "-gitlens.diffWithPrevious",
+        "when": "editorTextFocus && !isInDiffEditor && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /tracked/"
     }
 ]
