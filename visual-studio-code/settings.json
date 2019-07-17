@@ -664,7 +664,7 @@
 	"vim.hlsearch": true,
 	"vim.highlightedyank.enable": true,
 	"vim.highlightedyank.color": "#d2cf1e",
-	"vim.highlightedyank.duration": 400,
+	"vim.highlightedyank.duration": 250,
 	"vim.searchHighlightColor": "#58c4db",
 
 	"workbench.colorTheme": "monokai-best",
@@ -808,6 +808,10 @@
 		{
 			"name": "nice-blue",
 			"value": "#1857a4"
+		},
+		{
+			"name": "dark-orange-2",
+			"value": "#e8734e"
 		}
 	],
 	"workbench.colorCustomizations": {
