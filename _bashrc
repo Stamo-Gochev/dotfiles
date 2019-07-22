@@ -15,7 +15,8 @@ if [ -e "$HOME/.aliases" ]; then
   source "$HOME/.aliases"
 fi
 
-cd /c/Work/GitHub/kendo
+# cd /c/Work/GitHub/kendo
+cd /d/Work/github/blazor
 
 # remove Ctrl+s mapping
 bind -r '\C-s'
