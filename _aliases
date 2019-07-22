@@ -111,6 +111,7 @@ alias vb="vim ~/.bashrc"
 alias va="vim ~/.aliases"
 alias w="explorer .; gnome-open ."
 alias ldu="du -sh * | sort -hr"
+alias mkdir="mkdir -p"
 alias lr="bundle exec guard"
 
 # babun (shell for Windows)
