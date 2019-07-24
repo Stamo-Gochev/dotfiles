@@ -277,6 +277,7 @@ alias nup="npm update && npm prune"
 alias nv="npm view"
 alias nli="npm link"
 alias nl="npm list --depth=0"
+alias nls="npm list"
 alias nvk="npm view @progress/kendo-ui"
 alias nvrw="npm view @progress/kendo-dropdowns-react-wrapper"
 alias ni="npm install"
@@ -352,15 +353,13 @@ alias cpg="code /d/work/github/playground"
 alias cac="code /d/work/github/aspnet-core/AspNetCore"
 alias cacj="code /d/work/github/aspnet-core/extensions"
 
-# open projects - dev
-alias cpac="code /d/work/github/aspnet-core/AspNetCore"
-
 # open projects - kendo
 alias ck="code /c/work/github/kendo"
 alias ckco="code /d/work/github/kendo-ui-core"
 alias ckendo="code /c/work/github/kendo"
 alias ckcdn="code /d/work/github/kendo-cdn"
 
+# open projects - kendo blazor
 alias ckb="code /d/work/github/blazor"
 alias ckbj="code /d/work/github/blazor/js"
 alias ckb2="code /d/kendo-blazor"
@@ -373,9 +372,9 @@ alias ckad="code /d/work/github/kendo-angular-dateinputs"
 alias ckai="code /d/work/github/kendo-angular-intl"
 alias ckd="code /d/work/github/kendo-drawing"
 
+# open projects - kendo react
 alias ckr="code /d/work/github/kendo-react-private"
 alias ckrp="code /d/work/github/kendo-react-private"
-alias ckvw="code /d/work/github/kendo-vue-wrappers"
 alias ckt="code /d/work/github/kendo-themes"
 
 alias ckpt="code /d/work/github/kendo-package-tasks"
@@ -401,7 +400,7 @@ alias pkcdn="cd /d/work/github/kendo-cdn"
 alias pkb="cd /d/work/github/blazor"
 alias pkbjs="cd /d/work/github/blazor/js/telerik-blazor"
 alias pkbj="cd /d/work/github/blazor/js/telerik-blazor"
-alias pkb2="cd /d/kendo-blazor"
+alias pkb2="cd /d/work/kendo-blazor"
 alias pkbd="cd /d/work/github/blazor-docs"
 
 # projects - kendo examples
@@ -444,6 +443,7 @@ alias ctrwc="gulp test --package kendo-charts-react-wrapper"
 # projects - kendo vue wrappers
 alias pkvw="cd /d/work/github/kendo-vue-wrappers"
 alias pvw="cd /d/work/github/kendo-vue-wrappers"
+alias ckvw="code /d/work/github/kendo-vue-wrappers"
 alias cvw="cd /d/work/github/kendo-vue-wrappers && code ."
 alias cpkvw="cd /d/work/github/kendo-vue-wrappers && code ."
 alias rve="chrome.exe http://localhost:8764"
@@ -504,11 +504,9 @@ alias dotbbce="dotnet build /d/work/github/blazor/demos/TelerikBlazor/TelerikBla
 
 alias dotpbe="dotnet publish /d/work/github/blazor/demos/TelerikBlazorDemos.Server/TelerikBlazorDemos.Server.csproj"
 
-
 # dotnet projects - kendo blazor server
 alias dotbbse="dotnet build /d/work/github/blazor/demos/server-side/TelerikBlazorDemos/TelerikBlazorDemos.csproj"
 alias dotrbse="dotnet run --project /d/work/github/blazor/demos/server-side/TelerikBlazorDemos/TelerikBlazorDemos.csproj"
-
 
 # docker
 alias doc="docker"
@@ -539,7 +537,6 @@ alias docni="docker network inspect"
 
 # kubernetes
 alias kub="kubectl"
-
 
 # ruby
 alias r19="uru 193p551"
