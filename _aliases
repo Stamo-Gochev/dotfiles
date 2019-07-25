@@ -102,9 +102,7 @@ alias gl="git log --graph --pretty=format:'%h - %d %s (%cr) <%an>' | vim -R -c '
 # git fun
 alias gitcoin="TZ=UTC git log --pretty=format:'%H%x09%ad%x09%an' --date=iso-local | sed -E 's/^(0*[1-9a-f])(.*)/\1\t\1\2/' | sort -k1,1 -k3,3 | head -n10 | cut -f 2,3,4"
 # time chart with commits for a user
-# git log --author="github-name-here" --date=iso | perl -nalE 'if (/^Date:\s+[\d-]{10}\s(\d{2})/) { say
-$1+0 }' | sort | uniq -c|perl -MList::Util=max -nalE '$h{$F[1]} = $F[0]; }{ $m = max values %h; fore ach (0..23) { $h{$_} = 0 if not exists $h{$_} } foreach (sort {$a <=> $b } keys %h) { say sprintf "% 02d - %4d %s", $_, $h{$_}, "*"x ($h{$_} / $m * 50); }''
-
+# git log --author="Stamo-Gochev" --date=iso | perl -nalE 'if (/^Date:\s+[\d-]{10}\s(\d{2})/) { say $1+0 }' | sort | uniq -c|perl -MList::Util=max -nalE '$h{$F[1]} = $F[0]; }{ $m = max values %h; foreach (0..23) { $h{$_} = 0 if not exists $h{$_} } foreach (sort {$a <=> $b } keys %h) { say sprintf "%02d - %4d %s", $_, $h{$_}, "*"x ($h{$_} / $m * 50); }'
 
 # dev
 alias ac="ack-grep"
