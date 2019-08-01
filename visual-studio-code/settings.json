@@ -817,20 +817,40 @@
 	"workbench.colorCustomizations": {
 		"editor.selectionHighlightBackground": "#1E79D2",
 		"editor.inactiveSelectionBackground": "#d2cf1e",
-		"editor.wordHighlightBackground": "#FF0000",
+		"editor.wordHighlightBackground": "#1E79D2",
 		"editor.wordHighlightStrongBackground": "#7e94aa",
-		"editor.findMatchBackground": "#1E79D2",
+		"editor.findMatchBackground": "#e8734e",
 		"editor.findMatchHighlightBackground": "#1E79D2",
 		"editorLineNumber.foreground": "#ffffff",
+
 		"list.activeSelectionBackground": "#1E79D2",
 		"list.activeSelectionForeground": "#ffffff",
 		"list.inactiveSelectionBackground": "#557c9b",
 		"list.inactiveFocusBackground": "#832561",
 		"list.focusBackground": "#832561",
-		"list.hoverBackground": "#832561",
+		"list.hoverBackground": "#1E79D2",
+		"list.focusForeground": "#ffffff",
+
+		"tab.activeBackground": "#1E79D2",
+		"tab.activeForeground": "#ffffff",
+		"tab.activeBorder": "#ffffff",
+		"tab.unfocusedActiveForeground": "#ffffff",
+		"tab.inactiveForeground": "#ffffff",
+		"tab.unfocusedInactiveForeground": "#ffffff",
+
 		"sideBar.background": "#000000",
 		"sideBar.border": "#ffffff",
 		"sideBar.foreground": "#ffffff",
+		"sideBar.foreground": "#ffffff",
+
+		"badge.background": "#000000",
+
+		"scrollbar.shadow": "#42b883",
+		"scrollbarSlider.background": "#42b883",
+		"scrollbarSlider.hoverBackground": "#42b883",
+		"scrollbarSlider.activeBackground": "#42b883",
+
+		"editorBracketMatch.background": "#e8734e",
 
 	},
 	"peacock.surpriseMeOnStartup": true,
