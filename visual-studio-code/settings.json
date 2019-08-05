@@ -815,6 +815,10 @@
 		}
 	],
 	"workbench.colorCustomizations": {
+		"breadcrumb.foreground": "#ffffff",
+		"breadcrumb"i: "#832561",
+		"breadcrumb.activeSelectionForeground"i: "#ffffff",
+
 		"editor.selectionHighlightBackground": "#1E79D2",
 		"editor.inactiveSelectionBackground": "#d2cf1e",
 		"editor.wordHighlightBackground": "#1E79D2",
@@ -851,6 +855,9 @@
 		"scrollbarSlider.activeBackground": "#42b883",
 
 		"editorBracketMatch.background": "#e8734e",
+
+		"gitDecoration.modifiedResourceForeground": "#ffffff",
+		"gitDecoration.untrackedResourceForeground": "#d2cf1e",
 
 	},
 	"peacock.surpriseMeOnStartup": true,
