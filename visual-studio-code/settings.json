@@ -814,6 +814,10 @@
 			"value": "#e8734e"
 		}
 	],
+
+	// fix coloring of .gitignore files by the vscode theme, e.g. node_modules
+	"explorer.decorations.colors": false,
+
 	"workbench.colorCustomizations": {
 		"breadcrumb.foreground": "#ffffff",
 		"breadcrumb"i: "#832561",
@@ -822,6 +826,7 @@
 		"editor.selectionHighlightBackground": "#1E79D2",
 		"editor.inactiveSelectionBackground": "#d2cf1e",
 		"editor.wordHighlightBackground": "#1E79D2",
+		"editor.wordHighlightStrongBackground": "#1E79D2",
 		"editor.wordHighlightStrongBackground": "#7e94aa",
 		"editor.findMatchBackground": "#e8734e",
 		"editor.findMatchHighlightBackground": "#1E79D2",
