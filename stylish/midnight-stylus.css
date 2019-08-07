@@ -449,3 +449,9 @@ body * {
     color: white !important;
 }
 }
+
+@-moz-document url-prefix("https://overreacted.io") {
+body {
+    font-family: Arial !important;
+}
+}
