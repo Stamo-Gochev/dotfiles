@@ -747,7 +747,7 @@
 	"peacock.favoriteColors": [
 		{
 			"name": "Angular Red",
-			"value": "#b52e31"
+			"value": "#eb2626"
 		},
 		{
 			"name": "C# Purple",
@@ -783,7 +783,7 @@
 		},
 		{
 			"name": "kendo-orange",
-			"value": "#8e4c37"
+			"value": "#e56137"
 		},
 		{
 			"name": "original dark pink",
@@ -810,8 +810,8 @@
 			"value": "#1857a4"
 		},
 		{
-			"name": "dark-orange-2",
-			"value": "#e8734e"
+			"name": "dark-pink-2",
+			"value": "#e72e8a"
 		}
 	],
 
@@ -820,8 +820,8 @@
 
 	"workbench.colorCustomizations": {
 		"breadcrumb.foreground": "#ffffff",
-		"breadcrumb"i: "#832561",
-		"breadcrumb.activeSelectionForeground"i: "#ffffff",
+		"breadcrumb": "#832561",
+		"breadcrumb.activeSelectionForeground": "#ffffff",
 
 		"editor.selectionHighlightBackground": "#1E79D2",
 		"editor.inactiveSelectionBackground": "#d2cf1e",
@@ -863,6 +863,12 @@
 
 		"gitDecoration.modifiedResourceForeground": "#ffffff",
 		"gitDecoration.untrackedResourceForeground": "#d2cf1e",
+
+		"debugToolBar.border": "#d2cf1e",
+
+		"input.background": "#000000",
+		"input.foreground": "#ffffff",
+		"input.border": "#e8734e",
 
 	},
 	"peacock.surpriseMeOnStartup": true,
