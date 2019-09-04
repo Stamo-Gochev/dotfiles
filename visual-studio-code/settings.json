@@ -812,6 +812,14 @@
 		{
 			"name": "dark-pink-2",
 			"value": "#e72e8a"
+		},
+		{
+			"name": "dark-pink-3",
+			"value": "#ac4dda"
+		},
+		{
+			"name": "angular-dark-red",
+			"value": "#860d0d"
 		}
 	],
 
