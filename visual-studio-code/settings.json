@@ -509,7 +509,7 @@
 	// Whether the linter is run on save or on type.
 	"php.validate.run": "onSave",
 
-	//Custom settings
+	// Custom settings
 
 	"editor.wordWrap": true,
 
@@ -524,6 +524,8 @@
     "editor.trimAutoWhitespace": true,
 
 	"trailing-spaces.trimOnSave": true,
+
+	"workbench.editor.enablePreview": false,
 
 	//Vim
 	"vim.normalModeKeyBindings": [{
@@ -820,6 +822,10 @@
 		{
 			"name": "angular-dark-red",
 			"value": "#860d0d"
+		},
+		{
+			"name": "kendo-dark-orange-2",
+			"value": "#e24f21"
 		}
 	],
 
