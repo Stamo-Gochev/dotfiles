@@ -29,6 +29,10 @@ alias di="rm -f .git/index.lock"
 alias llbr="git llbr"
 alias lmrbr="git lmrbr"
 alias lrbr="git lrbr"
+alias lro="git lro"
+alias rro="git rro"
+alias dro="git rro"
+alias sro="git sro"
 alias lrbrby="git lrbrby"
 alias plbr="git plbr"
 alias c="git c"
@@ -60,6 +64,7 @@ alias rc="git rc"
 alias rea="git rea"
 alias rec="git rec"
 alias ra="git ra"
+alias req="git req"
 alias ri="git ri"
 alias rim="git rim"
 alias ric="git ric"
@@ -111,9 +116,11 @@ alias i="sudo apt-get install"
 alias v="vim"
 alias vv="vim ~/.vimrc"
 alias vb="vim ~/.bashrc"
+alias vz="vim ~/.zshrc"
 alias va="vim ~/.aliases"
 alias w="explorer .; gnome-open ."
 alias ldu="du -sh * | sort -hr"
+alias lds="df -h"
 alias mkdir="mkdir -p"
 alias lr="bundle exec guard"
 
@@ -215,7 +222,7 @@ alias dcts='gulp karma-unit --tests="`git tests`"'
 # gulp karma-unit --tests="{tests/editor/resizing/table-resize-handle.js,tests/editor/resizing/table-resizing.js}"
 # gulp karma-unit --tests="tests/editor/resizing/table-resize-handle.js" --tests="tests/editor/resizing/table-resizing.js"
 
-alias gus='gulp scripts --skip-min="true"'
+alias gusm='gulp scripts --skip-min="true"'
 
 # debug tests
 alias ctc="chrome.exe http://localhost:9876/debug.html"
@@ -284,6 +291,7 @@ alias nls="npm list"
 alias nvk="npm view @progress/kendo-ui"
 alias nvrw="npm view @progress/kendo-dropdowns-react-wrapper"
 alias ni="npm install"
+alias nin="npm init"
 alias nif="npm install --force"
 alias nig="npm install -g"
 alias nis="npm install --save"
@@ -298,6 +306,7 @@ alias nrw="npm run watch"
 alias ns="npm start"
 alias nsaot="ng server --aot-true"
 alias nu="npm update"
+alias ncc="npm cache clean --force"
 alias rac="npm run api-check"
 alias rn="rm -rf node_modules"
 alias rna="find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +"
@@ -348,13 +357,16 @@ alias pa="cd /d/work/github/aspnet-core"
 alias pac="cd /d/work/github/aspnet-core/AspNetCore"
 alias pacj="cd /d/work/github/aspnet-core/extensions"
 alias pab="cd /d/work/github/aspnet-core/blazor"
+alias pacf="cd /d/work/github/aspnet-core/corefx"
 
 # open projects
-alias cal="cide && ck && cbj && cac && cpg"
+alias cal="cide && ck && ckbj && cac && cpg"
 alias cide="code /c/work/github/dotfiles"
 alias cpg="code /d/work/github/playground"
 alias cac="code /d/work/github/aspnet-core/AspNetCore"
 alias cacj="code /d/work/github/aspnet-core/extensions"
+alias cace="code /d/work/github/aspnet-core/extensions"
+alias cacf="code /d/work/github/aspnet-core/corefx"
 
 # open projects - kendo
 alias ck="code /c/work/github/kendo"
@@ -370,16 +382,22 @@ alias ckb2="code /d/kendo-blazor"
 # open projects - kendo angular
 alias ckc="code /d/work/github/kendo-charts"
 alias ckintl="code /d/work/github/kendo-intl"
+alias ckaco="code /d/work/github/kendo-angular-common"
+alias ckad="code /d/work/github/kendo-draggable"
 alias ckac="code /d/work/github/kendo-angular-charts"
-alias ckad="code /d/work/github/kendo-angular-dateinputs"
+alias ckadi="code /d/work/github/kendo-angular-dateinputs"
+alias ckag="code /d/work/github/kendo-angular-grid"
 alias ckai="code /d/work/github/kendo-angular-intl"
 alias ckd="code /d/work/github/kendo-drawing"
 
 # open projects - kendo react
 alias ckr="code /d/work/github/kendo-react-private"
 alias ckrp="code /d/work/github/kendo-react-private"
+alias ckbt="code /d/work/github/kendo-build-tasks"
+alias ckrt="code /d/work/github/kendo-react-tasks"
 alias ckt="code /d/work/github/kendo-themes"
 
+# open projects - kendo common
 alias ckpt="code /d/work/github/kendo-package-tasks"
 alias ckbt="code /d/work/github/kendo-build-tasks"
 
@@ -414,10 +432,12 @@ alias pkume="cd ui-for-aspnet-mvc-examples"
 alias pk2="cd /d/work/github/k2-site"
 alias pkacb="cd /c/work/github/kendo-angular-component-base"
 alias pkab="cd /c/work/github/kendo-angular-buttons"
+alias pkaco="cd /c/work/github/kendo-angular-common"
 alias pkac="cd /d/work/github/kendo-angular-charts"
 alias pc="cd /d/work/github/kendo-charts"
 alias pkad="cd /c/work/github/kendo-angular-dropdowns"
 alias pkai="cd /c/work/github/kendo-angular-inputs"
+alias pkad="cd /d/work/github/kendo-draggable"
 alias pkag="cd /d/work/github/kendo-angular-grid"
 alias pkap="cd /c/work/github/kendo-angular-popup"
 alias pkaa="cd /c/work/github/angular-aot"
@@ -434,6 +454,8 @@ alias rnp="rm -rf node_modules/@progress"
 alias prp="cd /d/work/github/kendo-react-private"
 alias pkr="cd /d/work/github/kendo-react-private"
 alias pkrp="cd /d/work/github/kendo-react-private"
+alias prg="cd /d/work/github/kendo-react-private/packages/grid"
+alias pkrg="cd /d/work/github/kendo-react-private/packages/grid"
 alias rre="chrome.exe http://localhost:8888"
 
 # projects - kendo react wrappers
@@ -453,6 +475,7 @@ alias rve="chrome.exe http://localhost:8764"
 
 # projects - common
 alias ptb="cd /c/work/github/themebuilder"
+alias pktb="cd /c/work/github/themebuilder"
 alias rtb="chrome.exe http://localhost:4200"
 alias preact="cd /d/work/github/react"
 
@@ -494,14 +517,16 @@ alias dotbt="dotnet build /C/work/github/kendo/wrappers/mvc-6/tests/Kendo.Mvc.Te
 
 # dotnet projects - kendo blazor
 alias dotbb="dotnet build /d/work/github/blazor/Telerik.Blazor/Telerik.Blazor.csproj"
-alias dotbbe="dotnet build /d/work/github/blazor/demos/TelerikBlazorDemos.Server/TelerikBlazorDemos.Server.csproj"
+# alias dotbbe="dotnet build /d/work/github/blazor/demos/TelerikBlazorDemos.Server/TelerikBlazorDemos.Server.csproj"
 alias dotbbe="dotnet build /d/work/github/blazor/demos/server-side/TelerikBlazorDemos/TelerikBlazorDemos.csproj"
 
 # alias dotbbe="dotnet build RazorComponentsApp/RazorComponentsApp.Server/RazorComponentsApp.Server.csproj"
 # alias dotrbe="dotnet run RazorComponentsApp/RazorComponentsApp.Server"
 # alias dotbbe="dotnet build /d/work/github/ui-for-blazor-examples/TelerikBlazor.Server"
 # alias dotrbe="dotnet restore /d/work/github/blazor/demos/TelerikBlazorDemos.Server/TelerikBlazorDemos.Server.csproj"
-alias dotrbe="dotnet run --project /d/work/github/blazor/demos/TelerikBlazorDemos.Server/TelerikBlazorDemos.Server.csproj"
+# alias dotrbe="dotnet run --project /d/work/github/blazor/demos/TelerikBlazorDemos.Server/TelerikBlazorDemos.Server.csproj"
+alias dotrbe="dotnet run --project /d/Work/github/blazor/demos/server-side/TelerikBlazorDemos/TelerikBlazorDemos.csproj"
+alias rbe="dotnet run --project /d/Work/github/blazor/demos/server-side/TelerikBlazorDemos/TelerikBlazorDemos.csproj"
 
 alias dotbbce="dotnet build /d/work/github/blazor/demos/TelerikBlazor/TelerikBlazorDemos"
 
@@ -552,12 +577,14 @@ alias gub="gulp build"
 alias guc="gulp compile"
 # alias gucdn="gulp compile-cdn"
 alias gucdn="gulp build-cdn"
+alias gucdnc="gulp build-cdn && gulp copy-js"
 alias gunpm="gulp compile-npm"
 alias gues="gulp compile-es"
 alias gutl="gulp tslint"
 alias gul="gulp lint"
 alias gut="gulp test"
 alias guwt="gulp watch-test"
+alias gus="gulp start"
 
 # lerna
 alias le="lerna"
@@ -620,3 +647,16 @@ alias rt="tmux source-file ~/.tmux.conf"
 
 # kill the process
 # taskkill /F /PID 8588
+
+# linux helpers
+alias es="echo $SHELL"
+
+# WSL - Windows Subsystem for linuxgazette
+alias cdc="cd /mnt/c/"
+alias cdl="cd  ~/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs"
+
+# change to zsh
+# https://medium.com/@vinhp/set-and-use-zsh-as-default-shell-in-wsl-on-windows-10-the-right-way-4f30ed9592dc
+# chsh -s $(which zsh)
+alias ctzs="chsh -s /bin/zsh root"
+alias ctzsu="chsh -s /bin/zsh $(whoami)"

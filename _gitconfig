@@ -42,6 +42,7 @@
 	bi = bisect
 	bisc = "!f() { git bisect start && git bisect bad `git cc` ; }; f"
 	br = "!f() { git checkout -b $1 `git current` ; }; f"
+	br = "!f() { git checkout -b $1 `git current` ; }; f"
 	# current commit
 	cc = rev-parse HEAD
 	# delete local branch
@@ -76,6 +77,12 @@
 	d1 = diff HEAD~1
 	ds = diff --staged
 
+	# remotes
+	lro = remote -v
+	rro = remote remove
+	dro = remote remove
+	sro = remote set-url origin
+
 	# cherry-pick from ... to ...
 	#cpf2 = "!f() { git checkout $2 && git pull --rebase && git cherry-pick $1 && git push && git checkout $1 ; }; f"
 	cpf2 = "!f() { git checkout $2 && git pull --rebase origin $2 && git cherry-pick $1 ; }; f"
@@ -106,6 +113,7 @@
 	mnff = merge --no-ff
 	m = merge
 	ra = rebase --abort
+	req = rebase --quit
 	ri = rebase -i
 	rim = rebase -i origin/master
 	ric = "!f() { rebase -i origin/`git current` ; }; f"

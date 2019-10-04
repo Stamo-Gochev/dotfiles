@@ -1,6 +1,8 @@
 " automatically reload vimrc when it's saved
 au BufWritePost .vimrc so ~/.vimrc
 
+let os = substitute(system('uname -a'), "\n", "", "")
+
 " =============================================================================
 " Plugins
 " =============================================================================
@@ -158,7 +160,6 @@ Plugin 'lambdalisue/vim-unified-diff'
 "------------------------------------------------------------------
 
 " configure terminal colors
-let os = substitute(system('uname -a'), "\n", "", "")
 if os =~ "Msys" || has("win32") || has("win64")
   " using 256-color terminal with Cmder on Windows is too hacky
 else
@@ -210,10 +211,16 @@ set wildmode=list:longest
 set cursorline
 
 " Fix cursor type in Cygwin terminal on Windows when in normal (block) and insert mode (thin line)
-let &t_ti.="\e[1 q"
-let &t_SI.="\e[5 q"
-let &t_EI.="\e[1 q"
-let &t_te.="\e[0 q"
+
+if os =~ "Msys" || has("win32") || has("win64")
+  let &t_ti.="\e[1 q"
+  let &t_SI.="\e[5 q"
+  let &t_EI.="\e[1 q"
+  let &t_te.="\e[0 q"
+else
+  let &t_SI = "\e[6 q"
+  let &t_EI = "\e[2 q"
+endif
 
 " Enable mouse support - even in tmux \o/
 set mouse=a
@@ -428,6 +435,10 @@ nnoremap ) $
 " open next/previous file (use buffers)
 nmap <leader>ne :bn<CR>
 nmap <leader>pre :bp<CR>
+
+# map alt+k to switch tabs
+# https://stackoverflow.com/a/24047516
+map <Esc>\033[$ :tabn<CR>
 
 " ctags navigate to
 noremap <leader>; <C-]>zz
