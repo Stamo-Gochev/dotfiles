@@ -42,7 +42,6 @@
 	bi = bisect
 	bisc = "!f() { git bisect start && git bisect bad `git cc` ; }; f"
 	br = "!f() { git checkout -b $1 `git current` ; }; f"
-	br = "!f() { git checkout -b $1 `git current` ; }; f"
 	# current commit
 	cc = rev-parse HEAD
 	# delete local branch
@@ -51,7 +50,8 @@
 	# list remote branches
 	lrbr = branch -r
 	# list local branches
-	llbr = branch
+	llbr = "!f() { git branch --sort=-committerdate | head -n10 ; }; f"
+	llbra = branch
 	# remote branches created by an author
 	lrbrby = "!f() { git for-each-ref --format=' %(authorname) %09 %(refname)' | egrep -i 'refs/remotes/' | egrep -i --color $1 ; }; f"
 	# my remote branches
@@ -105,7 +105,6 @@
 
 	pr = pull --rebase
 	l = log -10 --oneline
-	l2 = log -10 --oneline --pretty=format:"%H %an %ad" --date=iso
 	# list history of a deleted file
 	lh = "!f() { git log -30 --all --full-history -- $1 ; }; f"
 	lo = log -10 --graph --pretty=format:'%C(yellow)(%cd)%Creset %C(cyan)%an%Creset %C(green)%h%Creset -%C(yellow)%d%Creset %s' --abbrev-commit --date=iso
