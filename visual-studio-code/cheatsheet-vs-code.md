@@ -75,6 +75,10 @@ Make sure to set the global path to gulp in `launch.json` as the local reference
 }
 ```
 # Themes
+**Note:** For some reason the new location is at:
+```
+C:\Users\{name}\AppData\Local\Programs\Microsoft VS Code\resources\app\extensions
+```
 ```
 cd C:\Program Files\Microsoft VS Code\resources\app\extensions
 mklink /D theme-monokai-best D:\GitHub\ide-settings\visual-studio-code\theme-monokai-best
