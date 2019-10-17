@@ -60,7 +60,8 @@ Make sure to set the global path to gulp in `launch.json` as the local reference
             "type": "node",
             "request": "launch",
             "name": "Gulp task",
-            "program": "C:/Users/gochev/AppData/Roaming/npm/gulp",
+            //"program": "C:/Users/gochev/AppData/Roaming/npm/gulp",
+            "program": "${workspaceRoot}/node_modules/gulp/bin/gulp.js",
             "args": [
                 "taskName"
             ]
