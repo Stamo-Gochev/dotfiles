@@ -264,10 +264,6 @@
         "command": "-workbench.debug.action.toggleRepl"
     },
     {
-        "key": "ctrl+l",
-        "command": "workbench.output.action.clearOutput"
-    },
-    {
         "key": "ctrl+r ctrl+r",
         "command": "editor.action.rename",
         "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
@@ -400,5 +396,22 @@
         "key": "alt+r",
         "command": "-toggleSearchRegex",
         "when": "searchViewletFocus && searchViewletVisible"
+    },
+    {
+        "key": "shift+f5",
+        "command": "-workbench.action.debug.stop",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "shift+f5",
+        "command": "workbench.action.debug.stop"
+    },
+    {
+        "key": "ctrl+k ctrl+a",
+        "command": "workbench.action.closeOtherEditors"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.output.action.clearOutput"
     }
 ]
