@@ -669,7 +669,7 @@
 	"vim.highlightedyank.duration": 250,
 	"vim.searchHighlightColor": "#58c4db",
 
-	"workbench.colorTheme": "monokai-best",
+	"workbench.colorTheme": "Monokai-Best",
 	"spell.StopAsking": true,
 	"workbench.iconTheme": "vscode-icons",
 	"vsicons.presets.foldersAllDefaultIcon": true,
@@ -826,6 +826,14 @@
 		{
 			"name": "kendo-dark-orange-2",
 			"value": "#e24f21"
+		},
+		{
+			"name": "light-green",
+			"value": "#23b89c"
+		},
+		{
+			"name": "light-beige",
+			"value": "#fd8fc7"
 		}
 	],
 
