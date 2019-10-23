@@ -593,6 +593,27 @@
 	}, {
 		"before":["<leader>", "h"],
 		"commands": [":nohl"]
+	}, {
+		"before":["<leader>", "0", "p"],
+		"after":["\"", "0", "p"]
+	}, {
+		"before":["<leader>", "1", "p"],
+		"after":["\"", "1", "p"]
+	}, {
+		"before":["<leader>", "2", "p"],
+		"after":["\"", "2", "p"]
+	}, {
+		"before":["<leader>", "3", "p"],
+		"after":["\"", "3", "p"]
+	}, {
+		"before":["<leader>", "4", "p"],
+		"after":["\"", "4", "p"]
+	}, {
+		"before":["<leader>", "5", "p"],
+		"after":["\"", "5", "p"]
+	}, {
+		"before":["<leader>", "2", "p"],
+		"after":["\"", "2", "p"]
 	}
 	],
 
@@ -624,6 +645,8 @@
 		"<C-c>": false,
 		"<C-v>": false
 	},
+
+	"vim.replaceWithRegister": true,
 
 	"vim.easymotion": true,
 
