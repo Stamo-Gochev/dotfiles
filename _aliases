@@ -329,10 +329,13 @@ alias ya="yarn add"
 alias yad="yarn add --dev"
 alias yag="yarn add -g"
 alias yi="yarn install"
-alias yv="yarn --version"
 alias ys="yarn start"
 alias yb="yarn build"
+alias yr="yarn run"
 alias yt="yarn test"
+alias yav="yarn -v"
+alias yv="yarn -v"
+alias uya="npm upgrade --global yarn"
 
 # packages
 alias bp="npm run build-package; npm pack"
@@ -356,12 +359,14 @@ alias pg="cd /d/work/github/playground"
 alias ide="cd /c/work/github/dotfiles"
 alias pa="cd /d/work/github/aspnet-core"
 alias pac="cd /d/work/github/aspnet-core/AspNetCore"
+alias pacd="cd /d/work/github/aspnet-core/AspNetCore.Docs"
 alias pacj="cd /d/work/github/aspnet-core/extensions"
 alias pab="cd /d/work/github/aspnet-core/blazor"
 alias pacf="cd /d/work/github/aspnet-core/corefx"
+alias pgt="cd /d/work/github/test-things"
 
 # open projects
-alias cal="cide && ck && ckbj && cac && cpg"
+alias cal="cide && ck && ckbj && cac && cpg && ckr && ckag"
 alias cide="code /c/work/github/dotfiles"
 alias cpg="code /d/work/github/playground"
 alias cac="code /d/work/github/aspnet-core/AspNetCore"
@@ -401,6 +406,7 @@ alias ckt="code /d/work/github/kendo-themes"
 # open projects - kendo common
 alias ckpt="code /d/work/github/kendo-package-tasks"
 alias ckbt="code /d/work/github/kendo-build-tasks"
+alias ckdq="code /d/work/github/kendo-data-query"
 
 # projects - kendo
 alias pk="cd /c/work/github/kendo"
@@ -417,6 +423,7 @@ alias pkd="cd /d/work/github/kendo-drawing"
 alias pkpt="cd /d/work/github/kendo-package-tasks"
 alias pkbt="cd /d/work/github/kendo-build-tasks"
 alias pkcdn="cd /d/work/github/kendo-cdn"
+alias pkdq="cd /d/work/github/kendo-data-query"
 
 # projects - kendo blazor
 alias pkb="cd /d/work/github/blazor"
@@ -521,9 +528,15 @@ alias dotbb="dotnet build /d/work/github/blazor/Telerik.Blazor/Telerik.Blazor.cs
 alias dotbbe="dotnet build /d/work/github/blazor/demos/server-side/TelerikBlazorDemos/TelerikBlazorDemos.csproj"
 alias dotbbsp="dotnet build /d/work/github/blazor/playground/ServerSidePlayground/ServerSidePlayground.csproj"
 
+# blazor examples
 alias dotrbe="dotnet run --project /d/Work/github/blazor/demos/server-side/TelerikBlazorDemos/TelerikBlazorDemos.csproj"
 alias rbe="dotnet run --project /d/Work/github/blazor/demos/server-side/TelerikBlazorDemos/TelerikBlazorDemos.csproj"
+
+# blazor server playground
 alias dotrbsp="dotnet run --project /d/work/github/blazor/playground/ServerSidePlayground/ServerSidePlayground.csproj"
+
+# blazor client playground
+alias dotrbcp="dotnet run --project /d/work/github/blazor/playground/ClientPlayground/Server/ClientPlayground.Server.csproj"
 
 # dotnet projects - kendo blazor server
 alias dotbbse="dotnet build /d/work/github/blazor/demos/server-side/TelerikBlazorDemos/TelerikBlazorDemos.csproj"
