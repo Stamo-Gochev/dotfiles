@@ -857,6 +857,22 @@
 		{
 			"name": "light-beige",
 			"value": "#fd8fc7"
+		},
+		{
+			"name": "gray-green",
+			"value": "#446d76"
+		},
+		{
+			"name": "brown",
+			"value": "#704314"
+		},
+		{
+			"name": "cyan-dark",
+			"value": "#2492a7"
+		},
+		{
+			"name": "cyan-light",
+			"value": "#43bdd6"
 		}
 	],
 
