@@ -1,4 +1,4 @@
-# Go lan
+# Go lang
 
 ## Install
 1. Install go 
