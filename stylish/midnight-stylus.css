@@ -426,6 +426,13 @@ body * {
 }
 }
 
+@-moz-document url-prefix("https://github.com/") {
+.page-responsive .pagehead {
+    
+    background-color: black !important;
+}
+}
+
 @-moz-document url-prefix("https://docs.docker.com/") {
 .language-Dockerfile, .highlighter-rouge, code {
     color: white !important;
@@ -453,5 +460,11 @@ body * {
 @-moz-document url-prefix("https://overreacted.io") {
 body {
     font-family: Arial !important;
+}
+}
+
+@-moz-document domain("https://docs.telerik.com") {
+.k-in, .k-mid, .k-mid > .k-in, k.in > a {
+    color: white !important;
 }
 }
