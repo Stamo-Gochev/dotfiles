@@ -20,10 +20,6 @@ color: #eee !important;
 }
 }
 
-@-moz-document url("about:blank"), url-prefix("ftp://"), url-prefix("file://"), url-prefix("about:neterror"), regexp("https?:\\/\\/(?!((www\\\\.)?(teams\\.microsoft\\.com))).*") {
-@namespace html url(http://www.w3.org/1999/xhtml);
-@namespace xul url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
-
 /* Browser Background */
 browser[type="content-primary"] {
     background-color: #141414 !important;
@@ -404,11 +400,8 @@ div.vso > .vspi {
     background: none transparent !important;
     border: none !important;
 }
-}
 
 @-moz-document url("https://github.com/") {
-
-
 body * {
     background-color: #000000 !important;
 }
