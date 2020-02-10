@@ -20,6 +20,7 @@ color: #eee !important;
 }
 }
 
+@-moz-document regexp("https?:\\/\\/(?!((www\\\\.)?(teams\\.microsoft\\.com))).*") {
 /* Browser Background */
 browser[type="content-primary"] {
     background-color: #141414 !important;
@@ -399,6 +400,7 @@ div.vsc:hover > .vspi,
 div.vso > .vspi {
     background: none transparent !important;
     border: none !important;
+}
 }
 
 @-moz-document url("https://github.com/") {
