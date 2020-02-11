@@ -12,6 +12,7 @@ for i in */.git; do ( echo $i; echo "============="; cd $i/..; git stash; git ch
 
 ## Stylus regex
 `https?:\/\/(?!((www\\.)?(teams\.microsoft\.com))).*`
+"https?:\\/\\/(?!((www\\\\.)?(github\\.com))).*"
 
 ## Chrome extensions
 Quick Tabs - https://chrome.google.com/webstore/detail/quick-tabs/jnjfeinjfmenlddahdjdmgpbokiacbbb?hl=en
