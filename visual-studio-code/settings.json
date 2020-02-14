@@ -873,6 +873,14 @@
 		{
 			"name": "cyan-light",
 			"value": "#43bdd6"
+		},
+		{
+			"name": "orange-dark",
+			"value": "#892e12"
+		},
+		{
+			"name": "ng2-red",
+			"value": "#860d0d"
 		}
 	],
 
