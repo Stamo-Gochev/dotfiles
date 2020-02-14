@@ -407,11 +407,23 @@
         "command": "workbench.action.debug.stop"
     },
     {
-        "key": "ctrl+k ctrl+a",
+        "key": "ctrl+k ctrl+w",
         "command": "workbench.action.closeOtherEditors"
     },
     {
         "key": "ctrl+l",
         "command": "workbench.output.action.clearOutput"
+    },
+    {
+        "key": "ctrl+alt+l",
+        "command": "workbench.files.action.focusFilesExplorer"
+    },
+    {
+        "key": "ctrl+k ctrl+a",
+        "command": "workbench.action.closeAllEditors"
+    },
+    {
+        "key": "ctrl+k ctrl+w",
+        "command": "-workbench.action.closeAllEditors"
     }
 ]
