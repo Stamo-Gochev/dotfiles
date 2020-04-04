@@ -41,7 +41,7 @@ sudo npm install -g typescript
 sudo npm install -g react
 sudo npm install -g react-redux
 sudo npm isntall -g redux
-sudo npm install -g http-server
+sudo npm install -g live-server
 
 sudo apt-get install dconf-cli
 sudo dpkg --configure -a
