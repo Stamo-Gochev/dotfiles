@@ -114,6 +114,7 @@ alias gitcoin="TZ=UTC git log --pretty=format:'%H%x09%ad%x09%an' --date=iso-loca
 alias ac="ack-grep"
 alias hs="live-server"
 alias rls="live-server"
+alias lis="live-server"
 alias i="sudo apt-get install"
 alias v="vim"
 alias vv="vim ~/.vimrc"

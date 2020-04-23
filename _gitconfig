@@ -44,6 +44,7 @@
 	br = "!f() { git checkout -b $1 `git current` ; }; f"
 	# current commit
 	cc = rev-parse HEAD
+
 	# delete local branch
 	dlbr = branch -D
 	drbr = push origin --delete
@@ -60,6 +61,7 @@
 	rbr = branch -m
 	# "!f() { git push -u origin ; }; f"
 	plbr = "!f() { git push --set-upstream origin `git current` ; }; f"
+
 	c = commit -m
 	ca = commit --amend
 	cae = commit --allow-empty
@@ -102,15 +104,17 @@
     # do not allow force pushing if new commits are not pulled
     # this does NOT work with fetch only - make sure that you have pulled the branch
     pf = push --force-with-lease
-
 	pr = pull --rebase
+
 	l = log -10 --oneline
 	# list history of a deleted file
 	lh = "!f() { git log -30 --all --full-history -- $1 ; }; f"
 	lo = log -10 --graph --pretty=format:'%C(yellow)(%cd)%Creset %C(cyan)%an%Creset %C(green)%h%Creset -%C(yellow)%d%Creset %s' --abbrev-commit --date=iso
 	lol = log --graph --pretty=format:'%C(yellow)(%cd)%Creset %C(green)%h%Creset -%C(yellow)%d%Creset %s %C(cyan)%an%Creset' --abbrev-commit --date=iso
+
 	mnff = merge --no-ff
 	m = merge
+
 	ra = rebase --abort
 	req = rebase --quit
 	ri = rebase -i
@@ -118,6 +122,7 @@
 	ric = "!f() { rebase -i origin/`git current` ; }; f"
 	rea = rebase --abort
 	rec = rebase --continue
+
 	# revert the last commit and preserve the changes locally
 	rc = reset --soft HEAD~
 	s = status
