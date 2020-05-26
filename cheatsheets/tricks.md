@@ -35,3 +35,13 @@ When used together with skype, remap port 80 to 8080: https://stackoverflow.com/
 ## JavaScript bookmarklet
 https://superuser.com/questions/279107/add-a-bookmarklet-in-google-chrome
 Add a bookmark with text `javascript: <minified-code>"
+
+## Docker
+### Delete `\ProgramData\docker` folder on Windows
+
+https://bit.ly/2ywANbJ
+```
+$ cd C:\ProgramData\docker
+$ takeown /R /F *
+$ ICACLS * /T /Q /C /RESET
+```
