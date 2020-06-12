@@ -427,7 +427,11 @@ body * {
 }
 
 @-moz-document url-prefix("https://github.com/") {
-.page-responsive .pagehead {
+.page-responsive .pagehead,
+.js-notification-inboxes,
+.js-notification-sidebar-repositories,
+.js-notification-sidebar-filters ,
+.border-0, .py-2, .m-0,  .d-flex{
     
     background-color: black !important;
 }
