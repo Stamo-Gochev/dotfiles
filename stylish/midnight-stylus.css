@@ -472,3 +472,13 @@ body {
     color: white !important;
 }
 }
+
+@-moz-document url-prefix("https://devblogs.microsoft.com/") {
+.commentlist pre, 
+.commentlist pre.prettyprinted, 
+.commentlist pre.prettyprint,
+body pre, body pre.prettyprint, 
+body pre.prettyprinted {
+      background-color: black !important;
+}
+}
