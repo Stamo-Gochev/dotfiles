@@ -51,7 +51,7 @@
 	# list remote branches
 	lrbr = branch -r
 	# list local branches
-	llbr = "!f() { git branch --sort=-committerdate | head -n10 ; }; f"
+	llbr = "!f() { git branch --sort=-committerdate | head -n20 ; }; f"
 	llbra = branch
 	# remote branches created by an author
 	lrbrby = "!f() { git for-each-ref --format=' %(authorname) %09 %(refname)' | egrep -i 'refs/remotes/' | egrep -i --color $1 ; }; f"
@@ -125,6 +125,10 @@
 
 	# revert the last commit and preserve the changes locally
 	rc = reset --soft HEAD~
+	# delete "pick" and set "r" when rebasing interactively to edit the commit
+	# then add and commit with a new message
+	rrc= reset HEAD^
+	rl = reflog
 	s = status
 	st = stash save
 	dst = "!f() { git stash drop stash@{$1} ; }; f"
@@ -167,6 +171,22 @@
 	# tags - usage git tagcommit <tag_name>
 	commit-of-tag = "!f() { git rev-list -n 1 $1 ; }; f"
 	list-tags = "!f() { git tag -l | sort -V --reverse | head -30 | grep '^2' ; }; f"
+
+	# https://www.smashingmagazine.com/make-life-easier-when-using-git/
+	# restore files when reflog fails
+	# This will find any change that was staged but is not attached to the git tree
+	# git fsck --lost-found
+	lfsck = fsck --lost-found
+
+	# See the dates of the files
+	# ls -lah .git/lost-found/other/
+
+	# Copy the relevant files to where you want them, for example:
+	# cp .git/lost-found/other/73f60804ac20d5e417783a324517eba600976d30 index.html
+
+	# statistics
+	show-commits-by-author = shortlog -sn --no-merges
+	scba = show-commits-by-author
 
 	###############################################
 	# public/private mirrors aliases
