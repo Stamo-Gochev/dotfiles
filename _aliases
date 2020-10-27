@@ -531,6 +531,7 @@ alias dotlr="dotnet --list-runtimes"
 alias dotrunt="dotnet --list-runtimes"
 alias dotls="dotnet --list-sdks"
 alias dotsdk="dotnet --list-sdks"
+alias rnad="find . -iname 'bin' -o -iname 'obj' | xargs rm -rf"
 
 # dotnet projects - kendo
 alias dotrew="dotnet restore wrappers/mvc-6/src/Kendo.Mvc/Kendo.Mvc.csproj"
@@ -553,7 +554,7 @@ alias dd="dotnet build /d/work/github/blazor/Telerik.Blazor/Telerik.Blazor.cspro
 alias dotbbe="dotnet build /d/work/github/blazor/demos/server-side/TelerikBlazorDemos/TelerikBlazorDemos.csproj"
 alias dotpbe="dotnet publish /d/work/github/blazor/demos/server-side/TelerikBlazorDemos/TelerikBlazorDemos.csproj"
 alias dotba="dotbb && dotbbe"
-alias dottbp="dotnet test /d/work/github/blazor-tests/BlazorTests/Blazor.Playground.Tests"
+alias dotbp="dotnet test /d/work/github/blazor-tests/BlazorTests/Blazor.Playground.Tests"
 alias ddb="dotbb && dotbbe"
 alias dda="dotbb && dotbbe && dotbbsp && dotbbcp"
 alias dde="dotbbe"
@@ -573,16 +574,25 @@ alias rbe="dotnet run --project /d/Work/github/blazor/demos/server-side/TelerikB
 # blazor server playground
 alias dotbbsp="dotnet build /d/work/github/blazor/playground/ServerSidePlayground/ServerSidePlayground.csproj"
 alias dotbsp="dotbbsp"
+alias dotpsp="dotnet publish -c Release /d/work/github/blazor/playground/ServerSidePlayground/ServerSidePlayground.csproj"
 alias ddsp="dotnet build /d/work/github/blazor/playground/ServerSidePlayground/ServerSidePlayground.csproj"
+alias dotbsp5="dotnet build /d/work/github/blazor/playground/ServerSidePlayground/ServerSidePlayground.Net5.csproj"
+alias dotpsp5="dotnet publish -c Release /d/work/github/blazor/playground/ServerSidePlayground/ServerSidePlayground.Net5.csproj"
 alias dotrbsp="dotnet run --project /d/work/github/blazor/playground/ServerSidePlayground/ServerSidePlayground.csproj"
 alias dotrsp="dotrbsp"
 
 # blazor client playground
 alias dotbbcp="dotnet build /d/work/github/blazor/playground/ClientPlayground/Server/ClientPlayground.Server.csproj"
+alias dotbcp5="dotnet build /d/work/github/blazor/playground/ClientPlayground/Server/ClientPlayground.Server.Net5.csproj"
+alias dotbcpc5="dotnet build /d/work/github/blazor/playground/ClientPlayground/Client/ClientPlayground.Client.Net5.csproj"
 alias dotbcp="dotbbcp"
-alias ddcp="dotnet build /d/work/github/blazor/playground/ClientPlayground/Server/ClientPlayground.Server.csproj"
+alias ddcp="dotbbcp"
 alias dotrbcp="dotnet run --configuration Release --project /d/work/github/blazor/playground/ClientPlayground/Server/ClientPlayground.Server.csproj"
 alias dotrcp="dotrbcp"
+alias dotrbcp="dotnet run --configuration Release --project /d/work/github/blazor/playground/ClientPlayground/Server/ClientPlayground.Server.csproj"
+
+alias dotpcp="dotnet publish -p:PublishProfile=FolderProfile /d/work/github/blazor/playground/ClientPlayground/Server/ClientPlayground.Server.csproj"
+alias dotpcp5="dotnet publish -p:PublishProfile=FolderProfile /d/work/github/blazor/playground/ClientPlayground/Server/ClientPlayground.Server.Net5.kcsproj"
 
 # blazor tests
 alias dotbt="dotnet test /d/work/github/blazor/Telerik.Blazor.Tests"

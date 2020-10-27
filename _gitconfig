@@ -154,6 +154,7 @@
 	goprp = "!f() { git config --get remote.origin.url | sed -e 's/git@github.com://' | sed -e 's/.git//' | awk '{ printf "\"https://github.com/%s/compare/production...\"", $1 }' && echo `git current` ; }; f"
 
 	rh = reset --hard
+	rhh = reset --hard HEAD
 	u = reset HEAD
 	undo = checkout --
 	unst = reset HEAD
