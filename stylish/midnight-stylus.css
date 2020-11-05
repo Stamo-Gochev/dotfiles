@@ -488,3 +488,11 @@
         font-family: Arial !important;
     }
     }
+
+    @-moz-document url-prefix("https://finance.yahoo.com/") {
+    .YDC-Lead-Stack,
+    .YDC-Lead,
+    div[id] {
+        background-color: black !important;
+    }
+    }
