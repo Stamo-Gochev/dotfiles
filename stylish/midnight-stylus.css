@@ -414,6 +414,11 @@ body * {
     background-color: #000000 !important;
 }
 
+.text-gray-light,
+.f1-light {
+    color: gold !important;
+}
+
 
 }
 
