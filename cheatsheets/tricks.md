@@ -45,3 +45,9 @@ $ cd C:\ProgramData\docker
 $ takeown /R /F *
 $ ICACLS * /T /Q /C /RESET
 ```
+
+## Links
+Create a junction
+```
+mklink /J Link Target
+```
