@@ -418,9 +418,9 @@ color: #eee !important;
 }
 
 @-moz-document url-prefix("https://github.com/") {
-body * {
+/* body * {
     background-color: #000000 !important;
-}
+}*/
 
 .text-gray,
 .text-gray-dark {
@@ -432,6 +432,7 @@ body * {
 .bg-blue-light,
 #ref-list-branches,
 #wiki-footer,
+.hide-full-screen,
 .page-responsive .pagehead,
 .js-notification-inboxes,
 .js-notification-sidebar-repositories,
@@ -491,6 +492,12 @@ body * {
 .text-gray-light {
     color: gold !important;
 }
+
+.tree-browser-result[aria-selected=true] {
+    background-color: teal !important;
+}
+
+
 }
 
 @-moz-document url-prefix("https://docs.docker.com/") {
