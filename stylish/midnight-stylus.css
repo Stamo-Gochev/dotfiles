@@ -653,3 +653,40 @@ body, table {
 }
 
 }
+
+@-moz-document url-prefix("https://teams.microsoft.com/") {
+.app-bar-text {
+    color: white !important;
+    font-size: 1.1rem;
+}
+
+.app-bar-text,
+.app-bar button {
+    color: white !important;
+}
+
+.ts-channel-list a {
+    color: #d5cbcb !important;
+}
+
+.left-rail-selected * {
+    color: gold !Important;
+}
+
+.ts-channel-list a.ts-unread-channel {
+    font-weight: 800 !important;
+    color: white !Important;    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}
