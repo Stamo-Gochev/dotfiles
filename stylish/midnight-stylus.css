@@ -666,18 +666,39 @@ body, table {
 }
 
 .ts-channel-list a {
-    color: #d5cbcb !important;
+    /*color: #e6e0e0 !important;*/
+    color: white !important;
 }
 
 .left-rail-selected * {
-    color: gold !Important;
+    /*color: gold !Important; */
+    font-weight: 800 !important;
+    background: #4d54ff !important;
+    
 }
 
 .ts-channel-list a.ts-unread-channel {
     font-weight: 800 !important;
-    color: white !Important;    
+    color: #75fff7 !Important;    
 }
 
+.app-bar button.app-bar-link.app-bar-selected {
+     color: white !Important;
+    border: 1px solid white !important;
+}
+
+.app-bar .app-bar-link {
+    color: white !Important; 
+}
+
+.ts-left-rail-wrapper {
+    background-color: rgb(31, 31, 31) !important;
+}
+
+button[aria-label*=activity] {
+    border: 1px solid red !important;  
+    background: #28938c !important;
+}
 
 
 
