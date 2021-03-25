@@ -70,24 +70,12 @@
         "when": "terminalFocus"
     },
     {
-        "key": "ctrl+shift+n",
-        "command": "extension.advancedNewFile"
-    },
-    {
         "key": "ctrl+alt+n",
         "command": "-extension.advancedNewFile"
     },
     {
         "key": "ctrl+n",
-        "command": "workbench.action.files.newUntitledFile"
-    },
-    {
-        "key": "ctrl+n",
         "command": "-workbench.action.files.newUntitledFile"
-    },
-    {
-        "key": "ctrl+shift+n",
-        "command": "newFile.createNewFile"
     },
     {
         "key": "ctrl+alt+n",
@@ -425,5 +413,38 @@
     {
         "key": "ctrl+k ctrl+w",
         "command": "-workbench.action.closeAllEditors"
+    },
+    {
+        "key": "ctrl+k ctrl+r",
+        "command": "-workbench.action.keybindingsReference"
+    },
+    {
+        "key": "ctrl+k ctrl+r",
+        "command": "workbench.action.closeEditorsToTheRight"
+    },
+    {
+        "key": "ctrl+shift+n",
+        "command": "-workbench.action.newWindow"
+    },
+    {
+        "key": "ctrl+shift+n",
+        "command": "explorer.newFolder"
+    },
+    {
+        "key": "ctrl+alt+n",
+        "command": "extension.advancedNewFile"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "workbench.action.files.newUntitledFile"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "workbench.view.explorer"
+    },
+    {
+        "key": "ctrl+y",
+        "command": "-extension.vim_ctrl+y",
+        "when": "editorTextFocus && vim.active && vim.use<C-y> && !inDebugRepl"
     }
 ]
