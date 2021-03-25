@@ -881,6 +881,30 @@
 		{
 			"name": "ng2-red",
 			"value": "#860d0d"
+		},
+		{
+			"name": "yellow",
+			"value": "#958605"
+		},
+		{
+			"name": "csharp-light-purple",
+			"value": "#523472"
+		},
+		{
+			"name": "orange-light",
+			"value": "#f26035"
+		},
+		{
+			"name": "light-green",
+			"value": "#88cd5e"
+		},
+		{
+			"name": "green-grass",
+			"value": "#99b41a"
+		},
+		{
+			"name": "sky-blue",
+			"value": "#2a9ccc"
 		}
 	],
 
@@ -944,5 +968,12 @@
 	"peacock.keepBadgeColor": true,
 	"breadcrumbs.enabled": true,
 	"liveshare.featureSet": "insiders",
-	"peacock.affectStatusBar": false
+	"peacock.affectStatusBar": false,
+
+	"debug.javascript.usePreview": true,
+	"vs-kubernetes": {
+		"vs-kubernetes.helm-path.windows": "C:\\Users\\gochev\\.vs-kubernetes\\tools\\helm\\windows-amd64\\helm.exe",
+		"vs-kubernetes.minikube-path.windows": "C:\\Users\\gochev\\.vs-kubernetes\\tools\\minikube\\windows-amd64\\minikube.exe",
+		"vs-kubernetes.draft-path.windows": "C:\\Users\\gochev\\.vs-kubernetes\\tools\\draft\\windows-amd64\\draft.exe"
+	}
 }
