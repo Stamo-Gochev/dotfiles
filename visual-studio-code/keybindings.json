@@ -407,10 +407,6 @@
         "command": "workbench.files.action.focusFilesExplorer"
     },
     {
-        "key": "ctrl+k ctrl+a",
-        "command": "workbench.action.closeAllEditors"
-    },
-    {
         "key": "ctrl+k ctrl+w",
         "command": "-workbench.action.closeAllEditors"
     },
@@ -446,5 +442,13 @@
         "key": "ctrl+y",
         "command": "-extension.vim_ctrl+y",
         "when": "editorTextFocus && vim.active && vim.use<C-y> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+k ctrl+a",
+        "command": "workbench.files.action.collapseExplorerFolders"
+    },
+    {
+        "key": "ctrl+alt+l",
+        "command": "workbench.files.action.showActiveFileInExplorer"
     }
 ]
