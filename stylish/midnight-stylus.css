@@ -700,14 +700,10 @@ button[aria-label*=activity] {
     background: #28938c !important;
 }
 
+}
 
-
-
-
-
-
-
-
-
-
+@-moz-document url-prefix("https://kubernetes.io/") {
+.flip-nav .td-navbar {
+    background-color: black !important;
+}
 }
