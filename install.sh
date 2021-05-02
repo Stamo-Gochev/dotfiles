@@ -56,3 +56,39 @@ wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-ke
 sudo sh -c 'echo "deb https://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 sudo apt-get update
 sudo apt-get install google-chrome-stable
+
+# end chrome
+
+# vscode
+sudo apt-get update
+sudo apt-get install gdebi-core
+
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
+sudo apt-get update
+sudo apt-get install code
+
+# make vscode the default editor
+xdg-mime default code.desktop text/plain
+
+# end vscode
+
+# machine learning
+
+sudo apt-get install python
+
+# miniconda
+
+wget https://repo.anaconda.com/miniconda/Miniconda3-py39_4.9.2-Linux-x86_64.sh
+bash Miniconda3-py39_4.9.2-Linux-x86_64.sh 
+
+# end miniconda
+
+# mamba
+
+conda install mamba -n base -c conda-forge
+
+# end mamba
+
+# end machine learning
