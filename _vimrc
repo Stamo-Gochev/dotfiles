@@ -436,8 +436,8 @@ nnoremap ) $
 nmap <leader>ne :bn<CR>
 nmap <leader>pre :bp<CR>
 
-# map alt+k to switch tabs
-# https://stackoverflow.com/a/24047516
+" map alt+k to switch tabs
+" https://stackoverflow.com/a/24047516
 map <Esc>\033[$ :tabn<CR>
 
 " ctags navigate to

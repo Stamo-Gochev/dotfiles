@@ -2,13 +2,16 @@
 alias g="git"
 alias a="git a"
 
-# bisect commits - http://webchick.net/node/99
+# bisect commits - http://webchick.net/git-bisect
 # git checkout (bad commit)
 # git br <new_branch>
 # git bisect start
 # git bisect good fd0a623
 # git bisect bad 256d850
 # git bisect reset
+# g bisc
+# g bisect good <some_has>
+
 alias bi="git bi"
 alias big="git bi good"
 alias bib="git bi bad"
@@ -37,12 +40,14 @@ alias sro="git sro"
 alias lrbrby="git lrbrby"
 alias plbr="git plbr"
 alias c="git c"
+alias cnv="git commit $1 --no-verify"
 alias cc="g cc"
 alias ca="git ca"
 alias cae="git cae"
 alias cl="git cl"
 alias co="git co"
 alias cod="git cod"
+alias codpr="git cod && pr"
 alias com="git com"
 alias compr="git com && pr"
 alias cop="git cop"
@@ -135,6 +140,7 @@ alias mkdir="mkdir -p"
 alias lr="bundle exec guard"
 alias gbd="nr build:debug"
 alias gbp="nr build:production"
+alias rhs="chrome.exe http://localhost:8080"
 
 # babun (shell for Windows)
 alias bpi="pact install"
@@ -154,7 +160,7 @@ alias tk="tmux kill-session -t"
 # list sessions
 alias tl="tmux ls"
 
-# tests
+# kendo tests
 alias cta='gulp karma-mocha'
 alias ctah='gulp karma-mocha --browser="ChromeHeadless"'
 alias ctb='gulp karma-mocha --tests="tests/button/**"'
@@ -170,12 +176,8 @@ alias ctdsm='gulp karma-mocha --tests="tests/model/**"'
 alias ctg='gulp karma-mocha --tests="tests/grid/**"'
 alias ctgh='gulp karma-mocha --tests="tests/grid/**" --browser="ChromeHeadless"'
 alias ctgff='gulp karma-mocha --tests="tests/grid/**" --browser="Firefox"'
-alias ctgsj3='gulp karma-mocha --tests="tests/grid/scrollable.js" --jquery="3.3.1"'
 alias ctgj3='gulp karma-mocha --tests="tests/grid/**" --jquery="3.3.1"'
 alias ctve='gulp karma-mocha --tests="tests/grid/virtual*"'
-alias ctvpe='gulp karma-mocha --tests="tests/grid/virtual-popup*"'
-alias ctvie='gulp karma-mocha --tests="tests/grid/virtual-incell*"'
-alias ctvi='gulp karma-mocha --tests="tests/grid/virtual-inline*"'
 alias ctlb='gulp karma-mocha --tests="tests/listbox/*.js"'
 alias ctlv='gulp karma-mocha --tests="tests/listview/*.js"'
 alias ctmtb='gulp karma-mocha --tests="tests/maskedtextbox/*.js"'
@@ -190,7 +192,7 @@ alias ctw='gulp karma-mocha --tests="tests/window/**"'
 alias ctaw='gulp karma-mocha --tests="tests/action-widgets/**"'
 alias ctsv='gulp karma-mocha --tests="tests/view/**"'
 
-# deprecated tests
+# deprecated - kendo tests
 alias dcta="gulp karma-unit"
 alias dctb='gulp karma-unit --tests="tests/button/**"'
 alias dctcm='gulp karma-unit --tests="tests/columnmenu/**"'
@@ -202,12 +204,7 @@ alias dctds='gulp karma-unit --tests="tests/data/**"'
 alias dctdsm='gulp karma-unit --tests="tests/model/**"'
 alias dctg='gulp karma-unit --tests="tests/grid/**"'
 alias dctgff='gulp karma-unit --tests="tests/grid/**" --browser="Firefox"'
-alias dctgsj3='gulp karma-unit --tests="tests/grid/scrollable.js" --jquery="3.3.1"'
 alias dctgj3='gulp karma-unit --tests="tests/grid/**" --jquery="3.3.1"'
-alias dctve='gulp karma-unit --tests="tests/grid/virtual*"'
-alias dctvpe='gulp karma-unit --tests="tests/grid/virtual-popup*"'
-alias dctvie='gulp karma-unit --tests="tests/grid/virtual-incell*"'
-alias dctvi='gulp karma-unit --tests="tests/grid/virtual-inline*"'
 alias dctlb='gulp karma-unit --tests="tests/listbox/*.js"'
 alias dctlv='gulp karma-unit --tests="tests/listview/*.js"'
 alias dctmtb='gulp karma-unit --tests="tests/maskedtextbox/*.js"'
@@ -241,7 +238,7 @@ alias ctc="chrome.exe http://localhost:9876/debug.html"
 alias ctf="firefox.exe http://localhost:9876/debug.html"
 alias ctie="iexplore.exe http://localhost:9876/debug.html"
 
-# rake tasks
+# kendo rake tasks
 alias rta="rake --tasks"
 alias rmb="rake mvc:binaries"
 alias rmb2="rake mvc:binaries MSBUILD='C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\MSBuild\Current\Bin\msbuild.exe'"
@@ -308,22 +305,32 @@ alias nif="npm install --force"
 alias nig="npm install -g"
 alias nis="npm install --save"
 alias nisd="npm install --save-dev"
+alias nid="npm install --only=dev"
 alias nip="npm-install-peers"
 alias nu="npm uninstall"
 alias nr="npm run"
 alias nrb="npm run build"
 alias nrd="npm run dev"
+alias nrl="npm run lint"
 alias nrs="npm run serve"
+alias nrt="npm run test"
 alias nrw="npm run watch"
 alias ns="npm start"
 alias nt="npm test"
 alias nsaot="ng server --aot-true"
-alias nu="npm update"
+alias nu="npm uninstall"
+alias nup="npm update"
 alias ncc="npm cache clean --force"
 alias rac="npm run api-check"
 alias rn="rm -rf node_modules"
 alias rna="find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +"
 alias rnp="rm -rf node_modules/$1"
+
+# pnpm
+alias pni="pnpm install"
+alias pnig="pnpm install -g"
+alias pnis="npm install --save"
+alias pnisd="npm install --save-dev"
 
 # npm packages
 
@@ -354,7 +361,7 @@ alias bp="npm run build-package; npm pack"
 alias saa="bp; cp *.tgz /c/work/github/angular-aot/; cd /c/work/github/angular-aot/; npm install *.tgz; cd -"
 alias sau="bp; cp *.tgz /c/work/github/angular-universal-rendering/; cd /c/work/github/angular-universal-rendering/; npm install *.tgz; cd -"
 
-# angular run aliases
+# kendo angular run aliases
 alias ae="chrome.exe http://gochev:8888/examples/"
 alias al="gulp lint"
 alias ak2="chrome.exe http://gochev:4000"
@@ -400,6 +407,8 @@ alias ckcdn="code /d/work/github/kendo-cdn"
 alias ckb="code /d/work/github/blazor"
 alias ckbj="code /d/work/github/blazor/js"
 alias ckb2="code /d/kendo-blazor"
+alias ckb2="code /d/kendo-blazor"
+alias ckbd="code /d/work/github/blazor/demos/server-side/TelerikBlazorDemos/wwwroot/demoList.json"
 
 # open projects - kendo angular
 alias ckc="code /d/work/github/kendo-charts"
@@ -407,6 +416,7 @@ alias ckintl="code /d/work/github/kendo-intl"
 alias ckaco="code /d/work/github/kendo-angular-common"
 alias ckad="code /d/work/github/kendo-draggable"
 alias ckac="code /d/work/github/kendo-angular-charts"
+alias ckaga="code /d/work/github/kendo-angular-gauges"
 alias ckadi="code /d/work/github/kendo-angular-dateinputs"
 alias ckag="code /d/work/github/kendo-angular-grid"
 alias ckai="code /d/work/github/kendo-angular-intl"
@@ -450,6 +460,7 @@ alias pkbb="cd /d/Work/kendo-blazor"
 alias pkbbj="cd /d/Work/kendo-blazor/js/telerik-blazor"
 alias pkbjs="cd /d/work/github/blazor/js/telerik-blazor"
 alias pkbj="cd /d/work/github/blazor/js/telerik-blazor"
+alias pkbbj="cd /d/work/kendo-blazor/js/telerik-blazor"
 alias pkb2="cd /d/work/kendo-blazor"
 alias pkbui="cd /d/work/github/blazor-ui"
 alias pkbd="cd /d/work/github/blazor-docs"
@@ -491,7 +502,6 @@ alias rre="chrome.exe http://localhost:8888"
 # projects - kendo react wrappers
 alias prw="cd /d/work/github/kendo-react-wrappers"
 alias crw="cd /d/work/github/kendo-react-private && code ."
-alias rrwe="chrome.exe http://localhost:8080"
 alias ctrwg="gulp test --package kendo-grid-react-wrapper"
 alias ctrwc="gulp test --package kendo-charts-react-wrapper"
 
@@ -509,6 +519,9 @@ alias pktb="cd /d/work/github/themebuilder"
 alias cktb="code /d/work/github/themebuilder"
 alias rtb="chrome.exe http://localhost:4200"
 alias preact="cd /d/work/github/react"
+
+# projects - kendo themes
+alias ptb="cd /d/work/github/themebuilder"
 
 # dotnet
 alias dot="dotnet"
@@ -593,12 +606,15 @@ alias dotpcp="dotnet publish -p:PublishProfile=FolderProfile /d/work/github/blaz
 alias dotpcp5="dotnet publish -p:PublishProfile=FolderProfile /d/work/github/blazor/playground/ClientPlayground/Server/ClientPlayground.Server.Net5.kcsproj"
 
 # blazor tests
-alias dotbt="dotnet test /d/work/github/blazor/Telerik.Blazor.Tests"
-alias ddt="dotnet test /d/work/github/blazor/Telerik.Blazor.Tests"
-alias ddtb="dotnet test /d/work/github/blazor/Telerik.Blazor.Tests"
+alias dotbt="dotnet test dotnet test Telerik.Blazor.Tests"
+alias ddt="dotnet test Telerik.Blazor.Tests"
+alias ddtb="dotnet test dotnet test Telerik.Blazor.Tests"
 alias ddtds="dotnet test /d/work/github/datasource/tests/Telerik.DataSource.Tests/"
-alias ddte2e="dotnet test /d/Work/github/blazor/BlazorTests/Blazor.Playground.Tests"
-alias ddte="dotnet test /d/work/github/blazor/e2e/Blazor.Playground.Tests"
+alias ddte2e="dotnet test e2e/Blazor.Playground.Tests"
+alias dde2e="ddte2e"
+alias ddte="ddte2e"
+alias ddeg="dotnet test e2e/Blazor.Playground.Tests --verbosity minimal --filter 'FullyQualifiedName~Playground.Functional.GridTests'"
+alias ddetl="dotnet test e2e/Blazor.Playground.Tests --verbosity minimal --filter 'FullyQualifiedName~Playground.Functional.TreeListTests'"
 
 # docker
 alias doc="docker"
@@ -614,7 +630,7 @@ alias docv="docker --version"
 alias doci="docker images"
 alias docil="docker image ls"
 alias docl="docker container ls --all"
-alias docs="docker stop"
+alias docst="docker stop"
 alias docrm="docker rm"
 alias docpr="yes | docker container prune"
 alias docsa="docker stop $(docker ps -a -q)"
@@ -645,14 +661,14 @@ alias gucdn="gulp build-cdn"
 alias gucdnc="gulp build-cdn && gulp copy-js"
 alias gg="gulp build-cdn --mode dev && gulp copy-js"
 alias ggc="gulp build-cdn && gulp copy-js"
-alias ggw="cd /d/work/github/blazor/js/telerik-blazor && ggc && gulp watch-js --mode dev"
+alias ggw="ggc && gulp watch-js --mode dev"
 alias gunpm="gulp compile-npm"
 alias gues="gulp compile-es"
 alias gutl="gulp tslint"
 alias gul="gulp lint"
 alias gwl="gulp watch-lint"
 alias glw="gulp watch-lint"
-alias ggl="cd /d/work/github/blazor/js/telerik-blazor && gulp watch-lint"
+alias ggl="gulp watch-lint"
 alias ggwl="gulp watch-lint"
 alias gut="gulp test"
 alias guwt="gulp watch-test"
@@ -667,6 +683,12 @@ alias lei="lerna init"
 # webpack
 alias wp="webpack"
 alias wpds="webpack-dev-server"
+
+# snowpack
+alias sn="snowpack"
+alias snb="snowpack build"
+alias snd="snowpack dev"
+alias sndpkbb="pkbbj && snowpack dev"
 
 # react
 alias cra="create-react-app"
@@ -712,6 +734,8 @@ alias rz="source ~/.zshrc"
 alias rt="tmux source-file ~/.tmux.conf"
 
 # todo - think about aliases
+# an alternative can be
+# npx kill-port 1234
 # find which process ID is running on port 8080
 # netstat -o -n -a | findstr 0.0:8080
 
@@ -721,10 +745,12 @@ alias rt="tmux source-file ~/.tmux.conf"
 # kill the process
 # taskkill /F /PID 8588
 
+alias kp="npx kill-port"
+
 # linux helpers
 alias es="echo $SHELL"
 
-# WSL - Windows Subsystem for linuxgazette
+# WSL - Windows Subsystem for linux
 alias cduc="cd /mnt/c/"
 alias cdc="cd /mnt/c/"
 alias cdu="cd  ~/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs"
@@ -734,3 +760,6 @@ alias cdu="cd  ~/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79
 # chsh -s $(which zsh)
 alias ctzs="chsh -s /bin/zsh root"
 alias ctzsu="chsh -s /bin/zsh $(whoami)"
+
+# helpers
+alias lvse="code --list-extensions"
