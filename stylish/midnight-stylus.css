@@ -439,28 +439,7 @@ color: #eee !important;
 .js-notification-sidebar-filters ,
 .border-0, .py-2, .m-0,  .d-flex,
 .blankslate, .blankslate-spacious,
-.color-bg-secondary {
-
-    background-color: black !important;
-}
-
-.color-text-secondary,
-.d-flex,
-.flex-items-end,
-.v-align-baseline,
-.ml-1,
-.text-mono,
-.text-small,
-.color-text-primary,
-.break-word {
-    color:white !important;
-}
-
-.text-gray,
-.text-gray-dark,
-.color-text-secondary {
-    color: #CCC !important;
-}
+.color-bg-secondary,
 
 .page-responsive .pagehead,
 .js-notification-inboxes,
@@ -484,9 +463,27 @@ color: #eee !important;
 .bg-white,
 .border-bottom,
 .py-3, 
-.p-responsive {
-    
+.p-responsive,
+.flex-auto, .px-3, .px-lg-5 {
     background-color: black !important;
+}
+
+.color-text-secondary,
+.d-flex,
+.flex-items-end,
+.v-align-baseline,
+.ml-1,
+.text-mono,
+.text-small,
+.color-text-primary,
+.break-word {
+    color:white !important;
+}
+
+.text-gray,
+.text-gray-dark,
+.color-text-secondary {
+    color: #CCC !important;
 }
 
 .f1-light,
