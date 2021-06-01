@@ -696,14 +696,55 @@ body, table {
 }
 
 button[aria-label*=activity] {
-    border: 1px solid red !important;  
-    background: #28938c !important;
+    /*border: 1px solid red !important;  */
+    background: #4d54ff !important;
 }
+
+
+
+
+
+
+
+
+
+
 
 }
 
-@-moz-document url-prefix("https://kubernetes.io/") {
-.flip-nav .td-navbar {
+@-moz-document url-prefix("https://blazor.syncfusion.com/") {
+.gatsby-highlight,
+.language-csharp,
+pre[class*=language-],
+code[class*=language-] {
     background-color: black !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@-moz-document url-prefix("https://outlook.office.com/") {
+[aria-selected='true'] {
+    background-color: rgb(0, 120, 212) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
 }
