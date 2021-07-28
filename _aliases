@@ -610,10 +610,11 @@ alias dotbt="dotnet test dotnet test Telerik.Blazor.Tests"
 alias ddt="dotnet test Telerik.Blazor.Tests"
 alias ddtb="dotnet test dotnet test Telerik.Blazor.Tests"
 alias ddtds="dotnet test /d/work/github/datasource/tests/Telerik.DataSource.Tests/"
-alias ddte2e="dotnet test e2e/Blazor.Playground.Tests"
+alias ddte2e="dotnet test e2e/Playground.Functional"
 alias dde2e="ddte2e"
 alias ddte="ddte2e"
 alias ddeg="dotnet test e2e/Blazor.Playground.Tests --verbosity minimal --filter 'FullyQualifiedName~Playground.Functional.GridTests'"
+alias dde2eg="ddeg"
 alias ddetl="dotnet test e2e/Blazor.Playground.Tests --verbosity minimal --filter 'FullyQualifiedName~Playground.Functional.TreeListTests'"
 
 # docker
