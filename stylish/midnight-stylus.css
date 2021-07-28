@@ -484,7 +484,8 @@ color: #eee !important;
 
 .text-gray,
 .text-gray-dark,
-.color-text-secondary {
+.color-text-secondary,
+.color-text-tertiary {
     color: #CCC !important;
 }
 
@@ -534,6 +535,16 @@ body {
 .k-in, .k-mid, .k-mid > .k-in, k.in > a {
         color: white !important;
     }
+}
+
+@-moz-document url-prefix("https://supportheroes.telerik.com/") {
+.editor-attachments,
+.flow-editor-wrap,
+.pinned-editor-wrap {
+    position: static !important;
+    border: 1px solid red !important;
+}
+
 }
 
 @-moz-document url-prefix("https://devblogs.microsoft.com/") {
@@ -737,6 +748,21 @@ code[class*=language-] {
 }
 
 
+
+
+
+
+
+
+
+
+
+}
+
+@-moz-document url-prefix("https://css-tricks.com/") {
+* {
+    font-family: Arial !important;
+}
 
 
 
