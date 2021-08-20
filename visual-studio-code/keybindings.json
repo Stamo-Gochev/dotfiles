@@ -431,10 +431,6 @@
         "command": "extension.advancedNewFile"
     },
     {
-        "key": "ctrl+n",
-        "command": "workbench.action.files.newUntitledFile"
-    },
-    {
         "key": "ctrl+shift+b",
         "command": "workbench.view.explorer"
     },
@@ -542,5 +538,9 @@
     {
         "key": "alt+2",
         "command": "workbench.action.focusSecondEditorGroup"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "explorer.newFile"
     }
 ]
