@@ -466,6 +466,7 @@ color: #eee !important;
 .border-bottom,
 .py-3, 
 .p-responsive,
+.color-bg-canvas-inset,
 .flex-auto, .px-3, .px-lg-5 {
     background-color: black !important;
 }
@@ -743,7 +744,7 @@ code[class*=language-] {
 }
 
 @-moz-document url-prefix("https://outlook.office.com/") {
-[aria-selected='true'] {
+div[aria-selected='true'] {
     background-color: rgb(0, 120, 212) !important;
 }
 
