@@ -120,7 +120,9 @@
 	ra = rebase --abort
 	req = rebase --quit
 	ri = rebase -i
+	rid = rebase -i origin/develop
 	rim = rebase -i origin/master
+	rip = rebase -i origin/production
 	ric = "!f() { rebase -i origin/`git current` ; }; f"
 	rea = rebase --abort
 	rec = rebase --continue
@@ -150,6 +152,7 @@
 	notpushed = cherry -v
 	jshint = "!f() { git diff --name-status | egrep '^(A|M).*.js' | awk '{ print $2 }' | paste -sd ',' ; }; f"
 	tests = "!f() { git diff --name-only | egrep '^tests/.*' | paste -sd ',' ; }; f"
+	changed-tests = "!f() { git status --short | egrep '(tests?|e2e)/.*' | awk '{ print $2 }' | paste -sd ',' ; }; f"
 	# mocha-tests = "!f() { git diff --name-only | egrep '^mocha-tests/.*' | paste -sd ',' ; }; f"
 	# open pull request from current to master branch
 	gopr = "!f() { git config --get remote.origin.url | sed -e 's/git@github.com://' | sed -e 's/.git//' | awk '{ printf "\"https://github.com/%s/compare/master...\"", $1 }' && echo `git current` ; }; f"
@@ -157,9 +160,12 @@
 
 	rh = reset --hard
 	rhh = reset --hard HEAD
+	rhom = reset --hard origin/master
+	rhop = reset --hard origin/production
+	rhod = reset --hard origin/develop
 	u = reset HEAD
 	undo = checkout --
-	unst = reset HEAD
+	unstage = reset HEAD
 	staged = diff --cached
 	unstaged = diff
 	# Usage: git track origin/feature-123-login-form

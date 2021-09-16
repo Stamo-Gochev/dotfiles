@@ -79,7 +79,9 @@ alias ra="git ra"
 alias req="git req"
 alias ri="git ri"
 alias rim="git rim"
+alias frid="git f && g rid"
 alias frim="git f && g rim"
+alias frip="git f && g rip"
 alias ric="git ric"
 alias s="git s"
 alias sr="git remote set-url origin"
@@ -142,6 +144,8 @@ alias gbd="nr build:debug"
 alias gbp="nr build:production"
 alias rhs="chrome.exe http://localhost:8080"
 
+alias nic="npm install webpack-stream sockjs-client"
+
 # babun (shell for Windows)
 alias bpi="pact install"
 alias bpr="pact remove"
@@ -164,6 +168,8 @@ alias tl="tmux ls"
 alias cta='gulp karma-mocha'
 alias ctah='gulp karma-mocha --browser="ChromeHeadless"'
 alias ctb='gulp karma-mocha --tests="tests/button/**"'
+alias ctbc='gulp karma-mocha --tests="tests/barcode/**"'
+alias ctbch='gulp karma-mocha --tests="tests/barcode/**" --browser="ChromeHeadless"'
 alias ctcm='gulp karma-mocha --tests="tests/columnmenu/**"'
 alias ctch='gulp karma-mocha --tests="tests/chart/**"'
 alias ctchh='gulp karma-mocha --tests="tests/chart/**" --browser="ChromeHeadless"'
@@ -222,6 +228,9 @@ alias dctw='gulp karma-unit --tests="tests/window/**"'
 alias ctm='gulp karma-mocha --tests={`git tests`}'
 alias ctmh='gulp karma-mocha --tests={`git tests`} --browser="ChromeHeadless"'
 alias dctm='gulp karma-unit --tests={`git tests`}'
+alias e2em='gulp watch-e2e --tests={`git changed-tests`}'
+alias e2emh='gulp watch-e2e --tests={`git changed-tests` --browser="ChromeHeadless"}'
+# alias e2emh='gulp e2e --tests={`git changed-tests` --browser="Chrome_headless"}'
 
 # run karma with a single file
 alias cts='gulp karma-mocha --tests="`git tests`"'
@@ -237,6 +246,10 @@ alias gusm='gulp scripts --skip-min="true"'
 alias ctc="chrome.exe http://localhost:9876/debug.html"
 alias ctf="firefox.exe http://localhost:9876/debug.html"
 alias ctie="iexplore.exe http://localhost:9876/debug.html"
+
+# kendo-charts tests
+alias e2ebc='gu watch-e2e --tests="e2e/barcode/**/*.js"'
+alias e2ewwc='gu watch-e2e --tests="e2e/chart/**/*.js"'
 
 # kendo rake tasks
 alias rta="rake --tasks"
@@ -447,7 +460,9 @@ alias rje="chrome.exe http://localhost:8080/spring-demos/"
 alias rmce="chrome.exe http://localhost:5000"
 alias rpe="chrome.exe http://localhost:8987"
 alias pkc="cd /d/work/github/kendo-charts"
+alias pkcc="cd /d/work/github-clone/kendo-charts"
 alias pkdr="cd /d/work/github/kendo-drawing"
+alias pkd="cd /d/work/github/kendo-drawing"
 alias pkpt="cd /d/work/github/kendo-package-tasks"
 alias pkbta="cd /d/work/github/kendo-build-tasks"
 alias pkcdn="cd /d/work/github/kendo-cdn"
@@ -455,6 +470,7 @@ alias pkdq="cd /d/work/github/kendo-data-query"
 
 # projects - kendo blazor
 alias pkb="cd /d/work/github/blazor"
+alias pkbr="cd /d/work/github/blazor-repl"
 alias pkbt="cd /d/work/github/blazor-tests"
 alias pkbb="cd /d/Work/kendo-blazor"
 alias pkbbj="cd /d/Work/kendo-blazor/js/telerik-blazor"
@@ -528,12 +544,14 @@ alias dot="dotnet"
 alias dnc="dotnet nuget locals all --clear"
 alias dotap="dotnet add package"
 alias doti="dotnet --info"
+alias dotim="dotnet new --install Microsoft.Maui.Templates::6.0.100-rc. 2.1662"
 alias dotb="dotnet build"
 alias dotp="dotnet publish"
 alias dotpa="dotnet pack"
 alias dotre="dotnet restore"
 alias dotr="dotnet run"
 alias dotn="dotnet new"
+alias dotlp="dotnet new -u"
 alias dott="dotnet test"
 alias dtt="dotnet test wrappers/mvc-6/tests/Kendo.Mvc.Tests"
 alias dotkt="dotnet test wrappers/mvc-6/tests/Kendo.Mvc.Tests"
@@ -660,6 +678,7 @@ alias guc="gulp compile"
 # alias gucdn="gulp compile-cdn"
 alias gucdn="gulp build-cdn"
 alias gucdnc="gulp build-cdn && gulp copy-js"
+alias gubm="gulp build-module"
 alias gg="gulp build-cdn --mode dev && gulp copy-js"
 alias ggc="gulp build-cdn && gulp copy-js"
 alias ggw="ggc && gulp watch-js --mode dev"
@@ -689,6 +708,7 @@ alias wpds="webpack-dev-server"
 alias sn="snowpack"
 alias snb="snowpack build"
 alias snd="snowpack dev"
+alias sndr="snowpack dev --reload"
 alias sndpkbb="pkbbj && snowpack dev"
 
 # react
