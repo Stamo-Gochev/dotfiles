@@ -42,12 +42,10 @@ window {
     }
 
     /* Give id's BG hopefully */
-    /*
     div[id] {
         background-color: inherit !important;
     }
-    */
-    
+
     /* Filter non-icons */
     span:not(:empty):not([class*="icon"]):not([id*="icon"]):not([class*="star"]):not([id*="star"]):not([id*="rating"]):not([class*="rating"]):not([class*="prite"]) {
 
@@ -763,6 +761,21 @@ div[aria-selected='true'] {
 @-moz-document url-prefix("https://css-tricks.com/") {
 * {
     font-family: Arial !important;
+}
+
+
+
+
+
+
+
+
+
+}
+
+@-moz-document url-prefix("https://kubernetes.io/") {
+.flip-nav .td-navbar {
+    background-color: black !important;
 }
 
 
