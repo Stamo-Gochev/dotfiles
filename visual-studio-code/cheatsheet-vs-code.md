@@ -1,9 +1,6 @@
 # Sync settings
 ```
-{"Token":"","Gist":"54b0a0207c3d4e3afd26f9ca9af8e0ed","Migrated":true,"ProxyIP":null,"ProxyPort":null}
-
-new gist id:
-795c85c13164562d375674daefdb4cca
+{"Token":"","Gist":"c3fadfb006fc3f96dd1c9c50694828de","Migrated":true,"ProxyIP":null,"ProxyPort":null}
 
 public gist id:
 c3fadfb006fc3f96dd1c9c50694828de
