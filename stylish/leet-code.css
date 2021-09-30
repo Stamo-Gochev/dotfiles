@@ -1,0 +1,1429 @@
+@-moz-document domain("leetcode.com") {
+
+
+.content-wrapper, html, body {
+  color: #fff;
+  background-color: black !important;
+}
+
+.btn-default {
+  color: #fff;
+  background-color: #000;
+}
+
+.btn-default:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.btn.focus, .btn:focus, .btn:hover {
+  color: #fff;
+}
+
+.btn.btn-default, .btn.btn-default:active, .btn.btn-default:active:focus, .btn.btn-default:focus {
+  border-color: #000;
+}
+
+/** Notification **/
+.notification-link__2RRJ {
+  background-color: #000;
+}
+
+.notification-link__2RRJ::after {
+  background: linear-gradient(180deg, #222, #000);
+}
+
+.ant-dropdown-menu-item > a, .ant-dropdown-menu-submenu-title > a {
+  color: #fff;
+}
+
+.notification-item-container__sH-w {
+  color: #fff;
+}
+
+.notifications-container-compact a.notification-list-item.notification-list-unread-item {
+  background-color: #000;
+}
+
+.notification-item__QZJ6 {
+  border-bottom-color: #000;
+}
+
+/* Footer */
+.notification-menu-bar__MEeh {
+  border-top-color: #000;
+}
+
+.notification-menu-container__3MW3 {
+  background-color: #000;
+}
+
+/**** Home Page i.e. leetcode.com/ ****/
+
+/** Left Column **/
+
+.trending-topic-container:first-child {
+  border-top-color: #000;
+}
+
+.storyboard {
+  border-right-color: #000;
+}
+
+.trending-topic-container {
+  background-color: #000;
+  border-bottom-color: #000;
+}
+
+.discuss-markdown-container {
+  color: #fff;
+}
+
+.trending-topic-content-mask {
+  background: linear-gradient(#00000, #00066);
+}
+
+/** Right Column **/
+
+.problem-category .problem-category-info a {
+  color: #fff;
+}
+
+.problem-category .problem-category-info a:hover {
+  background-color: #000;
+}
+
+.side-block {
+  border-bottom-color: #000;
+}
+
+/**** /discuss/interview-question/<id>/ ****/
+
+.css-1gk7v15 {
+  background-color: #000;
+}
+
+.topic-container__3Kpd {
+  background-color: #000;
+}
+
+.root__3ov- {
+  box-shadow: inset 0 -1px 0 0 #000;
+}
+
+/* Vote up/down */
+.vote__3Zp9 {
+  background-color: #000;
+}
+
+.vote__3btZ:not([data-is-voted="true"]):hover, .vote__3btZ:not([data-is-voted="true"]):hover svg {
+  color: #ccc;
+}
+
+/* Tags */
+.css-vh6pmz {
+  background-color: #000;
+  color: #5291f8; /* from .cm-s-textmate span.cm-keyword */
+}
+
+/* 'Comments' Footer */
+.header___QdN {
+  background-color: #000;
+  border-color: #000;
+}
+
+.css-1yqeuah-xs {
+  color: #ccc;
+}
+
+.comment__4GKl {
+  border-color: #000;
+}
+
+.editor__2AvG .action-area__2XIi {
+  border-top-color: #000;
+}
+
+.editor__2AvG .text-area__1za6 {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Individual Comment */
+.markdown-content-area__33i4 .read-more__3UuG {
+  background: linear-gradient(#2220, #222);
+}
+
+/* Individual Comment - Code */
+.discuss-markdown-container pre {
+  background-color: #000;
+  color: #fff;
+}
+
+.hljs-title, .hljs-tag, .hljs-symbol, .hljs-bullet, .hljs-number, .hljs-meta {
+  color: #1d70ff; /* #1c00cf; */
+}
+
+.hljs-section, .hljs-class .hljs-title, .hljs-type, .hljs-attr, .hljs-built_in, .hljs-builtin-name, .hljs-params {
+  color: #9c66d9; /* #5c2699; */
+}
+
+.hljs-keyword, .hljs-selector-tag, .hljs-literal {
+  color: #d911b9; /* #aa0d91; */
+}
+
+/* Individual Comment - 'Playground' code box */
+.playground-mini-base .toolbar-base {
+  background-color: #000;
+}
+
+.playground-mini-base {
+  border-color: #000;
+}
+
+.playground-mini-base .editor-base {
+  border-top-color: #000;
+}
+
+/* Page No.s */
+.ant-pagination-item {
+  background-color: #000;
+}
+
+.ant-pagination-prev .ant-pagination-item-link, .ant-pagination-next .ant-pagination-item-link {
+  background-color: #000;
+}
+
+.ant-pagination-disabled a, .ant-pagination-disabled:hover a, .ant-pagination-disabled:focus a, .ant-pagination-disabled .ant-pagination-item-link, .ant-pagination-disabled:hover .ant-pagination-item-link, .ant-pagination-disabled:focus .ant-pagination-item-link {
+  color: #ccc;
+}
+
+.ant-pagination-prev a, .ant-pagination-next a {
+  color: #ccc;
+}
+
+.comments-list-loading__2Dus {
+  background-color: #000;
+}
+
+.loading-cover__3hdh {
+  background-color: #000;
+}
+
+/* .ant-pagination-prev .ant-pagination-item-link::after {
+  filter: invert(1.0)
+}
+
+.ant-pagination-next .ant-pagination-item-link::after {
+  filter: invert(1.0)
+} */
+
+
+/**** /problemset ****/
+
+/** Top Panel **/
+
+.dropdown-menu {
+  background-color: #000;
+}
+
+.dropdown-menu > li > a {
+  background-color: #000;
+  color: #fff;
+}
+
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/** Left side **/
+
+/* 'Category - All' */
+
+.category-card-base .card {
+  opacity: 0.7;
+}
+
+.card-sp {
+  border-color: #000;
+}
+
+/* Top separator */
+
+.separator-op {
+  border-bottom-color: #000;
+  background: linear-gradient(#000, #000);
+}
+
+.separator_left_mask {
+  background: linear-gradient(to right, #000, rgba(40, 40, 40, 0));
+}
+
+.separator_right_mask {
+  background: linear-gradient(to right, rgba(40, 40, 40, 0), #000);
+}
+
+/* Search */
+.form-control {
+  background-color: #000;
+  color: #fff;
+}
+
+.form-control, .form input {
+  border-color: #000;
+}
+
+/* Dropdown for 'Difficulty', 'Status', .... */
+
+.filter-dropdown-menu-items {
+  background-color: #000;
+}
+
+.filter-dropdown-menu-item ~ .filter-dropdown-menu-item {
+  border-top-color: #000;
+}
+
+.filter-dropdown-menu-item:hover {
+  background-color: #000;
+}
+
+/* Table */
+
+.question-list-table table.table thead th {
+  border-bottom-color: #000;
+}
+
+.question-list-table tbody tr:nth-of-type(2n+1) {
+  background-color: #000;
+}
+
+.question-list-table tbody.reactable-data tr:hover {
+  background-color: #363636 !important;
+}
+
+.question-list-base .reactable-pagination tr {
+  background-color: #363636 !important;
+}
+
+/* Footer */
+.question-list-base .reactable-pagination {
+  border-top-color: #000;
+}
+
+.reactable-pagination a {
+  background-color: #222 !important;
+}
+
+.reactable-pagination .reactable-current-page {
+  color: #ccc;
+}
+
+/* Table - Labels */
+
+.label {
+  color: #ccc;
+}
+
+.label-warning {
+  background-color: #ae6801; /* #f0ad4e; */
+}
+
+.label-danger {
+  background-color: #b52b27; /* #d9534f */
+}
+
+.label-success {
+    background-color: #357935; /* #5cb85c */
+}
+
+/** Right side **/
+
+/* Profile Dropdown */
+
+
+
+/* 'Your Progress' section */
+
+.progress-panel-base {
+  color: #fff;
+}
+
+.progress-panel-base .session-manager-btn .btn {
+  background-color: #222 !important;
+  border-color: #222 !important;
+}
+
+.progress-panel-base > ul > li:nth-of-type(2n+1) {
+  background-color: #000;
+}
+
+.list-group-item {
+  background-color: #000;
+}
+
+/** Topics **/
+
+.text-gray {
+  color: #fff !important;
+}
+
+/* 'Show More' */
+
+.sidebar-module .show-more-btn > div {
+  border-color: #000;
+}
+
+hr {
+  border-top-color: #000;
+}
+
+/** 'Companies' **/
+.sidebar-module.company .tags .badge {
+  background-color: #ae6801; /* #f0ad4e; */
+}
+
+/**** /problems/<problem>/ e.g. n-queens ****/
+
+/* Loading Page */
+.main__2_tD .loading__1XBq {
+  background-color: #000;
+}
+
+/* Header */
+.header__3STC, .header-cn__3MqR {
+  background-color: #000;
+}
+
+.nav-item-container__16kF .nav-item__5BvG:hover, .nav-item-container__16kF .nav-item__5BvG .ant-dropdown-trigger:hover {
+  color: #fff;
+}
+
+.navbar__1Bue {
+  border-bottom-color: #000;
+}
+
+/*** Question Tab - 'Description', 'Solution', 'Submissions', 'Discuss' ***/
+
+.tab-pane__ncJk {
+  border-right-color: #000;
+}
+
+.css-19j86kk-TabHeader::before {
+  background-color: #000;
+}
+
+.css-1lelwtv-TabHeader::before {
+  background-color: #000;
+}
+
+/** Description tab **/
+
+.css-5wdlwo-TabViewHeader {
+  background-color: #000;
+}
+
+.css-19j86kk-TabHeader::after {
+  background-color: #000;
+}
+
+.css-5wdlwo-TabViewHeader::after {
+  border-bottom-color: #000;
+}
+
+/* Header */
+.css-v3d350 {
+  color: #fff;
+}
+
+.css-19j86kk-TabHeader {
+  background-color: #000;
+}
+
+.css-1uwsqgo-TabHeaderRow {
+  color: #fff;
+}
+
+.css-101rr4k {
+  border-bottom-color: #000;
+}
+
+/* Body */
+.content__u3I1 {
+  color: #fff;
+}
+
+.content__u3I1 img {
+  opacity: 0.5;
+}
+
+/* Body - Code */
+.content__u3I1 code {
+  background-color: #000;
+  color: #fff;
+}
+
+.content__u3I1 pre {
+  background-color: #000;
+  color: #fff;
+}
+
+/* 'Accepted' | 'Submissions' */
+.css-oqu510::after {
+  background-color: #000;
+}
+
+.css-jkjiwi {
+  color: #fff;
+}
+
+/* 'Seen this question in a real interview before?' */
+.css-12aggky {
+  border-bottom-color: #000;
+}
+
+.header__28Cb {
+  border-bottom-color: #000;
+}
+
+.btn-info__3x1M, .btn-info__3x1M:active:not([disabled]) {
+  background-color: #000;
+  border-color: #000;
+  color: #fff;
+}
+
+/* 'Companies' */
+.css-isal7m {
+  background-color: #000;
+  border-top-color: #000;
+}
+
+.css-1819af6-baseHeaderStyle {
+  color: #fff;
+}
+
+.css-1819af6-baseHeaderStyle:hover, .css-1819af6-baseHeaderStyle:hover > svg {
+  color: #ccc;
+}
+
+/* 'Related Topics' */
+.tag__2PqS {
+  background-color: #000;
+  color: #5291f8; /* from .cm-s-textmate span.cm-keyword */
+}
+
+.tag__2PqS:hover {
+  background-color: #000;
+}
+
+/* Footer */
+.question-fast-picker-wrapper__2Y97 {
+  background-color: #000;
+  border-top-color: #000;
+}
+
+.css-tj8r5s-default-sm {
+  background-color: #000;
+}
+
+.css-tj8r5s-default-sm:hover:not([disabled]) {
+  background-color: #000;
+}
+
+.handler-text__1hMU, .shuffle-icon__dV27 {
+  color: #fff;
+}
+
+/** Solution tab **/
+
+/* 'Quick Navigation' header bar */
+.nav__1n5p {
+  border-bottom-color: #000;
+}
+
+/* Divider */
+.content__QRGW hr {
+  background-color: #000;
+}
+
+/* Code */
+.content__QRGW code {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Code Area */
+.content__QRGW pre {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Comments - Image */
+.discuss-markdown-container img {
+  opacity: 0.5;
+}
+
+/** Submissions tab **/
+
+/* Table */
+.ant-table-thead > tr > th {
+  background-color: #000;
+  color: #fff;
+  border-bottom-color: #000;
+  border-right-color: #000;
+}
+
+.ant-table-thead > tr:first-child > th {
+  border-top-color: #000;
+}
+
+.ant-table-thead > tr > th:first-child {
+  border-left-color: #000;
+}
+
+.ant-table .ant-table-tbody > tr > td:first-child {
+  border-left-color: #000;
+}
+
+.ant-table .ant-table-tbody > tr:nth-child(2n) > td {
+  background-color: #000;
+  color: #fff;
+  border-bottom-color: #000;
+  border-right-color: #000;
+}
+
+.ant-table .ant-table-tbody > tr:nth-child(2n+1) > td {
+  background-color: #000;
+  color: #fff;
+  border-bottom-color: #000;
+  border-right-color: #000;
+}
+
+/** Discuss tab - /problems/<id>/discuss/ **/
+
+.content__1Nro {
+  background-color: #000;
+}
+
+.css-1g1wmrm-FullWrapper {
+  background-color: #000;
+}
+
+/* Loading Page */
+.loading__1ICj, .error__3kzJ {
+  background-color: #000;
+}
+
+/* Header */
+.border-wrapper__A-w9 {
+  background-color: #000;
+}
+
+.title__27Kb {
+  color: #fff;
+}
+
+/* Tags box (on right) */
+
+.css-d08ysn-Container {
+  background-color: #000;
+}
+
+.css-19s60mn-Pane-TagsHeader {
+  border-bottom-color: #000;
+}
+
+/* Footer */
+.container__vsjd {
+  border-top-color: #000;
+}
+
+/** Discuss Solution - /problems/<id>/discuss/<id_2>/<id_3> **/
+
+.topic-container__1JMG {
+  background-color: #000;
+}
+
+.right-border__2-Gs::after {
+  background-color: #000;
+}
+
+/*** Divider ***/
+
+.resize-bar__2_sK {
+  background: linear-gradient(to bottom, #000 10%, #000 90%);
+}
+
+.resize-bar__2_sK::before {
+  background: #000;
+}
+
+/*** Solution ***/
+
+.container__2zYY {
+  background-color: #000;
+  box-shadow: inset 0 -1px #000;
+}
+
+.container__YPDh {
+  border-left-color: #000;
+}
+
+/* Language dropdown*/
+.ant-select-light {
+  color: #fff;
+  border-color: #000;
+}
+
+.ant-select-light:not(.ant-select-disabled).ant-select-open, .ant-select-light:not(.ant-select-disabled):hover, .ant-select-light:not(.ant-select-disabled):focus {
+  color: #5291f8;
+}
+
+.ant-select-dropdown-light {
+  background-color: #000;
+}
+
+.ant-select-dropdown-light .ant-select-dropdown-menu-item-selected {
+  background-color: #000;
+  border-color: #000;
+}
+
+.ant-select-dropdown-light .ant-select-dropdown-menu-item {
+  color: #fff;
+}
+
+.ant-select-dropdown-light .ant-select-dropdown-menu-item:hover, .ant-select-dropdown-light .ant-select-dropdown-menu-item-active {
+  background-color: #000;
+}
+
+/* Fullscreen button Pop-up - 'Need more space? Try using full screen mode!' */
+.ant-popover-inner {
+  background-color: #000;
+}
+
+.lc-popover .ant-popover-content .ant-popover-inner-content {
+  color: #fff;
+}
+
+.ant-popover-placement-bottom .ant-popover-content .ant-popover-arrow, .ant-popover-placement-bottomLeft .ant-popover-content .ant-popover-arrow, .ant-popover-placement-bottomRight .ant-popover-content .ant-popover-arrow {
+  border-bottom-color: #000;
+}
+
+/* Info 'i' button Pop-up Pane */
+.ant-modal-content {
+  background-color: #000;
+}
+
+.lc-modal__2lWv .lc-modal-with-title-header__1SAd {
+  background: linear-gradient(to bottom, #000, #000);
+}
+
+.ant-modal-title {
+  color: #fff;
+}
+
+.ant-modal {
+  color: #fff;
+}
+
+/* Editor Settings */
+.ant-select-light {
+  background-color: #000;
+  border-color: #000;
+}
+
+/* Footer */
+.container__2WTi {
+  background-color: #000;
+  border-top-color: #000;
+}
+
+.css-y98m8o-sm {
+  color: #fff;
+}
+
+.container__2WTi .action__38Xc .runcode__1EDI:not(:disabled) {
+  border-color: #000;
+}
+
+.container__2WTi .action__38Xc .runcode__1EDI:not(:disabled):hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Footer - Message */
+.result__1UhQ {
+  border-left-color: #000;
+}
+
+.header__1Shn {
+  background-color: #000;
+  border-top-color: #000;
+  border-bottom-color: #000;
+}
+
+.panel__2Uom {
+  color: #fff;
+}
+
+/** Editor **/
+
+/* Line No.s */
+.container__YPDh .CodeMirror-gutters {
+  background-color: #000;
+  border-right-color: #000;
+}
+
+/* Active line */
+.cm-s-textmate .CodeMirror-activeline-background {
+  background-color: #000 !important;
+}
+
+/* Cursor */
+.CodeMirror-cursor {
+  border-left-color: #fff;
+}
+
+/** Notes Pane (right edge of Solution) **/
+
+/* Header */
+.note__1Qo7 .editor-toolbar {
+  background-color: #000;
+  border-top-color: #000;
+  border-left-color: #000;
+  border-right-color: #000;
+}
+
+.note__1Qo7 .editor-toolbar a {
+  color: #fff !important;
+}
+
+.note__1Qo7 .editor-toolbar i.separator {
+  border-left-color: #000;
+  border-right-color: #000;
+}
+
+.note__1Qo7 .editor-toolbar a.active, .note__1Qo7 .editor-toolbar a:hover {
+  background-color: #000;
+  border-color: #000;
+}
+
+/* Body */
+.note__1Qo7 .CodeMirror {
+  background-color: #000;
+}
+
+.note__1Qo7 .CodeMirror.cm-s-paper.CodeMirror-wrap {
+  border-color: #000;
+}
+
+.note__1Qo7 .CodeMirror {
+  color: #fff;
+}
+
+.note__1Qo7 .CodeMirror-cursor {
+  border-left-color: #fff;
+}
+
+/* Body - Preview */
+.note__1Qo7 .editor-preview {
+  background-color: #000;
+}
+
+.note__1Qo7 .editor-toolbar.disabled-for-preview a:not(.no-disable) {
+  background-color: #000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fffa;
+}
+
+.note__1Qo7 span.CodeMirror-selectedtext {
+  background-color: #323a2e;
+}
+
+span.CodeMirror-selectedtext {
+  background-color: #323a2e;
+}
+
+/** Console/'Run Code' bottom pull-up section **/
+
+.css-jccvoy-TabViewHeader {
+  background-color: #000;
+}
+
+.css-qndcpp-TabHeader::before {
+  background-color: #000;
+}
+
+.css-qndcpp-TabHeader::after {
+  background-color: #000;
+}
+
+.css-qndcpp-TabHeader {
+  background-color: #000;
+  color: #fff;
+}
+
+.css-jccvoy-TabViewHeader::after {
+  border-bottom-color: #000;
+}
+
+.ace-github .ace_cursor {
+  color: #fff;
+}
+
+/* 'TestCase' */
+
+.ace-github {
+  background-color: #000;
+  color: #fff;
+}
+
+.editor-container__QkHu {
+  border-color: #000;
+}
+
+/* 'Run Code Result' */
+.css-s9svfs-TabContent rect {
+  fill: #000 !important;
+}
+
+/* 'Accepted'/'Wrong Answer' */
+
+.css-1gzlqzt-ValueContainer {
+  background-color: #000;
+  border-color: #000;
+  color: #fff;
+}
+
+/* 'Diff' switch */
+.css-10vz3an-sm-StyledSwitch {
+  background-color: #000;
+}
+
+.css-1iqccza-Children {
+  color: #fff;
+}
+
+.css-10vz3an-sm-StyledSwitch::after {
+  background-color: #000;
+}
+
+.css-smc38x-sm-StyledSwitch::after {
+  background-color: #000;
+}
+
+/**** Submission Page - /submissions/detail/<id>/ ****/
+
+
+/** 'Submission Detail' **/
+
+/* 'Accepted' status */
+#status {
+  background-color: #000;
+}
+
+#details-summary {
+  border-color: #000;
+}
+
+/** 'Accepted Solutions Runtime Distribution' **/
+
+.legendColorBox {
+  background-color: #000;
+}
+
+.legendLabel {
+  background-color: #000;
+  color: #fff;
+}
+
+/** Editor **/
+
+.ace-tm {
+  background-color: #000;
+  color: #fff;
+}
+
+.editor {
+  border-color: #000;
+}
+
+/* Line No. */
+.ace-tm .ace_gutter {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Selected Line/Word */
+.ace-tm .ace_gutter-active-line {
+  background-color: #000;
+}
+
+.ace-tm .ace_marker-layer .ace_selection {
+  background-color: #000;
+}
+
+.ace-tm .ace_marker-layer .ace_selected-word {
+  background-color: #4c4c4c;
+  border-color: #000;
+}
+
+.ace-tm .ace_cursor {
+  color: #fff;
+}
+
+
+/**** /explore ****/
+
+.explore-home-showcase .explore-index-showcase-base .showcase-row::before {
+  background: linear-gradient(to right, #000, rgba(250, 250, 250, 0));
+}
+
+.explore-home-showcase .explore-index-showcase-base .showcase-row::after {
+  background: linear-gradient(to right, rgba(250, 250, 250, 0), #000);
+}
+
+/** Card **/
+
+.explore-card-base .explore-card {
+  background: linear-gradient(#000, #222);
+  box-shadow: inset 0 4px 7px 1px #000, inset 0 -5px 20px rgba(173, 186, 204, 0.25), 0 2px 6px rgba(0, 21, 64, 0.14), 0 10px 20px rgba(0, 21, 64, 0.05);
+}
+
+.explore-card-base .explore-card:hover {
+  box-shadow: inset 0 4px 7px 1px #fff, inset 0 -5px 20px rgba(173, 186, 204, 0.25), 0 0 20px rgba(0, 21, 64, 0.14), 0 0 40px rgba(0, 0, 0, 0.2);
+}
+
+.explore-card-base .explore-card .bot-base .big-number {
+  color: #fff;
+}
+
+/* Button */
+.explore-card-base .explore-card .start-button-base {
+  background-color: #000;
+}
+
+.explore-card-base a {
+  color: #fff;
+}
+
+.chartjs-render-monitor {
+  filter: invert(0.8)
+}
+
+/** 'More' button in sections e.g. Interview, Learn **/
+.explore-home-basic .category-title .more-btn {
+  background-color: #000;
+}
+
+.explore-home-basic .category-title .more-btn:hover {
+  background-color: #000;
+}
+
+.explore-home-basic .category-title .more-btn:hover a {
+  color: #08c;
+}
+
+/*** Footer ***/
+footer.site-footer .links a {
+  color: #fff;
+}
+
+/**** /explore/challenge/card/<challenge> ****/
+
+/** Left column **/
+
+.chapter-list-base .description::after {
+  background: linear-gradient(to right, rgba(250, 250, 250, 0), #000);
+}
+
+.chapter-list-base .chapter-list .chapter-list-item:hover {
+  background-color: #000;
+}
+
+.chapter-list-base .chapter-list .chapter-list-item:hover .description::after {
+  background: linear-gradient(to right, rgba(250, 250, 250, 0), #000);
+}
+
+.chapter-list-base .chapter-list .chapter-list-item {
+  border-color: #000;
+}
+
+/** Right column **/
+
+.overview-tables-base .table-header {
+  background-color: #000;
+  border-color: #000;
+}
+
+.overview-tables-base .overview-item-list-base.item-bg {
+  background-color: #000;
+}
+
+.overview-tables-base .overview-item-list-base {
+  border-left-color: #000;
+  border-right-color: #000;
+  border-bottom-color: #000;
+}
+
+.overview-tables-base .table-item {
+  background-color: #000;
+  border-bottom-color: #000;
+}
+
+.overview-tables-base .table-item:nth-child(2n+1) {
+  border-right-color: #000;
+}
+
+.overview-tables-base .table-item:nth-child(4n-1) {
+  background-color: #000;
+}
+
+.overview-tables-base .table-item:nth-child(4n) {
+  background-color: #000;
+}
+
+.overview-tables-base .table-item.accessible:hover {
+  background-color: #000 !important;
+}
+
+/**** /explore/challenge/card/<challenge>/N/<week> ****/
+
+.list-group-item {
+  border-color: #000;
+}
+
+.explore-item-list .list-group-item:nth-child(2n) {
+  background-color: #000;
+}
+
+.explore-item-list .list-group-item.accessible:hover {
+  background-color: #000;
+}
+
+/**** /explore/featured/card/<challenge>/N/<week>/M/ ****/
+
+/*** Left column ***/
+
+.expandable-chapter-list-base .item-list-group .list-group-item.selected, .expandable-chapter-list-base .item-list-group .list-group-item.selected:hover {
+  background-color: #000;
+}
+
+.expandable-chapter-list-base .item-list-group .list-group-item {
+  background-color: #000;
+}
+
+.expandable-chapter-list-base .chapter-item .list-group {
+  background-color: #000;
+}
+
+.expandable-chapter-list-base .chapter-item .chapter .description::after {
+  background: linear-gradient(to right, rgba(250, 250, 250, 0), #000);
+}
+
+/*** Right column ***/
+
+.content-viewer-toolbar-base {
+  background-color: #000;
+}
+
+.content-viewer-toolbar-base button.btn {
+  background-color: #000;
+}
+
+.content-viewer-toolbar-base button.btn.menu-btn {
+  border-right-color: #000;
+}
+
+.content-base .viewer-base {
+  background-color: #000;
+}
+
+.content-base .question-base .question-area .question-detail {
+  background-color: #000;
+}
+
+pre {
+  background-color: #000;
+  border-color: #000;
+}
+
+/** 'Show Hints' **/
+
+.expandable-panel__YLuE {
+  background-color: #222 !important;
+  border-color: #000;
+}
+
+.expandable-panel__YLuE .content__1q_0 {
+  background-color: #000;
+}
+
+.expandable-panel__YLuE .line__2vww {
+  border-bottom-color: #000;
+}
+
+
+/** Language dropdown **/
+
+.Select-control {
+  background-color: #000;
+  border-color: #000;
+  color: #fff;
+}
+
+.Select.has-value.Select--single > .Select-control .Select-value .Select-value-label, .Select.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {
+  color: #fff;
+}
+
+.select-wrapper .Select-arrow-zone {
+  background-color: #000;
+}
+
+.Select-control .Select-input:focus {
+  background: #000;
+}
+
+.CodeMirror {
+  border-color: #000;
+}
+
+
+
+/**** /articles ****/
+
+/* Row item */
+a.list-group-item, button.list-group-item {
+  color: #fff;
+}
+
+.article-list.list-group .list-group-item .media .top-bar {
+  border-bottom-color: #000;
+}
+
+.article-list.list-group .list-group-item:hover {
+  background: #000;
+}
+
+a.list-group-item:focus, a.list-group-item:hover, button.list-group-item:focus, button.list-group-item:hover {
+  color: #fff;
+}
+
+/**** /articles/<problem> ****/
+
+/* Top Header */
+
+.article-reader-app .navigation-base {
+  background-color: #000;
+}
+
+.navigation, .navigation a {
+  color: #fff;
+}
+
+.navigation {
+  border-bottom-color: #000;
+}
+
+.block-markdown p, .block-markdown li {
+  color: #fff;
+}
+
+.sticky-wrapper.is-sticky .navigation-base {
+  border-bottom-color: #000;
+}
+
+/* Text */
+
+code {
+  background-color: #000;
+  color: #5291f8;
+}
+
+.article-reader-app .question-base pre, .article-reader-app .question-base blockquote {
+  background-color: #000;
+}
+
+.article-reader-app .question-base pre {
+  border-color: #000;
+}
+
+pre {
+  color: #fff;
+}
+
+/* Solution */
+.article-base {
+  background-color: #000;
+}
+
+.block-markdown hr {
+  background-color: #000;
+}
+
+/* 'Previous', 'Next' */
+.pager li > a, .pager li > span {
+  background-color: #000;
+  border-color: #000;
+}
+
+.pager .disabled > a, .pager .disabled > a:focus, .pager .disabled > a:hover, .pager .disabled > span {
+  background-color: #000;
+}
+
+/** Syntax Highlighting **/
+
+/* Top Tab */
+
+.playground-mini-base .lang-btn-set-base {
+  border-color: #000;
+}
+
+.playground-mini-base .lang-btn-set-base .lang-btn-set button {
+  background-color: #000;
+  border-color: #000;
+}
+
+.playground-mini-base .lang-btn-set-base .lang-btn-set button.active {
+  background-color: #000;
+  border-bottom-color: #000;
+}
+
+.playground-mini-base.snippet-mode .editor-base {
+  border-color: #000;
+}
+
+/* Body */
+
+.cm-s-textmate.CodeMirror {
+  background-color: #000;
+  color: #fff;
+}
+
+.cm-s-textmate span.cm-variable {
+  color: #fff;
+}
+
+.cm-s-textmate span.cm-property {
+  color: #fff;
+}
+
+.cm-s-textmate span.cm-keyword {
+  color: #5291f8;
+}
+
+.cm-s-textmate span.cm-type {
+  color: #fd971F;
+}
+
+.cm-s-textmate span.cm-operator {
+  color: #f92672;
+}
+
+.cm-s-textmate span.cm-number {
+  color: #5291f8;
+}
+
+.cm-s-textmate span.cm-def {
+  color: #a6e22e;
+}
+
+.CodeMirror-gutters {
+  background-color: #000;
+  border-right-color: #000;
+}
+
+/* on press of 'Copy' */
+.playground-mini-base .copied-panel {
+  background-color: #000;
+}
+
+/**** /discuss/ ****/
+
+/** Loading **/
+.loading-wrapper__1pmE {
+  background-color: #000;
+}
+
+/* Top Header */
+.css-10yicc7-Category {
+  background-color: #000;
+}
+
+/* Middle Header */
+.css-1j22pvs {
+  background-color: #000;
+}
+
+.css-6jo0jy-FullWrapper-RoundedTopicList {
+  background-color: #000;
+}
+
+.subheader__3zA6 {
+  background-color: #000;
+}
+
+.border-wrapper__A-w9 {
+  border-bottom-color: #000;
+}
+
+.css-1yqeuah-xs {
+  color: #fff;
+}
+
+/*** Left Column ***/
+
+/* Input */
+.input__2W4f {
+  background-color: #000;
+  border-color: #000;
+}
+
+/** Row **/
+
+.css-e1naa7 {
+  background-color: #000;
+  color: #fff;
+}
+
+.topic-item-wrap__2FSZ {
+  border-bottom-color: #000;
+}
+
+.topic-title__3LYM {
+  color: #fff;
+}
+
+/* Pin icon */
+.pinned-icon__1ZAy {
+  color: #fff;
+}
+
+/*** Right Column ***/
+
+/** Tags **/
+.css-r3mzh3-Container-RoundedTagFilter {
+  background-color: #000;
+}
+
+/* Tag */
+.css-cvi2dm-TagButton {
+  background-color: #000;
+}
+
+.css-1ytv31z-Detail {
+  color: #fff;
+}
+
+/**** /notifications/ ****/
+
+.notifications-container .notification-list-item.notification-list-unread-item {
+  background-color: #000;
+}
+
+.notifications-container .notification-list-item {
+  border-bottom-color: #000;
+}
+}
