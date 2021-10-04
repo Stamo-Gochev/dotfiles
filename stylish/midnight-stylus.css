@@ -790,7 +790,10 @@ div[aria-selected='true'] {
 
 
 
-
+@-moz-document url-prefix("https://www.gatesnotes.com") {
+* {
+    font-family: Arial !important;
+}
 
 
 
