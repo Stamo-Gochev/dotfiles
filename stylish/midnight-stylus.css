@@ -586,6 +586,16 @@ td[aria-label="Symbol"]:hover
 {
     outline: 1px solid lightgreen !Important;
 }
+    
+#atomic .C\(\$positiveColor\) {
+    color: #41f390 !important;
+}
+
+
+#atomic .C\(\$negativeColor\) {
+    color: #eb0f29 !important;
+}
+
 }
 
 @-moz-document url-prefix("https://www.linkedin.com/") {
