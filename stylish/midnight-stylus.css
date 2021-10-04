@@ -587,14 +587,17 @@ td[aria-label="Symbol"]:hover
     outline: 1px solid lightgreen !Important;
 }
     
-#atomic .C\(\$positiveColor\) {
+#atomic .C\(\$positiveColor\),
+._96166592 {
     color: #41f390 !important;
 }
 
 
-#atomic .C\(\$negativeColor\) {
-    color: #eb0f29 !important;
+#atomic .C\(\$negativeColor\),
+.c8de4835 {
+    color: #f24d61 !important;
 }
+
 
 }
 
