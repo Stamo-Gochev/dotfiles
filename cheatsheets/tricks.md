@@ -10,6 +10,10 @@ for i in */.git; do ( echo $i; echo "============="; cd $i/..; git stash; git ch
 
 `rd /s %systemdrive%\$Recycle.bin`
 
+## Disable Hibernate mode on Windows
+
+`powercfg -h off`
+
 ## Stylus regex
 `https?:\/\/(?!((www\\.)?(teams\.microsoft\.com))).*`
 "https?:\\/\\/(?!((www\\\\.)?(github\\.com))).*"
