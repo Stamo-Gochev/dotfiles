@@ -549,6 +549,11 @@ input.k-state-invalid,
     opacity: 0.8;
 }
 
+textarea {
+    background-color: black !important;
+}
+
+
 
 
 
