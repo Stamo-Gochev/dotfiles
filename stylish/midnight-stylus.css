@@ -496,8 +496,6 @@ color: #eee !important;
 .tree-browser-result[aria-selected=true] {
     background-color: teal !important;
 }
-
-
 }
 
 @-moz-document url-prefix("https://docs.docker.com/") {
@@ -543,7 +541,6 @@ body {
     position: static !important;
     border: 1px solid red !important;
 }
-
 }
 
 @-moz-document url-prefix("https://devblogs.microsoft.com/") {
@@ -597,8 +594,6 @@ td[aria-label="Symbol"]:hover
 .c8de4835 {
     color: #f24d61 !important;
 }
-
-
 }
 
 @-moz-document url-prefix("https://www.linkedin.com/") {
@@ -666,14 +661,12 @@ body, table {
     border: 1px solid teal !important;
    background-color: black !important; 
 }
-
 }
 
 @-moz-document url-prefix("https://forum.investor.bg/") {
 .topic-title {
     color: rgb(177, 203, 247) !important;
 }
-
 }
 
 @-moz-document url-prefix("https://teams.microsoft.com/") {
@@ -722,10 +715,15 @@ button[aria-label*=activity] {
     background: #4d54ff !important;
 }
 
+.app-header-bar,
+.new-post-button {
+	background-color: #8a8fff !important;
+    background-color: #6264A7 !important;
+}
+
 .message-body-content a {
 	color: cyan !important;
 }
-
 }
 
 @-moz-document url-prefix("https://blazor.syncfusion.com/") {
@@ -735,49 +733,18 @@ pre[class*=language-],
 code[class*=language-] {
     background-color: black !important;
 }
-
-
-
-
-
-
-
-
-
-
-
 }
 
 @-moz-document url-prefix("https://outlook.office.com/") {
 div[aria-selected='true'] {
     background-color: rgb(0, 120, 212) !important;
 }
-
-
-
-
-
-
-
-
-
-
-
 }
 
 @-moz-document url-prefix("https://css-tricks.com/") {
 * {
     font-family: Arial !important;
 }
-
-
-
-
-
-
-
-
-
 }
 
 @-moz-document url-prefix("https://kubernetes.io/") {
@@ -796,4 +763,5 @@ div[aria-selected='true'] {
 
 
 
+}
 }
