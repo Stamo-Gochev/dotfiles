@@ -722,15 +722,9 @@ button[aria-label*=activity] {
     background: #4d54ff !important;
 }
 
-
-
-
-
-
-
-
-
-
+.message-body-content a {
+	color: cyan !important;
+}
 
 }
 
