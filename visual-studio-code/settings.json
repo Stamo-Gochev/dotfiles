@@ -909,6 +909,14 @@
 		{
 			"name": "grass-green",
 			"value": "#99b41a"
+		},
+		{
+			"name": "light-orange",
+			"value": "#fe8412"
+		},
+		{
+			"name": "pinky",
+			"value": "#d54b70"
 		}
 	],
 
@@ -979,5 +987,7 @@
 		"vs-kubernetes.helm-path.windows": "C:\\Users\\gochev\\.vs-kubernetes\\tools\\helm\\windows-amd64\\helm.exe",
 		"vs-kubernetes.minikube-path.windows": "C:\\Users\\gochev\\.vs-kubernetes\\tools\\minikube\\windows-amd64\\minikube.exe",
 		"vs-kubernetes.draft-path.windows": "C:\\Users\\gochev\\.vs-kubernetes\\tools\\draft\\windows-amd64\\draft.exe"
-	}
+	},
+	"workbench.sideBar.location": "left",
+	"gitlens.views.repositories.files.layout": "tree"
 }
