@@ -6,11 +6,6 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+e",
-        "command": "editor.action.insertCursorAtEndOfEachLineSelected",
-        "when": "editorTextFocus"
-    },
-    {
         "key": "F8",
         "command": "workbench.action.compareEditor.nextChange",
         "when": "textCompareEditorVisible"
@@ -542,5 +537,24 @@
     {
         "key": "ctrl+n",
         "command": "explorer.newFile"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "-workbench.action.quickOpenNavigateNextInFilePicker",
+        "when": "inFilesPicker && inQuickOpen"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "-workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "revealFileInOS",
+        "when": "!editorFocus"
+    },
+    {
+        "key": "shift+alt+r",
+        "command": "-revealFileInOS",
+        "when": "!editorFocus"
     }
 ]
