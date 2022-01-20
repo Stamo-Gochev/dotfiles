@@ -83,6 +83,7 @@ alias frid="git f && g rid"
 alias frim="git f && g rim"
 alias frip="git f && g rip"
 alias ric="git ric"
+alias rra="rm -rf .git/rebase-apply"
 alias s="git s"
 alias sr="git remote set-url origin"
 alias dst="git dst"
@@ -143,6 +144,13 @@ alias lr="bundle exec guard"
 alias gbd="nr build:debug"
 alias gbp="nr build:production"
 alias rhs="chrome.exe http://localhost:8080"
+# for linux
+# alias jtn="node --inspect-brk node_modules/.bin/jest --runInBand"
+# alias jtndb="ndb node --inspect-brk node_modules/.bin/jest --runInBand"
+# for windows
+alias jtn="node --inspect-brk node_modules/jest/bin/jest.js --runInBand"
+alias jtnw="node --inspect-brk node_modules/jest/bin/jest.js --runInBand --watch"
+alias jtndbw="ndb node --inspect-brk node_modules/jest/bin/jest.js --runInBand --watch"
 
 alias nic="npm install webpack-stream sockjs-client"
 
@@ -170,6 +178,8 @@ alias ctah='gulp karma-mocha --browser="ChromeHeadless"'
 alias ctb='gulp karma-mocha --tests="tests/button/**"'
 alias ctbc='gulp karma-mocha --tests="tests/barcode/**"'
 alias ctbch='gulp karma-mocha --tests="tests/barcode/**" --browser="ChromeHeadless"'
+alias ctqc='gulp karma-mocha --tests="tests/qrcode/**"'
+alias ctqch='gulp karma-mocha --tests="tests/qrcode/**" --browser="ChromeHeadless"'
 alias ctcm='gulp karma-mocha --tests="tests/columnmenu/**"'
 alias ctch='gulp karma-mocha --tests="tests/chart/**"'
 alias ctchh='gulp karma-mocha --tests="tests/chart/**" --browser="ChromeHeadless"'
@@ -250,6 +260,7 @@ alias ctie="iexplore.exe http://localhost:9876/debug.html"
 # kendo-charts tests
 alias e2ebc='gu watch-e2e --tests="e2e/barcode/**/*.js"'
 alias e2ewwc='gu watch-e2e --tests="e2e/chart/**/*.js"'
+alias e2eqc='gu watch-e2e --tests="e2e/qrcode/**/*.js"'
 
 # kendo rake tasks
 alias rta="rake --tasks"
@@ -312,15 +323,17 @@ alias nli="npm link"
 alias nl="npm list --depth=0"
 alias nls="npm list"
 alias nvk="npm view @progress/kendo-ui"
-alias ni="npm install"
-alias nin="npm init"
-alias nif="npm install --force"
-alias nig="npm install -g"
-alias nis="npm install --save"
-alias nisd="npm install --save-dev"
+alias ni="npm install --ignore-scripts"
+alias nit="npm init"
+alias nif="npm install --force --ignore-scripts"
+alias nig="npm install -g --ignore-scripts"
+alias nis="npm install --save --ignore-scripts"
+alias nisd="npm install --save-dev --ignore-scripts"
 alias nid="npm install --only=dev"
 alias nip="npm-install-peers"
 alias nu="npm uninstall"
+alias nug="npm uninstall -g"
+alias nout="npm outdated"
 alias nr="npm run"
 alias nrb="npm run build"
 alias nrd="npm run dev"
@@ -339,11 +352,14 @@ alias rn="rm -rf node_modules"
 alias rna="find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +"
 alias rnp="rm -rf node_modules/$1"
 
+# node-sass
+alias rns="npm rebuild node-sass --force"
+
 # pnpm
-alias pni="pnpm install"
-alias pnig="pnpm install -g"
-alias pnis="npm install --save"
-alias pnisd="npm install --save-dev"
+alias pni="pnpm install --ignore-scripts"
+alias pnig="pnpm install -g --ignore-scripts"
+alias pnis="pnpm install --save --ignore-scripts"
+alias pnisd="pnpm install --save-dev --ignore-scripts"
 
 # npm packages
 
@@ -447,6 +463,7 @@ alias ckt="code /d/work/github/kendo-themes"
 alias ckpt="code /d/work/github/kendo-package-tasks"
 alias ckbt="code /d/work/github/kendo-build-tasks"
 alias ckdq="code /d/work/github/kendo-data-query"
+alias ckco="code /d/work/github/kendo-common"
 
 # projects - kendo
 alias pk="cd /c/work/github/kendo"
@@ -467,6 +484,7 @@ alias pkpt="cd /d/work/github/kendo-package-tasks"
 alias pkbta="cd /d/work/github/kendo-build-tasks"
 alias pkcdn="cd /d/work/github/kendo-cdn"
 alias pkdq="cd /d/work/github/kendo-data-query"
+alias pkco="cd /d/work/github/kendo-common"
 
 # projects - kendo blazor
 alias pkb="cd /d/work/github/blazor"
@@ -480,7 +498,8 @@ alias pkbbj="cd /d/work/kendo-blazor/js/telerik-blazor"
 alias pkb2="cd /d/work/kendo-blazor"
 alias pkbui="cd /d/work/github/blazor-ui"
 alias pkbd="cd /d/work/github/blazor-docs"
-alias pkds="cd /d/work/github/datasource"
+alias pkds="cd /d/work/github/telerik-datasource"
+alias pkre="cd /d/work/github/telerik-recurrence"
 alias pkumce="cd ui-for-aspnet-core-examples"
 alias pkume="cd ui-for-aspnet-mvc-examples"
 
@@ -541,10 +560,11 @@ alias ptb="cd /d/work/github/themebuilder"
 
 # dotnet
 alias dot="dotnet"
-alias dnc="dotnet nuget locals all --clear"
+alias dotnc="dotnet nuget locals all --clear"
 alias dotap="dotnet add package"
 alias doti="dotnet --info"
 alias dotim="dotnet new --install Microsoft.Maui.Templates::6.0.100-rc. 2.1662"
+alias dotibw="dotnet new --install Microsoft.Maui.Templates::6.0.100-rc. 2.1662"
 alias dotb="dotnet build"
 alias dotp="dotnet publish"
 alias dotpa="dotnet pack"
@@ -586,7 +606,7 @@ alias dotbbe="dotnet build /d/work/github/blazor/demos/server-side/TelerikBlazor
 alias dotpbe="dotnet publish /d/work/github/blazor/demos/server-side/TelerikBlazorDemos/TelerikBlazorDemos.csproj"
 alias dde="dotnet build /d/work/github/blazor/demos/server-side/TelerikBlazorDemos/TelerikBlazorDemos.csproj"
 alias dotba="dotbb && dotbbe"
-alias dotbp="dotnet test /d/work/github/blazor-tests/BlazorTests/Blazor.Playground.Tests"
+# alias dotbp="dotnet test /d/work/github/blazor-tests/BlazorTests/Blazor.Playground.Tests"
 alias ddb="dotbb && dotbbe"
 alias dda="dotbb && dotbbe && dotbbsp && dotbbcp"
 alias ddd="dotbb && dotbbe"
@@ -649,7 +669,9 @@ alias docv="docker --version"
 alias doci="docker images"
 alias docil="docker image ls"
 alias docl="docker container ls --all"
+alias doccl="docker container ls --all"
 alias docst="docker stop"
+alias docs="docker stop"
 alias docrm="docker rm"
 alias docpr="yes | docker container prune"
 alias docsa="docker stop $(docker ps -a -q)"
@@ -709,6 +731,12 @@ alias sn="snowpack"
 alias snb="snowpack build"
 alias snd="snowpack dev"
 alias sndr="snowpack dev --reload"
+alias sndhr="rm -rf node_modules/.cache/snowpack && snowpack dev"
+alias sndhrc="rm -rf node_modules/.cache/snowpack/development/\@pr
+ogress/kendo-charts.js && snowpack dev"
+alias rnsnd="rm -rf dist/snowpack && rm -rf node_modules/.cache/snowpack"
+alias rncsnd="rm -rf node_modules/.cache/snowpack/development/\@pr
+ogress/kendo-charts.js"
 alias sndpkbb="pkbbj && snowpack dev"
 
 # react
@@ -770,6 +798,8 @@ alias kp="npx kill-port"
 
 # linux helpers
 alias es="echo $SHELL"
+# list linux version
+alias lv="lsb_release -a"
 
 # WSL - Windows Subsystem for linux
 alias cduc="cd /mnt/c/"

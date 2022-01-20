@@ -42,6 +42,7 @@ sudo npm install -g react
 sudo npm install -g react-redux
 sudo npm isntall -g redux
 sudo npm install -g live-server
+sudo npm install -g --production windows-build-tools
 
 sudo apt-get install dconf-cli
 sudo dpkg --configure -a
@@ -81,7 +82,7 @@ sudo apt-get install python
 # miniconda
 
 wget https://repo.anaconda.com/miniconda/Miniconda3-py39_4.9.2-Linux-x86_64.sh
-bash Miniconda3-py39_4.9.2-Linux-x86_64.sh 
+bash Miniconda3-py39_4.9.2-Linux-x86_64.sh
 
 # end miniconda
 
