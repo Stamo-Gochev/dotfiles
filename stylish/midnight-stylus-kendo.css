@@ -470,7 +470,9 @@ border-color: #000 !important;
     opacity: 1;
 }
 
-.k-floating-label-container .k-input input {
+.k-floating-label-container .k-input input, 
+.k-floating-label-container .k-input textarea,
+.k-floating-label-container .k-input-inner {
     background: transparent !important;
 }
 
