@@ -465,6 +465,19 @@ border-color: #000 !important;
     /*color: red !important;*/
 }
 
+::placeholder {
+    color: orange !important;
+    opacity: 1;
+}
+
+.k-floating-label-container .k-input input {
+    background: transparent !important;
+}
+
+.k-floating-label-container .k-label {
+    color: cyan !important;
+}
+
 [class*="menu"],
 .k-columnmenu-item.k-state-selected,
 .k-state-selected {
