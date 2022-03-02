@@ -68,9 +68,11 @@
 	ca = commit --amend
 	cae = commit --allow-empty
 	cl = clone
+	clsm = clone --recurse-submodules
 	co = checkout
 	cod = checkout develop
 	com = checkout master
+	coma = checkout main
 	cop = checkout production
 	cp = cherry-pick
 	# --no-commit let's you modify the commit before cherry picking, then do `git commit`
@@ -171,6 +173,12 @@
 	# Usage: git track origin/feature-123-login-form
 	track = checkout -t
 	rmtrack = rm --cached
+
+	# submodules
+	# clone up to 8 submodules in parallel
+	smu = git submodule update --init --recursive --jobs 8
+	smpr = git submodule update --remote
+	prsm = git submodule update --remote
 
 	# ignore a file
 	ignore = "!f() { git update-index --assume-unchanged $1 ; }; f"
