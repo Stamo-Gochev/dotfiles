@@ -585,13 +585,14 @@ td[aria-label="Symbol"]:hover
 }
     
 #atomic .C\(\$positiveColor\),
-._96166592 {
+._96166592,
+.f4be3290 {
     color: #41f390 !important;
 }
 
-
 #atomic .C\(\$negativeColor\),
-.c8de4835 {
+.c8de4835,
+.ee3e99dd {
     color: #f24d61 !important;
 }
 }
