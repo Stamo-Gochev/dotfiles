@@ -489,6 +489,11 @@ border-color: #000 !important;
     background-color: teal !important;
 }
 
+.k-range-mid {
+    background-color: teal !important;
+    opacity: 0.5;
+}
+
 .k-state-active,
 .k-grid-column-menu.k-grid-filter.k-state-active {
     background-color: cyan !important;
@@ -569,6 +574,11 @@ input.k-state-invalid,
 
 textarea {
     background-color: black !important;
+}
+
+.k-pdf-viewer .k-page .k-text-layer > span {
+    background-color: brown !important;
+    color: white !important;
 }
 
 
