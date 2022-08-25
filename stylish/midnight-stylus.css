@@ -541,6 +541,17 @@ body {
     position: static !important;
     border: 1px solid red !important;
 }
+
+
+img[src="App_Themes/Dark/images/ticket-closed.gif"],
+img[src="/App_Themes/Dark/images/ticket-closed.gif"],
+img[src="/support/assets/ticket-closed.gif"]
+{
+    background-color: #93f6ff !important;
+    margin-left: -50px !important;
+    padding: 4px 50px !important;
+}
+
 }
 
 @-moz-document url-prefix("https://devblogs.microsoft.com/") {
@@ -764,5 +775,56 @@ div[aria-selected='true'] {
 
 
 
+}
+}
+
+@-moz-document url-prefix("https://help.syncfusion.com/") {
+.left-toc .e-treeview .e-item .e-text {
+    background-color: teal !important;
+}
+
+.e-item {
+    color: black !important;
+}
+}
+
+@-moz-document url-prefix("https://blazor.syncfusion.com/") {
+.left-toc .e-treeview .e-item .e-text {
+    background-color: #8e0bca !important;
+    color: white !Important;
+}
+
+li.e-item a.e-text.CanSelect {
+    color: white !important;
+    text-shadow: 2px 1px white !Important;
+}
+}
+
+@-moz-document url-prefix("https://www.myworkday.com/") {
+*,
+body,
+.WBDV,
+.WJBV,
+.WDHP,
+.WKBB,
+.WGHG,
+.WAGB,
+.WHBQ.WBAQ.WBAB,
+.WMDK {
+    background-color: black !important;
+}
+
+.WED4.WITO.WJDK {
+    background-color: teal !important;
+    color: white !important;
+}
+
+.WED4.WITO.WJDK:hover {
+    background-color: teal !important;
+    color: yellow !important;
+}
+
+#app-chrome-container {
+    background-color: teal !important;
 }
 }
