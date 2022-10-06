@@ -333,7 +333,8 @@ alias nit="npm init"
 alias nif="npm install --force --ignore-scripts"
 alias nig="npm install -g --ignore-scripts"
 alias nis="npm install --save --ignore-scripts"
-alias nisd="npm install --save-dev --ignore-scripts"
+# alias nisd="npm install --save-dev --ignore-scripts"
+alias nisd="npm install --save-dev"
 alias nid="npm install --only=dev"
 alias nip="npm-install-peers"
 alias nu="npm uninstall"
@@ -470,6 +471,7 @@ alias ckpt="code /d/work/github/kendo-package-tasks"
 alias ckbt="code /d/work/github/kendo-build-tasks"
 alias ckdq="code /d/work/github/kendo-data-query"
 alias ckco="code /d/work/github/kendo-common"
+alias ckco="code /d/work/github/kendo-common"
 
 # projects - kendo
 alias pk="cd /c/work/github/kendo"
@@ -560,6 +562,7 @@ alias pktb="cd /d/work/github/themebuilder"
 alias cktb="code /d/work/github/themebuilder"
 alias rtb="chrome.exe http://localhost:4200"
 alias preact="cd /d/work/github/react"
+alias pkic="code /d/work/github/kendo-inputs-common"
 
 # projects - kendo themes
 alias ptb="cd /d/work/github/themebuilder"
@@ -589,6 +592,7 @@ alias dotrunt="dotnet --list-runtimes"
 alias dotls="dotnet --list-sdks"
 alias dotsdk="dotnet --list-sdks"
 alias rnad="find . -iname 'bin' -o -iname 'obj' | xargs rm -rf"
+
 
 # dotnet projects - kendo
 alias dotrew="dotnet restore wrappers/mvc-6/src/Kendo.Mvc/Kendo.Mvc.csproj"
@@ -646,7 +650,8 @@ alias dotrbcp="dotnet run --configuration Release --project /d/work/github/blazo
 alias dotrcp="dotrbcp"
 alias dotrbcp="dotnet run --configuration Release --project /d/work/github/blazor/playground/ClientPlayground/Server/ClientPlayground.Server.csproj"
 
-alias dotpcp="dotnet publish -p:PublishProfile=FolderProfile /d/work/github/blazor/playground/ClientPlayground/Server/ClientPlayground.Server.csproj"
+alias dotpcp="dotnet publish -c Release /d/work/github/blazor/playground/ClientPlayground/Server/ClientPlayground.Server.csproj"
+alias dotpcp2="dotnet publish -p:PublishProfile=FolderProfile /d/work/github/blazor/playground/ClientPlayground/Server/ClientPlayground.Server.csproj"
 alias dotpcp5="dotnet publish -p:PublishProfile=FolderProfile /d/work/github/blazor/playground/ClientPlayground/Server/ClientPlayground.Server.Net5.kcsproj"
 
 # blazor tests
@@ -746,6 +751,13 @@ alias rnsnd="rm -rf dist/snowpack && rm -rf node_modules/.cache/snowpack"
 alias rncsnd="rm -rf node_modules/.cache/snowpack/development/\@pr
 ogress/kendo-charts.js"
 alias sndpkbb="pkbbj && snowpack dev"
+
+# vite
+alias vd="vite"
+alias vv="vite"
+alias vdr="vite --force"
+alias vdb="vite --force"
+alias vir="vite --force"
 
 # react
 alias cra="create-react-app"
