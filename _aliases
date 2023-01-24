@@ -149,15 +149,23 @@ alias lr="bundle exec guard"
 alias gbd="nr build:debug"
 alias gbp="nr build:production"
 alias rhs="chrome.exe http://localhost:8080"
+
+# dev - jest
 # for linux
 # alias jtn="node --inspect-brk node_modules/.bin/jest --runInBand"
 # alias jtndb="ndb node --inspect-brk node_modules/.bin/jest --runInBand"
 # for windows
-alias jtn="node --inspect-brk node_modules/jest/bin/jest.js --runInBand"
-alias jtnw="node --inspect-brk node_modules/jest/bin/jest.js --runInBand --watch"
-alias jtndbw="ndb node --inspect-brk node_modules/jest/bin/jest.js --runInBand --watch"
+alias jtn="node --inspect-brk node_modules/jest/bin/jest.js --runInBand --config jest.config.json"
+alias jtnw="node --inspect-brk node_modules/jest/bin/jest.js --runInBand --config jest.config.json --watch --no-cache"
+alias jtndbw="ndb node --inspect-brk node_modules/jest/bin/jest.js --runInBand --config jest.config.json --watch --no-cache"
+alias jd="ndb node --inspect-brk node_modules/jest/bin/jest.js --runInBand --config jest.config.json --watch"
 
-alias nic="npm install webpack-stream sockjs-client"
+# dev - typescript
+alias tt="tsc -p tsconfig.es.json"
+alias tsb="tsc -p tsconfig.es.json"
+
+# dev - charts
+alias nich="npm install webpack-stream sockjs-client"
 
 # babun (shell for Windows)
 alias bpi="pact install"
@@ -324,8 +332,8 @@ alias wnpm="explorer \$(npm root -g)"
 alias npmv="npm --version"
 alias nup="npm update && npm prune"
 alias nv="npm view"
-alias nli="npm link"
-alias nl="npm list --depth=0"
+alias nl="npm link"
+alias nls0="npm list --depth=0"
 alias nls="npm list"
 alias nvk="npm view @progress/kendo-ui"
 alias ni="npm install --ignore-scripts"
@@ -346,6 +354,7 @@ alias nrd="npm run dev"
 alias nrl="npm run lint"
 alias nrs="npm run serve"
 alias nrt="npm run test"
+alias nrtw="npm run watch-test"
 alias nrw="npm run watch"
 alias ns="npm start"
 alias nt="npm test"
@@ -471,7 +480,8 @@ alias ckpt="code /d/work/github/kendo-package-tasks"
 alias ckbt="code /d/work/github/kendo-build-tasks"
 alias ckdq="code /d/work/github/kendo-data-query"
 alias ckco="code /d/work/github/kendo-common"
-alias ckco="code /d/work/github/kendo-common"
+alias ckdic="code /d/work/github/kendo-dateinputs-common"
+alias ckic="code /d/work/github/kendo-inputs-common"
 
 # projects - kendo
 alias pk="cd /c/work/github/kendo"
@@ -556,13 +566,14 @@ alias cvw="cd /d/work/github/kendo-vue-wrappers && code ."
 alias cpkvw="cd /d/work/github/kendo-vue-wrappers && code ."
 alias rve="chrome.exe http://localhost:8764"
 
-# projects - common
+# projects - kendo common
 alias ptb="cd /d/work/github/themebuilder"
 alias pktb="cd /d/work/github/themebuilder"
 alias cktb="code /d/work/github/themebuilder"
 alias rtb="chrome.exe http://localhost:4200"
 alias preact="cd /d/work/github/react"
-alias pkic="code /d/work/github/kendo-inputs-common"
+alias pkdic="cd /d/work/github/kendo-dateinputs-common"
+alias pkic="cd /d/work/github/kendo-inputs-common"
 
 # projects - kendo themes
 alias ptb="cd /d/work/github/themebuilder"
@@ -756,6 +767,8 @@ alias sndpkbb="pkbbj && snowpack dev"
 alias vd="vite"
 alias vv="vite"
 alias vdr="vite --force"
+alias vid="vite --force"
+alias vvr="vite --force"
 alias vdb="vite --force"
 alias vir="vite --force"
 
