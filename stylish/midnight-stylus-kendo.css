@@ -459,7 +459,7 @@ border-color: #000 !important;
 }
 }
 
-@-moz-document url-prefix("https://winslaveblazor.openstack.progress.com/blazor-ui"), url-prefix("https://demos.telerik.com/blazor-ui/grid/"), url-prefix("http://localhost:3000/"), url-prefix("http://localhost:8888/"), regexp(".*/blazor-playground-client.*"), regexp(".*/blazor-playground-server.*"), regexp(".*/blazor-ui.*"), regexp(".*/kendo-ui.*") {
+@-moz-document url-prefix("https://winslaveblazor.openstack.progress.com/blazor-ui"), url-prefix("https://demos.telerik.com/blazor-ui/grid/"), url-prefix("http://localhost:3000/"), url-prefix("http://localhost:8888/"), url-prefix("https://localhost:44382/"), regexp(".*/blazor-playground-client.*"), regexp(".*/blazor-playground-server.*"), regexp(".*/blazor-ui.*"), regexp(".*/kendo-ui.*") {
 .k-state-focused,
 .k-focus {
     border: 1px solid  lime !important;
@@ -585,11 +585,20 @@ textarea {
     background-color: cyan !important;
 }
 
-.k-search-highlight mark {
+.k-search-highlight mark,
+.k-search-highlight-mark {
     background-color: yellow !important;
 }
 
+.k-loader-container-inner {
+    background-color: white !important;
+}
 
+
+
+}
+
+@-moz-document url-prefix("http://example.com") {
 
 }
 
@@ -598,4 +607,38 @@ textarea {
 .global-nav {
     background-color: black !important;
 }
+}
+
+@-moz-document url-prefix("https://demos.telerik.com/aspnet-ajax") {
+.syntaxhighlighter .line.alt1,
+.syntaxhighlighter .line.alt2 {
+    background-color: black !important;
+    color: white !important;
+}
+
+
+.syntaxhighlighter .plain, 
+.syntaxhighlighter .plain a {
+      color: white !important;
+}
+
+.xml .keyword {
+      color: white !important;
+}
+
+.xml .string {
+      color: cyan !important;
+}
+
+.xml .color1,
+.syntaxhighlighter .xml.color1, 
+.syntaxhighlighter .xml.color1 a,
+.syntaxhighlighter .c-sharp.string, 
+.syntaxhighlighter .vb.string, 
+.syntaxhighlighter .css.keyword {
+      color: yellow !important;
+}
+
+
+
 }
