@@ -447,6 +447,7 @@ alias ck="code /c/work/github/kendo"
 alias ckco="code /d/work/github/kendo-ui-core"
 alias ckendo="code /c/work/github/kendo"
 alias ckcdn="code /d/work/github/kendo-cdn"
+alias ckw="code /d/work/github/kendo-workflows"
 
 # open projects - kendo blazor
 alias ckb="code /d/work/github/blazor"
@@ -503,6 +504,7 @@ alias pkbta="cd /d/work/github/kendo-build-tasks"
 alias pkcdn="cd /d/work/github/kendo-cdn"
 alias pkdq="cd /d/work/github/kendo-data-query"
 alias pkco="cd /d/work/github/kendo-common"
+alias pkw="cd /d/work/github/kendo-workflows"
 
 # projects - kendo blazor
 alias pkb="cd /d/work/github/blazor"
@@ -578,6 +580,10 @@ alias pkic="cd /d/work/github/kendo-inputs-common"
 # projects - kendo themes
 alias ptb="cd /d/work/github/themebuilder"
 
+# projects - telerik wpf
+alias pwpf="cd /d/work/github/WPF_Scrum_Git"
+alias ppg="cd /D/work/github/WPF_Scrum_Git/Pivot/Core"
+
 # dotnet
 alias dot="dotnet"
 alias dotnc="dotnet nuget locals all --clear"
@@ -603,7 +609,7 @@ alias dotrunt="dotnet --list-runtimes"
 alias dotls="dotnet --list-sdks"
 alias dotsdk="dotnet --list-sdks"
 alias rnad="find . -iname 'bin' -o -iname 'obj' | xargs rm -rf"
-
+alias dotlv="dotnet list package --vulnerable --include-transitive"
 
 # dotnet projects - kendo
 alias dotrew="dotnet restore wrappers/mvc-6/src/Kendo.Mvc/Kendo.Mvc.csproj"

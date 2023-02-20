@@ -70,6 +70,7 @@
 	cl = clone
 	clsm = clone --recurse-submodules
 	co = checkout
+	coh = checkout HEAD .
 	cod = checkout develop
 	com = checkout master
 	coma = checkout main
@@ -201,9 +202,6 @@
 	# See the dates of the files
 	# ls -lah .git/lost-found/other/
 
-	# Copy the relevant files to where you want them, for example:
-	# cp .git/lost-found/other/73f60804ac20d5e417783a324517eba600976d30 index.html
-
 	# statistics
 	show-commits-by-author = shortlog -sn --no-merges
 	scba = show-commits-by-author
@@ -239,3 +237,8 @@
 		| sort \
 		| uniq -c \
 		| perl -MList::Util=max -nalE '$h{$F[1]} = $F[0]; }{ $m = max values %h; foreach (0..23) { $h{$_} = 0 if not exists $h{$_} } foreach (sort {$a <=> $b } keys %h) { say sprintf \"%02d - %4d %s\", $_, $h{$_}, \"*\"x ($h{$_} / $m * 50); }'"
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
