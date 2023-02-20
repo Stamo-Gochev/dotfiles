@@ -1,15 +1,21 @@
 {
-	"name": "theme-monokai-best",
-	"version": "0.1.0",
-	"publisher": "vscode",
-	"engines": { "vscode": "*" },
-	"contributes": {
-		"themes": [
-			{
-				"label": "Monokai-Best",
-				"uiTheme": "vs-dark",
-				"path": "./themes/monokai-best.tmTheme"
-			}
-		]
-	}
+    "name": "theme-monokai-best-2",
+    "displayName": "%displayName%",
+    "description": "%description%",
+    "version": "1.0.0",
+    "publisher": "vscode",
+    "license": "MIT",
+    "engines": {
+        "vscode": "*"
+    },
+    "contributes": {
+        "themes": [
+            {
+                "id": "Monokai Best 2",
+                "label": "%themeLabel%",
+                "uiTheme": "vs-dark",
+                "path": "./themes/monokai-best-2-color-theme.json"
+            }
+        ]
+    }
 }
