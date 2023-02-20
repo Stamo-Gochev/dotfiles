@@ -128,11 +128,13 @@ Add this to `package.json`:
 ```
 C:\Users\{name}\AppData\Local\Programs\Microsoft VS Code\resources\app\extensions
 ```
-```
-cd C:\Program Files\Microsoft VS Code\resources\app\extensions
-mklink /D theme-monokai-best D:\GitHub\ide-settings\visual-studio-code\theme-monokai-best
 
-C:\Program Files\Microsoft VS Code\resources\app\extensions>mklink /D theme-monokai-best D:\GitHub\ide-settings\visual-studio-code\theme-monokai-best
+```
+cd C:\Users\gochev\AppData\Local\Programs\Microsoft VS Code\resources\app\extensions
+mklink /D theme-monokai-best-2 C:\work\github\dotfiles\visual-studio-code\theme-monokai-best-2\
+
+C:\Users\gochev\AppData\Local\Programs\Microsoft VS Code\resources\app\extensions>
+mklink /D theme-monokai-best-2 C:\work\github\dotfiles\visual-studio-code\theme-monokai-best-2\
 
 Linux Mint
 sudo cp -r theme-monokai-best/ /usr/share/code/resources/app/extensions 
