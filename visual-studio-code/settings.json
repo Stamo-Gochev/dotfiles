@@ -15,7 +15,7 @@
 	"editor.lineHeight": 0,
 
 	// Controls visibility of line numbers
-	"editor.lineNumbers": true,
+	"editor.lineNumbers": "on",
 
 	// Controls visibility of the glyph margin
 	"editor.glyphMargin": false,
@@ -51,7 +51,11 @@
 	"editor.mouseWheelScrollSensitivity": 1,
 
 	// Controls if quick suggestions should show up or not while typing
-	"editor.quickSuggestions": true,
+	"editor.quickSuggestions": {
+		"comments": "on",
+		"strings": "on",
+		"other": "on"
+	},
 
 	// Controls the delay in ms after which quick suggestions will show up
 	"editor.quickSuggestionsDelay": 10,
@@ -66,7 +70,7 @@
 	"editor.suggestOnTriggerCharacters": true,
 
 	// Controls if suggestions should be accepted 'Enter' - in addition to 'Tab'. Helps to avoid ambiguity between inserting new lines or accepting suggestions.
-	"editor.acceptSuggestionOnEnter": true,
+	"editor.acceptSuggestionOnEnter": "on",
 
 	// Controls whether the editor should highlight similar matches to the selection
 	"editor.selectionHighlight": true,
@@ -176,7 +180,7 @@
 	//-------- Update configuration --------
 
 	// Configure the update channel to receive updates from. Requires a restart after change.
-	"update.channel": "none",
+	"update.channel": "manual",
 
 
 	//-------- Git configuration --------
@@ -511,9 +515,9 @@
 
 	// Custom settings
 
-	"editor.wordWrap": true,
+	"editor.wordWrap": "on",
 
-	"editor.autoIndent": true,
+	"editor.autoIndent": "full",
 
 	"editor.cursorBlinking": "solid",
 
@@ -917,6 +921,46 @@
 		{
 			"name": "pinky",
 			"value": "#d54b70"
+		},
+		{
+			"name": "yellow-1",
+			"value": "#a3a13f"
+		},
+		{
+			"name": "light-green-repl",
+			"value": "#18d76e"
+		},
+		{
+			"name": "green-2",
+			"value": "#7ae249"
+		},
+		{
+			"name": "yellow-light-2",
+			"value": "#b7c756"
+		},
+		{
+			"name": "orange-new-1",
+			"value": "#f48a19"
+		},
+		{
+			"name": "light-green-2",
+			"value": "#6fc271"
+		},
+		{
+			"name": "yellow-green-2",
+			"value": "#8e9d34"
+		},
+		{
+			"name": "salmon",
+			"value": "#dd4b6f"
+		},
+		{
+			"name": "green-3",
+			"value": "#4e9001"
+		},
+		{
+			"name": "petrol-green",
+			"value": "#1bad84"
 		}
 	],
 
@@ -989,5 +1033,6 @@
 		"vs-kubernetes.draft-path.windows": "C:\\Users\\gochev\\.vs-kubernetes\\tools\\draft\\windows-amd64\\draft.exe"
 	},
 	"workbench.sideBar.location": "left",
-	"gitlens.views.repositories.files.layout": "tree"
+	"gitlens.views.repositories.files.layout": "tree",
+	"editor.bracketPairColorization.enabled": false
 }
