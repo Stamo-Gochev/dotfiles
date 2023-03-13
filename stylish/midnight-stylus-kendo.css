@@ -639,6 +639,26 @@ textarea {
       color: yellow !important;
 }
 
+.syntaxhighlighter .xml.keyword, .syntaxhighlighter .css.plain, .syntaxhighlighter .js.string {
+    color: pink !important;
+    
+}
 
+
+
+}
+
+@-moz-document url-prefix("https://localhost:44319/"), url-prefix("") {
+
+
+.rpgFieldItem, .RadPivotGrid_Default .rpgUpdateButton {
+     background-image: none !important;
+}
+
+
+
+}
+
+@-moz-document url-prefix("http://example.com") {
 
 }
