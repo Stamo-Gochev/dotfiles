@@ -496,6 +496,38 @@ color: #eee !important;
 .tree-browser-result[aria-selected=true] {
     background-color: teal !important;
 }
+
+/*
+.State--merged {
+    background-color: #b87fff !important;
+}
+
+
+html body [class*="open"],
+.State--open {
+    background-color: #09b43a  !important;
+}
+
+.btn-primary:active, .btn-primary.selected, .btn-primary[aria-selected=true] {
+    background-color: #09b43a  !important;
+}
+
+.btn-primary:hover, .btn-primary.hover, [open]>.btn-primary {
+    background-color: #09b43a !important;
+    border-color: #09b43a  !important;
+}
+*/
+
+::-moz-selection {
+    color: white !important;
+    background-color: #0860C9 !important;
+}
+
+::selection {
+    color: white !important;
+    background-color: #0860C9 !important;  
+}
+
 }
 
 @-moz-document url-prefix("https://docs.docker.com/") {
@@ -556,12 +588,32 @@ img[src="/support/assets/ticket-closed.gif"]
 
 @-moz-document url-prefix("https://devblogs.microsoft.com/") {
 .commentlist pre,
-    .commentlist pre.prettyprinted,
-    .commentlist pre.prettyprint,
-    body pre, body pre.prettyprint,
-    body pre.prettyprinted {
-          background-color: black !important;
-    }
+.commentlist pre.prettyprinted,
+.commentlist pre.prettyprint,
+body pre, body pre.prettyprint,
+body pre.prettyprinted,
+pre code .pln,
+span.pln,
+pre code.language-assembly span, pre code.language-console span {
+    background-color: black !important;
+    color: white !important;
+}
+
+pre code.language-assembly span, pre code.language-console span,
+pre code,
+pre code.language-csharp.prettyprinted span {
+    background-color: black !important;
+    color: gold !important;
+}
+
+
+
+
+
+
+
+
+
 }
 
 @-moz-document url-prefix("https://instagram-engineering.com/") {
@@ -786,6 +838,10 @@ div[aria-selected='true'] {
 .e-item {
     color: black !important;
 }
+
+* {
+    font-family: Arial !important;
+}
 }
 
 @-moz-document url-prefix("https://blazor.syncfusion.com/") {
@@ -797,6 +853,11 @@ div[aria-selected='true'] {
 li.e-item a.e-text.CanSelect {
     color: white !important;
     text-shadow: 2px 1px white !Important;
+}
+
+
+* {
+    font-family: Arial !important;
 }
 }
 
