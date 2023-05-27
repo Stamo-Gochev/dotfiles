@@ -435,7 +435,7 @@ alias pgt="cd /d/work/github/test-things"
 # open projects
 alias cal="cide && ck && ckbj && cac && cpg && ckr && ckag"
 alias cal="cide && ckbj && ck && ckr"
-alias cide="code /c/work/github/dotfiles"
+alias cide="code /d/work/github/dotfiles"
 alias cpg="code /d/work/github/playground"
 alias cac="code /d/work/github/aspnet-core/AspNetCore"
 alias cacj="code /d/work/github/aspnet-core/extensions"
@@ -522,6 +522,8 @@ alias pkds="cd /d/work/github/telerik-datasource"
 alias pkre="cd /d/work/github/telerik-recurrence"
 alias pkumce="cd ui-for-aspnet-core-examples"
 alias pkume="cd ui-for-aspnet-mvc-examples"
+alias pkpc="cd /d/work/github/pivot-core"
+alias pkpdpx="cd /d/work/github/pivot-data-providers-xmla"
 
 # projects - kendo angular
 alias pk2="cd /d/work/github/k2-site"
