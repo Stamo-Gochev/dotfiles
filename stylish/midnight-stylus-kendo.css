@@ -609,7 +609,7 @@ textarea {
 }
 }
 
-@-moz-document url-prefix("https://demos.telerik.com/aspnet-ajax") {
+@-moz-document url-prefix("https://demos.telerik.com/aspnet-ajax"), url-prefix("https://localhost:44319/"), url-prefix("http://localhost:58448/") {
 .syntaxhighlighter .line.alt1,
 .syntaxhighlighter .line.alt2 {
     background-color: black !important;
@@ -641,18 +641,25 @@ textarea {
 
 .syntaxhighlighter .xml.keyword, .syntaxhighlighter .css.plain, .syntaxhighlighter .js.string {
     color: pink !important;
-    
+}
+
+a, .syntaxhighlighter .string a {
+    color: lightblue !important;
 }
 
 
 
 }
 
-@-moz-document url-prefix("https://localhost:44319/"), url-prefix("") {
+@-moz-document url-prefix("https://localhost:44319/"), url-prefix("http://localhost:62337/") {
 
 
 .rpgFieldItem, .RadPivotGrid_Default .rpgUpdateButton {
      background-image: none !important;
+}
+
+ .rpgAllFieldsContainer {
+    width: 100% !important;
 }
 
 
