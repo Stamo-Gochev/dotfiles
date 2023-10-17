@@ -785,7 +785,7 @@ button[aria-label*=activity] {
     background-color: #6264A7 !important;
 }
 
-.message-body-content a {
+.message-body-content a, .fui-Primitive a {
 	color: cyan !important;
 }
 }
@@ -799,10 +799,14 @@ code[class*=language-] {
 }
 }
 
-@-moz-document url-prefix("https://outlook.office.com/") {
-div[aria-selected='true'] {
+@-moz-document url-prefix("https://outlook.office.com/"), url-prefix("https://outlook.office365.com/") {
+div[aria-selected='true'],
+.C2IG3.wk4Sg {
     background-color: rgb(0, 120, 212) !important;
 }
+
+
+
 }
 
 @-moz-document url-prefix("https://css-tricks.com/") {
