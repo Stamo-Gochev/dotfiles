@@ -774,7 +774,8 @@ body, table {
     background-color: rgb(31, 31, 31) !important;
 }
 
-button[aria-label*=activity] {
+button[aria-label*=activity],
+.ui-tree__item > a[tabindex='0'] {
     /*border: 1px solid red !important;  */
     background: #4d54ff !important;
 }
@@ -785,8 +786,14 @@ button[aria-label*=activity] {
     background-color: #6264A7 !important;
 }
 
-.message-body-content a, .fui-Primitive a {
+.message-body-content a, 
+.fui-Primitive a,
+.f1leeax8 {
 	color: cyan !important;
+}
+
+.f11d4kpn {
+    color: #fff !Important;
 }
 }
 
