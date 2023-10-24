@@ -831,7 +831,19 @@ div[data-tid="post-message-subheader"] {
     background: #4d54ff !important;
 }
 
+.km {
+    width: 3rem !important;
+}
 
+
+.kl {
+    height: 3rem !important;
+}
+
+div[id*=message-body]:has(svg) {
+    border: 4px solid #ffc14d !important;
+    
+}
 
 }
 
