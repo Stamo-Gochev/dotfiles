@@ -788,13 +788,51 @@ button[aria-label*=activity],
 
 .message-body-content a, 
 .fui-Primitive a,
-.f1leeax8 {
+.f1leeax8,
+.f16muhyy,
+.fyind8e,
+button[data-track-action-scenario="seeLess"],
+button[data-track-action-scenario="seeMore"]{
 	color: cyan !important;
 }
 
 .f11d4kpn {
     color: #fff !Important;
 }
+
+span[id='author-*'],
+span[id*=author] {
+    font-size: 14px !important;
+    font-weight: bold !Important;
+}
+
+[data-tid="timestamp"] {
+    color: cyan !important;
+    font-size: 12px !important;
+    font-weight: bold !Important;
+}
+
+div[data-tid="channel-replies-pane-message"],
+div[id*=message-body] {
+    border: 1px dashed white !important;
+    margin: 10px !Important;
+}
+
+div[data-tid="reply-message-header"] > div.f1vx9l62 {
+     border: 0px solid white !important;
+    
+}
+
+div[data-testid="message-body-flex-wrapper"] {
+    border: 0px solid white !important;
+}
+
+div[data-tid="post-message-subheader"] {
+    background: #4d54ff !important;
+}
+
+
+
 }
 
 @-moz-document url-prefix("https://blazor.syncfusion.com/") {
