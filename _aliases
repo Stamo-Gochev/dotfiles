@@ -520,8 +520,10 @@ alias pkbui="cd /d/work/github/blazor-ui"
 alias pkbd="cd /d/work/github/blazor-docs"
 alias pkds="cd /d/work/github/telerik-datasource"
 alias pkre="cd /d/work/github/telerik-recurrence"
+alias pkrc="cd /d/work/github/telerik-recurrence"
 alias pkumce="cd ui-for-aspnet-core-examples"
 alias pkume="cd ui-for-aspnet-mvc-examples"
+alias pkpg="cd /d/work/github/pivot"
 alias pkpc="cd /d/work/github/pivot-core"
 alias pkpdpx="cd /d/work/github/pivot-data-providers-xmla"
 
@@ -639,6 +641,7 @@ alias dotba="dotbb && dotbbe"
 alias ddb="dotbb && dotbbe"
 alias dda="dotbb && dotbbe && dotbbsp && dotbbcp"
 alias ddd="dotbb && dotbbe"
+alias ddd="dotnet test D:\work\github\blazor\Telerik.Blazor.Tests"
 alias coj="u /d/work/github/blazor/Telerik.Blazor/wwwroot/js/ && co /d/work/github/blazor/Telerik.Blazor/wwwroot/js/"
 
 # blazor examples
