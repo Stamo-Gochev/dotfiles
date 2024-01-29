@@ -425,7 +425,7 @@ alias rkce="chrome.exe http://localhost:3000/examples"
 
 # projects
 alias pg="cd /d/work/github/playground"
-alias ide="cd /c/work/github/dotfiles"
+alias ide="cd /d/work/github/dotfiles"
 alias pa="cd /d/work/github/aspnet-core"
 alias pac="cd /d/work/github/aspnet-core/AspNetCore"
 alias pacd="cd /d/work/github/aspnet-core/AspNetCore.Docs"
@@ -485,6 +485,7 @@ alias ckdq="code /d/work/github/kendo-data-query"
 alias ckco="code /d/work/github/kendo-common"
 alias ckdic="code /d/work/github/kendo-dateinputs-common"
 alias ckic="code /d/work/github/kendo-inputs-common"
+alias cksc="code /d/work/github/kendo-spreadsheet-common"
 
 # projects - kendo
 alias pk="cd /c/work/github/kendo"
@@ -507,6 +508,7 @@ alias pkcdn="cd /d/work/github/kendo-cdn"
 alias pkdq="cd /d/work/github/kendo-data-query"
 alias pkco="cd /d/work/github/kendo-common"
 alias pkw="cd /d/work/github/kendo-workflows"
+alias pksc="cd /d/work/github/kendo-spreadsheet-common"
 
 # projects - kendo blazor
 alias pkb="cd /d/work/github/blazor"

@@ -190,8 +190,8 @@
 	prsm = git submodule update --remote
 
 	# ignore a file
-	ignore = "!f() { git update-index --assume-unchanged $1 ; }; f"
-	rmignore = "!f() { git update-index --no-assume-unchanged $1 ; }; f"
+	ignore = "!f() { git update-index --assume-unchanged --skip-worktree $1 ; }; f"
+	rmignore = "!f() { git update-index --no-assume-unchanged --no-skip-worktree $1 ; }; f"
 	lig = "!f() { git check-ignore * ; }; f"
 
 	# tags - usage git tagcommit <tag_name>
