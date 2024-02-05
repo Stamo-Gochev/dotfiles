@@ -151,6 +151,12 @@ alias gbp="nr build:production"
 alias rhs="chrome.exe http://localhost:8080"
 
 # dev - jest
+
+# https://stackoverflow.com/questions/33247602/how-do-you-debug-jest-tests
+
+# 1. go to chrome://inspect
+# 2. add the test folder as a workspace in Chrome DevTools
+
 # for linux
 # alias jtn="node --inspect-brk node_modules/.bin/jest --runInBand"
 # alias jtndb="ndb node --inspect-brk node_modules/.bin/jest --runInBand"
