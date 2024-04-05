@@ -575,6 +575,7 @@ alias rtb="chrome.exe http://localhost:4200"
 alias preact="cd /d/work/github/react"
 alias pkdic="cd /d/work/github/kendo-dateinputs-common"
 alias pkic="cd /d/work/github/kendo-inputs-common"
+alias pdsr="cd /d/work/github/dotnet-semantic-release"
 
 # projects - kendo themes
 alias ptb="cd /d/work/github/themebuilder"
