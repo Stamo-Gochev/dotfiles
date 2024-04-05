@@ -415,6 +415,13 @@ background-image:
 background-color: rgba(0,0,0,.75) !important;
 color: #eee !important;
 }
+
+
+textarea[name='issue[body]'] {
+    max-height: 600px !important;
+}
+
+
 }
 
 @-moz-document url-prefix("https://github.com/") {
@@ -528,6 +535,7 @@ html body [class*="open"],
     background-color: #0860C9 !important;  
 }
 
+
 }
 
 @-moz-document url-prefix("https://docs.docker.com/") {
@@ -584,6 +592,12 @@ img[src="/support/assets/ticket-closed.gif"]
     padding: 4px 50px !important;
 }
 
+}
+
+@-moz-document url-prefix("https://www.telerik.com/") {
+body * {
+    font-family: Arial !Important;
+}
 }
 
 @-moz-document url-prefix("https://devblogs.microsoft.com/") {
@@ -761,7 +775,8 @@ body, table {
     color: #75fff7 !Important;    
 }
 
-.app-bar button.app-bar-link.app-bar-selected {
+.app-bar button.app-bar-link.app-bar-selected,
+button.app-bar-link.app-bar-selected {
      color: white !Important;
     border: 1px solid white !important;
 }
@@ -780,8 +795,10 @@ button[aria-label*=activity],
     background: #4d54ff !important;
 }
 
+app-header-bar,
 .app-header-bar,
-.new-post-button {
+.new-post-button,
+.app-header-bar-actions {
 	background-color: #8a8fff !important;
     background-color: #6264A7 !important;
 }
@@ -972,6 +989,10 @@ body,
 
 #app-chrome-container {
     background-color: teal !important;
+}
+
+#mainContent, .WPGQ {
+    background-color: black !important;
 }
 }
 
