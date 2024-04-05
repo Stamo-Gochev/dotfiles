@@ -4,7 +4,6 @@
   "colors": {
 		"badge.background": "#000000",
 
-		"breadcrumb": "#832561",
     "breadcrumb.foreground": "#ffffff",
 		"breadcrumb.activeSelectionForeground": "#ffffff",
 
@@ -62,6 +61,8 @@
 
     "sidebar.background": "#000000",
     "sidebar.foreground": "#ffffff",
+    "sideBar.background": "#000000",
+    "sideBar.foreground": "#ffffff",
 		"sideBar.border": "#ffffff",
 
     "tab.activeBackground": "#1e79d2",
