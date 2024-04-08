@@ -75,6 +75,22 @@ Make sure to set the global path to gulp in `launch.json` as the local reference
 
 # Debug Jest tests
 
+```
+# https://stackoverflow.com/questions/33247602/how-do-you-debug-jest-tests
+
+# 1. go to chrome://inspect
+# 2. add the test folder as a workspace in Chrome DevTools
+
+# for linux
+# alias jtn="node --inspect-brk node_modules/.bin/jest --runInBand"
+# alias jtndb="ndb node --inspect-brk node_modules/.bin/jest --runInBand"
+# for windows
+alias jtn="node --inspect-brk node_modules/jest/bin/jest.js --runInBand --config jest.config.json"
+alias jtnw="node --inspect-brk node_modules/jest/bin/jest.js --runInBand --config jest.config.json --watch --no-cache"
+alias jtndbw="ndb node --inspect-brk node_modules/jest/bin/jest.js --runInBand --config jest.config.json --watch --no-cache"
+alias jd="ndb node --inspect-brk node_modules/jest/bin/jest.js --runInBand --config jest.config.json --watch"
+```
+
 https://github.com/Microsoft/vscode-recipes/tree/master/debugging-jest-tests
 
 ```json
