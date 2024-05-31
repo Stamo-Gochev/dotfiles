@@ -200,6 +200,8 @@
 	commit-of-tag = "!f() { git rev-list -n 1 $1 ; }; f"
 	# list-tags = "!f() { git tag -l | sort -V --reverse | head -30 | grep '^2' ; }; f"
 	list-tags = "!f() { git tag -l --sort=-v:refname | head -30 ; }; f"
+	atag = tag
+	rmtag = tag -d
 
 	# https://www.smashingmagazine.com/make-life-easier-when-using-git/
 	# restore files when reflog fails
