@@ -156,15 +156,16 @@ alias rhs="chrome.exe http://localhost:8080"
 
 # 1. go to chrome://inspect
 # 2. add the test folder as a workspace in Chrome DevTools
+# 3. add a debugger; to a file
 
 # for linux
 # alias jtn="node --inspect-brk node_modules/.bin/jest --runInBand"
 # alias jtndb="ndb node --inspect-brk node_modules/.bin/jest --runInBand"
 # for windows
-alias jtn="node --inspect-brk node_modules/jest/bin/jest.js --runInBand --config jest.config.json"
-alias jtnw="node --inspect-brk node_modules/jest/bin/jest.js --runInBand --config jest.config.json --watch --no-cache"
-alias jtndbw="ndb node --inspect-brk node_modules/jest/bin/jest.js --runInBand --config jest.config.json --watch --no-cache"
-alias jd="ndb node --inspect-brk node_modules/jest/bin/jest.js --runInBand --config jest.config.json --watch"
+alias jtn="node --inspect-brk node_modules/jest/bin/jest.js --runInBand --config jest.config.js"
+alias jtnw="node --inspect-brk node_modules/jest/bin/jest.js --runInBand --config jest.config.js --watch --no-cache"
+alias jtndbw="ndb node --inspect-brk node_modules/jest/bin/jest.js --runInBand --config jest.config.js --watch --no-cache"
+alias jd="ndb node --inspect-brk node_modules/jest/bin/jest.js --runInBand --config jest.config.js --watch"
 
 # dev - typescript
 alias tt="tsc -p tsconfig.es.json"
@@ -452,6 +453,7 @@ alias cacf="code /d/work/github/aspnet-core/corefx"
 
 # open projects - kendo
 alias ck="code /c/work/github/kendo"
+alias ck2="code /d/work/github-clone/kendo"
 alias ckco="code /d/work/github/kendo-ui-core"
 alias ckendo="code /c/work/github/kendo"
 alias ckcdn="code /d/work/github/kendo-cdn"
@@ -492,6 +494,8 @@ alias ckco="code /d/work/github/kendo-common"
 alias ckdic="code /d/work/github/kendo-dateinputs-common"
 alias ckic="code /d/work/github/kendo-inputs-common"
 alias cksc="code /d/work/github/kendo-spreadsheet-common"
+alias ckec="code /d/work/github/kendo-editor-common"
+alias ckpc="code /d/work/github/kendo-pdfviewer-common"
 
 # projects - kendo
 alias pk="cd /c/work/github/kendo"
