@@ -535,6 +535,10 @@ html body [class*="open"],
     background-color: #0860C9 !important;  
 }
 
+textarea[name='issue_comment[body]'] {
+    height: 800px !important;
+}
+
 
 }
 
@@ -835,9 +839,10 @@ div[data-tid="channel-pane-message"] span[id*=author] {
 div[data-tid="channel-replies-pane-message"],
 div[id*=message-body] {
     border: 1px solid white !important;
-    margin: 4px !Important;
-    border-style: solid solid solid solid !important;
+    margin: 2px !Important;
 }
+
+
 
 div[data-tid="response-surface"] {
     margin-left: 32px !Important;
@@ -931,6 +936,10 @@ div[aria-selected='true'],
 }
 
 @-moz-document url-prefix("https://blazor.syncfusion.com/") {
+* {
+    font-family: Arial !important;
+}
+
 .left-toc .e-treeview .e-item .e-text {
     background-color: #8e0bca !important;
     color: white !Important;
@@ -938,13 +947,17 @@ div[aria-selected='true'],
 
 li.e-item a.e-text.CanSelect {
     color: white !important;
-    text-shadow: 2px 1px white !Important;
+    /* text-shadow: 2px 1px white !Important; */
 }
 
-
-* {
-    font-family: Arial !important;
+.e-text.CanSelect.node-selected {
+    background-color: teal !Important;   
 }
+
+a:hover, a.e-text.CanSelect:hover {
+    color: yellow !Important;
+}
+
 }
 
 @-moz-document url-prefix("https://www.myworkday.com/") {
@@ -994,6 +1007,36 @@ body,
 #mainContent, .WPGQ {
     background-color: black !important;
 }
+
+.WCKK {
+    background-color: black !important;
+}
+
+.WIS4.WJ0O.WPJK {
+    background-color: black !important;
+    color: white !important;
+    border: 1px dotted white !important;
+}
+
+
+a.WIS4.WJ0O.WPJK:hover{
+    background-color: black !important;
+    color: white !important;
+    border: 1px solid white !important;
+}
+
+.WEON.WION.WJ0O.WEBO.WCNN {
+     background-color: black !important;
+}
+
+.WEON.WJ0O.WEBO.WIPN.WHON {
+    color: black !important;
+}
+
+.WEON.WJ0O.WEBO.WIPN.WHON span.WGON {
+    color: black !important;
+}
+
 }
 
 @-moz-document url-prefix("https://cloud.workhuman.com/") {
@@ -1010,6 +1053,14 @@ body * {
 pre {
     background-color: black !important;
     color: white !Important;
+}
+
+
+}
+
+@-moz-document url-prefix("https://nextword.substack.com/") {
+* {
+    font-family: Arial !important;
 }
 
 
