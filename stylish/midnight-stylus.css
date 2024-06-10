@@ -752,6 +752,11 @@ body, table {
 }
 
 @-moz-document url-prefix("https://teams.microsoft.com/") {
+:root {
+  --colorNeutralForeground3BrandSelected: red;
+  --colorNeutralForeground3: lime;
+}
+
 .app-bar-text {
     color: white !important;
     font-size: 1.1rem;
@@ -767,7 +772,8 @@ body, table {
     color: white !important;
 }
 
-.left-rail-selected * {
+.left-rail-selected *,
+.virtual-tree-list-scroll-container div[tabindex='0'] {
     /*color: gold !Important; */
     font-weight: 800 !important;
     background: #4d54ff !important;
@@ -780,7 +786,8 @@ body, table {
 }
 
 .app-bar button.app-bar-link.app-bar-selected,
-button.app-bar-link.app-bar-selected {
+button.app-bar-link.app-bar-selected,
+button[aria-pressed='true'] {
      color: white !Important;
     border: 1px solid white !important;
 }
@@ -812,6 +819,7 @@ app-header-bar,
 .f1leeax8,
 .f16muhyy,
 .fyind8e,
+.f19n0e5
 button[data-track-action-scenario="seeLess"],
 button[data-track-action-scenario="seeMore"]{
 	color: cyan !important;
@@ -875,6 +883,19 @@ div[data-tid="chat-pane-item"] {
     padding-bottom: 16px !important;
 }
 
+.ui-tree__title:has(.fl43uef) {
+    //background-color: teal !important;
+    border: 2px dotted white !important;
+}
+
+.ui-tree__title:has(.fl43uef) * {
+    color: cyan !important;
+}
+
+ui-tree__item .f19n0e5 {
+    color: cyan !important;
+    
+}
 }
 
 @-moz-document url-prefix("https://blazor.syncfusion.com/") {
