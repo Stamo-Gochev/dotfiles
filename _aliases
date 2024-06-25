@@ -453,6 +453,7 @@ alias cacf="code /d/work/github/aspnet-core/corefx"
 
 # open projects - kendo
 alias ck="code /c/work/github/kendo"
+alias ckcl="code /D/work/github-clone/kendo"
 alias ck2="code /d/work/github-clone/kendo"
 alias ckco="code /d/work/github/kendo-ui-core"
 alias ckendo="code /c/work/github/kendo"
@@ -495,10 +496,12 @@ alias ckdic="code /d/work/github/kendo-dateinputs-common"
 alias ckic="code /d/work/github/kendo-inputs-common"
 alias cksc="code /d/work/github/kendo-spreadsheet-common"
 alias ckec="code /d/work/github/kendo-editor-common"
-alias ckpc="code /d/work/github/kendo-pdfviewer-common"
+alias ckpvc="code /d/work/github/kendo-pdfviewer-common"
+alias ckpoc="cd /d/work/github/kendo-popup-common"
 
-# projects - kendo
+# projects - kendo common
 alias pk="cd /c/work/github/kendo"
+alias pk2="cd /d/work/github-clone/kendo"
 alias pkco="cd /d/work/github/kendo-ui-core"
 alias pkdo="cd /d/work/github/kendo-ui-dojo"
 alias pkt="cd /d/work/github/kendo-themes"
@@ -519,6 +522,12 @@ alias pkdq="cd /d/work/github/kendo-data-query"
 alias pkco="cd /d/work/github/kendo-common"
 alias pkw="cd /d/work/github/kendo-workflows"
 alias pksc="cd /d/work/github/kendo-spreadsheet-common"
+alias pkdic="cd /d/work/github/kendo-dateinputs-common"
+alias pkic="cd /d/work/github/kendo-inputs-common"
+alias pksc="code /d/work/github/kendo-spreadsheet-common"
+alias pkec="code /d/work/github/kendo-editor-common"
+alias pkpvc="code /d/work/github/kendo-pdfviewer-common"
+alias pkpoc="cd /d/work/github/kendo-popup-common"
 
 # projects - kendo blazor
 alias pkb="cd /d/work/github/blazor"
@@ -570,16 +579,6 @@ alias ckvw="code /d/work/github/kendo-vue-wrappers"
 alias cvw="cd /d/work/github/kendo-vue-wrappers && code ."
 alias cpkvw="cd /d/work/github/kendo-vue-wrappers && code ."
 alias rve="chrome.exe http://localhost:8764"
-
-# projects - kendo common
-alias ptb="cd /d/work/github/themebuilder"
-alias pktb="cd /d/work/github/themebuilder"
-alias cktb="code /d/work/github/themebuilder"
-alias rtb="chrome.exe http://localhost:4200"
-alias preact="cd /d/work/github/react"
-alias pkdic="cd /d/work/github/kendo-dateinputs-common"
-alias pkic="cd /d/work/github/kendo-inputs-common"
-alias pdsr="cd /d/work/github/dotnet-semantic-release"
 
 # projects - kendo themes
 alias ptb="cd /d/work/github/themebuilder"

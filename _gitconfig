@@ -200,7 +200,9 @@
 	commit-of-tag = "!f() { git rev-list -n 1 $1 ; }; f"
 	# list-tags = "!f() { git tag -l | sort -V --reverse | head -30 | grep '^2' ; }; f"
 	list-tags = "!f() { git tag -l --sort=-v:refname | head -30 ; }; f"
-	atag = tag
+	lt = "!f() { git tag -l --sort=-v:refname | head -30 ; }; f"
+	rt = "!f() { git fetch origin --tags --force ; }; f"
+	pt = "!f() { git push origin $1 ; }; f"
 	rmtag = tag -d
 
 	# https://www.smashingmagazine.com/make-life-easier-when-using-git/
