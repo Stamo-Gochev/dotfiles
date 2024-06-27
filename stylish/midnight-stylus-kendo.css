@@ -6,7 +6,9 @@ browser[type="content-primary"] {
 background-color: #141414 !important;
 }
 
-@-moz-document url-prefix("http://"), url-prefix("https://"), url-prefix("ftp://"), regexp("https?:\\/\\/(?!((www\\\\.)?(teams\\.microsoft\\.com))).*") {
+
+
+@-moz-document url-prefix("http://"), url-prefix("https://"), url-prefix("ftp://"), url-prefix("file://"), regexp("https?:\\/\\/(?!((www\\\\.)?(teams\\.microsoft\\.com))).*") {
 /*No background images. try to exclude icons, other misc items. */
 
 *:not(:empty):not([onclick*="open"]):not(span):not([class*="stars"]):not([id*="stars"]):not([id="rating"]):not([class="rating"]):not([class*="prite"]):not([id*="prite"]):not([id*="lbImage"]) {
@@ -594,6 +596,10 @@ textarea {
     background-color: white !important;
 }
 
+.k-skeleton {
+    border: 1px solid lime !important;
+    background-color: #ffa500 !important;
+}
 
 
 }
@@ -666,6 +672,82 @@ a, .syntaxhighlighter .string a {
 
 }
 
-@-moz-document url-prefix("http://example.com") {
+@-moz-document url-prefix("https://challengeaccepted.dev/") {
+* {
+    font-family: Arial !important;
+}
+
+}
+
+@-moz-document url-prefix("https://qachallengeaccepted.com/") {
+* {
+    font-family: Arial !important;
+}
+
+}
+
+@-moz-document url-prefix("https://www.telerik.com/devreach") {
+* {
+    font-family: Arial !important;
+}
+
+}
+
+@-moz-document url-prefix("https://careershow.bg/") {
+*, span, div {
+    font-family: Arial !important;
+    font-weight: 500 !important;
+}
+
+div, span, .container-program, .box-lecture, .w-richtext {
+    background-color: black !important;
+    color: white !important;
+}
+
+#hs-web-interactives-top-anchor {
+    width: 0% !important;
+    height: 0% !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@-moz-document url-prefix("https://www.cnbc.com/") {
+* {
+    font-family: Arial !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
