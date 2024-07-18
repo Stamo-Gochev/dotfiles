@@ -13,6 +13,17 @@
 10. Line endings - https://marketplace.visualstudio.com/items?itemName=JakubBielawa.LineEndingsUnifier
 11. whitespace visualizer - https://marketplace.visualstudio.com/items?itemName=MadsKristensen.TrailingWhitespaceVisualizer
 12. Semantic colorizer - https://marketplace.visualstudio.com/items?itemName=AndreasReischuck.SemanticColorizer
+13. Color preview
+14. Editorconfig guidelines
+15. Git diff margin
+16. Indent guides for vs 2022
+17. Open command line
+18. Output enhancer
+19. ResXManager
+20. Trailing whitespace visualizer
+21. VS spell checker
+22. VS Color Output 64
+23. ZenCoding
 
 ## VsVim
 ### Keyaboard shortcuts
