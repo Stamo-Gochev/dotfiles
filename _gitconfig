@@ -1,7 +1,7 @@
 [user]
 	name = Stamo-Gochev
 	email = stamo_gochev@yahoo.com
-	signingkey = 7810849315A4E351
+	signingkey = 590AC268B79739C4
 [commit]
 	gpgsign = true
 [gpg]
