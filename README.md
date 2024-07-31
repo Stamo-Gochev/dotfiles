@@ -61,6 +61,11 @@ syntax on
 set background=dark
 ```
 
+If you are on Windows 11, Vim appears missing in cmder (with "zz" displaying on the screen). The fix is to disabled the:
+> Settings -> Features -> disable Inject ConEmuHk
+See https://github.com/Maximus5/ConEmu/issues/2384#issuecomment-1167158988
+
+
 
 
 
