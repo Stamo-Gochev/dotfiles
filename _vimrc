@@ -1,7 +1,21 @@
 " automatically reload vimrc when it's saved
 au BufWritePost .vimrc so ~/.vimrc
 
-let os = substitute(system('uname -a'), "\n", "", "")
+syntax on
+
+" fixes Vim colors in Cmder
+" Set this after the plugins have been loaded
+set background=dark
+
+if !has("gui_running")
+    set term=xterm
+    set t_Co=256
+    let &t_AB="\e[48;5;%dm"
+    let &t_AF="\e[38;5;%dm"
+    " colorscheme zenburn
+endif
+
+let os = "win64"
 
 " =============================================================================
 " Plugins
@@ -15,25 +29,11 @@ let os = substitute(system('uname -a'), "\n", "", "")
 " do not try to be compatible with vi, required
 set nocompatible
 
-" install Vundle (should be done manually otherwise)
-let home_dir = expand('$HOME')
-if !isdirectory(expand(home_dir . '/.vim/bundle/vundle/.git', 1))
-  " Windows workaround for /bundle folder
-  "	execute "! git clone https://github.com/VundleVim/Vundle.vim " . home_dir . "/.vim/plugin/vundle"
-  execute "! git clone https://github.com/VundleVim/Vundle.vim " . home_dir . "/.vim/bundle/vundle"
-
-  if v:shell_error
-    finish
-  else
-    silent ! vim +PluginInstall +qall
-  endif
-endif
-
 " required for Vundle
 filetype off
 
 " set the runtime path to include Vundle and initialize on Windows
-" set rtp+=~/.vim/plugin/Vundle.vim
+" set rtp+=~/.vim/bundle/Vundle.vim
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -67,6 +67,16 @@ if has("gui_running")
   else
     set guifont=Consolas:h16
   endif
+endif
+
+""""""""""""""""""""""""""""""""""""""
+" let mouse wheel scroll file contents
+""""""""""""""""""""""""""""""""""""""
+if !has("gui_running")
+    set term=xterm
+    set mouse=a
+    " perhaps `nocompatible` is not required
+    set nocompatible
 endif
 
 Plugin 'machakann/vim-highlightedyank'
@@ -255,15 +265,8 @@ set smarttab
 
 " ignores
 set wildignore=*.o,*.obj,*.bin,*.dll,*.zip
-set wildignore+=*/dist/*,*/node_modules/*,*.min.js,*.js.map
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
-set wildignore+=*\\.git\\*,*\\.hg\\*,*\\.svn\\*
-
-syntax on
-
-" fixes Vim colors in Cmder
-" Set this after the plugins have been loaded
-set background=dark
+" set wildignore+=*/dist/*,*/node_modules/*,*.min.js,*.js.map
+" set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 
 "automatically save the file when switching between buffers
 set autowriteall
@@ -352,7 +355,7 @@ let g:syntastic_aggregate_errors = 1
 
 set statusline=%F%m%r%h%w[%L][%{&ff}]%y[%p%%][%04l,%04v]
 set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 set laststatus=2
 

@@ -204,6 +204,7 @@
 	rt = "!f() { git fetch origin --tags --force ; }; f"
 	pt = "!f() { git push origin $1 ; }; f"
 	rmtag = tag -d
+	dt = tag -d
 
 	# https://www.smashingmagazine.com/make-life-easier-when-using-git/
 	# restore files when reflog fails
