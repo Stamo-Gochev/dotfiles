@@ -6,8 +6,6 @@ browser[type="content-primary"] {
 background-color: #141414 !important;
 }
 
-
-
 @-moz-document url-prefix("http://"), url-prefix("https://"), url-prefix("ftp://"), url-prefix("file://"), regexp("https?:\\/\\/(?!((www\\\\.)?(teams\\.microsoft\\.com))).*") {
 /*No background images. try to exclude icons, other misc items. */
 
@@ -601,6 +599,12 @@ textarea {
     background-color: #ffa500 !important;
 }
 
+.k-marquee, .k-marquee-color {
+    border: 1px solid orange !important;
+    background-color: orange !important;
+    opacity: 0.5 !important;
+}
+
 
 }
 
@@ -652,14 +656,9 @@ textarea {
 a, .syntaxhighlighter .string a {
     color: lightblue !important;
 }
-
-
-
 }
 
 @-moz-document url-prefix("https://localhost:44319/"), url-prefix("http://localhost:62337/") {
-
-
 .rpgFieldItem, .RadPivotGrid_Default .rpgUpdateButton {
      background-image: none !important;
 }
@@ -667,30 +666,24 @@ a, .syntaxhighlighter .string a {
  .rpgAllFieldsContainer {
     width: 100% !important;
 }
-
-
-
 }
 
 @-moz-document url-prefix("https://challengeaccepted.dev/") {
 * {
     font-family: Arial !important;
 }
-
 }
 
 @-moz-document url-prefix("https://qachallengeaccepted.com/") {
 * {
     font-family: Arial !important;
 }
-
 }
 
 @-moz-document url-prefix("https://www.telerik.com/devreach") {
 * {
     font-family: Arial !important;
 }
-
 }
 
 @-moz-document url-prefix("https://careershow.bg/") {
@@ -708,46 +701,16 @@ div, span, .container-program, .box-lecture, .w-richtext {
     width: 0% !important;
     height: 0% !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 @-moz-document url-prefix("https://www.cnbc.com/") {
 * {
     font-family: Arial !important;
 }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@-moz-document url-prefix("https://kaksepishe.com/") {
+* {
+    font-family: Arial !important;
+}
 }
