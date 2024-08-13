@@ -420,8 +420,6 @@ color: #eee !important;
 textarea[name='issue[body]'] {
     max-height: 600px !important;
 }
-
-
 }
 
 @-moz-document url-prefix("https://github.com/") {
@@ -538,8 +536,6 @@ html body [class*="open"],
 textarea[name='issue_comment[body]'] {
     height: 800px !important;
 }
-
-
 }
 
 @-moz-document url-prefix("https://docs.docker.com/") {
@@ -595,7 +591,6 @@ img[src="/support/assets/ticket-closed.gif"]
     margin-left: -50px !important;
     padding: 4px 50px !important;
 }
-
 }
 
 @-moz-document url-prefix("https://www.telerik.com/") {
@@ -623,15 +618,6 @@ pre code.language-csharp.prettyprinted span {
     background-color: black !important;
     color: gold !important;
 }
-
-
-
-
-
-
-
-
-
 }
 
 @-moz-document url-prefix("https://instagram-engineering.com/") {
@@ -885,7 +871,7 @@ div[data-tid="chat-pane-item"] {
 
 .ui-tree__title:has(.fl43uef) {
     //background-color: teal !important;
-    border: 1px solid white !important;
+    border: 2px dotted white !important;
 }
 
 .ui-tree__title:has(.fl43uef) * {
@@ -894,8 +880,24 @@ div[data-tid="chat-pane-item"] {
 
 ui-tree__item .f19n0e5 {
     color: cyan !important;
-    
 }
+
+
+.globalEventContainer * {
+    color: white !Important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 @-moz-document url-prefix("https://blazor.syncfusion.com/") {
@@ -912,9 +914,6 @@ div[aria-selected='true'],
 .C2IG3.wk4Sg {
     background-color: rgb(0, 120, 212) !important;
 }
-
-
-
 }
 
 @-moz-document url-prefix("https://css-tricks.com/") {
@@ -978,7 +977,6 @@ li.e-item a.e-text.CanSelect {
 a:hover, a.e-text.CanSelect:hover {
     color: yellow !Important;
 }
-
 }
 
 @-moz-document url-prefix("https://www.myworkday.com/") {
@@ -1058,7 +1056,6 @@ a.WIS4.WJ0O.WPJK:hover,
 .WEON.WJ0O.WEBO.WIPN.WHON span.WGON {
     color: black !important;
 }
-
 }
 
 @-moz-document url-prefix("https://cloud.workhuman.com/") {
@@ -1067,8 +1064,6 @@ body,
 body * {
     background-color: black !important;
 }
-
-
 }
 
 @-moz-document url-prefix("https://kendobuild-staging.dev.progress.com/j") {
@@ -1076,22 +1071,28 @@ pre {
     background-color: black !important;
     color: white !Important;
 }
-
-
 }
 
 @-moz-document url-prefix("https://nextword.substack.com/") {
 * {
     font-family: Arial !important;
 }
-
-
 }
 
-@-moz-document url-prefix("https://medium.learningbyshipping.com/") {
-* {
-    font-family: Arial !important;
+@-moz-document url-prefix("https://progresssoftware.aha.io") {
+li.card.improved-card.ui-sortable-handle {
+    background-color: black !important;
+    color:white !Important;
 }
+
+
+
+
+
+
+
+
+
 
 
 }
