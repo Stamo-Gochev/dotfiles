@@ -1,0 +1,26 @@
+
+===========================================================================
+
+jest tests
+
+===========================================================================
+
+ttps://stackoverflow.com/questions/33247602/how-do-you-debug-jest-tests
+
+
+chrome://inspect/#devices
+
+note that if there is a JS file for jest config, then use .js
+
+
+node --inspect-brk node_modules/jest/bin/jest.js --runInBand --config jest.config.js --watch --no-cache
+
+===
+
+for json files
+
+node --inspect-brk node_modules/jest/bin/jest.js --runInBand --config jest.config.json --watch --no-cache
+
+ndb node --inspect-brk node_modules/jest/bin/jest.js --runInBand --config jest.config.json --watch
+
+===========================================================================
