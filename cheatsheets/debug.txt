@@ -5,7 +5,7 @@ jest tests
 
 ===========================================================================
 
-ttps://stackoverflow.com/questions/33247602/how-do-you-debug-jest-tests
+https://stackoverflow.com/questions/33247602/how-do-you-debug-jest-tests
 
 
 chrome://inspect/#devices
