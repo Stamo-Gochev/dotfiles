@@ -1038,7 +1038,10 @@ body,
 }
 
 
+li.WKYJ a,
 a.WIS4.WJ0O.WPJK:hover,
+a.WKB3.WO5N.WHYJ,
+a.WKB3.WO5N.WHYJ:hover,
 .WCD3 .WF5 .WK-J {
     background-color: black !important;
     color: white !important;
@@ -1086,6 +1089,91 @@ li.card.improved-card.ui-sortable-handle {
 }
 
 
+
+
+
+
+
+
+
+
+
+}
+
+@-moz-document url-prefix("https://progresslms.docebosaas.com/") {
+body *,
+.brand--body, .brand--body *,
+.fr-view {
+    font-family: Arial !important;
+}
+
+:root {
+
+    --font-family-body: Arial !important;
+    --font-family-head: Arial !important;
+    --font-family-ui: Arial !important;
+}
+
+
+
+
+
+
+
+
+
+
+}
+
+@-moz-document url-prefix("https://content-security-policy.com/") {
+* {
+    font-family: Arial !important;
+}
+
+
+
+
+
+
+
+
+
+}
+
+@-moz-document url-prefix("https://hbr.org/") {
+* {
+    font-family: Arial !important;
+}
+
+
+
+
+
+
+
+
+
+}
+
+@-moz-document url-prefix("https://medium.com/") {
+* {
+    font-family: Arial !important;
+}
+
+
+
+
+
+
+
+
+
+}
+
+@-moz-document url-prefix("https://huggingface.co/") {
+* {
+    font-family: Arial !important;
+}
 
 
 
