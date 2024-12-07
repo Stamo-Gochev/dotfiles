@@ -714,3 +714,9 @@ div, span, .container-program, .box-lecture, .w-richtext {
     font-family: Arial !important;
 }
 }
+
+@-moz-document url-prefix("https://blog.palantir.com/") {
+* {
+    font-family: Arial !important;
+}
+}
