@@ -469,6 +469,7 @@ alias ckco="code /d/work/github/kendo-ui-core"
 alias ckendo="code /d/work/github/kendo"
 alias ckcdn="code /d/work/github/kendo-cdn"
 alias ckw="code /d/work/github/kendo-workflows"
+alias ckac="code /d/work/github/actions"
 
 # open projects - kendo blazor
 alias ckb="code /d/work/github/blazor"
@@ -541,6 +542,7 @@ alias pkec="cd /d/work/github/kendo-editor-common"
 alias pkpvc="cd /d/work/github/kendo-pdfviewer-common"
 alias pkpoc="cd /d/work/github/kendo-popup-common"
 alias pksr="cd /d/work/github/semantic-prerelease"
+alias pkac="cd /d/work/github/actions"
 
 # projects - kendo blazor
 alias pkb="cd /d/work/github/blazor"
