@@ -1,0 +1,14 @@
+/* Increase Copilot menu font size */
+.chat-view, .chat-message, .chat-input {
+    font-size: 6px !important;
+}
+
+/* Change Copilot background color */
+.chat-view {
+    background-color: black !important; /* Dark mode */
+}
+
+/* Change text color */
+.chat-message {
+    color: yellow!important;
+}

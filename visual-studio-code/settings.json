@@ -974,6 +974,14 @@
 		{
 			"name": "gray-1",
 			"value": "#162326"
+		},
+		{
+			"name": "dark-blue-gray",
+			"value": "#10353a"
+		},
+		{
+			"name": "green-dark-3",
+			"value": "#203508"
 		}
 	],
 	// fix coloring of .gitignore files by the vscode theme, e.g. node_modules
@@ -1000,8 +1008,9 @@
 	"rubyLsp.rubyExecutablePath": "c:\\Ruby23-x64\\bin\\ruby.exe",
 	"git.openRepositoryInParentFolders": "always",
 	"typescript.updateImportsOnFileMove.enabled": "always",
-	"workbench.colorTheme": "Monokai Best 2",
 	"workbench.list.multiSelectModifier": "alt",
 	"vim.mouseSelectionGoesIntoVisualMode": false,
-	"editor.columnSelection": true
+	"terminal.integrated.defaultProfile.windows": "Git Bash",
+	"workbench.colorTheme": "Monokai Best 2",
+	"vscode_custom_css.imports": ["file:///D:/work/github/dotfiles/visual-studio-code/vscode-custom-styles.css"]
 }
