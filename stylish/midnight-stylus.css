@@ -494,7 +494,8 @@ textarea[name='issue[body]'] {
 }
 
 .f1-light,
-.text-gray-light {
+.text-gray-light,
+.Box-sc-g0xbh4-0 .jJSpep {
     color: gold !important;
 }
 
@@ -758,6 +759,7 @@ body, table {
     color: white !important;
 }
 
+.f14nttnl,
 .left-rail-selected *,
 .virtual-tree-list-scroll-container div[tabindex='0'] {
     /*color: gold !Important; */
@@ -766,10 +768,13 @@ body, table {
     
 }
 
+.channel-list-unread-text,
+.flh3ekv,
 .ts-channel-list a.ts-unread-channel {
     font-weight: 800 !important;
-    color: #75fff7 !Important;    
+    color: cyan !Important;    
 }
+
 
 .app-bar button.app-bar-link.app-bar-selected,
 button.app-bar-link.app-bar-selected,
@@ -800,6 +805,7 @@ app-header-bar,
     background-color: #6264A7 !important;
 }
 
+.channel-list-unread-text,
 .message-body-content a, 
 .fui-Primitive a,
 .f1leeax8,
@@ -870,7 +876,7 @@ div[data-tid="chat-pane-item"] {
 }
 
 .ui-tree__title:has(.fl43uef) {
-    //background-color: teal !important;
+    /* background-color: teal !important; */
     border: 2px dotted white !important;
 }
 
@@ -1009,12 +1015,13 @@ body,
     background-color: black !important;
 }
 
-.WED4.WITO.WJDK {
+.WED4.WITO.WJDK, .WA-J {
     background-color: teal !important;
     color: white !important;
 }
 
-.WED4.WITO.WJDK:hover {
+.WED4.WITO.WJDK:hover,
+.WF-J.WF5 {
     background-color: teal !important;
     color: yellow !important;
 }
@@ -1042,7 +1049,9 @@ li.WKYJ a,
 a.WIS4.WJ0O.WPJK:hover,
 a.WKB3.WO5N.WHYJ,
 a.WKB3.WO5N.WHYJ:hover,
-.WCD3 .WF5 .WK-J {
+.WCD3 .WF5 .WK-J,
+.WI1F,
+a.WEA3.WFAO.WNYJ, a.WEA3.WFAO.WNYJ:hover {
     background-color: black !important;
     color: white !important;
     border: 1px solid white !important;
