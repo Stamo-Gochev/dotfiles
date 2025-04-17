@@ -763,7 +763,7 @@ body, table {
 .left-rail-selected *,
 .virtual-tree-list-scroll-container div[tabindex='0'] {
     /*color: gold !Important; */
-    font-weight: 800 !important;
+    font-weight: 600 !important;
     background: #4d54ff !important;
     
 }
@@ -809,7 +809,8 @@ app-header-bar,
 .f1leeax8,
 .f16muhyy,
 .fyind8e,
-.f19n0e5,
+/* .f19n0e5,*/
+.flh3ekv,
 button[data-track-action-scenario="seeLess"],
 button[data-track-action-scenario="seeMore"]{
 	color: cyan !important;
