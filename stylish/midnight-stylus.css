@@ -768,8 +768,7 @@ body, table {
     
 }
 
-.channel-list-unread-text,
-.flh3ekv,
+
 .ts-channel-list a.ts-unread-channel {
     font-weight: 800 !important;
     color: cyan !Important;    
@@ -805,7 +804,6 @@ app-header-bar,
     background-color: #6264A7 !important;
 }
 
-.channel-list-unread-text,
 .message-body-content a, 
 .fui-Primitive a,
 .f1leeax8,
@@ -815,6 +813,10 @@ app-header-bar,
 button[data-track-action-scenario="seeLess"],
 button[data-track-action-scenario="seeMore"]{
 	color: cyan !important;
+}
+
+.fui-Primitive * {
+    color: white !important;
 }
 
 .f11d4kpn {
