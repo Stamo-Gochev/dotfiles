@@ -506,10 +506,12 @@ alias ckco="code /d/work/github/kendo-common"
 alias ckdic="code /d/work/github/kendo-dateinputs-common"
 alias ckic="code /d/work/github/kendo-inputs-common"
 alias ckdm="code /d/work/github/kendo-date-math"
+alias ckoo="code /d/work/github/kendo-ooxml"
 alias cksc="code /d/work/github/kendo-spreadsheet-common"
 alias ckec="code /d/work/github/kendo-editor-common"
 alias ckpvc="code /d/work/github/kendo-pdfviewer-common"
 alias ckpoc="code /d/work/github/kendo-popup-common"
+alias ckdc="code /d/work/github/kendo-diagram-common"
 alias cksr="code /d/work/github/semantic-prerelease"
 
 # projects - kendo common
@@ -541,8 +543,10 @@ alias pkdm="cd /d/work/github/kendo-date-math"
 alias pkec="cd /d/work/github/kendo-editor-common"
 alias pkpvc="cd /d/work/github/kendo-pdfviewer-common"
 alias pkpoc="cd /d/work/github/kendo-popup-common"
+alias pkdg="cd /d/work/github/kendo-diagram-common"
 alias pksr="cd /d/work/github/semantic-prerelease"
 alias pkac="cd /d/work/github/actions"
+alias pkoo="cd /d/work/github/kendo-ooxml"
 
 # projects - kendo blazor
 alias pkb="cd /d/work/github/blazor"
