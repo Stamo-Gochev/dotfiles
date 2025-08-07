@@ -495,9 +495,15 @@ border-color: #000 !important;
 }
 
 .k-state-active,
-.k-grid-column-menu.k-grid-filter.k-state-active {
+.k-grid-column-menu.k-grid-filter.k-state-active,
+.k-grid-column-menu.k-grid-filter.k-active,
+.k-grid-column-menu.k-grid-header-menu.k-active {
     background-color: cyan !important;
     border: 1px solid cyan !important;
+}
+
+.k-grid-column-menu.k-grid-header-menu.k-active {
+    background-color: orange !important;
 }
 
 
@@ -603,6 +609,10 @@ textarea {
     border: 1px solid orange !important;
     background-color: orange !important;
     opacity: 0.5 !important;
+}
+
+.k-highlighted {
+    background-color: brown !important;
 }
 
 
@@ -718,5 +728,68 @@ div, span, .container-program, .box-lecture, .w-richtext {
 @-moz-document url-prefix("https://blog.palantir.com/") {
 * {
     font-family: Arial !important;
+}
+}
+
+@-moz-document url-prefix("https://www.tradingview") {
+* {
+    font-family: Arial !important;
+}
+}
+
+@-moz-document url-prefix("https://roguefunds.substack.com/") {
+* {
+    font-family: Arial !important;
+}
+}
+
+@-moz-document url-prefix("https://www.codeofhonor.com/") {
+* {
+    font-family: Arial !important;
+}
+
+#content {
+    width: 90% !Important;
+    text-align: justify;
+}
+}
+
+@-moz-document url-prefix("https://stocktwits.com/") {
+.stx-float-date {
+    background-color: black !important;
+    color: white !important;
+}
+}
+
+@-moz-document url-prefix("https://dev.bg") {
+* {
+    font-family: Arial !important;
+}
+}
+
+@-moz-document url-prefix("https://x.com/") {
+* {
+    font-family: Arial !important;
+}
+}
+
+@-moz-document url-prefix("https://www.capital.bg/") {
+* {
+    font-family: Arial !important;
+}
+}
+
+@-moz-document url-prefix("https://localhost:44347/") {
+.k-bg-light,
+.terms-of-use-notification, 
+.terms-of-use-notification > *,
+.prompt-textarea, textarea.prompt-textarea:focus {
+    background-color: black !important;
+}
+}
+
+@-moz-document url-prefix("https://www.progress.com/") {
+.-bg-white, .-tint-white {
+    background-color: black !important;
 }
 }
