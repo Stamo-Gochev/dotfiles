@@ -779,6 +779,12 @@ div, span, .container-program, .box-lecture, .w-richtext {
 }
 }
 
+@-moz-document url-prefix("https://www.perplexity.ai/") {
+.z-10 {
+    z-index: unset !important;
+}
+}
+
 @-moz-document url-prefix("https://localhost:44347/") {
 .k-bg-light,
 .terms-of-use-notification, 
