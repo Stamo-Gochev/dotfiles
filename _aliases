@@ -109,8 +109,8 @@ alias lta="git tag -l"
 
 # use https://github.com/hotoo/gitopen
 # use 'gitopen "#<issue_id>"' as the hash should be escaped in Windows git bash
-alias gio="gitopen -b `g current` commits"
-alias go="gitopen -b `g current`"
+# alias gio="gitopen -b `g current` commits"
+alias gio="gitopen -b `g current`"
 alias goc="go commits"
 alias gomc="gitopen -b master commits"
 alias gopc="gitopen -b production commits"
@@ -499,6 +499,7 @@ alias ckrt="code /d/work/github/kendo-react-tasks"
 alias ckt="code /d/work/github/kendo-themes"
 
 # open projects - kendo common
+alias ckai="code /d/work/github/ai-builder"
 alias ckpt="code /d/work/github/kendo-package-tasks"
 alias ckbt="code /d/work/github/kendo-build-tasks"
 alias ckdq="code /d/work/github/kendo-data-query"
@@ -547,6 +548,7 @@ alias pkdg="cd /d/work/github/kendo-diagram-common"
 alias pksr="cd /d/work/github/semantic-prerelease"
 alias pkac="cd /d/work/github/actions"
 alias pkoo="cd /d/work/github/kendo-ooxml"
+alias pkai="cd /d/work/github/ai-builder"
 
 # projects - kendo blazor
 alias pkb="cd /d/work/github/blazor"

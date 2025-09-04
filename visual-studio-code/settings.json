@@ -982,6 +982,14 @@
 		{
 			"name": "green-dark-3",
 			"value": "#203508"
+		},
+		{
+			"name": "green-deep",
+			"value": "#10353a"
+		},
+		{
+			"name": "brown-1",
+			"value": "#332311"
 		}
 	],
 	// fix coloring of .gitignore files by the vscode theme, e.g. node_modules
@@ -1011,6 +1019,30 @@
 	"workbench.list.multiSelectModifier": "alt",
 	"vim.mouseSelectionGoesIntoVisualMode": false,
 	"terminal.integrated.defaultProfile.windows": "Git Bash",
+	"vscode_custom_css.imports": [
+		"file:///D:/work/github/dotfiles/visual-studio-code/vscode-custom-styles.css"
+	],
+	"workbench.colorCustomizations": {
+		"chat.requestBorder": "#FFFF00",
+		"chat.requestBackground": "#000000",
+		"chat.responseBorder": "#00ffff",
+		"chat.responseBackground": "#111111",
+		"debugTokenExpression.value": "#FFFF00",
+		"debugTokenExpression.name": "#ffffff",
+		"debugTokenExpression.string": "#FFFF00",
+		"debugTokenExpression.number": "#FFFF00",
+		"editor.stackFrameHighlightBackground": "#000000",
+		// "editor.stackFrameHighlightForeground": "#00ffff",
+		// "editor.focusedStackFrameHighlightBackground": "#00ffff",
+		// "editor.inlineValuesBackground": "#ff0000",
+		"editor.inlineValuesForeground": "#51ff00"
+	},
+	"update.mode": "manual",
+	"github.copilot.nextEditSuggestions.enabled": true,
+	"git.blame.editorDecoration.enabled": true,
+	"go.gopath": "C:\\Users\\gochev\\go",
+	"docker.extension.enableComposeLanguageServer": false,
 	"workbench.colorTheme": "Monokai Best 2",
-	"vscode_custom_css.imports": ["file:///D:/work/github/dotfiles/visual-studio-code/vscode-custom-styles.css"]
+	"chat.mcp.autostart": "newAndOutdated",
+	"debug.inlineValues": true
 }

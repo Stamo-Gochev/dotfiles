@@ -49,6 +49,9 @@ prepend_to_path "$(ruby -rubygems -e 'puts Gem.user_dir')/bin"
 # Include the user's private bin.
 prepend_to_path "$HOME/bin"
 
+prepend_to_path "/d/programs/go"
+prepend_to_path "/d/programs/go/bin"
+
 #------------------------------------------------------------------------------
 # grep
 #------------------------------------------------------------------------------
@@ -124,3 +127,5 @@ if [ -e "$HOME/.bash_completion.sh" ]; then
 fi
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+. "$HOME/.local/bin/env"
