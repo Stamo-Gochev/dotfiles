@@ -1134,3 +1134,49 @@ body *,
     z-index: 0 !important;
 }
 }
+
+@-moz-document url-prefix("https://thinkingmachines.ai/") {
+* {
+    font-family: Arial !important;
+}
+
+}
+
+@-moz-document url-prefix("https://www.interactivebrokers.ie") {
+* {
+    font-family: Arial !important;
+}
+
+.noWrap-l31H9iuA .series-l31H9iuA .valuesAdditionalWrapper-l31H9iuA .valueItem-l31H9iuA, .noWrap-l31H9iuA .series-l31H9iuA .valuesAdditionalWrapper-l31H9iuA .valueTitle-l31H9iuA, .noWrap-l31H9iuA .series-l31H9iuA .valuesAdditionalWrapper-l31H9iuA .valueValue-l31H9iuA {
+    color: lime !important;
+    font-size: 16px !important;
+}
+
+.quote-price.text-semibold span {
+    border: 1px solid yellow !important;
+    color: yellow !important;
+    font-size: 26px !important;
+}
+
+.quote-bidask * {
+    color: yellow !important;
+    font-size: 26px !important;
+}
+
+
+.quote-compact-widgets * {
+    color: yellow !important;
+    font-size: 20px !important;
+}
+
+.pos-widget.pcon-widget * {
+    color: yellow !important;
+    font-size: 16px !important; 
+}
+
+
+.quote-symbol,
+.title-l31H9iuA{
+    font-size: 32px !important;
+}
+}
