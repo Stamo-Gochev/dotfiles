@@ -1139,7 +1139,6 @@ body *,
 * {
     font-family: Arial !important;
 }
-
 }
 
 @-moz-document url-prefix("https://www.interactivebrokers.ie") {
@@ -1152,10 +1151,27 @@ body *,
     font-size: 16px !important;
 }
 
+#cp-ptf-positions-table0  * {
+    font-family: Arial !important;
+}
+
 .quote-price.text-semibold span {
     border: 1px solid yellow !important;
     color: yellow !important;
     font-size: 26px !important;
+}
+
+._nneg {
+    color: #17f1ff !important;
+}
+
+._npos {
+    color: lime !important;
+}
+
+.ellipsis * {
+    
+    color: yellow !important;
 }
 
 .quote-bidask * {
