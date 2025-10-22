@@ -1200,12 +1200,10 @@ body *,
     width: 1px !important;
     height: 1px !important;
 }
+}
 
 @-moz-document url-prefix("https://fintel.io/") {
 * {
     font-family: Arial !important;
 }
-
-
-
 }
