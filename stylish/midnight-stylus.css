@@ -1197,7 +1197,10 @@ body *,
 @-moz-document url-prefix("https://www.youtube.com") {
 .ytp-overlays-container {
     position: static !important;
+    width: 1px !important;
+    height: 1px !important;
 }
+
 
 
 }
