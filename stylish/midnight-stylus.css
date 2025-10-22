@@ -1192,38 +1192,12 @@ body *,
 #cp-ptf-positions-table0 > colgroup > col:nth-child(3) {
     width: 100px !important; 
 }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@-moz-document url-prefix("https://www.youtube.com") {
+.ytp-overlays-container {
+    position: static !important;
+}
 
 
 }
