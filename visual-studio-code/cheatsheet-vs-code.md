@@ -138,6 +138,27 @@ Add this to `package.json`:
 }
 ```
 
+## Debug semantic release
+
+```
+
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Run npm script",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "semantic-release:dry-run"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    }
+  ]
+}
+```
+
 
 # Themes
 **Note:** For some reason the new location is at:
