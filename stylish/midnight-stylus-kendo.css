@@ -614,8 +614,6 @@ textarea {
 .k-highlighted {
     background-color: brown !important;
 }
-
-
 }
 
 @-moz-document url-prefix("http://example.com") {
