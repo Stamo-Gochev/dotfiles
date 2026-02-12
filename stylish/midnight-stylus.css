@@ -1200,10 +1200,31 @@ body *,
     width: 1px !important;
     height: 1px !important;
 }
+
+
+}
+
+@-moz-document url-prefix("https://chatgpt.com/") {
+* {
+    font-family: Arial !important;
+}
+}
+
+@-moz-document url-prefix("https:") {
+* {
+    font-family: Arial !important;
+}
 }
 
 @-moz-document url-prefix("https://fintel.io/") {
-* {
-    font-family: Arial !important;
+ * {
+     font-family: Arial !important;
+ }
+ }
+
+@-moz-document url-prefix("https://www.emag.bg") {
+.card-v2-content,
+.card-v2-content * {
+    background-color: black !important;
 }
 }
