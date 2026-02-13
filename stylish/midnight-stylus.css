@@ -922,7 +922,6 @@ div[aria-selected='true'],
 
 
 
-@-moz-document url-prefix("https://www.gatesnotes.com") {
 * {
     font-family: Arial !important;
 }
@@ -930,8 +929,6 @@ div[aria-selected='true'],
 
 
 
-
-}
 }
 
 @-moz-document url-prefix("https://help.syncfusion.com/") {
@@ -1200,8 +1197,6 @@ body *,
     width: 1px !important;
     height: 1px !important;
 }
-
-
 }
 
 @-moz-document url-prefix("https://chatgpt.com/") {
@@ -1210,17 +1205,17 @@ body *,
 }
 }
 
-@-moz-document url-prefix("https:") {
-* {
-    font-family: Arial !important;
-}
-}
-
 @-moz-document url-prefix("https://fintel.io/") {
- * {
+* {
      font-family: Arial !important;
  }
+}
+
+@-moz-document url-prefix("https://gemini.google.com/") {
+* {
+     font-family: Arial !important;
  }
+}
 
 @-moz-document url-prefix("https://www.emag.bg") {
 .card-v2-content,
