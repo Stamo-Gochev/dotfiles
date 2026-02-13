@@ -1212,9 +1212,10 @@ body *,
 }
 
 @-moz-document url-prefix("https://gemini.google.com/") {
-* {
-     font-family: Arial !important;
- }
+.mat-mdc-icon-button:hover ~ .cdk-overlay-container, /* adjust selector as needed */
+.cdk-overlay-container {
+    display: none !important;
+}
 }
 
 @-moz-document url-prefix("https://www.emag.bg") {
