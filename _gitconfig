@@ -6,6 +6,8 @@
 	gpgsign = true
 [gpg]
 	program = C:\\Program Files\\Git\\usr\\bin\\gpg.exe
+	# program = gpg
+	# passphraseMode = loopback
 [branch]
 	autosetuprebase = always
 [core]
@@ -188,6 +190,7 @@
 	smu = git submodule update --init --recursive --jobs 8
 	smpr = git submodule update --remote
 	prsm = git submodule update --remote
+	ss = git submodule status
 
 	# ignore a file
 	ignore = "!f() { git update-index --assume-unchanged $1 ; }; f"

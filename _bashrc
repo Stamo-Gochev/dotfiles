@@ -1,6 +1,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+export GPG_TTY=$(tty)
+
 # smart cd to previous directories
 if [ -e "$HOME/.cd_history.sh" ]; then
   source "$HOME/.cd_history.sh"
