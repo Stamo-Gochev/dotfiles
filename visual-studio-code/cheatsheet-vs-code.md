@@ -170,10 +170,13 @@ C:\Users\{name}\AppData\Local\Programs\Microsoft VS Code\resources\app\extension
 cd C:\Users\gochev\AppData\Local\Programs\Microsoft VS Code\resources\app\extensions
 mklink /D theme-monokai-best-2 d:\work\github\dotfiles\visual-studio-code\theme-monokai-best-2\
 
-cd C:\Users\gochev\AppData\Local\Programs\Microsoft VS Code Insiders\resources\app\extensions
+C:\Users\gochev\AppData\Local\Programs\Microsoft VS Code\resources\app\extensions>
 mklink /D theme-monokai-best-2 d:\work\github\dotfiles\visual-studio-code\theme-monokai-best-2\
 
-C:\Users\gochev\AppData\Local\Programs\Microsoft VS Code\resources\app\extensions>
+cd C:\Users\gochev\.vscode\extensions
+mklink /D theme-monokai-best-2 d:\work\github\dotfiles\visual-studio-code\theme-monokai-best-2\
+
+cd C:\Users\gochev\.vscode-insiders\extensions
 mklink /D theme-monokai-best-2 d:\work\github\dotfiles\visual-studio-code\theme-monokai-best-2\
 
 Linux Mint
