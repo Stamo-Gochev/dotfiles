@@ -990,6 +990,10 @@
 		{
 			"name": "brown-1",
 			"value": "#332311"
+		},
+		{
+			"name": "gray-insomnia",
+			"value": "#0e1215"
 		}
 	],
 	// fix coloring of .gitignore files by the vscode theme, e.g. node_modules
@@ -1031,10 +1035,10 @@
 		"debugTokenExpression.name": "#ffffff",
 		"debugTokenExpression.string": "#FFFF00",
 		"debugTokenExpression.number": "#FFFF00",
-		"editor.stackFrameHighlightBackground": "#000000",
+		// "editor.stackFrameHighlightBackground": "#000000",
 		// "editor.stackFrameHighlightForeground": "#00ffff",
 		// "editor.focusedStackFrameHighlightBackground": "#00ffff",
-		// "editor.inlineValuesBackground": "#ff0000",
+		"editor.inlineValuesBackground": "#000000",
 		"editor.inlineValuesForeground": "#51ff00"
 	},
 	"update.mode": "manual",
@@ -1044,5 +1048,11 @@
 	"docker.extension.enableComposeLanguageServer": false,
 	"workbench.colorTheme": "Monokai Best 2",
 	"chat.mcp.autostart": "newAndOutdated",
-	"debug.inlineValues": true
+	"debug.inlineValues": true,
+	"git-graph.commitDetailsView.fileView.fileTree.compactFolders": false,
+	"scm.compactFolders": false,
+	"explorer.compactFolders": false,
+	"gitlens.ai.model": "vscode",
+	"gitlens.ai.vscode.model": "copilot:gpt-4.1",
+	"scm.defaultViewMode": "tree"
 }
