@@ -93,3 +93,7 @@ conda install mamba -n base -c conda-forge
 # end mamba
 
 # end machine learning
+
+# github copilot cli lsp config
+mkdir -p ~/.copilot
+ln -sf "$(pwd)/lsp-config.json" ~/.copilot/lsp-config.json

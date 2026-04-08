@@ -81,5 +81,20 @@ foreach ($file_object in $file_objects)
 	Create-SymLink $link $target
 }
 
+# github copilot cli lsp config: ~/.copilot/lsp-config.json -> lsp-config.json
+$copilot_dir = Join-Path $home_dir ".copilot"
+if (-not (Test-Path $copilot_dir))
+{
+	New-Item -ItemType Directory -Path $copilot_dir | Out-Null
+}
+
+$copilot_link = Join-Path $copilot_dir "lsp-config.json"
+$copilot_target = Join-Path $script_path "lsp-config.json"
+
+Write-Host "Link: $copilot_link"
+Write-Host "Target: $copilot_target"
+
+Create-SymLink $copilot_link $copilot_target
+
 Write-Host "Done"
 
