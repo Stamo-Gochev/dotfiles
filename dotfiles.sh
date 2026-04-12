@@ -48,4 +48,9 @@ if [ ! -d "$HOME/.vim/bundle" ]; then
     vim +PluginInstall +qall
 fi
 
+
+# github copilot cli lsp config
+mkdir -p ~/.copilot
+ln -sf "$(pwd)/lsp-config.json" ~/.copilot/lsp-config.json
+
 echo "Done"
