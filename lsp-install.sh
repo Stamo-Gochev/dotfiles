@@ -45,6 +45,21 @@ if require npm; then
 
     echo "-> angular-language-server"
     npm install -g @angular/language-server
+
+    echo "-> astro-ls"
+    npm install -g @astrojs/language-server
+
+    echo "-> graphql-language-service"
+    npm install -g graphql-language-service-cli
+
+    echo "-> ansible-language-server"
+    npm install -g @ansible/ansible-language-server
+
+    echo "-> svelte-language-server"
+    npm install -g svelte-language-server
+
+    echo "-> tailwindcss-language-server"
+    npm install -g @tailwindcss/language-server
 fi
 
 # --- Go-based ---
@@ -210,6 +225,36 @@ if ! command_exists jdtls; then
     fi
 else
     echo "-> jdtls already installed, skipping"
+fi
+
+# --- Terraform ---
+if ! command_exists terraform-ls; then
+    echo "-> terraform-ls"
+    if command_exists brew; then
+        brew install hashicorp/tap/terraform-ls
+    elif command_exists apt-get; then
+        wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+        echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+        sudo apt-get update && sudo apt-get install -y terraform-ls
+    else
+        echo "WARNING: Install terraform-ls from: https://github.com/hashicorp/terraform-ls/releases" >&2
+    fi
+else
+    echo "-> terraform-ls already installed, skipping"
+fi
+
+# --- Haskell (via GHCup) ---
+if ! command_exists haskell-language-server-wrapper; then
+    echo "-> haskell-language-server"
+    if command_exists ghcup; then
+        ghcup install hls
+    elif command_exists brew; then
+        brew install haskell-language-server
+    else
+        echo "WARNING: Install GHCup first: https://www.haskell.org/ghcup, then run: ghcup install hls" >&2
+    fi
+else
+    echo "-> haskell-language-server already installed, skipping"
 fi
 
 echo ""

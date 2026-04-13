@@ -235,6 +235,83 @@
                 ".ts": "typescript",
                 ".html": "html"
             }
+        },
+        "astro-ls": {
+            "command": "astro-ls",
+            "args": [
+                "--stdio"
+            ],
+            "fileExtensions": {
+                ".astro": "astro"
+            }
+        },
+        "graphql-language-service": {
+            "command": "graphql-lsp",
+            "args": [
+                "server",
+                "-m",
+                "stream"
+            ],
+            "fileExtensions": {
+                ".graphql": "graphql",
+                ".gql": "graphql"
+            }
+        },
+        "haskell-language-server": {
+            "command": "haskell-language-server-wrapper",
+            "args": [
+                "--lsp"
+            ],
+            "fileExtensions": {
+                ".hs": "haskell",
+                ".lhs": "haskell"
+            }
+        },
+        "ansible-language-server": {
+            "command": "ansible-language-server",
+            "args": [
+                "--stdio"
+            ],
+            "fileExtensions": {
+                ".yml": "yaml.ansible",
+                ".yaml": "yaml.ansible"
+            }
+        },
+        "terraform-ls": {
+            "command": "terraform-ls",
+            "args": [
+                "serve"
+            ],
+            "fileExtensions": {
+                ".tf": "terraform",
+                ".tfvars": "terraform-vars"
+            }
+        },
+        "svelte-language-server": {
+            "command": "svelteserver",
+            "args": [
+                "--stdio"
+            ],
+            "fileExtensions": {
+                ".svelte": "svelte"
+            }
+        },
+        "tailwindcss-language-server": {
+            "command": "tailwindcss-language-server",
+            "args": [
+                "--stdio"
+            ],
+            "fileExtensions": {
+                ".html": "html",
+                ".css": "css",
+                ".js": "javascript",
+                ".jsx": "javascriptreact",
+                ".ts": "typescript",
+                ".tsx": "typescriptreact",
+                ".vue": "vue",
+                ".svelte": "svelte",
+                ".astro": "astro"
+            }
         }
     }
 }
