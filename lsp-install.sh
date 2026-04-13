@@ -166,6 +166,9 @@ if require dotnet; then
     # If using Microsoft's official Roslyn LSP, install the C# VS Code extension
     # and point the command to its bundled server binary instead.
     dotnet tool install --global csharp-ls || dotnet tool update --global csharp-ls
+
+    echo "-> fsautocomplete (F#)"
+    dotnet tool install --global fsautocomplete || dotnet tool update --global fsautocomplete
 fi
 
 # --- clangd (C/C++) ---
@@ -225,6 +228,28 @@ if ! command_exists jdtls; then
     fi
 else
     echo "-> jdtls already installed, skipping"
+fi
+
+# --- lemminx (XML) ---
+if ! command_exists lemminx; then
+    echo "-> lemminx (XML)"
+    if command_exists brew; then
+        brew install lemminx
+    else
+        INSTALL_DIR="${HOME}/.local/bin"
+        mkdir -p "$INSTALL_DIR"
+        OS=$(uname -s | tr '[:upper:]' '[:lower:]')
+        ARCH=$(uname -m)
+        if [[ "$ARCH" == "x86_64" ]]; then ARCH="amd64"; fi
+        LEMMINX_VERSION=$(curl -fsSL https://api.github.com/repos/eclipse/lemminx/releases/latest | grep -Po '"tag_name": "\K[^"]*')
+        curl -fsSL "https://github.com/eclipse/lemminx/releases/download/${LEMMINX_VERSION}/lemminx-${OS}.zip" \
+            -o /tmp/lemminx.zip
+        unzip -o /tmp/lemminx.zip -d "$INSTALL_DIR"
+        chmod +x "${INSTALL_DIR}/lemminx"
+        echo "  Installed to ${INSTALL_DIR}/lemminx"
+    fi
+else
+    echo "-> lemminx already installed, skipping"
 fi
 
 # --- Terraform ---

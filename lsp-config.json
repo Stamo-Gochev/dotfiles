@@ -312,6 +312,28 @@
                 ".svelte": "svelte",
                 ".astro": "astro"
             }
+        },
+        "lemminx": {
+            "command": "lemminx",
+            "args": [],
+            "fileExtensions": {
+                ".xml": "xml",
+                ".xsd": "xml",
+                ".xsl": "xml",
+                ".xslt": "xml",
+                ".svg": "xml"
+            }
+        },
+        "fsautocomplete": {
+            "command": "fsautocomplete",
+            "args": [
+                "--adaptive-lsp-server-enabled"
+            ],
+            "fileExtensions": {
+                ".fs": "fsharp",
+                ".fsi": "fsharp",
+                ".fsx": "fsharp"
+            }
         }
     }
 }
