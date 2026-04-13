@@ -22,6 +22,16 @@
                 ".cs": "csharp",
                 ".razor": "razor"
             }
+        },
+        "python": {
+            "command": "pyright-langserver",
+            "args": [
+                "--stdio"
+            ],
+            "fileExtensions": {
+                ".py": "python",
+                ".pyi": "python"
+            }
         }
     }
 }
