@@ -55,6 +55,186 @@
                 ".h": "cpp",
                 ".hpp": "cpp"
             }
+        },
+        "marksman": {
+            "command": "marksman",
+            "args": [
+                "server"
+            ],
+            "fileExtensions": {
+                ".md": "markdown",
+                ".markdown": "markdown"
+            }
+        },
+        "rust-analyzer": {
+            "command": "rust-analyzer",
+            "args": [
+                "--stdio"
+            ],
+            "fileExtensions": {
+                ".rs": "rust"
+            }
+        },
+        "yaml-language-server": {
+            "command": "yaml-language-server",
+            "args": [
+                "--stdio"
+            ],
+            "fileExtensions": {
+                ".yml": "yaml",
+                ".yaml": "yaml"
+            }
+        },
+        "vscode-json-language-server": {
+            "command": "vscode-json-language-server",
+            "args": [
+                "--stdio"
+            ],
+            "fileExtensions": {
+                ".json": "json",
+                ".jsonc": "jsonc"
+            }
+        },
+        "vscode-html-language-server": {
+            "command": "vscode-html-language-server",
+            "args": [
+                "--stdio"
+            ],
+            "fileExtensions": {
+                ".html": "html",
+                ".htm": "html"
+            }
+        },
+        "vscode-css-language-server": {
+            "command": "vscode-css-language-server",
+            "args": [
+                "--stdio"
+            ],
+            "fileExtensions": {
+                ".css": "css",
+                ".scss": "scss",
+                ".less": "less"
+            }
+        },
+        "bash-language-server": {
+            "command": "bash-language-server",
+            "args": [
+                "start"
+            ],
+            "fileExtensions": {
+                ".sh": "shellscript",
+                ".bash": "shellscript"
+            }
+        },
+        "jdtls": {
+            "command": "jdtls",
+            "args": [],
+            "fileExtensions": {
+                ".java": "java"
+            }
+        },
+        "ruby-lsp": {
+            "command": "ruby-lsp",
+            "args": [],
+            "fileExtensions": {
+                ".rb": "ruby"
+            }
+        },
+        "intelephense": {
+            "command": "intelephense",
+            "args": [
+                "--stdio"
+            ],
+            "fileExtensions": {
+                ".php": "php"
+            }
+        },
+        "powershell-editor-services": {
+            "command": "pwsh",
+            "args": [
+                "-NoLogo",
+                "-NoProfile",
+                "-Command",
+                "Start-EditorServices.ps1"
+            ],
+            "fileExtensions": {
+                ".ps1": "powershell",
+                ".psm1": "powershell",
+                ".psd1": "powershell"
+            }
+        },
+        "elixir-ls": {
+            "command": "elixir-ls",
+            "args": [],
+            "fileExtensions": {
+                ".ex": "elixir",
+                ".exs": "elixir",
+                ".heex": "elixir"
+            }
+        },
+        "metals": {
+            "command": "metals",
+            "args": [],
+            "fileExtensions": {
+                ".scala": "scala",
+                ".sbt": "scala",
+                ".sc": "scala"
+            }
+        },
+        "vue-language-server": {
+            "command": "vue-language-server",
+            "args": [
+                "--stdio"
+            ],
+            "fileExtensions": {
+                ".vue": "vue"
+            }
+        },
+        "sourcekit-lsp": {
+            "command": "sourcekit-lsp",
+            "args": [],
+            "fileExtensions": {
+                ".swift": "swift"
+            }
+        },
+        "kotlin-language-server": {
+            "command": "kotlin-language-server",
+            "args": [],
+            "fileExtensions": {
+                ".kt": "kotlin",
+                ".kts": "kotlin"
+            }
+        },
+        "docker-langserver": {
+            "command": "docker-langserver",
+            "args": [
+                "--stdio"
+            ],
+            "fileExtensions": {
+                "Dockerfile": "dockerfile",
+                ".dockerfile": "dockerfile"
+            }
+        },
+        "sqls": {
+            "command": "sqls",
+            "args": [],
+            "fileExtensions": {
+                ".sql": "sql"
+            }
+        },
+        "angular-language-server": {
+            "command": "ngserver",
+            "args": [
+                "--stdio",
+                "--tsProbeLocations",
+                "",
+                "--ngProbeLocations",
+                ""
+            ],
+            "fileExtensions": {
+                ".ts": "typescript",
+                ".html": "html"
+            }
         }
     }
 }
