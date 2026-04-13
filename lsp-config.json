@@ -32,6 +32,29 @@
                 ".py": "python",
                 ".pyi": "python"
             }
+        },
+        "gopls": {
+            "command": "gopls",
+            "args": [
+                "serve"
+            ],
+            "fileExtensions": {
+                ".go": "go"
+            }
+        },
+        "clangd": {
+            "command": "clangd",
+            "args": [
+                "--background-index"
+            ],
+            "fileExtensions": {
+                ".cpp": "cpp",
+                ".cxx": "cpp",
+                ".cc": "cpp",
+                ".c": "c",
+                ".h": "cpp",
+                ".hpp": "cpp"
+            }
         }
     }
 }
