@@ -495,8 +495,7 @@ textarea[name='issue[body]'] {
 
 .f1-light,
 .text-gray-light,
-.Box-sc-g0xbh4-0 .jJSpep,
-.HeaderViewer-module__issueNumberText__MEUhM {
+.Box-sc-g0xbh4-0 .jJSpep {
     color: gold !important;
 }
 
@@ -923,6 +922,7 @@ div[aria-selected='true'],
 
 
 
+@-moz-document url-prefix("https://www.gatesnotes.com") {
 * {
     font-family: Arial !important;
 }
@@ -930,6 +930,8 @@ div[aria-selected='true'],
 
 
 
+
+}
 }
 
 @-moz-document url-prefix("https://help.syncfusion.com/") {
@@ -1190,6 +1192,15 @@ body *,
 #cp-ptf-positions-table0 > colgroup > col:nth-child(3) {
     width: 100px !important; 
 }
+
+a:link._tab {
+    color: yellow !Important;
+}
+
+a:link._taba {
+    color: yellow !Important;
+    border: 1px solid yellow !important;
+}
 }
 
 @-moz-document url-prefix("https://www.youtube.com") {
@@ -1219,9 +1230,21 @@ body *,
 }
 }
 
-@-moz-document url-prefix("https://www.emag.bg") {
+@-moz-document url-prefix("https:") {
+* {
+    font-family: Arial !important;
+}
+}
+
+@-moz-document url-prefix("https:") {
 .card-v2-content,
 .card-v2-content * {
     background-color: black !important;
+}
+}
+
+@-moz-document url-prefix("https:") {
+.fixed.inset-0.overflow-y-auto {
+    opacity: 1 !important;
 }
 }
