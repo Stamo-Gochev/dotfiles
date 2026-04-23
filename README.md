@@ -14,7 +14,7 @@ Make symbolic links (make sure to pass an existing dir as the `mklink` command w
 
 Open PowerShell and run the following script:
 ```
-dotfiles.ps1
+powershell -ExecutionPolicy Bypass -File .\dotfiles.ps1
 ```
 
 Otherwise, manually symlink the necessary files:
