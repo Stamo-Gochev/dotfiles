@@ -155,7 +155,7 @@
                 "-NoLogo",
                 "-NoProfile",
                 "-Command",
-                "Start-EditorServices.ps1"
+                "$module = Get-Module -ListAvailable PowerShellEditorServices | Select-Object -First 1; if (-not $module) { throw 'PowerShellEditorServices module not found.' }; $scriptPath = Join-Path $module.ModuleBase 'Start-EditorServices.ps1'; if (-not (Test-Path $scriptPath)) { throw \"Start-EditorServices.ps1 not found at $scriptPath.\" }; & $scriptPath"
             ],
             "fileExtensions": {
                 ".ps1": "powershell",
