@@ -1231,12 +1231,6 @@ a:link._taba {
 }
 
 @-moz-document url-prefix("https:") {
-* {
-    font-family: Arial !important;
-}
-}
-
-@-moz-document url-prefix("https:") {
 .card-v2-content,
 .card-v2-content * {
     background-color: black !important;
