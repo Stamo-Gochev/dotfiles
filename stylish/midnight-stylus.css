@@ -1242,3 +1242,9 @@ a:link._taba {
     opacity: 1 !important;
 }
 }
+
+@-moz-document url-prefix("https://bytebytego.com/") {
+* {
+     font-family: Arial !important;
+ }
+}
