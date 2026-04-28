@@ -563,6 +563,15 @@ alias pkbbj="cd /d/work/kendo-blazor/js/telerik-blazor"
 alias pkb2="cd /d/work/github-clone/blazor2"
 alias pkb2j="cd /d/work/github-clone/blazor2/js/telerik-blazor"
 
+alias pkb3="cd /d/work/github-clone/blazor3"
+alias pkb3j="cd /d/work/github-clone/blazor3/js/telerik-blazor"
+
+alias pkb4="cd /d/work/github-clone/blazor4"
+alias pkb4j="cd /d/work/github-clone/blazor4/js/telerik-blazor"
+
+alias pkb5="cd /d/work/github-clone/blazor5"
+alias pkb5j="cd /d/work/github-clone/blazor5/js/telerik-blazor"
+
 alias pkbui="cd /d/work/github/blazor-ui"
 alias pkbd="cd /d/work/github/blazor-docs"
 alias pkds="cd /d/work/github/telerik-datasource"
