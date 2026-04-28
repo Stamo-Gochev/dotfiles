@@ -558,7 +558,7 @@ alias pkbr="cd /d/work/github/blazor-repl"
 alias pkbt="cd /d/work/github/blazor-tests"
 
 alias pkbb="cd /d/work/github-clone/blazor"
-alias pkbbj="cd /d/work/kendo-blazor/js/telerik-blazor"
+alias pkbbj="cd /d/work/github-clone/blazor/js/telerik-blazor"
 
 alias pkb2="cd /d/work/github-clone/blazor2"
 alias pkb2j="cd /d/work/github-clone/blazor2/js/telerik-blazor"
