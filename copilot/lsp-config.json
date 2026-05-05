@@ -1,0 +1,339 @@
+{
+    "lspServers": {
+        "typescript": {
+            "command": "typescript-language-server",
+            "args": [
+                "--stdio"
+            ],
+            "fileExtensions": {
+                ".ts": "typescript",
+                ".tsx": "typescriptreact",
+                ".js": "javascript",
+                ".jsx": "javascriptreact"
+            }
+        },
+        "roslyn": {
+            "command": "roslyn-language-server",
+            "args": [
+                "--stdio",
+                "--logLevel=Information"
+            ],
+            "fileExtensions": {
+                ".cs": "csharp",
+                ".razor": "razor"
+            }
+        },
+        "python": {
+            "command": "pyright-langserver",
+            "args": [
+                "--stdio"
+            ],
+            "fileExtensions": {
+                ".py": "python",
+                ".pyi": "python"
+            }
+        },
+        "gopls": {
+            "command": "gopls",
+            "args": [
+                "serve"
+            ],
+            "fileExtensions": {
+                ".go": "go"
+            }
+        },
+        "clangd": {
+            "command": "clangd",
+            "args": [
+                "--background-index"
+            ],
+            "fileExtensions": {
+                ".cpp": "cpp",
+                ".cxx": "cpp",
+                ".cc": "cpp",
+                ".c": "c",
+                ".h": "cpp",
+                ".hpp": "cpp"
+            }
+        },
+        "marksman": {
+            "command": "marksman",
+            "args": [
+                "server"
+            ],
+            "fileExtensions": {
+                ".md": "markdown",
+                ".markdown": "markdown"
+            }
+        },
+        "rust-analyzer": {
+            "command": "rust-analyzer",
+            "args": [
+                "--stdio"
+            ],
+            "fileExtensions": {
+                ".rs": "rust"
+            }
+        },
+        "yaml-language-server": {
+            "command": "yaml-language-server",
+            "args": [
+                "--stdio"
+            ],
+            "fileExtensions": {
+                ".yml": "yaml",
+                ".yaml": "yaml"
+            }
+        },
+        "vscode-json-language-server": {
+            "command": "vscode-json-language-server",
+            "args": [
+                "--stdio"
+            ],
+            "fileExtensions": {
+                ".json": "json",
+                ".jsonc": "jsonc"
+            }
+        },
+        "vscode-html-language-server": {
+            "command": "vscode-html-language-server",
+            "args": [
+                "--stdio"
+            ],
+            "fileExtensions": {
+                ".html": "html",
+                ".htm": "html"
+            }
+        },
+        "vscode-css-language-server": {
+            "command": "vscode-css-language-server",
+            "args": [
+                "--stdio"
+            ],
+            "fileExtensions": {
+                ".css": "css",
+                ".scss": "scss",
+                ".less": "less"
+            }
+        },
+        "bash-language-server": {
+            "command": "bash-language-server",
+            "args": [
+                "start"
+            ],
+            "fileExtensions": {
+                ".sh": "shellscript",
+                ".bash": "shellscript"
+            }
+        },
+        "jdtls": {
+            "command": "jdtls",
+            "args": [],
+            "fileExtensions": {
+                ".java": "java"
+            }
+        },
+        "ruby-lsp": {
+            "command": "ruby-lsp",
+            "args": [],
+            "fileExtensions": {
+                ".rb": "ruby"
+            }
+        },
+        "intelephense": {
+            "command": "intelephense",
+            "args": [
+                "--stdio"
+            ],
+            "fileExtensions": {
+                ".php": "php"
+            }
+        },
+        "powershell-editor-services": {
+            "command": "pwsh",
+            "args": [
+                "-NoLogo",
+                "-NoProfile",
+                "-Command",
+                "$module = Get-Module -ListAvailable PowerShellEditorServices | Select-Object -First 1; if (-not $module) { throw 'PowerShellEditorServices module not found.' }; $scriptPath = Join-Path $module.ModuleBase 'Start-EditorServices.ps1'; if (-not (Test-Path $scriptPath)) { throw \"Start-EditorServices.ps1 not found at $scriptPath.\" }; & $scriptPath"
+            ],
+            "fileExtensions": {
+                ".ps1": "powershell",
+                ".psm1": "powershell",
+                ".psd1": "powershell"
+            }
+        },
+        "elixir-ls": {
+            "command": "elixir-ls",
+            "args": [],
+            "fileExtensions": {
+                ".ex": "elixir",
+                ".exs": "elixir",
+                ".heex": "elixir"
+            }
+        },
+        "metals": {
+            "command": "metals",
+            "args": [],
+            "fileExtensions": {
+                ".scala": "scala",
+                ".sbt": "scala",
+                ".sc": "scala"
+            }
+        },
+        "vue-language-server": {
+            "command": "vue-language-server",
+            "args": [
+                "--stdio"
+            ],
+            "fileExtensions": {
+                ".vue": "vue"
+            }
+        },
+        "sourcekit-lsp": {
+            "command": "sourcekit-lsp",
+            "args": [],
+            "fileExtensions": {
+                ".swift": "swift"
+            }
+        },
+        "kotlin-language-server": {
+            "command": "kotlin-language-server",
+            "args": [],
+            "fileExtensions": {
+                ".kt": "kotlin",
+                ".kts": "kotlin"
+            }
+        },
+        "docker-langserver": {
+            "command": "docker-langserver",
+            "args": [
+                "--stdio"
+            ],
+            "fileExtensions": {
+                "Dockerfile": "dockerfile",
+                ".dockerfile": "dockerfile"
+            }
+        },
+        "sqls": {
+            "command": "sqls",
+            "args": [],
+            "fileExtensions": {
+                ".sql": "sql"
+            }
+        },
+        "angular-language-server": {
+            "command": "ngserver",
+            "args": [
+                "--stdio",
+                "--tsProbeLocations",
+                "",
+                "--ngProbeLocations",
+                ""
+            ],
+            "fileExtensions": {
+                ".ts": "typescript",
+                ".html": "html"
+            }
+        },
+        "astro-ls": {
+            "command": "astro-ls",
+            "args": [
+                "--stdio"
+            ],
+            "fileExtensions": {
+                ".astro": "astro"
+            }
+        },
+        "graphql-language-service": {
+            "command": "graphql-lsp",
+            "args": [
+                "server",
+                "-m",
+                "stream"
+            ],
+            "fileExtensions": {
+                ".graphql": "graphql",
+                ".gql": "graphql"
+            }
+        },
+        "haskell-language-server": {
+            "command": "haskell-language-server-wrapper",
+            "args": [
+                "--lsp"
+            ],
+            "fileExtensions": {
+                ".hs": "haskell",
+                ".lhs": "haskell"
+            }
+        },
+        "ansible-language-server": {
+            "command": "ansible-language-server",
+            "args": [
+                "--stdio"
+            ],
+            "fileExtensions": {
+                ".yml": "yaml.ansible",
+                ".yaml": "yaml.ansible"
+            }
+        },
+        "terraform-ls": {
+            "command": "terraform-ls",
+            "args": [
+                "serve"
+            ],
+            "fileExtensions": {
+                ".tf": "terraform",
+                ".tfvars": "terraform-vars"
+            }
+        },
+        "svelte-language-server": {
+            "command": "svelteserver",
+            "args": [
+                "--stdio"
+            ],
+            "fileExtensions": {
+                ".svelte": "svelte"
+            }
+        },
+        "tailwindcss-language-server": {
+            "command": "tailwindcss-language-server",
+            "args": [
+                "--stdio"
+            ],
+            "fileExtensions": {
+                ".html": "html",
+                ".css": "css",
+                ".js": "javascript",
+                ".jsx": "javascriptreact",
+                ".ts": "typescript",
+                ".tsx": "typescriptreact",
+                ".vue": "vue",
+                ".svelte": "svelte",
+                ".astro": "astro"
+            }
+        },
+        "lemminx": {
+            "command": "lemminx",
+            "args": [],
+            "fileExtensions": {
+                ".xml": "xml",
+                ".xsd": "xml",
+                ".xsl": "xml",
+                ".xslt": "xml",
+                ".svg": "xml"
+            }
+        },
+        "fsautocomplete": {
+            "command": "fsautocomplete",
+            "args": [
+                "--adaptive-lsp-server-enabled"
+            ],
+            "fileExtensions": {
+                ".fs": "fsharp",
+                ".fsi": "fsharp",
+                ".fsx": "fsharp"
+            }
+        }
+    }
+}

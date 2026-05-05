@@ -49,8 +49,13 @@ if [ ! -d "$HOME/.vim/bundle" ]; then
 fi
 
 
-# github copilot cli lsp config
-mkdir -p ~/.copilot
-ln -sf "$(pwd)/lsp-config.json" ~/.copilot/lsp-config.json
+# github copilot: symlink contents of copilot/ into ~/.copilot/
+if [ ! -d "$HOME/.copilot" ]; then
+	mkdir -p "$HOME/.copilot"
+fi
+for item in copilot/*; do
+	name=$(basename "$item")
+	ln -sfn "$(pwd)/$item" "$HOME/.copilot/$name"
+done
 
 echo "Done"

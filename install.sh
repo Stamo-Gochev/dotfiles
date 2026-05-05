@@ -50,7 +50,9 @@ sudo apt-get install dconf-cli
 # export with dconf dump /org/cinnamon/desktop/keybindings/ > dconf-settings.conf
 # import with dconf load /org/cinnamon/desktop/keybindings/ < dconf-settings.conf
 
+
 bash dotfiles.sh
+bash lsp-install.sh
 
 # chrome
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -

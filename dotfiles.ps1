@@ -30,6 +30,27 @@ function Test-ReparsePoint([string]$path) {
   return [bool]($file.Attributes -band [IO.FileAttributes]::ReparsePoint)
 }
 
+Function Create-DirJunction ($link, $target)
+{
+	if (exist $link)
+	{
+		if (Test-ReparsePoint $link)
+		{
+			Write-Host "Updating directory junction $link to $target"
+			invoke-expression "cmd /c rmdir `"$link`""
+			invoke-expression "cmd /c mklink /J `"$link`" `"$target`""
+		}
+		else
+		{
+			Write-Host "WARNING: $link exists but is not a junction. Skipping."
+		}
+	}
+	else
+	{
+		invoke-expression "cmd /c mklink /J `"$link`" `"$target`""
+	}
+}
+
 Function Remove-SymLink ($link)
 {
 	if (exist $link)
@@ -81,20 +102,31 @@ foreach ($file_object in $file_objects)
 	Create-SymLink $link $target
 }
 
-# github copilot cli lsp config: ~/.copilot/lsp-config.json -> lsp-config.json
+# github copilot: symlink contents of copilot/ into ~/.copilot/
 $copilot_dir = Join-Path $home_dir ".copilot"
 if (-not (Test-Path $copilot_dir))
 {
 	New-Item -ItemType Directory -Path $copilot_dir | Out-Null
 }
 
-$copilot_link = Join-Path $copilot_dir "lsp-config.json"
-$copilot_target = Join-Path $script_path "lsp-config.json"
+$copilot_source = Join-Path $script_path "copilot"
+foreach ($item in Get-ChildItem $copilot_source)
+{
+	$link = Join-Path $copilot_dir $item.Name
+	$target = $item.FullName
 
-Write-Host "Link: $copilot_link"
-Write-Host "Target: $copilot_target"
+	Write-Host "Link: $link"
+	Write-Host "Target: $target"
 
-Create-SymLink $copilot_link $copilot_target
+	if ($item.PSIsContainer)
+	{
+		Create-DirJunction $link $target
+	}
+	else
+	{
+		Create-SymLink $link $target
+	}
+}
 
 Write-Host "Done"
 
