@@ -42,14 +42,14 @@ Evaluate the input across these concern categories:
 - **Debatable decisions**: Choices in brainstorming or planning that might lead to irrelevant implementation and decisions.
 - **Edge cases**: Inputs, states, or sequences not handled or tested.
 - **Standards violations**: Deviations from the loaded instruction files (🔴 Block rules take priority).
-- **Performance risks**: Unnecessary re-renders, missing `ShouldRender`, LINQ in hot paths, missing `@key`, unvirtualized large lists.
+- **Performance risks**: Unnecessary updates, known performance bottlenecks.
 - **Correctness**: Logic that may produce wrong results under non-obvious conditions.
 - **Missing tests**: Behavioral paths introduced by the change that lack test coverage.
 
 Read `references/stamo-devils-advocate/references/severity-rubric.md` to assign a severity level to each finding. When writing the `severity` field in the raw JSON, use the lowercase token values: `critical`, `warning`, or `advisory` — not the emoji labels.
 
 Apply the following filter before including a finding:
-- Include if the concern is reasonably debatable, likely to cause a bug, or violates a repo standard.
+- **Include** if the concern is reasonably debatable, likely to cause a bug, or violates a repo standard.
 - **Exclude** if the approach is standard, clearly intentional, and has no evident downside.
 
 Record raw findings to `.github/agents/workspace/devils-advocate-raw.json` with this shape:
