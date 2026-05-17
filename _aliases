@@ -1,6 +1,8 @@
 # git aliases
 alias g="git"
 alias a="git a"
+alias iss="install_stamo_skills"
+alias issl="install_stamo_skills_linux"
 
 # bisect commits - http://webchick.net/git-bisect
 # git checkout (bad commit)
@@ -456,7 +458,7 @@ alias pgt="cd /d/work/github/test-things"
 alias cal="cide && ck && ckbj && cac && cpg && ckr && ckag"
 alias cal="cide && ckbj && ck && ckr"
 alias cide="code /d/work/github/dotfiles"
-alias cide="code /d/work/github/ai-skills"
+alias cidea="code /d/work/github/ai-skills"
 alias cpg="code /d/work/github/playground"
 alias cac="code /d/work/github/aspnet-core/AspNetCore"
 alias cacj="code /d/work/github/aspnet-core/extensions"
