@@ -35,3 +35,7 @@ node_modules
 microsoft.gpg
 
 .github/agents/workspace/
+
+.github/skills
+
+.tmp
