@@ -478,8 +478,11 @@ alias ckac="code /d/work/github/actions"
 # open projects - kendo blazor
 alias ckb="code /d/work/github/blazor"
 alias ckbj="code /d/work/github/blazor/js/telerik-blazor"
-alias ckb2="code /d/kendo-blazor"
-alias ckb2="code /d/kendo-blazor"
+alias ckbb="code /d/work/github-clone/blazor"
+alias ckb2="code /d/work/github-clone/blazor2"
+alias ckb3="code /d/work/github-clone/blazor3"
+alias ckb4="code /d/work/github-clone/blazor4"
+alias ckb5="code /d/work/github-clone/blazor5"
 alias ckbd="code /d/work/github/blazor/demos/server-side/TelerikBlazorDemos/wwwroot/demoList.json"
 
 # open projects - kendo angular
