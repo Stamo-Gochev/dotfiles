@@ -1127,7 +1127,6 @@ body *,
 @-moz-document url-prefix("https://www.perplexity.ai/") {
 * {
     font-family: Arial !important;
-    font-weight: bold !important;
 }
 
 .z-10 {
@@ -1201,6 +1200,7 @@ a:link._taba {
     color: yellow !Important;
     border: 1px solid yellow !important;
 }
+
 }
 
 @-moz-document url-prefix("https://www.youtube.com") {
@@ -1209,6 +1209,8 @@ a:link._taba {
     width: 1px !important;
     height: 1px !important;
 }
+
+
 }
 
 @-moz-document url-prefix("https://chatgpt.com/") {
@@ -1218,30 +1220,20 @@ a:link._taba {
 }
 
 @-moz-document url-prefix("https://fintel.io/") {
-* {
+ * {
      font-family: Arial !important;
  }
 }
 
 @-moz-document url-prefix("https://gemini.google.com/") {
 .mat-mdc-icon-button:hover ~ .cdk-overlay-container, /* adjust selector as needed */
-.cdk-overlay-container {
-    display: none !important;
-}
-}
-
-@-moz-document url-prefix("https:") {
 .card-v2-content,
+.cdk-overlay-container {
 .card-v2-content * {
+    display: none !important;
     background-color: black !important;
-}
-}
-
-@-moz-document url-prefix("https:") {
-.fixed.inset-0.overflow-y-auto {
-    opacity: 1 !important;
-}
-}
+ }
+ }
 
 @-moz-document url-prefix("https://bytebytego.com/") {
 * {
