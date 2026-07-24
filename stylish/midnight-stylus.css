@@ -1251,3 +1251,15 @@ a:link._taba {
      font-family: Arial !important;
  }
 }
+
+@-moz-document url-prefix("https://www.syncfusion.com/blogs") {
+* {
+     font-family: Arial !important;
+ }
+
+h1, h2, h3,
+.elementor-widget-container h3,
+.post h3 {
+    color: white !important;
+}
+}
