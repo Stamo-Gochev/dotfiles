@@ -1259,7 +1259,7 @@ a:link._taba {
 
 h1, h2, h3,
 .elementor-widget-container h3,
-.post h3 {
+.post h1, .post h2, .post h3, .post h4 {
     color: white !important;
 }
 }
