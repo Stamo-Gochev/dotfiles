@@ -424,23 +424,8 @@ alias uya="npm upgrade --global yarn"
 
 # packages
 alias bp="npm run build-package; npm pack"
-alias saa="bp; cp *.tgz /c/work/github/angular-aot/; cd /c/work/github/angular-aot/; npm install *.tgz; cd -"
-alias sau="bp; cp *.tgz /c/work/github/angular-universal-rendering/; cd /c/work/github/angular-universal-rendering/; npm install *.tgz; cd -"
-
-# kendo angular run aliases
-alias ae="chrome.exe http://gochev:8888/examples/"
-alias al="gulp lint"
-alias ak2="chrome.exe http://gochev:4000"
-alias at="gulp watch-test"
-# alias aa="chrome.exe http://localhost:4200"
-alias au="chrome.exe http://localhost:3000"
-alias ak2s="bundle exec jekyll serve --incremental"
-alias ak2sf="SKIP_CONTENT_UPDATE=true bundle exec jekyll serve --incremental"
-alias ak2b="./copy-local-repo.sh kendo-angular-buttons /c/work/github/kendo-angular-buttons"
-alias ke="chrome.exe http://gochevlap/kendo/playground/editor/"
-alias rae="chrome.exe http://localhost:3000/examples"
-alias rce="chrome.exe http://localhost:3000/examples"
-alias rkce="chrome.exe http://localhost:3000/examples"
+alias nvr="npx vitest run"
+alias nvt="npx vitest run"
 
 # projects
 alias pg="cd /d/work/github/playground"
