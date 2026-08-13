@@ -438,6 +438,8 @@ alias pacj="cd /d/work/github/aspnet-core/extensions"
 alias pab="cd /d/work/github/aspnet-core/blazor"
 alias pacf="cd /d/work/github/aspnet-core/corefx"
 alias pgt="cd /d/work/github/test-things"
+alias ddv="cd /d/work/github/dynamic-data-visualization"
+alias pddv="cd /d/work/github/dynamic-data-visualization"
 
 # open projects
 alias cal="cide && ck && ckbj && cac && cpg && ckr && ckag"
@@ -449,6 +451,7 @@ alias cac="code /d/work/github/aspnet-core/AspNetCore"
 alias cacj="code /d/work/github/aspnet-core/extensions"
 alias cace="code /d/work/github/aspnet-core/extensions"
 alias cacf="code /d/work/github/aspnet-core/corefx"
+alias cddv="code /d/work/github/dynamic-data-visualization"
 
 # open projects - kendo
 alias ck="code /d/work/github/kendo"
