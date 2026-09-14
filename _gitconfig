@@ -147,7 +147,7 @@
 	rrc= reset HEAD^
 	rl = reflog
 	s = status
-	st = stash save
+	st = stash save --include-untracked
 	dst = "!f() { git stash drop stash@{$1} ; }; f"
 	stl = stash list
 	ust = "!f() { git stash apply stash@{$1} ; }; f"
