@@ -856,7 +856,8 @@ div[data-testid="message-body-flex-wrapper"] {
     border: 0px solid white !important;
 }
 
-div[data-tid="post-message-subheader"] span[id*=author] {
+div[data-tid="post-message-subheader"] span[id*=author],
+div[aria-describedby="simple-collab-item-context-menu"][tabindex="0"] {
    background: #4d54ff !important;
 }
 
@@ -865,10 +866,6 @@ div[data-tid="post-message-subheader"] span[id*=author] {
     height: 2rem !important;
 }
 
-
-div[id*=message-body]:has(svg, rect) {
-    //border: 1px solid #ffc14d !important;    
-}
 
 div[data-tid="chat-pane-item"] {
     padding-bottom: 16px !important;
@@ -924,8 +921,8 @@ div[aria-labelledby*="channel-list-unread-text"] [id*="time-channel-list-item"] 
 
 /* Target the layout item containing the unread label */
 .fui-TreeItemLayout:has([data-tid="unread"]) {
-  background-color: rgba(0, 255, 255, 0.1) !important;
-  border: 1px solid cyan !important;
+  background-color: teal !important;
+  border: 2px solid orange !important;
 }
 
 /* Change text color of the main content for unread items */
@@ -950,6 +947,37 @@ div[aria-labelledby*="channel-list-unread-text"] [id*="time-channel-list-item"] 
 [aria-labelledby*="channel-list-unread-text"] .fui-TreeItemLayout__aside * {
     color: cyan !important;
 }
+
+/* 1. Reset all tree items to White text and remove any background */
+.fui-TreeItemLayout,
+.fui-TreeItemLayout__main,
+.fui-TreeItemLayout__aside,
+.fui-TreeItemLayout * {
+  color: white !important;
+  background-color: transparent !important;
+}
+
+/* 2. Unread items: Teal background and a thick Orange left border */
+.fui-TreeItemLayout:has([data-tid="unread"]),
+.fui-TreeItemLayout:has(#unread-label),
+.fui-TreeItemLayout:has([id*="unread"]) {
+  background-color: teal !important;
+  border: 2px solid orange !important;
+}
+
+/* Ensure text inside these unread items remains white and bold */
+.fui-TreeItemLayout:has([data-tid="unread"]) .fui-TreeItemLayout__main,
+.fui-TreeItemLayout:has(#unread-label) .fui-TreeItemLayout__main {
+  color: white !important;
+  font-weight: bold !important;
+}
+
+/* 3. Keep chat message text in the main pane White */
+div[id^="content-"] p, 
+.fui-Primitive.___11tzqds p {
+  color: white !important;
+}
+
 
 }
 
