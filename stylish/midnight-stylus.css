@@ -738,7 +738,7 @@ body, table {
 }
 }
 
-@-moz-document url-prefix("https://teams.microsoft.com/") {
+@-moz-document url-prefix("https://teams.cloud.microsoft/") {
 :root {
   --colorNeutralForeground3BrandSelected: red;
   --colorNeutralForeground3: lime;
@@ -891,6 +891,66 @@ ui-tree__item .f19n0e5 {
 .globalEventContainer * {
     color: white !Important;
 }
+
+/* This targets ONLY the span with the channel title ID */
+/* inside a row that is marked as unread */
+
+div[aria-labelledby*="channel-list-unread-text"] span[id*="title-channel-list-item"] {
+    color: cyan !important;
+}
+
+/* Force all OTHER descendants (like the time) to stay grey */
+div[aria-labelledby*="channel-list-unread-text"] [id*="time-channel-list-item"],
+div[aria-labelledby*="channel-list-unread-text"] [id*="time-channel-list-item"] * {
+    color: white !important;
+}
+
+
+[aria-labelledby*="channel-list-unread-text"] .fui-TreeItemLayout__main span[id*="title-channel"],
+[aria-labelledby*="channel-list-unread-text"] .fui-TreeItemLayout__main span[id*="title-team"] {
+    color: cyan !important;
+}
+
+/* Only affect items inside the Fluent Tree (Sidebar) */
+.fui-Tree *, 
+.fui-TreeItem * {
+    color: #ffffff !important;
+}
+
+/* Unread channel title stays cyan */
+[aria-labelledby*="channel-list-unread-text"] span[id*="title-channel-list-item"] {
+    color: cyan !important;
+}
+
+/* Target the layout item containing the unread label */
+.fui-TreeItemLayout:has([data-tid="unread"]) {
+  background-color: rgba(0, 255, 255, 0.1) !important;
+  border: 1px solid cyan !important;
+}
+
+/* Change text color of the main content for unread items */
+.fui-TreeItemLayout:has([data-tid="unread"]) .fui-TreeItemLayout__main {
+  color: cyan !important;
+}
+
+/* Style the "Unread" label itself */
+.fui-TreeItemLayout [data-tid="unread"] {
+  color: cyan !important;
+  font-weight: bold !important;
+}
+
+/* Set the whole sidebar to white by default */
+.fui-Tree * {
+    color: #ffffff !important;
+}
+
+/* Make every part of an unread channel cyan */
+[aria-labelledby*="channel-list-unread-text"] [id*="-channel-list-item"],
+[aria-labelledby*="channel-list-unread-text"] .fui-TreeItemLayout__main *,
+[aria-labelledby*="channel-list-unread-text"] .fui-TreeItemLayout__aside * {
+    color: cyan !important;
+}
+
 }
 
 @-moz-document url-prefix("https://blazor.syncfusion.com/") {
