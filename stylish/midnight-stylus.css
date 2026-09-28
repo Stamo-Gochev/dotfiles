@@ -921,7 +921,7 @@ div[aria-labelledby*="channel-list-unread-text"] [id*="time-channel-list-item"] 
 
 /* Target the layout item containing the unread label */
 .fui-TreeItemLayout:has([data-tid="unread"]) {
-  background-color: teal !important;
+  background-color: red !important;
   border: 2px solid orange !important;
 }
 
@@ -961,7 +961,7 @@ div[aria-labelledby*="channel-list-unread-text"] [id*="time-channel-list-item"] 
 .fui-TreeItemLayout:has([data-tid="unread"]),
 .fui-TreeItemLayout:has(#unread-label),
 .fui-TreeItemLayout:has([id*="unread"]) {
-  background-color: teal !important;
+  background-color: darkgreen !important;
   border: 2px solid orange !important;
 }
 
@@ -978,6 +978,52 @@ div[id^="content-"] p,
   color: white !important;
 }
 
+.fui-Flex.rnyw7ur h2[id^="subject-line-"] {
+     color: white !important;
+}
+
+h2[id^="subject-line-"],
+span[id^="author-"] {
+    color: white !important;
+}
+
+/* context menu */
+/* 1. Fix Popover Transparency & Overlapping */
+.fui-MenuPopover {
+    background-color: #2b2b2b !important; /* Solid dark background */
+    opacity: 1 !important;
+    z-index: 1000000 !important; /* Ensure it stays on top */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* 2. Change Text Color to Yellow */
+.fui-MenuPopover, 
+.fui-MenuPopover .fui-MenuItem__content,
+.fui-MenuPopover .fui-MenuItem__secondaryContent,
+.fui-MenuPopover button,
+.fui-MenuPopover span {
+    color: #ffff00 !important; /* Yellow text */
+}
+
+/* 3. Fix Icons (Remove gray/transparency) */
+.fui-MenuPopover svg,
+.fui-MenuPopover .fui-MenuItem__icon,
+.fui-MenuPopover .fui-Button__icon {
+    color: #ffffff !important; /* Make icons white for better visibility */
+    opacity: 1 !important;
+    fill: currentColor !important;
+}
+
+/* 4. Ensure child containers aren't transparent */
+.fui-MenuPopover .fui-MenuList {
+    background-color: transparent !important;
+}
+
+/* end of context menu */
+
+div[id^="new-message-"] p {
+    color: yellow !important;
+}
 
 }
 
