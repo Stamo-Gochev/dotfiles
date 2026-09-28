@@ -1025,6 +1025,16 @@ div[id^="new-message-"] p {
     color: yellow !important;
 }
 
+h2, span, p, li {
+    color: #ffffff !important;
+}
+
+/* Specifically for the Menu Popover if you want it different */
+.fui-MenuPopover, 
+.fui-MenuPopover * {
+    color: #ffff00 !important; /* Yellow for the menu as requested before */
+}
+
 }
 
 @-moz-document url-prefix("https://blazor.syncfusion.com/") {
