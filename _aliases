@@ -1,6 +1,8 @@
 # git aliases
 alias g="git"
 alias a="git a"
+alias isi="install_stamo_instructions"
+alias isil="install_stamo_instructions_linux"
 alias iss="install_stamo_skills"
 alias issl="install_stamo_skills_linux"
 

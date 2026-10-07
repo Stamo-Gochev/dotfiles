@@ -54,3 +54,45 @@ install_stamo_skills_linux()
 
     bash "$installer"
 }
+
+install_stamo_instructions()
+{
+    local installer="/d/work/github/ai-skills/install-stamo-instructions.ps1"
+    local installer_win
+    local working_dir_win
+    local exit_code
+
+    if [ ! -f "$installer" ]; then
+        echo "ERROR: installer not found at $installer" >&2
+        return 1
+    fi
+
+    if ! command -v cygpath >/dev/null 2>&1; then
+        echo "ERROR: cygpath is required to run from Git Bash on Windows." >&2
+        return 1
+    fi
+
+    installer_win="$(cygpath -w "$installer")"
+    working_dir_win="$(cygpath -w "$PWD")"
+
+    powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$installer_win" -WorkingDir "$working_dir_win"
+    exit_code=$?
+
+    if [ $exit_code -ne 0 ]; then
+        echo "ERROR: install-stamo-instructions.ps1 failed with exit code $exit_code" >&2
+    fi
+
+    return $exit_code
+}
+
+install_stamo_instructions_linux()
+{
+    local installer="/d/work/github/ai-skills/install-stamo-instructions.sh"
+
+    if [ ! -f "$installer" ]; then
+        echo "ERROR: installer not found at $installer" >&2
+        return 1
+    fi
+
+    bash "$installer"
+}
